@@ -1,4 +1,4 @@
-# <h1>Projekt City</h1>
+# <h1>Projekt City
 
 Projekt City is a unique and expansive Minecraft project that operates without funding and is entirely free to play for everyone. Our mission is to develop an easily navigable Minecraft world for everyone, while paying a lot of attention to details and flawless work. Within "Projekt City," we are constructing a large map that features a city, an airport, a hotel, and much more, with meticulous attention to detail and precision. We enhance the gameplay through intricate redstone creations and commands.
 The Projekt City map spans 1,164 meters in width and 1,833 meters in length, covering a total area of 2,133,612 square meters*, making it a very large Minecraft project! Our current efforts are focused on developing the airport and hotel, which occupy a significant portion of the map.
@@ -9,4 +9,4 @@ To provide detailed information, we have launched a website where players can fi
 Thank you for your support,  
 SuffixHD & itsmarian
 
-# <h1>Map</h1>
+# <h1>Map
