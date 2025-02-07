@@ -25,6 +25,7 @@ section {
 
 footer {
     border-top: 1px solid #fff;
+    font-weight: 200;
     min-height: 100px;
     text-align: center;
 }
@@ -74,6 +75,11 @@ p {
 .linkout {
     color: #fff;
     text-decoration: underline;
+}
+
+.nodecoration {
+    color: #fff;
+    text-decoration: none;
 }
 
 /* Scrollbar / Source: https://community.hubspot.com/t5/CMS-Development/CSS-for-Scrollbar-in-iOS-devices/m-p/293889 [03/20/2024]*/
