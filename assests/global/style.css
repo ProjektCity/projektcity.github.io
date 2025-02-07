@@ -9,26 +9,23 @@ header {
     border-bottom: 1px solid #fff;
     height: 92.5px;
     min-height: 100px;
-    min-width: 1150px;
 }
 
 main {
     min-height: 100px;
-    min-width: 1150px;
 }
 
 section {
     margin: 0 auto;
     margin-bottom: 10px;
     margin-top: 10px;
-    min-width: 1150px;
+    width: 1150px;
     max-width: 1150px;
 }
 
 footer {
     border-top: 1px solid #fff;
     min-height: 100px;
-    min-width: 1150px;
     text-align: center;
 }
 
