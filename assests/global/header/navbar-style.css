@@ -76,7 +76,7 @@ img {
 }
 
 .menu-item {
-    font-size: 14px;
+    font-size: 17px;
     color: #888;
     cursor: pointer;
     height: 30px;
@@ -85,8 +85,8 @@ img {
 }
 
 .menu-item-inner {
-    height: 19.5px;
-    padding: 5.25px;
+    height: 23.2px;
+    padding: 3.4px;
 }
 
 .menu-item.active, .menu-item:hover {
