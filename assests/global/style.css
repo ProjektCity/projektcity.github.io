@@ -3,6 +3,7 @@ body {
     color: #fff;
     font-family: 'Poppins';
     font-weight: 100;
+    overflow-x: hidden;
 }
 
 header {
