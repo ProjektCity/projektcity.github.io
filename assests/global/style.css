@@ -2,7 +2,7 @@ body {
     background-color: #1B1D1E;
     color: #fff;
     font-family: 'Poppins';
-    font-weight: 100;
+    font-weight: 200;
     overflow-x: hidden;
 }
 
@@ -71,6 +71,7 @@ h3 {
 }
 
 h4 {
+    font-weight: 300;
     font-size: 30px;
 }
 
@@ -87,6 +88,38 @@ p {
 .nodecoration {
     color: #fff;
     text-decoration: none;
+}
+
+/* Button */
+.basic-btn {
+    background-color: #282626;
+    border: 1px solid #282626;
+    border-radius: 12.5px;
+    cursor: pointer;
+    font-size: 25px;
+    font-weight: 200;
+    height: 45px;
+    width: 300px;
+    /* Non selectable text */
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none; 
+    user-select: none;
+}
+
+.basic-btn:hover {
+    border: 1px solid #fff;
+    background-color: #1B1D1E;
+}
+
+.basic-btn-inner {
+    height: 35px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    text-align: center;
+    width: 300px;
 }
 
 /* Scrollbar / Source: https://community.hubspot.com/t5/CMS-Development/CSS-for-Scrollbar-in-iOS-devices/m-p/293889 [03/20/2024]*/

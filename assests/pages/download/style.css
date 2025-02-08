@@ -1,5 +1,5 @@
-.download{
-
+.download {
+    width: auto;
 }
 
 .download-header {
@@ -10,14 +10,16 @@
 }
 
 .download-h-maindir {
-
+    width: auto;
 }
 
 .download-h-arrowdir {
     text-align: center;
 }
 
-.download-h-nextdir {}
+.download-h-nextdir {
+    width: auto;
+}
 
 .download-project-information {
     display: flex;
@@ -41,7 +43,7 @@
 }
 
 .download-project-information-text-bottom {
-
+    width: auto;
 }
 
 .download-table {
@@ -53,6 +55,7 @@
 table {
     font-size: 20px;
     width: 1000px;
+    border-spacing: 0px;
 }
 
 table, td, tr {
@@ -64,6 +67,16 @@ table, td, tr {
 
 tr {
     height: 60px;
+}
+
+/* List */
+ul {
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+}
+
+li {
+    font-size: 25px;
 }
 
 .th-l1 {
@@ -138,14 +151,14 @@ tr {
 }
 
 .td-gversion {
-
+    width: auto;
 }
 
 .td-gversion-container {
-
+    width: auto;
 }
 
-/* Curent page */
+/* Current page */
 .download-currentpage {
     height: 150px;
     margin: 0 auto;
@@ -199,6 +212,55 @@ tr {
     font-size: 25px; 
 }
   
-  .tooltiptext {
+.tooltiptext {
     padding: 10px;
- }
+}
+
+
+/* Download page layout */
+.dwnld-area {
+    margin: 0 auto;
+    width: 1000px;
+}
+
+.dwnld-table {
+    text-align: left;
+    width: 1000px;
+}
+
+.dwnld-td-c1 {
+    width: 198px;
+}
+
+.dwnld-td-c2 {
+    width: 498px;
+}
+
+.dwnld-td-c3 {
+    width: auto;
+}
+
+.dwnld-changelog {
+    text-align: center;
+}
+
+.dwnld-cl-header {
+    text-align: center;
+}
+
+.dwnld-cl-version {
+    text-align: left;
+}
+
+.dwnld-cl-changelog {
+    font-size: 30px;
+    font-weight: 200;
+    text-align: left;
+}
+
+.download-footer-information {
+    font-size: 10px;
+    margin: 0 auto;
+    text-align: center;
+    width: 1150px;
+}
