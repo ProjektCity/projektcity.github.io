@@ -1,0 +1,148 @@
+.download{
+
+}
+
+.download-header {
+    display: flex;
+    font-size: 23px;
+}
+
+.download-h-maindir {
+    width: 70px;
+}
+
+.download-h-arrowdir {
+    height: 22px;
+    margin-bottom: 3px;
+    margin-left: 6.5px;
+    margin-right: 6.5px;
+    margin-top: 3px;
+    width: 22px;
+}
+
+.download-h-nextdir {
+
+}
+
+.download-project-information {
+    display: flex;
+    margin: 0 auto;
+    width: 1000px;
+}
+
+.download-project-information-image {
+
+}
+
+.download-project-information-text {
+
+}
+
+.download-project-information-text-top {
+
+}
+
+.download-project-information-text-bottom {
+
+}
+
+.download-table {
+    margin: 0 auto;
+    width: 1000px;
+}
+
+/* Table */
+table {
+    font-size: 20px;
+    width: 1000px;
+}
+
+table, td, tr {
+    border-top: 1px solid #fff;
+    border-collapse: collapse;
+    font-weight: 200;
+    text-align: left;
+}
+
+tr {
+    height: 60px;
+}
+
+.th-l1 {
+    text-align: center;
+    width: 98px;
+}
+
+.th-l2 {
+    text-align: left;
+    padding-left: 9px;
+    padding-right: 9px;
+    width: 280px;
+}
+
+.th-l3 {
+    text-align: left;
+    width: 248px;
+}
+
+.th-l4 {
+    text-align: left;
+    width: 173px;
+}
+
+.th-l5 {
+    text-align: left;
+    width: 185px;
+}
+
+/* Content */
+.td-image {
+    width: 98px;
+}
+
+.td-image-container {
+    height: 40px;
+    margin-left: 29px;
+    margin-right: 29px;
+    width: 40px;
+}
+
+.td-name {
+    text-align: left;
+    width: 280px;
+}
+
+.td-name-container {
+    height: 28px;
+    margin-left: 9px;
+    margin-right: 9px;
+    width: 280px;
+}
+
+.td-date {
+    text-align: left;
+    width: 248px;
+}
+
+.td-date-container {
+    width: 248px;
+    height: 28px;
+}
+
+.td-size {
+    text-align: left;
+    width: 173px;
+}
+
+.td-size-container {
+    width: 173px;
+    height: 28px;
+}
+
+.td-gversion {
+
+}
+
+.td-gversion-container {
+
+}
