@@ -85,7 +85,7 @@
 }
 
 .des-content {
-    font-size: 25px;
+    font-size: 24px;
     font-weight: 200;
     width: 100%;
 }
@@ -293,4 +293,8 @@ iframe {
 }
   .rotated {
     transform: translateY(-50%) rotate(180deg);
+}
+
+.special-information {
+    font-size: 8px;
 }
