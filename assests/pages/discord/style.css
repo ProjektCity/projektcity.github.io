@@ -1,0 +1,93 @@
+.discord-content {
+    margin: 0 auto;
+    text-align: center;
+    width: 1000px;
+}
+
+.dsc-content-information {
+
+}
+
+/* Discord page */
+.dsc-container {
+    height: auto;
+    overflow: hidden;
+    width: 1150px;
+}
+
+.dsc-container {
+    height: auto;
+    overflow: hidden;
+    text-align: left;
+    width: auto;
+}
+
+.dsc-frame {
+    height: auto;
+    overflow: hidden;
+    width: auto;
+}
+
+.dsc-information {
+    height: 475px;
+    overflow: hidden;
+    width: auto;
+}
+
+/* Information */
+.dsc-info-desc {
+    height: auto;
+    width: auto;
+}
+
+.dsc-info-bullets {
+    height: auto;
+    margin-bottom: 20px;
+    width: auto;
+}
+
+/* Bullet */
+.bullet {
+    display: flex;
+    margin-left: 10px;
+    height: 45px;
+}
+
+.bullet-svg {
+    height: 35px;
+    padding: 5px;
+    width: 35px;
+}
+
+.bullet-text {
+    font-size: 25px;
+    height: 35.2px;
+    padding: 4.9px;
+}
+
+.dsc-invitejoiner {
+    background-color: #5865F2;
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    height: 70px;
+    margin: 0 auto;
+    width: 470px;
+}
+
+.dsc-logo {
+    height: 50px;
+    padding: 10px;
+    width: 50px;
+}
+
+.dsc-text {
+    color: #fff;
+    font-size: 40px;
+    height: 56px;
+    padding: 7px;
+    padding-right: 17px;
+    text-align: left;
+    width: 380px;
+}
