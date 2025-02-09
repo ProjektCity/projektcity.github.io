@@ -1,16 +1,16 @@
 body {
     border: 1px solid #fff;
-    width: 950px;
+    width: 300px;
 }
 
 #mobile-header {
     height: 160px;
-    width: 950px;
+    width: 300px;
 }
 
 .mobile-section {
     padding: 5px;
-    width: 940px;
+    width: 280px;
 }
 
 body {
@@ -45,7 +45,6 @@ body {
 .box-container {
     width: 303px;
     height: 50px;
-    padding: 2.5px;
 }
 
 .left-column {
@@ -174,7 +173,7 @@ img {
 }
 
 .des-header {
-    min-width: 950px;
+    min-width: 300px;
     text-align: center;
 }
 
