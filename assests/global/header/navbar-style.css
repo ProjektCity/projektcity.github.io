@@ -162,6 +162,7 @@ img {
 }
 
 .scrolling-items {
+    background-color: #1B1D1E;
     display: flex;
     font-size: 33px;
     width: 2740.32px;
@@ -176,5 +177,6 @@ img {
 }
 
 .scrolling-item {
+    background-color: #1B1D1E;
     white-space: nowrap;
 }
