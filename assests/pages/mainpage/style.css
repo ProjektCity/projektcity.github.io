@@ -171,9 +171,9 @@
 .indicators button {
     position: relative;
     width: 15px;
-    height: 2.5px;
+    height: 5px;
     margin: 0 5px;
-    border-radius: 2.5px;
+    border-radius: 5px;
     border: none;
     background-color: #bbb;
     overflow: hidden;
@@ -182,8 +182,8 @@
 
 .indicators button.active {
     width: 45px;
-    height: 2.5px;
-    border-radius: 2.5px;
+    height: 5px;
+    border-radius: 5px;
     background-color: #bbb;
 }
 
@@ -213,10 +213,10 @@
 
 .li-text {
     background-color: rgba(255, 255, 255, 0.5);
-    margin-top: -60px;
+    margin-top: -70px;
     color: #333;
     font-size: 17.9px;
-    height: 20px;
+    height: auto;
     padding: 5px;
     position: relative;
     text-align: center;
