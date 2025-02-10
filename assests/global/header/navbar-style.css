@@ -1,5 +1,4 @@
-.head {
-    border: 1px solid #32333C;
+.dt-head {
     border-radius: 10px;
     font-family: 'Poppins';
     font-weight: 200;
@@ -17,19 +16,19 @@
     user-select: none;
 }
 
-.gh-ui-navbar {
+.dt-gh-ui-navbar {
     height: 72.5px;
     padding-top: 10px;
     padding-bottom: 10px;
 }
 
-.header {
+.dt-header {
     background-color: #24262B;
     height: 53px;
     padding: 10px;
 }
 
-.box-container {
+.dt-box-container {
     display: flex;
     height: 50px;
     justify-content: space-around;
@@ -37,17 +36,17 @@
 }
 
 /* Information */
-.left-column {
+.dt-left-column {
     height: 50px;
     width: 300px;
 }
 
-.information {
+.dt-information {
     height: 50px;
     width: 300px;
 }
 
-.img {
+.dt-img {
     height: 50px;
     width: 50px;
 }
@@ -56,23 +55,23 @@ img {
     border-radius: 5px;
 }
 
-.text-inner {
+.dt-text-inner {
     height: 50px;
     width: 250px;
 }
 
-.text {
+.dt-text {
     height: 50px;
     width: 250px;
 }
 
 /* Menu */
-.middle-column {
+.dt-middle-column {
     width: 400px;
     height: 50px;
 }
 
-.menu {
+.dt-menu {
     align-items: center;
     display: flex;
     height: 30px;
@@ -82,7 +81,7 @@ img {
     width: 400px;
 }
 
-.menu-item {
+.dt-menu-item {
     font-size: 17px;
     color: #888;
     cursor: pointer;
@@ -91,29 +90,29 @@ img {
     width: 100px;
 }
 
-.menu-item-inner {
+.dt-menu-item-inner {
     height: 23.2px;
     padding: 3.4px;
 }
 
-.menu-item.active, .menu-item:hover {
+.dt-menu-item.active, .menu-item:hover {
     color: #fff;
 }
 
 /* About & others */
-.right-column {
+.dt-right-column {
     height: 50px;
     width: 220px;
 }
 
-.others {
+.dt-others {
     display: flex;
     height: 50px;
     justify-content: space-around;
     position: relative;
 }
 
-.cf {
+.dt-cf {
     height: 50px;
     width: 50px;
 }
@@ -139,7 +138,7 @@ img {
     }
 }
 
-.container {
+.dt-container {
     font-weight: 100;
     font-family: 'Poppins', sans-serif;
     background-color: transparent;
@@ -161,8 +160,8 @@ img {
     animation-fill-mode: forwards;
 }
 
-.scrolling-items {
-    background-color: #1B1D1E;
+.dt-scrolling-items {
+    background-color: transparent;
     display: flex;
     font-size: 33px;
     width: 2740.32px;
@@ -176,7 +175,8 @@ img {
     animation-timing-function: linear;
 }
 
-.scrolling-item {
-    background-color: #1B1D1E;
+.dt-scrolling-item {
+    background-color: transparent;
+    font-weight: 100;
     white-space: nowrap;
 }

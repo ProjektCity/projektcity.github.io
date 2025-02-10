@@ -6,7 +6,7 @@ body {
     overflow-x: hidden;
 }
 
-header {
+.dt-p-header {
     background-color: #1B1D1E;
     position: fixed;
     top: 0;
@@ -17,12 +17,12 @@ header {
     z-index: 1000;
 }
 
-main {
+.dt-main {
     padding-top: 94.5px;
     min-height: 100px;
 }
 
-section {
+.dt-section {
     margin: 0 auto;
     margin-bottom: 10px;
     margin-top: 10px;
@@ -30,14 +30,14 @@ section {
     max-width: 1150px;
 }
 
-footer {
+.dt-footer {
     border-top: 1px solid #fff;
     font-weight: 200;
     min-height: 100px;
     text-align: center;
 }
 
-.content {
+.dt-content {
     margin-bottom: 20px;
     margin-top: 20px;
 }

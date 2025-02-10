@@ -18,7 +18,7 @@ fetch('https://pcapi-k48687951-6e4e.vercel.app/api')
     const percentage = (downloadCount / maxValue) * 100;
     progressBar.style.width = percentage + '%';
 
-    const counters = document.querySelectorAll('.counter');
+    const counters = document.querySelectorAll('.dt-counter');
     if (counters.length >= 2) {
         counters[0].setAttribute('data-purecounter-end', beforeComma);
         counters[1].setAttribute('data-purecounter-end', afterComma);
@@ -28,7 +28,7 @@ fetch('https://pcapi-k48687951-6e4e.vercel.app/api')
     progressText.textContent = `${formattedDownloadCount} / ${formattedMaxValue}`;
 
     new PureCounter({
-        selector: ".counter",
+        selector: ".dt-counter",
         start: 0,
         duration: 1,
         delay: 1,
@@ -48,17 +48,17 @@ fetch('https://pcapi-k48687951-6e4e.vercel.app/api')
 
 // Image Container
 
-const carousel = document.querySelector('.carousel ul');
-const indicatorsContainer = document.querySelector('.indicators');
+const carousel = document.querySelector('.dt-carousel ul');
+const indicatorsContainer = document.querySelector('.dt-indicators');
 let index = 0;
 let autoSlideInterval;
 
 function createIndicators() {
-    const slides = document.querySelectorAll('.carousel li');
+    const slides = document.querySelectorAll('.dt-carousel li');
     slides.forEach((_, i) => {
         const button = document.createElement('button');
         const progress = document.createElement('div');
-        progress.classList.add('progress');
+        progress.classList.add('dt-progress');
         button.dataset.index = i;
         button.appendChild(progress);
         button.onclick = () => showSlide(i, true);
@@ -70,18 +70,18 @@ function createIndicators() {
 function updateIndicators() {
     const buttons = indicatorsContainer.querySelectorAll('button');
     buttons.forEach((button, i) => {
-        const progress = button.querySelector('.progress');
-        button.classList.remove('active');
+        const progress = button.querySelector('.dt-progress');
+        button.classList.remove('dt-active');
         progress.style.animation = 'none';
         if (i === index) {
-            button.classList.add('active');
+            button.classList.add('dt-active');
             progress.style.animation = 'fill 3s linear';
         }
     });
 }
 
 function showSlide(newIndex, stopAutoSlide = false) {
-    const slides = document.querySelectorAll('.carousel li');
+    const slides = document.querySelectorAll('.dt-carousel li');
     const totalSlides = slides.length;
 
     if (newIndex < 0) newIndex = totalSlides - 1;
