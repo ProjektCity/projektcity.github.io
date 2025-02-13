@@ -175,15 +175,15 @@ p {
 .mb-main {
     padding-top: 94.5px;
     min-height: 100px;
-    width: 310px;
+    width: 350px;
 }
 
 .mb-section {
     margin: 0 auto;
     margin-bottom: 10px;
     margin-top: 10px;
-    width: 310px;
-    max-width: 310px;
+    width: 350px;
+    max-width: 350px;
 }
 
 .mb-footer {
