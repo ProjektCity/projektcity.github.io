@@ -1,71 +1,71 @@
-.discord-content {
+.dt-discord-content {
     margin: 0 auto;
     text-align: center;
     width: 1000px;
 }
 
-.dsc-content-information {
+.dt-dsc-content-information {
 
 }
 
 /* Discord page */
-.dsc-container {
+.dt-dsc-container {
     height: auto;
     overflow: hidden;
     width: 1150px;
 }
 
-.dsc-container {
+.dt-dsc-container {
     height: auto;
     overflow: hidden;
     text-align: left;
     width: auto;
 }
 
-.dsc-frame {
+.dt-dsc-frame {
     height: auto;
     overflow: hidden;
     width: auto;
 }
 
-.dsc-information {
+.dt-dsc-information {
     height: 475px;
     overflow: hidden;
     width: auto;
 }
 
 /* Information */
-.dsc-info-desc {
+.dt-dsc-info-desc {
     height: auto;
     width: auto;
 }
 
-.dsc-info-bullets {
+.dt-dsc-info-bullets {
     height: auto;
     margin-bottom: 20px;
     width: auto;
 }
 
 /* Bullet */
-.bullet {
+.dt-bullet {
     display: flex;
     margin-left: 10px;
     height: 45px;
 }
 
-.bullet-svg {
+.dt-bullet-svg {
     height: 35px;
     padding: 5px;
     width: 35px;
 }
 
-.bullet-text {
+.dt-bullet-text {
     font-size: 25px;
     height: 35.2px;
     padding: 4.9px;
 }
 
-.dsc-invitejoiner {
+.dt-dsc-invitejoiner {
     background-color: #5865F2;
     border-radius: 10px;
     cursor: pointer;
@@ -76,13 +76,13 @@
     width: 470px;
 }
 
-.dsc-logo {
+.dt-dsc-logo {
     height: 50px;
     padding: 10px;
     width: 50px;
 }
 
-.dsc-text {
+.dt-dsc-text {
     color: #fff;
     font-size: 40px;
     height: 56px;
