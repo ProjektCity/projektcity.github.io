@@ -156,3 +156,124 @@ p {
     background: #707070;
     width: 5px;
 }
+
+
+/* Mobile */
+
+
+.mb-p-header {
+    background-color: #1B1D1E;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border-bottom: 2px solid #fff;
+    height: 126.5px;
+    z-index: 1000;
+}
+
+.mb-main {
+    padding-top: 94.5px;
+    min-height: 100px;
+    width: 310px;
+}
+
+.mb-section {
+    margin: 0 auto;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    width: 310px;
+    max-width: 310px;
+}
+
+.mb-footer {
+    border-top: 1px solid #fff;
+    font-weight: 200;
+    min-height: 100px;
+    text-align: center;
+}
+
+.mb-content {
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+/* Classes */
+.header1 {
+    text-align: center;
+}
+
+/* Basic header style */
+h1 {
+    font-size: 3em;
+    font-weight: 300;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    text-decoration: underline;
+}
+
+h2 {
+    font-size: 2.5em;
+    font-weight: 300;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+}
+
+h3 {
+    font-size: 40px;
+    font-weight: 300;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+}
+
+h4 {
+    font-weight: 300;
+    font-size: 30px;
+}
+
+p {
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+}
+
+.linkout {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.nodecoration {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Button */
+.mb-basic-btn {
+    background-color: #282626;
+    border: 1px solid #282626;
+    border-radius: 12.5px;
+    cursor: pointer;
+    font-size: 25px;
+    font-weight: 200;
+    height: 45px;
+    width: 300px;
+    /* Non selectable text */
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none; 
+    user-select: none;
+}
+
+.mb-basic-btn:hover {
+    border: 1px solid #fff;
+    background-color: #1B1D1E;
+}
+
+.mb-basic-btn-inner {
+    height: 35px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    text-align: center;
+    width: 300px;
+}

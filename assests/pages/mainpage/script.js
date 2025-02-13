@@ -18,7 +18,7 @@ fetch('https://pcapi-k48687951-6e4e.vercel.app/api')
     const percentage = (downloadCount / maxValue) * 100;
     progressBar.style.width = percentage + '%';
 
-    const counters = document.querySelectorAll('.dt-counter');
+    const counters = document.querySelectorAll('.counter');
     if (counters.length >= 2) {
         counters[0].setAttribute('data-purecounter-end', beforeComma);
         counters[1].setAttribute('data-purecounter-end', afterComma);
@@ -28,7 +28,7 @@ fetch('https://pcapi-k48687951-6e4e.vercel.app/api')
     progressText.textContent = `${formattedDownloadCount} / ${formattedMaxValue}`;
 
     new PureCounter({
-        selector: ".dt-counter",
+        selector: ".counter",
         start: 0,
         duration: 1,
         delay: 1,

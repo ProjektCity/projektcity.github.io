@@ -1,0 +1,143 @@
+.mb-gh-ui-navbar {
+    height: 116.5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.mb-head {
+    height: 116.5px;
+    margin: 0 auto;
+    overflow: hidden;
+    width: 310px;
+    /* Non selectable text */
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none; 
+    user-select: none;
+}
+
+.mb-header {
+    height: 116.5px;
+    width: 310px;
+}
+
+.mb-top-menu {
+    border: 1px solid #32333C;
+    background-color: #24262B;
+    border-radius: 5px;
+    width: 308px;
+}
+
+.mb-box-container {
+    width: 303px;
+    height: 50px;
+    padding: 2.5px;
+}
+
+.mb-left-column {
+    height: 50px;
+    width: 303px;
+}
+
+.mb-information {
+    display: flex;
+    height: 50px;
+    justify-content: space-around;
+    position: relative;
+    width: 303px;
+}
+
+.mb-img {
+    height: 50px;
+    width: 50px;
+}
+
+img {
+    border-radius: 5px;
+    width: 50px;
+    height: 50px;
+}
+
+.mb-text {
+    width: 253px;
+}
+
+.mb-text-inner {
+    height: 50px;
+    width: 253px;
+}
+
+.mb-bottom-menu {
+    border: 1px solid #32333C;
+    background-color: #24262B;
+    border-radius: 5px;
+    width: 308px;
+}
+
+.mb-right-column {
+
+}
+
+.mb-others {
+    display: flex;
+    height: 50px;
+    justify-content: space-around;
+    position: relative;
+}
+
+.mb-clickelement {
+    width: 50px;
+    height: 50px;
+}
+
+
+@keyframes initialWidth {
+    from {
+        width: 180px;
+    }
+
+    to {
+        width: 248px;
+    }
+}
+
+@keyframes infiniteScroll {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+.mb-container {
+    padding-left: 5px;
+    width: 180px;
+    height: 50px;
+    font-weight: 100;
+    overflow: hidden;
+    animation-name: initialWidth;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+.mb-scrolling-items {
+    display: flex;
+    font-size: 33px;
+    width: 2740.32px;
+    /* 
+        width = [TW * 1.5]
+        TW = total width of text
+    */
+    animation-name: infiniteScroll;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.mb-scrolling-item {
+white-space: nowrap;
+}
