@@ -31,14 +31,14 @@
 }
 
 .mb-box-container {
-    width: 343px;
+    width: 393px;
     height: 50px;
     padding: 2.5px;
 }
 
 .mb-left-column {
     height: 50px;
-    width: 343px;
+    width: 393px;
 }
 
 .mb-information {
@@ -46,7 +46,7 @@
     height: 50px;
     justify-content: space-around;
     position: relative;
-    width: 343px;
+    width: 393px;
 }
 
 .mb-img {
@@ -61,7 +61,7 @@ img {
 }
 
 .mb-text {
-    width: 243px;
+    width: 338px;
 }
 
 .mb-text-inner {
@@ -99,7 +99,7 @@ img {
     }
 
     to {
-        width: 285px;
+        width: 335px;
     }
 }
 
