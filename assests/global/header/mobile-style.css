@@ -8,7 +8,7 @@
     height: 116.5px;
     margin: 0 auto;
     overflow: hidden;
-    width: 350px;
+    width: 400px;
     /* Non selectable text */
     -webkit-touch-callout: none;
     -webkit-user-select: none;
@@ -20,14 +20,14 @@
 
 .mb-header {
     height: 116.5px;
-    width: 350px;
+    width: 400px;
 }
 
 .mb-top-menu {
     border: 1px solid #32333C;
     background-color: #24262B;
     border-radius: 5px;
-    width: 348px;
+    width: 398px;
 }
 
 .mb-box-container {
@@ -61,19 +61,19 @@ img {
 }
 
 .mb-text {
-    width: 293px;
+    width: 243px;
 }
 
 .mb-text-inner {
     height: 50px;
-    width: 288px;
+    width: 338px;
 }
 
 .mb-bottom-menu {
     border: 1px solid #32333C;
     background-color: #24262B;
     border-radius: 5px;
-    width: 348px;
+    width: 398px;
 }
 
 .mb-right-column {
