@@ -415,5 +415,43 @@
     </footer>
     <script src="assests/global/script.js"></script>
     <script src="download/versions.js"></script>
+    <script>
+        function getDeviceType() {
+            const userAgent = navigator.userAgent.toLowerCase();
+            if (/mobile|android|iphone|ipad|ipod|blackberry|windows phone/i.test(userAgent)) {
+                window.open("https://bit.ly/ProjektCity?utm_src=mainpage_github_autoredirect&utm_medium=projektcity", "_parent");
+                return "mobile";
+            } else {
+                return "desktop";
+            }
+        }
+
+        function getBrowser() {
+            const userAgent = navigator.userAgent;
+            if (userAgent.indexOf("Firefox") > -1) {
+                return "Mozilla Firefox";
+            } else if (userAgent.indexOf("SamsungBrowser") > -1) {
+                return "Samsung Internet";
+            } else if (userAgent.indexOf("Opera") > -1 || userAgent.indexOf("OPR") > -1) {
+                return "Opera";
+            } else if (userAgent.indexOf("Trident") > -1) {
+                return "Internet Explorer";
+            } else if (userAgent.indexOf("Edge") > -1) {
+                return "Microsoft Edge";
+            } else if (userAgent.indexOf("Chrome") > -1) {
+                return "Google Chrome";
+            } else if (userAgent.indexOf("Safari") > -1) {
+                return "Apple Safari";
+            } else {
+                return "unknown";
+            }
+        }
+
+        const deviceType = getDeviceType();
+        const browser = getBrowser();
+
+        console.log(`set-userdevice=${deviceType}`);
+        console.log(`set-userbrowser=${browser}`);
+    </script>
 </body>
 </html>
