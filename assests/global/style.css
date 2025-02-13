@@ -91,7 +91,7 @@ p {
 }
 
 /* Button */
-.basic-btn {
+.dt-basic-btn {
     background-color: #282626;
     border: 1px solid #282626;
     border-radius: 12.5px;
@@ -109,12 +109,12 @@ p {
     user-select: none;
 }
 
-.basic-btn:hover {
+.dt-basic-btn:hover {
     border: 1px solid #fff;
     background-color: #1B1D1E;
 }
 
-.basic-btn-inner {
+.dt-basic-btn-inner {
     height: 35px;
     margin-bottom: 5px;
     margin-top: 5px;

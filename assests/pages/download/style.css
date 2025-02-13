@@ -1,52 +1,52 @@
-.download {
+.dt-download {
     width: auto;
 }
 
-.download-header {
+.dt-download-header {
     display: flex;
     font-size: 23px;
     margin: 0 auto;
     width: 1000px;
 }
 
-.download-h-maindir {
+.dt-download-h-maindir {
     width: auto;
 }
 
-.download-h-arrowdir {
+.dt-download-h-arrowdir {
     text-align: center;
 }
 
-.download-h-nextdir {
+.dt-download-h-nextdir {
     width: auto;
 }
 
-.download-project-information {
+.dt-download-project-information {
     display: flex;
     margin: 0 auto;
     width: 1000px;
 }
 
-.download-project-information-image {
+.dt-download-project-information-image {
     height: 140px;
     width: 140px;
 }
 
-.download-project-information-text {
+.dt-download-project-information-text {
     height: 102px;
     padding: 19px;
     font-size: 35px;
 }
 
-.download-project-information-text-top {
+.dt-download-project-information-text-top {
     font-weight: 400;
 }
 
-.download-project-information-text-bottom {
+.dt-download-project-information-text-bottom {
     width: auto;
 }
 
-.download-table {
+.dt-download-table {
     margin: 0 auto;
     width: 1000px;
 }
@@ -79,98 +79,98 @@ li {
     font-size: 25px;
 }
 
-.th-l1 {
+.dt-th-l1 {
     text-align: center;
     width: 98px;
 }
 
-.th-l2 {
+.dt-th-l2 {
     text-align: left;
     padding-left: 9px;
     padding-right: 9px;
     width: 280px;
 }
 
-.th-l3 {
+.dt-th-l3 {
     text-align: left;
     width: 248px;
 }
 
-.th-l4 {
+.dt-th-l4 {
     text-align: left;
     width: 173px;
 }
 
-.th-l5 {
+.dt-th-l5 {
     text-align: left;
     width: 185px;
 }
 
 /* Content */
-.td-image {
+.dt-td-image {
     width: 98px;
 }
 
-.td-image-container {
+.dt-td-image-container {
     height: 40px;
     margin-left: 29px;
     margin-right: 29px;
     width: 40px;
 }
 
-.td-name {
+.dt-td-name {
     text-align: left;
     width: 280px;
 }
 
-.td-name-container {
+.dt-td-name-container {
     height: 28px;
     margin-left: 9px;
     margin-right: 9px;
     width: 280px;
 }
 
-.td-date {
+.dt-td-date {
     text-align: left;
     width: 248px;
 }
 
-.td-date-container {
+.dt-td-date-container {
     width: 248px;
     height: 28px;
 }
 
-.td-size {
+.dt-td-size {
     text-align: left;
     width: 173px;
 }
 
-.td-size-container {
+.dt-td-size-container {
     width: 173px;
     height: 28px;
 }
 
-.td-gversion {
+.dt-td-gversion {
     width: auto;
 }
 
-.td-gversion-container {
+.dt-td-gversion-container {
     width: auto;
 }
 
 /* Current page */
-.download-currentpage {
+.dt-download-currentpage {
     height: 150px;
     margin: 0 auto;
     width: 1000px;
 }
 
-.tooltip-container {
+.dt-tooltip-container {
     width: 70px;
     margin: 0 auto;
 }
 
-.tooltip {
+.dt-tooltip {
     align-items: center; 
     cursor: pointer;
     display: inline-flex;
@@ -179,7 +179,7 @@ li {
     position: relative;
 }
 
-.tooltip .tooltiptext {
+.dt-tooltip .dt-tooltiptext {
     background-color: #555;
     border-radius: 5px;
     color: #fff;
@@ -195,70 +195,70 @@ li {
     z-index: 1;
 }
 
-.tooltip:hover .tooltiptext {
+.dt-tooltip:hover .dt-tooltiptext {
     opacity: 1;
     visibility: visible;
 }
 
-.tooltip .left-bracket,
-.tooltip .right-bracket,
-.tooltip .middle-bracket {
+.dt-tooltip .dt-left-bracket,
+.dt-tooltip .dt-right-bracket,
+.dt-tooltip .dt-middle-bracket {
     color: #ccc;
     margin: 0 5px;
 }
 
-.middle-bracket {
+.dt-middle-bracket {
     color: #fff;
     font-size: 25px; 
 }
   
-.tooltiptext {
+.dt-tooltiptext {
     padding: 10px;
 }
 
 
 /* Download page layout */
-.dwnld-area {
+.dt-dwnld-area {
     margin: 0 auto;
     width: 1000px;
 }
 
-.dwnld-table {
+.dt-dwnld-table {
     text-align: left;
     width: 1000px;
 }
 
-.dwnld-td-c1 {
+.dt-dwnld-dt-td-c1 {
     width: 198px;
 }
 
-.dwnld-td-c2 {
+.dt-dwnld-dt-td-c2 {
     width: 498px;
 }
 
-.dwnld-td-c3 {
+.dt-dwnld-dt-td-c3 {
     width: auto;
 }
 
-.dwnld-changelog {
+.dt-dwnld-changelog {
     text-align: center;
 }
 
-.dwnld-cl-header {
+.dt-dwnld-cl-header {
     text-align: center;
 }
 
-.dwnld-cl-version {
+.dt-dwnld-cl-version {
     text-align: left;
 }
 
-.dwnld-cl-changelog {
+.dt-dwnld-cl-changelog {
     font-size: 30px;
     font-weight: 200;
     text-align: left;
 }
 
-.download-footer-information {
+.dt-download-footer-information {
     font-size: 10px;
     margin: 0 auto;
     text-align: center;
