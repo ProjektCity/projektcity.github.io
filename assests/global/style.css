@@ -1,9 +1,9 @@
-body {
+html, body {
     background-color: #1B1D1E;
     color: #fff;
     font-family: 'Poppins';
     font-weight: 200;
-    overflow: hidden;
+    overflow-x: hidden;
     width: 100%;
 }
 
