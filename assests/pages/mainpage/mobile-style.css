@@ -46,7 +46,7 @@
     position: absolute;
     top: 50%;
     transform: translate(-50%, -50%);
-    width: 400px;
+    width: 350px;
 }
 
 .mb-counterdiv {
@@ -78,12 +78,12 @@
 
 .mb-des-h-project-description {
     margin: 0;
-    width: 400px;
+    width: 350px;
 }
 
 .mb-des-h-author {
     margin-top: -18px;
-    width: 400px;
+    width: 350px;
 }
 
 .mb-des-content {
@@ -245,7 +245,7 @@
 .mb-videocontainer {
     border: 1px solid #ccc;
     border-radius: 7.5px;
-    height: 200px;
+    height: 197px;
     margin: 0 auto;
     overflow: hidden;
     position: relative;

@@ -46,7 +46,7 @@
     position: absolute;
     top: 50%;
     transform: translate(-50%, -50%);
-    width: 400px;
+    width: 350px;
 }
 
 .dt-counterdiv {
@@ -237,7 +237,7 @@
 .dt-videocontainer {
     border: 1px solid #ccc;
     border-radius: 7.5px;
-    height: 400px;
+    height: 350px;
     margin: 0 auto;
     overflow: hidden;
     position: relative;
