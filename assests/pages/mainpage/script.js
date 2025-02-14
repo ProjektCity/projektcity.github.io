@@ -46,10 +46,9 @@ fetch('https://pcapi-k48687951-6e4e.vercel.app/api')
     console.error("Fehler beim Abrufen der Daten:", error);
 });
 
-// Image Container
-
-const carousel = document.querySelector('.dt-carousel ul');
-const indicatorsContainer = document.querySelector('.dt-indicators');
+// Image Container Desktop
+const dtcarousel = document.querySelector('.dt-carousel ul');
+const dtindicatorsContainer = document.querySelector('.dt-indicators');
 let index = 0;
 let autoSlideInterval;
 
@@ -62,13 +61,13 @@ function createIndicators() {
         button.dataset.index = i;
         button.appendChild(progress);
         button.onclick = () => showSlide(i, true);
-        indicatorsContainer.appendChild(button);
+        dispatchEventindicatorsContainer.appendChild(button);
     });
     updateIndicators();
 }
 
 function updateIndicators() {
-    const buttons = indicatorsContainer.querySelectorAll('button');
+    const buttons = dispatchEventindicatorsContainer.querySelectorAll('button');
     buttons.forEach((button, i) => {
         const progress = button.querySelector('.dt-progress');
         button.classList.remove('dt-active');
@@ -89,7 +88,7 @@ function showSlide(newIndex, stopAutoSlide = false) {
 
     index = newIndex;
     const offset = -index * 100;
-    carousel.style.transform = `translateX(${offset}%)`;
+    DOMStringListcarousel.style.transform = `translateX(${offset}%)`;
     updateIndicators();
 
     if (stopAutoSlide) {
@@ -121,6 +120,77 @@ function resetAutoSlide() {
 createIndicators();
 startAutoSlide();
 
+// Image Container Mobile
+const mbcarousel = document.querySelector('.mb-carousel ul');
+const mbindicatorsContainer = document.querySelector('.mb-indicators');
+
+function createIndicators() {
+    const slides = document.querySelectorAll('.mb-carousel li');
+    slides.forEach((_, i) => {
+        const button = document.createElement('button');
+        const progress = document.createElement('div');
+        progress.classList.add('mb-progress');
+        button.dataset.index = i;
+        button.appendChild(progress);
+        button.onclick = () => showSlide(i, true);
+        mbindicatorsContainer.appendChild(button);
+    });
+    updateMBIndicators();
+}
+
+function updateMBIndicators() {
+    const buttons = mbindicatorsContainer.querySelectorAll('button');
+    buttons.forEach((button, i) => {
+        const progress = button.querySelector('.mb-progress');
+        button.classList.remove('mb-active');
+        progress.style.animation = 'none';
+        if (i === index) {
+            button.classList.add('mb-active');
+            progress.style.animation = 'fill 3s linear';
+        }
+    });
+}
+
+function showSlide(newIndex, stopAutoSlide = false) {
+    const slides = document.querySelectorAll('.mb-carousel li');
+    const totalSlides = slides.length;
+
+    if (newIndex < 0) newIndex = totalSlides - 1;
+    if (newIndex >= totalSlides) newIndex = 0;
+
+    index = newIndex;
+    const offset = -index * 100;
+    mbcarousel.style.transform = `translateX(${offset}%)`;
+    updateMBIndicators();
+
+    if (stopAutoSlide) {
+        resetAutoSlide();
+    }
+}
+
+function nextSlide() {
+    showSlide(index + 1);
+    resetAutoSlide();
+}
+
+function prevSlide() {
+    showSlide(index - 1);
+    resetAutoSlide();
+}
+
+function startAutoSlide() {
+    autoSlideInterval = setInterval(() => {
+        nextSlide();
+    }, 3000);
+}
+
+function resetAutoSlide() {
+    clearInterval(autoSlideInterval);
+    startAutoSlide();
+}
+
+createIndicators();
+startAutoSlide();
 
 // FAQ Container
 function toggleContent(id, triangleId) {

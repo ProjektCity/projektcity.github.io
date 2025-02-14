@@ -78,21 +78,23 @@
 
 .mb-des-h-project-description {
     margin: 0;
+    width: 400px;
 }
 
 .mb-des-h-author {
-    margin-top: -22px;
+    margin-top: -18px;
+    width: 400px;
 }
 
 .mb-des-content {
-    font-size: 24px;
+    font-size: 18px;
     font-weight: 200;
     width: 100%;
 }
 
 /* Map */
 .mb-map-content {
-    font-size: 22px;
+    font-size: 15px;
     font-weight: 200;
     text-align: center;
 }
@@ -111,19 +113,19 @@
 }
 
 .mb-carousel {
-    position: relative;
-    width: 800px;
-    height: 428px;
+    border-radius: 3.75px;
+    box-shadow: 0 0 3.75px rgba(0, 0, 0, 0.5);
+    height: 160.5px;
     overflow: hidden;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    position: relative;
+    width: 300px;
 }
 
 .mb-carousel ul {
     display: flex;
-    padding: 0;
-    margin: 0;
     list-style-type: none;
+    margin: 0;
+    padding: 0;
     transition: transform 0.5s ease-in-out;
 }
 
@@ -132,78 +134,84 @@
 }
 
 .mb-carousel img {
-    width: 100%;
-    height: 428px;
     display: block;
+    height: 160.5px;
+    width: 100%;
 }
 
-.mb-carousel button {
+.mb-navbtn-prev, .mb-navbtn-next {
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    border-radius: 1.875px;
+    cursor: pointer;
+    height: 15px;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-    z-index: 100;
+    width: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.mb-carousel .mb-navbt-prev {
-    border-radius: 5px;
-    height: 40px;
-    left: 10px;
-    width: 40px;
+.mb-navbtn-prev {
+    left: 1.875px;
 }
-.mb-carousel .mb-navbtn-next {
-    border-radius: 5px;
-    height: 40px;
-    right: 10px;
-    width: 40px;
+
+.mb-navbtn-next {
+    right: 3.75px;
+}
+
+.mb-navbtn-inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
 }
 
 .mb-indicators {
     display: flex;
     justify-content: center;
-    margin-top: 10px;
+    margin-top: 3.75px;
 }
 
 .mb-indicators button {
-    position: relative;
-    width: 15px;
-    height: 5px;
-    margin: 0 5px;
-    border-radius: 5px;
-    border: none;
     background-color: #bbb;
-    overflow: hidden;
+    border-radius: 0.9375px;
+    border: none;
     cursor: pointer;
+    height: 0.9375px;
+    margin: 0 1.875px;
+    overflow: hidden;
+    position: relative;
+    width: 5.625px;
 }
 
-.mb-indicators button.mb-active {
-    width: 45px;
-    height: 5px;
-    border-radius: 5px;
+.mb-indicators button.active {
     background-color: #bbb;
+    border-radius: 0.9375px;
+    height: 0.9375px;
+    width: 25px;
 }
 
 .mb-indicators button .mb-progress {
+    animation: fill 3s linear infinite;
+    background-color: #717171;
+    border-radius: 0.9375px;
+    height: 100%;
+    left: 0;
     position: absolute;
     top: 0;
-    left: 0;
     width: 0;
-    height: 100%;
-    border-radius: 2.5px;
-    background-color: #717171;
-    animation: fill 3s linear infinite;
 }
 
 @keyframes fill {
     0% {
-    width: 0;
+        width: 0;
     }
     100% {
-    width: 100%;
+        width: 100%;
     }
 }
 
@@ -213,14 +221,14 @@
 
 .mb-li-text {
     background-color: rgba(255, 255, 255, 0.5);
-    margin-top: -70px;
     color: #333;
-    font-size: 17.9px;
-    height: auto;
-    padding: 5px;
+    font-size: 6.7125px;
+    height: 7.5px;
+    margin-top: -22.5px;
+    padding: 1.875px;
     position: relative;
     text-align: center;
-    width: 790px;
+    width: 296.25px;
 }
 
 /* Trailer */
@@ -237,11 +245,11 @@
 .mb-videocontainer {
     border: 1px solid #ccc;
     border-radius: 7.5px;
-    height: 400px;
+    height: 200px;
     margin: 0 auto;
     overflow: hidden;
     position: relative;
-    width: 711px;
+    width: 350px;
 }
 
 iframe {
@@ -252,12 +260,12 @@ iframe {
 .mb-v5-0-content {
     color: white;
     font-family: 'Poppins', sans-serif;
-    font-size: 22px;
+    font-size: 15px;
     font-weight: 200;
 }
 
 .mb-faq-container {
-    font-size: 20px;
+    font-size: 15px;
     font-weight: 200;
     margin: 0;
     overflow: hidden;
@@ -276,10 +284,11 @@ iframe {
     display: block;
     overflow: hidden;
     padding-bottom: 20px;
-    padding-left: 20px;
+    padding-left: 10px;
     padding-right: 0px;
-    padding-top: 10px;
-    width: 90%;
+    padding-top: 5px;
+    max-width: 370px;
+    min-width: 300px;
 }
 
 .mb-triangle {
@@ -300,5 +309,5 @@ iframe {
 }
 
 .mb-special-information {
-    font-size: 8px;
+    font-size: 6px;
 }
