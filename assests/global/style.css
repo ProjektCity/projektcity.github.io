@@ -3,7 +3,7 @@ body {
     color: #fff;
     font-family: 'Poppins';
     font-weight: 200;
-    overflow-x: hidden;
+    overflow: hidden;
     width: 100%;
 }
 
