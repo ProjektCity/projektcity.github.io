@@ -264,3 +264,34 @@ li {
     text-align: center;
     width: 1150px;
 }
+
+/* Individual Download Site */
+.dt-dwnld-page-table, .dt-dwnld-td-c1, .dt-dwnld-td-c2, .dt-dwnld-td-c3, .dt-tr {
+    border-top: 1px solid #fff;
+    border-collapse: collapse;
+    font-weight: 200;
+    text-align: left;
+}
+
+.dt-dwnld-page-table {
+    
+}
+
+.dt-dwnld-page-thead {
+    height: 50px;
+}
+
+.dt-dwnld-td-c1 {
+    height: 50px;
+    width: 100px;
+}
+
+.dt-dwnld-td-c2 {
+    height: 50px;
+    width: 200px;
+}
+
+.dt-dwnld-td-c3 {
+    height: 50px;
+    width: 300px;
+}
