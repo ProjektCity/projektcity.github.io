@@ -93,7 +93,7 @@
 }
 
 
-@keyframes initialWidth {
+@keyframes initialMBWidth {
     from {
         width: 180px;
     }
@@ -118,7 +118,7 @@
     height: 50px;
     font-weight: 100;
     overflow: hidden;
-    animation-name: initialWidth;
+    animation-name: initialMBWidth;
     animation-duration: 1s;
     animation-fill-mode: forwards;
 }
