@@ -688,23 +688,23 @@
             function getDeviceType() {
         const userAgent = navigator.userAgent.toLowerCase();
         if (/mobile|android|iphone|ipad|ipod|blackberry|windows phone/i.test(userAgent)) {
-            // document.querySelector(".mb-p-header").style.display = "block";
-            // document.querySelector(".mb-main").style.display = "block";
-            // document.querySelector(".mb-footer").style.display = "block";
-            // document.querySelector(".dt-p-header").style.display = "none";
-            // document.querySelector(".dt-main").style.display = "none";
-            // document.querySelector(".dt-footer").style.display = "none";
+            document.querySelector(".mb-p-header").style.display = "block";
+            document.querySelector(".mb-main").style.display = "block";
+            document.querySelector(".mb-footer").style.display = "block";
+            document.querySelector(".dt-p-header").style.display = "none";
+            document.querySelector(".dt-main").style.display = "none";
+            document.querySelector(".dt-footer").style.display = "none";
             document.querySelector(".dt-p-header").remove();
             document.querySelector(".dt-main").remove();
             document.querySelector(".dt-footer").remove();
             return "mobile";
         } else {
-            // document.querySelector(".mb-p-header").style.display = "none";
-            // document.querySelector(".mb-main").style.display = "none";
-            // document.querySelector(".mb-footer").style.display = "none";
-            // document.querySelector(".dt-p-header").style.display = "block";
-            // document.querySelector(".dt-main").style.display = "block";
-            // document.querySelector(".dt-footer").style.display = "block";
+            document.querySelector(".mb-p-header").style.display = "none";
+            document.querySelector(".mb-main").style.display = "none";
+            document.querySelector(".mb-footer").style.display = "none";
+            document.querySelector(".dt-p-header").style.display = "block";
+            document.querySelector(".dt-main").style.display = "block";
+            document.querySelector(".dt-footer").style.display = "block";
             document.querySelector(".mb-p-header").remove();
             document.querySelector(".mb-main").remove();
             document.querySelector(".mb-footer").remove();
