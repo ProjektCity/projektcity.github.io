@@ -55,7 +55,7 @@
 
 /* Table */
 .mb-table {
-    font-size: 10px;
+    font-size: 13px;
     width: 300px;
     border-spacing: 0px;
 }
@@ -68,7 +68,7 @@
 }
 
 .mb-tr {
-    height: 50px;
+    height: 47px;
 }
 
 /* List */
@@ -82,89 +82,91 @@ li {
 }
 
 .mb-th-l1 {
+    height: 47px;
     text-align: center;
     width: 48px !important;
 }
 
 .mb-th-l2 {
+    height: 47px;
     text-align: left;
     padding-left: 9px;
     padding-right: 9px;
-    width: 80px;
+    width: 100px;
 }
 
 .mb-th-l3 {
+    height: 47px;
     text-align: left;
     width: 100px;
 }
 
 .mb-th-l4 {
-    text-align: left;
-    width: 75px;
-}
-
-.mb-th-l5 {
+    height: 47px;
     text-align: left;
     width: 75px;
 }
 
 /* Content */
 .mb-td-image {
+    height: 47px;
     width: 48px;
 }
 
 .mb-td-image-container {
     height: 30px;
-    margin-left: 9px;
-    margin-right: 9px;
+    margin-left: 9.015px;
+    margin-right: 9.015px;
     width: 30px;
 }
 
 .mb-td-name {
+    height: 47.11px;
     text-align: left;
-    width: 80px;
+    width: 128.02px;
 }
 
 .mb-td-name-container {
-    height: 28px;
-    margin-left: 9px;
-    margin-right: 9px;
-    width: 80px;
+    height: 18.08px;
+    width: 128.02px;
 }
 
 .mb-td-date {
+    height: 47.11px;
     text-align: left;
-    width: 100px;
+    width: 118.02px;
 }
 
 .mb-td-date-container {
-    width: 100px;
-    height: 28px;
+    height: 18.08px;
+    width: 118.02px;
 }
 
 .mb-td-size {
+    height: 47.11px;
     text-align: left;
     width: 75px;
 }
 
 .mb-td-size-container {
     width: 75px;
-    height: 28px;
+    height: 18.08px;
 }
 
 .mb-td-gversion {
-    width: auto;
+    height: 47.11px;
+    width: 78.02px;
 }
 
 .mb-td-gversion-container {
-    width: auto;
+    width: 78.02px;
 }
 
 /* Current page */
 .mb-download-currentpage {
     height: 150px;
     margin: 0 auto;
-    width: 1000px;
+    width: 380px;
 }
 
 .mb-tooltip-container {
