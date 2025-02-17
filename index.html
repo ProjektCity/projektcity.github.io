@@ -398,7 +398,7 @@
             </div>
         </div>
     </footer>
-    <div class="cookie-banner">
+    <div class="cookie-banner" id="cookie-banner">
         <div class="cb-inner">
             <div class="cb-left-text">
                 <a>This site uses cookies and similar technologies to help deliver personalized and embedded content, to ensure legal, website, and user security and to improve our services. The information we collect, do we not pass on unless legaly required or for safety. By using our services, you agree to the&nbsp;</a><a class="linkout" href="#">Privacy Policy</a><a>&nbsp;and&nbsp;</a><a class="linkout" href="#">terms of use</a><a>!</a>
@@ -432,64 +432,65 @@
     <script src="assests/pages/mainpage/script.js"></script>
     <script src="assests/pages/mainpage/purecounter.js"></script>
     <script>
-            function getDeviceType() {
-        const userAgent = navigator.userAgent.toLowerCase();
-        if (/mobile|android|iphone|ipad|ipod|blackberry|windows phone/i.test(userAgent)) {
-            // document.querySelector(".mb-p-header").style.display = "block";
-            // document.querySelector(".mb-main").style.display = "block";
-            // document.querySelector(".mb-footer").style.display = "block";
-            document.getElementById("mobile-information").style.display = "block";
-            document.querySelector(".dt-p-header").style.display = "none";
-            document.querySelector(".dt-main").style.display = "none";
-            document.querySelector(".dt-footer").style.display = "none";
-            document.querySelector(".dt-p-header").remove();
-            document.querySelector(".dt-main").remove();
-            document.querySelector(".dt-footer").remove();
-            return "mobile";
-            window.location.href = "https://itsmarian.wixsite.com/projektcity?utm_src=githubpage-mobile-device-detector-script&utm_medium=projektcity&utm_content=%3Ca%3EProjekt%20City%20is%20not%20yet%20supported%20on%20mobile%20devices%21%3C%2Fa%3E%3Cbr%3E%3Ca%3EPlease%20switch%20to%20a%20desktop%20or%20use%20our%20old%20website%2E%3C%2Fa%3E";
-            window.location.replace("https://itsmarian.wixsite.com/projektcity?utm_src=githubpage-mobile-device-detector-script&utm_medium=projektcity&utm_content=%3Ca%3EProjekt%20City%20is%20not%20yet%20supported%20on%20mobile%20devices%21%3C%2Fa%3E%3Cbr%3E%3Ca%3EPlease%20switch%20to%20a%20desktop%20or%20use%20our%20old%20website%2E%3C%2Fa%3E");
-            window.open("https://itsmarian.wixsite.com/projektcity?utm_src=githubpage-mobile-device-detector-script&utm_medium=projektcity&utm_content=%3Ca%3EProjekt%20City%20is%20not%20yet%20supported%20on%20mobile%20devices%21%3C%2Fa%3E%3Cbr%3E%3Ca%3EPlease%20switch%20to%20a%20desktop%20or%20use%20our%20old%20website%2E%3C%2Fa%3E", "_parent")
-        } else {
-            // document.querySelector(".mb-p-header").style.display = "none";
-            // document.querySelector(".mb-main").style.display = "none";
-            // document.querySelector(".mb-footer").style.display = "none";
-            document.querySelector(".dt-p-header").style.display = "block";
-            document.querySelector(".dt-main").style.display = "block";
-            document.querySelector(".dt-footer").style.display = "block";
-            // document.querySelector(".mb-p-header").remove();
-            // document.querySelector(".mb-main").remove();
-            // document.querySelector(".mb-footer").remove();
-            document.getElementById("mobile-information").remove();
-            return "desktop";
+        function getDeviceType() {
+            const userAgent = navigator.userAgent.toLowerCase();
+            if (/mobile|android|iphone|ipad|ipod|blackberry|windows phone/i.test(userAgent)) {
+                // document.querySelector(".mb-p-header").style.display = "block";
+                // document.querySelector(".mb-main").style.display = "block";
+                // document.querySelector(".mb-footer").style.display = "block";
+                document.getElementById("mobile-information").style.display = "block";
+                document.querySelector(".dt-p-header").style.display = "none";
+                document.querySelector(".dt-main").style.display = "none";
+                document.querySelector(".dt-footer").style.display = "none";
+                document.querySelector(".dt-p-header").remove();
+                document.querySelector(".dt-main").remove();
+                document.querySelector(".dt-footer").remove();
+                document.getElementById("cookie-banner").remove();
+                window.location.href = "https://itsmarian.wixsite.com/projektcity?utm_src=githubpage-mobile-device-detector-script&utm_medium=projektcity&utm_content=%3Ca%3EProjekt%20City%20is%20not%20yet%20supported%20on%20mobile%20devices%21%3C%2Fa%3E%3Cbr%3E%3Ca%3EPlease%20switch%20to%20a%20desktop%20or%20use%20our%20old%20website%2E%3C%2Fa%3E";
+                window.location.replace("https://itsmarian.wixsite.com/projektcity?utm_src=githubpage-mobile-device-detector-script&utm_medium=projektcity&utm_content=%3Ca%3EProjekt%20City%20is%20not%20yet%20supported%20on%20mobile%20devices%21%3C%2Fa%3E%3Cbr%3E%3Ca%3EPlease%20switch%20to%20a%20desktop%20or%20use%20our%20old%20website%2E%3C%2Fa%3E");
+                window.open("https://itsmarian.wixsite.com/projektcity?utm_src=githubpage-mobile-device-detector-script&utm_medium=projektcity&utm_content=%3Ca%3EProjekt%20City%20is%20not%20yet%20supported%20on%20mobile%20devices%21%3C%2Fa%3E%3Cbr%3E%3Ca%3EPlease%20switch%20to%20a%20desktop%20or%20use%20our%20old%20website%2E%3C%2Fa%3E", "_parent")
+                return "mobile";
+            } else {
+                // document.querySelector(".mb-p-header").style.display = "none";
+                // document.querySelector(".mb-main").style.display = "none";
+                // document.querySelector(".mb-footer").style.display = "none";
+                document.querySelector(".dt-p-header").style.display = "block";
+                document.querySelector(".dt-main").style.display = "block";
+                document.querySelector(".dt-footer").style.display = "block";
+                // document.querySelector(".mb-p-header").remove();
+                // document.querySelector(".mb-main").remove();
+                // document.querySelector(".mb-footer").remove();
+                document.getElementById("mobile-information").remove();
+                return "desktop";
+            }
         }
-    }
 
-    function getBrowser() {
-        const userAgent = navigator.userAgent;
-        if (userAgent.indexOf("Firefox") > -1) {
-            return "Mozilla Firefox";
-        } else if (userAgent.indexOf("SamsungBrowser") > -1) {
-            return "Samsung Internet";
-        } else if (userAgent.indexOf("Opera") > -1 || userAgent.indexOf("OPR") > -1) {
-            return "Opera";
-        } else if (userAgent.indexOf("Trident") > -1) {
-            return "Internet Explorer";
-        } else if (userAgent.indexOf("Edge") > -1) {
-            return "Microsoft Edge";
-        } else if (userAgent.indexOf("Chrome") > -1) {
-            return "Google Chrome";
-        } else if (userAgent.indexOf("Safari") > -1) {
-            return "Apple Safari";
-        } else {
-            return "unknown";
+        function getBrowser() {
+            const userAgent = navigator.userAgent;
+            if (userAgent.indexOf("Firefox") > -1) {
+                return "Mozilla Firefox";
+            } else if (userAgent.indexOf("SamsungBrowser") > -1) {
+                return "Samsung Internet";
+            } else if (userAgent.indexOf("Opera") > -1 || userAgent.indexOf("OPR") > -1) {
+                return "Opera";
+            } else if (userAgent.indexOf("Trident") > -1) {
+                return "Internet Explorer";
+            } else if (userAgent.indexOf("Edge") > -1) {
+                return "Microsoft Edge";
+            } else if (userAgent.indexOf("Chrome") > -1) {
+                return "Google Chrome";
+            } else if (userAgent.indexOf("Safari") > -1) {
+                return "Apple Safari";
+            } else {
+                return "unknown";
+            }
         }
-    }
 
-    const deviceType = getDeviceType();
-    const browser = getBrowser();
+        const deviceType = getDeviceType();
+        const browser = getBrowser();
 
-    console.log(`set-userdevice=${deviceType}`);
-    console.log(`set-userbrowser=${browser}`);
+        console.log(`set-userdevice=${deviceType}`);
+        console.log(`set-userbrowser=${browser}`);
     </script>
 </body>
 </html>
