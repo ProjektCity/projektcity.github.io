@@ -49,22 +49,22 @@
                         <div class="dt-placeholder w64 h50"></div>
                         <div class="dt-middle-column">
                             <div class="dt-menu">
-                                <div class="dt-menu-item" data-width="100" style="width: 100px;">
+                                <div class="dt-menu-item" data-width="100" style="width: 100px;" title="Home">
                                     <div class="dt-menu-item-inner">
                                         <a href="/?ref=navbar_home" style="color: #fff; text-decoration: none;">Home</a>
                                     </div>
                                 </div>
-                                <div class="dt-menu-item" data-width="100" style="width: 100px;">
+                                <div class="dt-menu-item" data-width="100" style="width: 100px;" title="V5.0">
                                     <div class="dt-menu-item-inner">
                                         <a href="/v5-0" style="color: #fff; text-decoration: none;">V5.0</a>
                                     </div>
                                 </div>
-                                <div class="dt-menu-item" data-width="100" style="width: 100px;">
+                                <div class="dt-menu-item" data-width="100" style="width: 100px;" title="Download">
                                     <div class="dt-menu-item-inner">
                                         <a href="/download" style="color: #fff; text-decoration: none;">Download</a>
                                     </div>
                                 </div>
-                                <div class="dt-menu-item" data-width="100" style="width: 100px;">
+                                <div class="dt-menu-item" data-width="100" style="width: 100px;" title="Discord">
                                     <div class="dt-menu-item-inner">
                                         <a href="/discord" style="color: #fff; text-decoration: none;">Discord</a>
                                     </div>
@@ -90,8 +90,8 @@
                                 </div>
                                 <div>
                                     <a onclick="window.open(this.href); return false;" href="https://bit.ly/ProjektCityLinktree?utm_src=projektcity_cstm-header_right-col_lt-logo&amp;utm_medium=projektcity&amp;redirect_url=https%3A%2F%2Flinktr.ee%2FProjektCity" target="_blank">
-                                        <svg xmlns="http://www.w3.org/2000/svg" height="50" viewBox="0 -960 960 960" width="50" fill="#fff">
-                                            <path d="M600-160v-80H440v-200h-80v80H80v-240h280v80h80v-200h160v-80h280v240H600v-80h-80v320h80v-80h280v240H600Zm80-80h120v-80H680v80ZM160-440h120v-80H160v80Zm520-200h120v-80H680v80Zm0 400v-80 80ZM280-440v-80 80Zm400-200v-80 80Z"></path>
+                                        <svg height="50" viewBox="0 0 417 512.238" width="50" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill="#fff" fill-rule="nonzero" d="M171.274 344.942h74.09v167.296h-74.09V344.942zM0 173.468h126.068l-89.622-85.44 49.591-50.985 85.439 87.829V0h74.086v124.872L331 37.243l49.552 50.785-89.58 85.24H417v70.502H290.252l90.183 87.629L331 381.192 208.519 258.11 86.037 381.192l-49.591-49.591 90.218-87.631H0v-70.502z"/>
                                         </svg>
                                     </a>
                                 </div>
@@ -344,6 +344,7 @@
         <section class="dt-section" id="specials" data-tagname="specials">
             <div class="dt-special-information">
                 <p>Some texts were expanded, checked, improved and changed using artificial intelligence. Important information should be checked for correctness!</p>
+                <p>Providers, images, brand names, trademarks, products, services and their logos are the property of their respective owners. Projekt City is not (under certain circumstances) associated with these providers and is not responsible for their content!</p>
                 <div class="placeholder w350 h10"></div>
                 <p>*Total area calculated from width x height. Actual size may vary (due to changes). 1 block = 1 meter</p>
                 <p>This document contains links to third party websites and resources, which are inserted for convenience only.</p>
@@ -397,6 +398,30 @@
             </div>
         </div>
     </footer>
+    <div class="cookie-banner">
+        <div class="cb-inner">
+            <div class="cb-left-text">
+                <a>This site uses cookies and similar technologies to help deliver personalized and embedded content, to ensure legal, website, and user security and to improve our services. The information we collect, do we not pass on unless legaly required or for safety. By using our services, you agree to the&nbsp;</a><a class="linkout" href="#">Privacy Policy</a><a>&nbsp;and&nbsp;</a><a class="linkout" href="#">terms of use</a><a>!</a>
+            </div>
+            <div class="cb-right-btns">
+                <div class="legal-btn" onclick="window.open('https://bit.ly/ProjektCityPrivacy', '_blank')">
+                    <div class="legal-btn-inner">
+                        <a>Privacy Policy</a>
+                    </div>
+                </div>
+                <div class="legal-btn" onclick="window.open('https://bit.ly/ProjektCityTerms', '_blank')">
+                    <div class="legal-btn-inner">
+                        <a>Terms of use</a>
+                    </div>
+                </div>
+                <div class="legal-filled-btn" onclick="acceptCookies()">
+                    <div class="legal-filled-btn-inner">
+                        <a>Accept</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <div id="mobile-information" style="display: none;">
         <a>Projekt City is not yet supported on mobile devices!</a>
         <br>
@@ -421,7 +446,9 @@
             document.querySelector(".dt-main").remove();
             document.querySelector(".dt-footer").remove();
             return "mobile";
-            window.open("https://itsmarian.wixsite.com/projektcity?utm_src=githubpage-mobile-device-detector-script&utm_medium=projektcity&utm_content=%3Ca%3EProjekt%20City%20is%20not%20yet%20supported%20on%20mobile%20devices%21%3C%2Fa%3E%3Cbr%3E%3Ca%3EPlease%20switch%20to%20a%20desktop%20or%20use%20our%20old%20website%2E%3C%2Fa%3E")
+            window.location.href = "https://itsmarian.wixsite.com/projektcity?utm_src=githubpage-mobile-device-detector-script&utm_medium=projektcity&utm_content=%3Ca%3EProjekt%20City%20is%20not%20yet%20supported%20on%20mobile%20devices%21%3C%2Fa%3E%3Cbr%3E%3Ca%3EPlease%20switch%20to%20a%20desktop%20or%20use%20our%20old%20website%2E%3C%2Fa%3E";
+            window.location.replace("https://itsmarian.wixsite.com/projektcity?utm_src=githubpage-mobile-device-detector-script&utm_medium=projektcity&utm_content=%3Ca%3EProjekt%20City%20is%20not%20yet%20supported%20on%20mobile%20devices%21%3C%2Fa%3E%3Cbr%3E%3Ca%3EPlease%20switch%20to%20a%20desktop%20or%20use%20our%20old%20website%2E%3C%2Fa%3E");
+            window.open("https://itsmarian.wixsite.com/projektcity?utm_src=githubpage-mobile-device-detector-script&utm_medium=projektcity&utm_content=%3Ca%3EProjekt%20City%20is%20not%20yet%20supported%20on%20mobile%20devices%21%3C%2Fa%3E%3Cbr%3E%3Ca%3EPlease%20switch%20to%20a%20desktop%20or%20use%20our%20old%20website%2E%3C%2Fa%3E", "_parent")
         } else {
             // document.querySelector(".mb-p-header").style.display = "none";
             // document.querySelector(".mb-main").style.display = "none";

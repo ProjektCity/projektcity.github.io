@@ -29,3 +29,16 @@
     styleTag.appendChild(document.createTextNode(generateStyles()));
     document.head.appendChild(styleTag);
 })();
+
+// Cookie Banner
+function acceptCookies() {
+    document.querySelector('.cookie-banner').style.display = 'none';
+    document.querySelector('.cookie-banner').remove();
+    localStorage.setItem('cookiesAccepted', 'true');
+    console.log("New user accepted cookies! User action was saved into cache.");
+}
+
+if (localStorage.getItem('cookiesAccepted')) {
+    document.querySelector('.cookie-banner').remove();
+    console.log("User already accepted cookies. Cookie banner removed.");
+}
