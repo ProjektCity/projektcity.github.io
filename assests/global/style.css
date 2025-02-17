@@ -304,18 +304,32 @@ p {
 
 .cb-inner {
     display: flex;
-    height: 62px;
+    height: auto;
 }
 
-.cb-left-text {
+.left-close-btn {
+    background-color: #000;
     height: 62px;
+    width: 25px;
+}
+
+.cb-middle-text {
+    font-size: 17px;
+    min-height: 50px;
+    max-height: 130px;
     width: 100%;
 }
 
 .cb-right-btns {
-    display: flex;
-    height: 62px;
+    height: auto;
     width: 436px;
+}
+
+.cb-right-btns-inner {
+    display: flex;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 .legal-btn {

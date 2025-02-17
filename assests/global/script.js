@@ -42,3 +42,7 @@ if (localStorage.getItem('cookiesAccepted')) {
     document.querySelector('.cookie-banner').remove();
     console.log("User already accepted cookies. Cookie banner removed.");
 }
+
+document.getElementById("close-cookie-banner").addEventListener("click", function() {
+    document.querySelector('.cookie-banner').remove();
+});
