@@ -110,22 +110,49 @@
 </p>
 <h1 align="center">
     <span style="font-size: 35px; color: #7393b3;">
-        <a style="color: gray; text-decoration: none;">[</a><a style="cursor: pointer; font-size: 35px; color: rgb(115, 147, 179); text-decoration: none;" title="Minecraft" href="mailto:projektcityofficial@gmail.com">E-Mail</a><a style="color: gray; text-decoration: none;">]</a>
+        <a style="color: gray; text-decoration: none;">[</a><a href="https://bit.ly/ProjektCityCF" style="font-size: 35px; color: rgb(115, 147, 179); text-decoration: none;" title="CurseForge">Curseforge</a><a style="color: gray; text-decoration: none;">]</a>
+    </span>
+    <br>
+    <span>
+        <a style="color: gray; text-decoration: none;">[</a><a href="https://discord.com/users/1307429094635339876" style="font-size: 35px; color: rgb(115, 147, 179); text-decoration: none;" title="Discord Account">Discord Account</a><a style="color: gray; text-decoration: none;">]</a>
     </span>
     <br>
     <span style="font-size: 35px; color: #7393b3;">
-        <a style="color: gray; text-decoration: none;">[</a><a style="font-size: 35px; color: rgb(115, 147, 179); text-decoration: none;" title="Discord" href="https://discord.com/invite/HeRwHB2QQk">Discord</a><a style="color: gray; text-decoration: none;">]</a>
+        <a style="color: gray; text-decoration: none;">[</a><a href="https://discord.com/invite/HeRwHB2QQk" style="font-size: 35px; color: rgb(115, 147, 179); text-decoration: none;" title="Discord Server">Discord Server</a><a style="color: gray; text-decoration: none;">]</a>
     </span>
     <br>
     <span style="font-size: 35px; color: #7393b3;">
-        <a style="color: gray; text-decoration: none;">[</a><a style="font-size: 35px; color: rgb(115, 147, 179); text-decoration: none;" title="CurseForge" href="https://www.curseforge.com/members/itsmarian_mc">Curseforge</a><a style="color: gray; text-decoration: none;">]</a>
+        <a style="color: gray; text-decoration: none;">[</a><a href="mailto:projektcityofficial@gmail.com" style="cursor: pointer; font-size: 35px; color: rgb(115, 147, 179); text-decoration: none;" title="Minecraft">E-Mail</a><a style="color: gray; text-decoration: none;">]</a>
+    </span>
+    <br>
+    <span>
+        <a style="color: gray; text-decoration: none;">[</a><a href="https://bit.ly/ProjektCityHelpcenter" style="font-size: 35px; color: rgb(115, 147, 179); text-decoration: none;" title="Projekt City Helpcenter">Helpcenter</a><a style="color: gray; text-decoration: none;">]</a>
+    </span>
+    <br>
+    <span>
+        <a style="color: gray; text-decoration: none;">[</a><a href="https://bit.ly/ProjektCityLinktree" style="font-size: 35px; color: rgb(115, 147, 179); text-decoration: none;" title="Socials">Socials</a><a style="color: gray; text-decoration: none;">]</a>
+    </span>
+    <br>
+    <span>
+        <a style="color: gray; text-decoration: none;">[</a><a href="https://tiktok.com/@ProjektCity" style="font-size: 35px; color: rgb(115, 147, 179); text-decoration: none;" title="">TikTok</a><a style="color: gray; text-decoration: none;">]</a>
+    </span>
+    <br>
+    <span>
+        <a style="color: gray; text-decoration: none;">[</a><a href="https://youtube.com/@ProjektCity" style="font-size: 35px; color: rgb(115, 147, 179); text-decoration: none;" title="">YouTube</a><a style="color: gray; text-decoration: none;">]</a>
+    </span>
+    <br>
+    <span>
+        <a style="color: gray; text-decoration: none;">[</a><a href="https://bit.ly/ProjektCity" style="font-size: 35px; color: rgb(115, 147, 179); text-decoration: none;" title="">Website</a><a style="color: gray; text-decoration: none;">]</a>
     </span>
     <br>
     <span style="font-size: 35px; color: #7393b3;">
-        <a style="color: gray; text-decoration: none;">[</a><a style="font-size: 35px; color: rgb(115, 147, 179); text-decoration: none;" title="Minecraft">Minecraft: SuffixHD & itsmarian</a><a style="color: gray; text-decoration: none;">]</a>
+        <a style="color: gray; text-decoration: none;">[</a><a style="font-size: 35px; color: #72b147; text-decoration: none;" title="Minecraft">Minecraft: SuffixHD & itsmarian</a><a style="color: gray; text-decoration: none;">]</a>
     </span>
     <br><br>
 </h1>
+<span>
+    <a style="color: gray; text-decoration: none;">[</a><a href="" style="font-size: 35px; color: rgb(115, 147, 179); text-decoration: none;" title=""></a><a style="color: gray; text-decoration: none;">]</a>
+</span>
 <!-- Specials -->
 <p align="center">
     <a href="https://bit.ly/ProjektCityAG?utm_src=projektcity_github_footer&return_url=https%3A%2f%2Fgithub.com%2Fitsmarianmc%2FProjekt-City&footer_line=1&footer_max_lines=2">Application Guidelines</a>&nbsp;•&nbsp;<a href="https://bit.ly/ProjektCityAccessebilityStatement?utm_src=projektcity_github_footer&return_url=https%3A%2f%2Fgithub.com%2Fitsmarianmc%2FProjekt-City&footer_line=1&footer_max_lines=2">Accessebility statement</a>&nbsp;•&nbsp;<a href="https://bit.ly/ProjektCityAdvertisementTerms?utm_src=projektcity_github_footer&return_url=https%3A%2f%2Fgithub.com%2Fitsmarianmc%2FProjekt-City&footer_line=1&footer_max_lines=2">Advertisement Terms</a>
