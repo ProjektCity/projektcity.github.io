@@ -309,6 +309,7 @@ p {
 
 .left-close-btn {
     background-color: #000;
+    cursor: pointer;
     height: 46px;
     width: 25px;
 }
