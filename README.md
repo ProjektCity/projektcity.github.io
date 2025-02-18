@@ -4,14 +4,14 @@
 </p>
 <!-- Our mission -->
 <p align="center">
-    <span style="font-size: 18px;">"Projekt City" is an unfunded, free and massive Minecraft project! Our mission is to entertain as many players as possible and create a fun and easy to understand map that is completely free to play.</span>
+    <span style="font-size: 18px;">Projekt City is a unique and expansive Minecraft project that operates without funding and is entirely free to play for everyone. Our mission is to develop an easily navigable Minecraft world for everyone, while paying a lot of attention to details and flawless work. Within "Projekt City," we are constructing a large map that features a city, an airport, a hotel, and much more, with meticulous attention to detail and precision. We enhance the gameplay through intricate redstone creations and commands.</span>
 </p>
 <p align="center">
-    <span style="font-size: 18px;">
-        The entire map is in English&sup1; and will remain so from now on, as it is too complicated to add other languages. However, all versions except V4.2 are currently in German as we forgot to update it. We hope you understand. Version
-        V4.2 contains (so far) everything in English. We try to fulfil every wish as well and as quickly as possible. Requests can be made on our Discord⁸ server, on our website and in the Curseforge Comments. We are looking forward to your
-        feedback, suggestions and wishes for this project, so that all players have fun on our map. We are trying to become more professional with every update and are constantly improving our building skills.
-    </span>
+    <span style="font-size: 18px;">The Projekt City map spans 1,164 meters in width and 1,833 meters in length, covering a total area of 2,133 612 square meters*, making it a very large Minecraft project! Our current efforts are focused on developing the airport and hotel, which occupy a significant portion of the map.</span>
+    <br>
+    <span>All versions after 4.1 are in English and will remain so until the project's completion, as adding other languages is a significant undertaking. We plan to introduce additional languages, such as German, French, and Italian, after completing the project to enhance accessibility for more players.</span>
+    <br>
+    <span>To provide detailed information, we have launched a website where players can find essential details and ask questions. We strive to address player requests swiftly and professionally, aiming to create a bug-free world. We encourage you to report any bugs or errors on our Discord server or forum. We are committed to enhancing our professionalism and skills in building, redstone, and commands to becom to become more professional, more accurate and better!</span>
 </p>
 <br>
 <!-- Informations -->
@@ -36,11 +36,17 @@
         <strong>SERVERS</strong>
     <br>
     <span style="font-size: 18px;">
-        <span>Server owners be aware that </span>
-        <strong>
-            <span style="color: aqua;">"enable-command-block=true"</span>
-        </strong> 
-        <span> must be set in your <strong><span style="color: aqua;">"server.properties"</span></strong> file, or armor stands and other things won't work correctly!
+        <span>Server owners be aware that "enable-command-block=true" must be set in your "server.properties" file or armor stands, interactive contents, player detections and other constructions won't work correctly!</span>
+        <br>
+        <span>For the best experience you need administrator rights / it is recommended to enable the following commands for players: "fill", "setblock", "teleport" ("tp") & "tellraw"</span>
+        <br>
+        <span>Server only version coming after finishing version V5.0. fall 2026</span>
+        <br>
+        <span>If this is not possible, download the file "Projekt City [V5.0] SERVER ONLY", which will be available fall 2026, and set it as your default minecraft world! For easy world switches we recommend using Mutliverse core for</span>
+        <a href="https://dev.bukkit.org/projects/multiverse-core?utm_src=github_mainpage_content_area_server_footer_information_click&utm_medium=projektcity&return_url=https://github.com/ProjektCity/projektcity.github.io" style="text-decoration: none; color: #fff">[BUKKIT]
+        <span>or</span>
+        <a href="https://www.spigotmc.org/resources/multiverse-core.390?utm_src=curseforge_mainpage_content_area_server_footer_information_click&utm_medium=projektcity&return_url=https://curseforge.com/minecraft/worlds/projekt-city" style="text-decoration: none; color: #fff">[SPIGOT]</a>
+        <span>.</span>
     </span>
     <br><br>
 </p>
@@ -49,40 +55,54 @@
     <img style="padding-top: 75px; padding-bottom: 25px; display: block; margin-left: auto; margin-right: auto;" src="https://i.ibb.co/2khFS8z/Map.png" width="100%" />
 </p>
 <p align="center">
-    <span style="font-size: 18px;">A long highway with cars and which leads to the airport and the city</span>
+    <span style="font-size: 18px;">A long highway with cars and which leads to the airport, the city and other places in the region</span>
 </p>
 <p align="center">
     <span style="font-size: 30px;">&darr;</span>
 </p>
 <p align="center">
-    <span style="font-size: 18px;">the highway&sup2; leads to many places on the map that can be reached quickly and easily!</span>
+    <span style="font-size: 18px;">The highway leads to many places, like the airport, the hotel an the city on the map that can be reached quickly and easily!</span>
 </p>
 <p align="center">
-    <span style="font-size: 18px;">A big city with a massive hotel&sup3; and a big redstone construction⁴</span>
-</p>
-<p align="center">
-    <span style="font-size: 30px;">&darr;</span>
-</p>
-<p align="center">
-    <span style="font-size: 18px;">The hotel has a big lobby with workers, a restaurant, lights, bedrooms and much more!</span>
-</p>
-<p align="center">
-    <span style="font-size: 18px;">Many working redstone circuits!</span>
+    <span style="font-size: 18px;">A big city including many houses, an enormous hotel in which are big redstone constructions, a luxury suite, a public pool, a restaurant and other activities</span>
 </p>
 <p align="center">
     <span style="font-size: 30px;">&darr;</span>
 </p>
 <p align="center">
-    <span style="font-size: 18px;">Our houses, the airport, the hotel, the city, the highway, the tunnel and the cars work with redstone circuits!</span>
+    <span style="font-size: 18px;">The hotel has a big lobby with workers, a working keycard system, a restaurant, many interactive lights, large bedrooms, a big public pool and much more!</span>
 </p>
 <p align="center">
-    <span style="font-size: 18px;">A big Airport with planes and check-in stations⁵</span>
+    <span style="font-size: 18px;">Many working redstone circuits, an interactive chat, autmatic scan systems and player position detection, which is possible with complex and highly integrated redstone constructions!</span>
 </p>
 <p align="center">
     <span style="font-size: 30px;">&darr;</span>
 </p>
 <p align="center">
-    <span style="font-size: 18px;">The airport has four check-in stations⁶ and many shops⁷ where you can buy food, snacks, drinks, etc.</span>
+    <span style="font-size: 18px;">Our houses, the airport, the hotel, the city, the highway, the tunnel and the cars work with many complicated redstone circuits and feature an interactive chat, which should give the player an even better experience and speed up some processes!</span>
+</p>
+<p align="center">
+    <span style="font-size: 18px;">A big Airport with planes, gates, check-in stations, local food areas, duty free shops, NPCs, waiting rooms, a minecart station and much more</span>
+</p>
+<p align="center">
+    <span style="font-size: 30px;">&darr;</span>
+</p>
+<p align="center">
+    <span style="font-size: 18px;">The airport has four check-in stations and many shops where you can buy food, snacks, drinks, etc. while waiting for your flight</span>
+</p>
+<p align="center">
+    <span style="font-size: 30px;">&darr;</span>
+</p>
+<p align="center">
+    <span style="font-size: 18px;">You can use your ticket, which you can purchase in the entrance, to board to your flight</span>
+</p>
+
+<p align="center">
+    <span style="font-size: 18px;">Various hills/mountains with  trees, streets and a long tunnel which take care of nature and the environment so as not to damage the climate, to protect the environment and avoid air pollution.</span>
+</p>
+
+<p align="center">
+    <span style="font-size: 18px;">Large and huge forests with gaint, detailed trees which are positionated on hills and mountians to ensure a beautiful nature.</span>
 </p>
 <!-- Support -->
 <p>
