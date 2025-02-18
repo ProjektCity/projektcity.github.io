@@ -309,19 +309,20 @@ p {
 
 .left-close-btn {
     background-color: #000;
-    height: 62px;
+    height: 46px;
     width: 25px;
 }
 
 .cb-middle-text {
     font-size: 15px;
-    min-height: 50px;
-    max-height: 130px;
+    min-height: 46px;
+    max-height: 140px;
     width: 100%;
 }
 
 .cb-right-btns {
-    height: auto;
+    min-height: 46px;
+    max-height: 140px;
     width: 152px;
 }
 
@@ -332,6 +333,28 @@ p {
     transform: translateY(-50%);
 }
 
+.legal-filled-btn {
+    background-color: #fff;
+    border: 1px solid #fff;
+    color: #000;
+    cursor: pointer;
+    height: 40px;
+    margin: 5px;
+    width: 140px;
+}
+
+.legal-filled-btn:hover {
+    opacity: 0.7;
+}
+
+.legal-filled-btn-inner {
+    font-size: 20px;
+    height: 28px;
+    margin-bottom: 6px;
+    margin-top: 6px;
+}
+
+/* Buttons */
 .legal-btn {
     border: 1px solid #fff;
     cursor: pointer;
@@ -349,25 +372,4 @@ p {
     height: 17px;
     margin-bottom: 16.5px;
     margin-top: 16.5px;
-}
-
-.legal-filled-btn {
-    background-color: #fff;
-    border: 1px solid #fff;
-    color: #000;
-    cursor: pointer;
-    height: 50px;
-    margin: 5px;
-    width: 150px;
-}
-
-.legal-filled-btn:hover {
-    opacity: 0.7;
-}
-
-.legal-filled-btn-inner {
-    font-size: 20px;
-    height: 30px;
-    margin-bottom: 10px;
-    margin-top: 10px;
 }
