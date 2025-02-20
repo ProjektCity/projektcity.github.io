@@ -27,6 +27,11 @@ html, body {
     min-height: 100px;
 }
 
+.dt-content {
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
 .dt-section {
     margin: 0 auto;
     margin-bottom: 10px;
@@ -42,9 +47,8 @@ html, body {
     text-align: center;
 }
 
-.dt-content {
-    margin-bottom: 20px;
-    margin-top: 20px;
+.placeholder {
+    margin: 0 auto;   
 }
 
 /* Classes */
@@ -83,6 +87,14 @@ h4 {
 p {
     margin-block-start: 0em;
     margin-block-end: 0em;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.bold {
+    font-weight: 500;
 }
 
 .linkout {
