@@ -149,10 +149,7 @@
         <a style="color: gray; text-decoration: none;">[</a><a style="font-size: 35px; color: #72b147; text-decoration: none;" title="Minecraft">Minecraft: SuffixHD & itsmarian</a><a style="color: gray; text-decoration: none;">]</a>
     </span>
     <br><br>
-</h1>
-<span>
-    <a style="color: gray; text-decoration: none;">[</a><a href="" style="font-size: 35px; color: rgb(115, 147, 179); text-decoration: none;" title=""></a><a style="color: gray; text-decoration: none;">]</a>
-</span>
+</h1
 <!-- Specials -->
 <p align="center">
     <a href="https://bit.ly/ProjektCityAG?utm_src=projektcity_github_footer&return_url=https%3A%2f%2Fgithub.com%2Fitsmarianmc%2FProjekt-City&footer_line=1&footer_max_lines=2">Application Guidelines</a>&nbsp;•&nbsp;<a href="https://bit.ly/ProjektCityAccessebilityStatement?utm_src=projektcity_github_footer&return_url=https%3A%2f%2Fgithub.com%2Fitsmarianmc%2FProjekt-City&footer_line=1&footer_max_lines=2">Accessebility statement</a>&nbsp;•&nbsp;<a href="https://bit.ly/ProjektCityAdvertisementTerms?utm_src=projektcity_github_footer&return_url=https%3A%2f%2Fgithub.com%2Fitsmarianmc%2FProjekt-City&footer_line=1&footer_max_lines=2">Advertisement Terms</a>
