@@ -7,6 +7,10 @@
     width: 100%;
 }
 
+.question {
+    font-weight: 400;
+}
+
 .content {
     display: block;
     font-size: 22px;
