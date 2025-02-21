@@ -319,13 +319,6 @@ p {
     height: auto;
 }
 
-.left-close-btn {
-    background-color: #000;
-    cursor: pointer;
-    height: 46px;
-    width: 25px;
-}
-
 .cb-middle-text {
     font-size: 15px;
     min-height: 46px;
@@ -344,19 +337,20 @@ p {
     position: relative;
     top: 50%;
     transform: translateY(-50%);
+    height: 46px;
 }
 
 /* Close Button */
 .cb-close-btn {
     height: 36px;
-    margin-bottom: 11.7px;
-    margin-top: 11.7px;
+    margin-bottom: 10px;
+    margin-top: 10px;
     width: 36px;
 }
 .close-btn {
     cursor: pointer;
     height: 25px;
-    margin: 5px;
+    margin: 5.5px;
     width: 25px;
 }
 
@@ -372,7 +366,7 @@ p {
     border: 1px solid #fff;
     color: #000;
     cursor: pointer;
-    height: 48.4px;
+    height: 36px;
     margin: 5px;
     width: 140px;
 }
@@ -384,8 +378,8 @@ p {
 .legal-filled-btn-inner {
     font-size: 20px;
     height: 28px;
-    margin-bottom: 13px;
-    margin-top: 8.4px;
+    margin-bottom: 5px;
+    margin-top: 3px;
 }
 
 /* Buttons */
