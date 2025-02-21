@@ -1,0 +1,23 @@
+.dt-helpcenter-header {
+    height: auto;
+    text-align: center;
+    width: 1150px;
+}
+
+.dt-helpcenter-information-container {
+    height: auto;
+    width: 1150px;
+}
+
+.dt-helpcenter-ic-header {
+    font-size: 25px;
+}
+
+.dt-helpcenter-ic-contents {
+    font-size: 25px;
+}
+
+.dt-helpcenter-ul {
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+}
