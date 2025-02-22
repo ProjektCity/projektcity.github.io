@@ -109,7 +109,8 @@
         </div>
     </header>
     <main class="dt-main" style="display: block;">
-        <section id="download-area" data-tagname="download-area">
+        <div class="placeholder w300 h30" id="mb-placeholder" style="display: none;"></div>
+        <section class="dt-section" id="download-area" data-tagname="download-area">
             <div class="dt-download">
                 <div class="dt-download-header">
                     <div class="dt-download-h-maindir">
@@ -588,9 +589,20 @@
         function getDeviceType() {
             const userAgent = navigator.userAgent.toLowerCase();
             if (/mobile|android|iphone|ipad|ipod|blackberry|windows phone/i.test(userAgent)) {
-                window.open("https://bit.ly/ProjektCity?utm_src=mainpage_github_autoredirect&utm_medium=projektcity", "_parent");
+                document.getElementById("mobile-header").style.display = "block";
+                document.querySelector(".dt-p-header").style.display = "none";
+                document.querySelector(".dt-main").style.display = "block";
+                document.querySelector(".dt-footer").style.display = "block";
+                document.getElementById("mb-placeholder").style.display = "block";
+                document.querySelector(".dt-download-project-information-text-bottom").style.fontSize = "25px"
+                document.getElementById("cookie-banner").remove();
+                document.getElementById("download-v5-0").remove();
+                document.querySelectorAll(".dt-dwnld-td-c3").forEach(el => {
+                    el.remove();
+                });
                 return "mobile";
             } else {
+                document.querySelector(".dt-p-header").style.display = "block";
                 return "desktop";
             }
         }

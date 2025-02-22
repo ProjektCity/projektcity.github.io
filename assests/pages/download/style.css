@@ -229,7 +229,8 @@ li {
 /* Download page layout */
 .dt-dwnld-area {
     margin: 0 auto;
-    width: 1000px;
+    max-width: 1000px;
+    min-width: 300px;
 }
 
 .dt-dwnld-table {
@@ -251,10 +252,14 @@ li {
 
 .dt-dwnld-changelog {
     text-align: center;
+    min-width: 300px;
+    max-width: 1000px;
 }
 
 .dt-dwnld-cl-header {
     text-align: center;
+    min-width: 300px;
+    max-width: 1000px;
 }
 
 .dt-dwnld-cl-version {
@@ -271,7 +276,8 @@ li {
     font-size: 10px;
     margin: 0 auto;
     text-align: center;
-    width: 1150px;
+    max-width: 1000px;
+    min-width: 300px;
 }
 
 /* Individual Download Site */
