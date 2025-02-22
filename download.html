@@ -812,7 +812,7 @@
                 document.querySelector(".dt-footer").remove();
                 // Table
                 document.querySelectorAll("dt-td-date").forEach(el => {
-                    el.remove()
+                    el.style.display = "none";
                 });
                 document.getElementById("cookie-banner").remove();
                 return "mobile";
@@ -829,7 +829,7 @@
                 // Table
                 document.querySelector(".dt-th-l3").remove();
                 document.querySelectorAll(".dt-td-date").forEach(el => {
-                    el.remove()
+                    el.style.display = "none";
                 });
                 return "desktop";
             }
