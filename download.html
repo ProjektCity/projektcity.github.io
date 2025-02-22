@@ -878,18 +878,15 @@
         function getDeviceType() {
             const userAgent = navigator.userAgent.toLowerCase();
             if (/mobile|android|iphone|ipad|ipod|blackberry|windows phone/i.test(userAgent)) {
-                document.querySelector(".mb-p-header").style.display = "block";
-                document.querySelector(".mb-main").style.display = "block";
-                document.querySelector(".mb-footer").style.display = "block";
+                document.getElementById("mobile-header").style.display = "block";
                 document.querySelector(".dt-p-header").style.display = "none";
-                document.querySelector(".dt-main").style.display = "none";
-                document.querySelector(".dt-footer").style.display = "none";
-                document.querySelector(".dt-p-header").remove();
-                document.querySelector(".dt-main").remove();
-                document.querySelector(".dt-footer").remove();
+                document.querySelector(".dt-main").style.display = "block";
+                document.getElementById("mb-placeholder").style.display = "block";
+                document.getElementById("cookie-banner").remove();
                 // Table
                 document.querySelectorAll("dt-td-date").forEach(el => {
                     el.style.display = "none";
+                    el.remove();
                 });
                 document.getElementById("cookie-banner").remove();
                 return "mobile";
@@ -900,14 +897,7 @@
                 document.querySelector(".dt-p-header").style.display = "block";
                 document.querySelector(".dt-main").style.display = "block";
                 document.querySelector(".dt-footer").style.display = "block";
-                document.querySelector(".mb-p-header").remove();
                 document.querySelector(".mb-main").remove();
-                document.querySelector(".mb-footer").remove();
-                // Table
-                document.querySelector(".dt-th-l3").remove();
-                document.querySelectorAll(".dt-td-date").forEach(el => {
-                    el.style.display = "none";
-                });
                 return "desktop";
             }
         }
