@@ -6,7 +6,7 @@
 
 .mb-gh-ui-navbar {
     border-bottom: 2px solid #fff;
-    height: 116.5px;
+    height: 100%;
     margin: 0 auto;
     padding-top: 5px;
     padding-bottom: 5px;
@@ -26,7 +26,7 @@
 }
 
 .mb-header {
-    height: 106.5px;
+    height: 100%;
     min-width: 300px;
     max-width: 400px;
 }
@@ -98,7 +98,7 @@
     width: 100%;
 }
 
-.mb-bottom-menu {
+.mb-middle-menu {
     border: 1px solid #32333C;
     border-radius: 5px;
     background-color: #24262B;
@@ -116,7 +116,7 @@
 }
 
 .mb-clickelement {
-    
+    height: 50px;
 }
 
 @keyframes initialMBWidth {
