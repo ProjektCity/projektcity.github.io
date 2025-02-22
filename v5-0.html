@@ -293,9 +293,10 @@
         function getDeviceType() {
             const userAgent = navigator.userAgent.toLowerCase();
             if (/mobile|android|iphone|ipad|ipod|blackberry|windows phone/i.test(userAgent)) {
-                window.open("https://itsmarian.wixsite.com/projektcity/v5-0-1?utm_src=mainpage_github_autoredirect&utm_medium=projektcity", "_parent");
+                window.open("https://projektcity.github.io/download/v5.0", "_parent");
                 return "mobile";
             } else {
+                window.open("https://projektcity.github.io/download/v5.0", "_parent");
                 return "desktop";
             }
         }
