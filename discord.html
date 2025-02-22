@@ -107,7 +107,7 @@
         </div>
     </header>
     <main class="dt-main">
-        <section id="discord" data-tagname="discord">
+        <section class="dt-section" id="discord" data-tagname="discord">
             <div class="dt-discord-content">
                 <h2 style="text-decoration: underline;">Join our Discord server!</h2>
                 <div class="placeholder w1000 h50"></div>
@@ -299,9 +299,13 @@
         function getDeviceType() {
             const userAgent = navigator.userAgent.toLowerCase();
             if (/mobile|android|iphone|ipad|ipod|blackberry|windows phone/i.test(userAgent)) {
-                window.open("https://itsmarian.wixsite.com/projektcity/discord?utm_src=mainpage_github_autoredirect&utm_medium=projektcity", "_parent");
+                document.getElementById("mobile-header").style.display = "block";
+                document.querySelector(".dt-p-header").style.display = "none";
+                document.querySelector(".dt-main").style.display = "block";
+                document.querySelector(".dt-footer").style.display = "block";
                 return "mobile";
             } else {
+                document.querySelector(".dt-p-header").style.display = "block";
                 return "desktop";
             }
         }
