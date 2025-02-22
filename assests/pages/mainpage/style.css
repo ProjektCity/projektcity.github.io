@@ -100,6 +100,14 @@
     text-align: center;
 }
 
+.dt-map-content-text {
+    font-size: 22px;
+}
+
+.dt-map-content-arrow {
+    font-size: 30px;
+}
+
 /* Images */
 .dt-image-slider {
     font-family: Arial, sans-serif;

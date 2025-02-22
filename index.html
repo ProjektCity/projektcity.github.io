@@ -241,27 +241,27 @@
             </div>
             <div class="placeholder w350 h20"></div>
             <div class="dt-map-content">
-                <p>A long highway with cars and which leads to the airport, the city and other places in the region</p>
-                <p style="font-size: 30px;">↓</p>
-                <p>The highway leads to many places, like the airport, the hotel an the city on the map that can be reached quickly and easily!</p>
+                <p class="dt-map-content-text">A long highway with cars and which leads to the airport, the city and other places in the region</p>
+                <p class="dt-map-content-arrow">↓</p>
+                <p class="dt-map-content-text">The highway leads to many places, like the airport, the hotel an the city on the map that can be reached quickly and easily!</p>
                 <br>
-                <p>A big city including many houses, an enormous hotel in which are big redstone constructions, a luxury suite, a public pool, a restaurant and other activities</p>
-                <p>↓</p>
-                <p>The hotel has a big lobby with workers, a working keycard system, a restaurant, many interactive lights, large bedrooms, a big public pool and much more!</p>
+                <p class="dt-map-content-text">A big city including many houses, an enormous hotel in which are big redstone constructions, a luxury suite, a public pool, a restaurant and other activities</p>
+                <p class="dt-map-content-arrow">↓</p>
+                <p class="dt-map-content-text">The hotel has a big lobby with workers, a working keycard system, a restaurant, many interactive lights, large bedrooms, a big public pool and much more!</p>
                 <br>
-                <p>Many working redstone circuits, an interactive chat, autmatic scan systems and player position detection, which is possible with complex and highly integrated redstone constructions!</p>
-                <p>↓</p>
-                <p>Our houses, the airport, the hotel, the city, the highway, the tunnel and the cars work with many complicated redstone circuits and feature an interactive chat, which should give the player an even better experience and speed up some processes!</p>
+                <p class="dt-map-content-text">Many working redstone circuits, an interactive chat, autmatic scan systems and player position detection, which is possible with complex and highly integrated redstone constructions!</p>
+                <p class="dt-map-content-arrow">↓</p>
+                <p class="dt-map-content-text">Our houses, the airport, the hotel, the city, the highway, the tunnel and the cars work with many complicated redstone circuits and feature an interactive chat, which should give the player an even better experience and speed up some processes!</p>
                 <br>
-                <p>A big Airport with planes, gates, check-in stations, local food areas, duty free shops, NPCs, waiting rooms, a minecart station and much more</p>
-                <p>↓</p>
-                <p>The airport has four check-in stations and many shops where you can buy food, snacks, drinks, etc. while waiting for your flight</p>
-                <p>↓</p>
-                <p>You can use your ticket, which you can purchase in the entrance, to board to your flight</p>
+                <p class="dt-map-content-text">A big Airport with planes, gates, check-in stations, local food areas, duty free shops, NPCs, waiting rooms, a minecart station and much more</p>
+                <p class="dt-map-content-arrow">↓</p>
+                <p class="dt-map-content-text">The airport has four check-in stations and many shops where you can buy food, snacks, drinks, etc. while waiting for your flight</p>
+                <p class="dt-map-content-arrow">↓</p>
+                <p class="dt-map-content-text">You can use your ticket, which you can purchase in the entrance, to board to your flight</p>
                 <br>
-                <p>Various hills/mountains with trees, streets and a long tunnel which take care of nature and the environment so as not to damage the climate, to protect the environment and avoid air pollution.</p>
-                <p>↓</p>
-                <p>Large and huge forests with gaint, detailed trees which are positionated on hills and mountians to ensure a beautiful nature.</p>
+                <p class="dt-map-content-text">Various hills/mountains with trees, streets and a long tunnel which take care of nature and the environment so as not to damage the climate, to protect the environment and avoid air pollution.</p>
+                <p class="dt-map-content-arrow">↓</p>
+                <p class="dt-map-content-text">Large and huge forests with gaint, detailed trees which are positionated on hills and mountians to ensure a beautiful nature.</p>
             </div>
             <div class="placeholder w350 h20"></div>
         </section>
@@ -464,6 +464,13 @@
                 document.querySelector(".dt-trailer-container").style.display = "none";
                 document.querySelector(".dt-image-slider").style.display = "none";
                 document.getElementById("download-count").style.display = "none";
+                // Set Font Sizes
+                document.querySelector(".dt-des-content").style.fontSize = "20px";
+                document.querySelector(".dt-v5-0-content").style.fontSize = "20px";
+                document.querySelector(".dt-special-information").style.fontSize = "5px";
+                document.querySelectorAll(".dt-map-content-text").forEach(el => {
+                    el.style.fontSize = "18px";
+                });
                return "mobile";
             } else {
                 document.querySelector(".dt-p-header").style.display = "block";
