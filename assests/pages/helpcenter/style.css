@@ -1,12 +1,14 @@
 .dt-helpcenter-header {
     height: auto;
     text-align: center;
-    width: 1150px;
+    max-width: 1150px;
+    min-width: 300px;
 }
 
 .dt-helpcenter-information-container {
     height: auto;
-    width: 1150px;
+    min-width: 300px;
+    max-width: 1150px;
 }
 
 .dt-helpcenter-ic-header {
