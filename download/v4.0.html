@@ -267,7 +267,7 @@
                     </div>
                     <div class="dt-dwnld-cl-changelog">
                         <p>Changes:</p>
-                        <ul style="font-size: 18px;">
+                        <ul class="dt-dwnld-cl-ul">
                             <li>Markers showing where houses are built</li>
                             <li>Redstone improved</li>
                             <li>Terrain changed/extended</li>
@@ -366,11 +366,6 @@
             </div>
         </div>
     </div>
-    <div id="mobile-information" style="display: none;">
-        <a>Projekt City is not yet supported on mobile devices!</a>
-        <br>
-        <a>Please switch to a desktop or use our old website.</a>
-    </div>
     <script src="../assests/global/script.js"></script>
     <script>
         document.getElementById("download-v4-0").addEventListener('click', function() {
@@ -387,6 +382,7 @@
                 document.getElementById("mb-placeholder").style.display = "block";
                 document.querySelector(".dt-download-project-information-text-bottom").style.fontSize = "25px";
                 document.querySelector(".dt-dwnld-cl-changelog").style.fontSize = "20px";
+                document.querySelector(".dt-dwnld-cl-ul").style.fontSize = "20px";
                 document.getElementById("cookie-banner").remove();
                 document.getElementById("download-v4-0").remove();
                 document.querySelectorAll(".dt-dwnld-td-c3").forEach(el => {
