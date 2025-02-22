@@ -184,6 +184,7 @@
         </div>
     </header>
     <main class="dt-main">
+        <div class="placeholder w300 h30" id="mb-placeholder" style="display: none;"></div>
         <section class="dt-section" id="discord" data-tagname="discord">
             <div class="dt-discord-content">
                 <h2 style="text-decoration: underline;">Join our Discord server!</h2>
@@ -380,6 +381,7 @@
                 document.querySelector(".dt-p-header").style.display = "none";
                 document.querySelector(".dt-main").style.display = "block";
                 document.querySelector(".dt-footer").style.display = "block";
+                document.getElementById("mb-placeholder").style.display = "block";
                 document.getElementById("cookie-banner").remove();
                 return "mobile";
             } else {
