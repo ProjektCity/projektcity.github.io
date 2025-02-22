@@ -27,7 +27,7 @@
 </head>
 <body style="overflow-x: hidden;">
     <!-- Global Header -->
-    <header class="dt-p-header" style="display: none;">
+    <header class="dt-p-header" style="display: none; overflow-x: hidden;">
         <div class="dt-gh-ui-navbar">
             <div class="dt-head">
                 <div class="dt-header">
@@ -112,7 +112,7 @@
         </div>
     </header>
     <!-- Main Content -->
-    <main class="dt-main" style="display: none;">
+    <main class="dt-main" style="display: none; overflow-x: hidden;">
         <!-- Download Count --> 
         <section class="dt-section" id="download-count" data-tagname="download-count">
             <div class="dt-download-count">
@@ -301,7 +301,7 @@
         </section>
     </main>
     <!-- Global Footer -->
-    <footer class="dt-footer" style="display: none;">
+    <footer class="dt-footer" style="display: none; overflow-x: hidden;">
         <div class="dt-content">
             <div class="dt-gf-div-lines">
                 <div class="dt-gf-div-line">
@@ -367,11 +367,6 @@
             </div>
         </div>
     </div>
-    <div id="mobile-information" style="display: none;">
-        <a>Projekt City is not yet supported on mobile devices!</a>
-        <br>
-        <a>Please switch to a desktop or use our old website.</a>
-    </div>
     <script src="assests/global/header/navbar-script.js"></script>
     <script src="assests/global/script.js"></script>
     <script src="assests/pages/mainpage/script.js"></script>
@@ -380,12 +375,9 @@
         function getDeviceType() {
             const userAgent = navigator.userAgent.toLowerCase();
             if (/mobile|android|iphone|ipad|ipod|blackberry|windows phone/i.test(userAgent)) {
-                document.getElementById("mobile-information").style.display = "block";
                 document.querySelector(".dt-p-header").style.display = "none";
                 document.querySelector(".dt-main").style.display = "block";
-                document.querySelector(".dt-footer").style.display = "none";
                 document.querySelector(".dt-p-header").remove();
-                document.querySelector(".dt-footer").remove();
                 document.getElementById("cookie-banner").remove();
                 // Mobile Elements
                 document.querySelector(".mb-trailer-container").style.display = "flex";
