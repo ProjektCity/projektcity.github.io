@@ -1,6 +1,8 @@
 /* Download Count */
 .dt-download-count {
     height: 100px;
+    margin: 0 auto;
+    width: 585px;
     /* Non selectable text */
     -webkit-touch-callout: none;
     -webkit-user-select: none;
@@ -58,7 +60,7 @@
     padding-top: 6.98px;
     position: absolute;
     text-align: center;
-    width: 584px;
+    width: 100%;
 }
 
 .dt-counter, .dt-countertext-separator, .dt-counter-list-item {
@@ -72,7 +74,8 @@
 }
 
 .dt-des-header {
-    min-width: 1150px;
+    max-width: 1150px;
+    min-width: 300px;
     text-align: center;
 }
 
