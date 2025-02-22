@@ -110,7 +110,7 @@
         </div>
     </header>
     <main class="dt-main" style="display: block;">
-        <section id="download-area" data-tagname="download-area">
+        <section class="dt-section" id="download-area" data-tagname="download-area">
             <div class="dt-download">
                 <div class="dt-download-header">
                     <div class="dt-download-h-maindir">
@@ -810,6 +810,10 @@
                 document.querySelector(".dt-p-header").remove();
                 document.querySelector(".dt-main").remove();
                 document.querySelector(".dt-footer").remove();
+                // Table
+                document.querySelectorAll("dt-td-date").forEach(el => {
+                    el.remove()
+                });
                 return "mobile";
             } else {
                 document.querySelector(".mb-p-header").style.display = "none";
@@ -821,6 +825,11 @@
                 document.querySelector(".mb-p-header").remove();
                 document.querySelector(".mb-main").remove();
                 document.querySelector(".mb-footer").remove();
+                // Table
+                document.querySelector(".dt-th-l3").remove();
+                document.querySelectorAll(".dt-td-date").forEach(el => {
+                    el.remove()
+                });
                 return "desktop";
             }
         }
@@ -828,21 +837,21 @@
         function getBrowser() {
             const userAgent = navigator.userAgent;
             if (userAgent.indexOf("Firefox") > -1) {
-                return "Mozilla Firefox";
+                return "mf_mozilla-firefox";
             } else if (userAgent.indexOf("SamsungBrowser") > -1) {
-                return "Samsung Internet";
+                return "si_samsung-internet";
             } else if (userAgent.indexOf("Opera") > -1 || userAgent.indexOf("OPR") > -1) {
-                return "Opera";
+                return "op_opera";
             } else if (userAgent.indexOf("Trident") > -1) {
-                return "Internet Explorer";
+                return "ie_internet-Explorer";
             } else if (userAgent.indexOf("Edge") > -1) {
-                return "Microsoft Edge";
+                return "me_microsoft-edge";
             } else if (userAgent.indexOf("Chrome") > -1) {
-                return "Google Chrome";
+                return "gc_google-chrome";
             } else if (userAgent.indexOf("Safari") > -1) {
-                return "Apple Safari";
+                return "as_apple-safari";
             } else {
-                return "unknown";
+                return "uk_unknown";
             }
         }
 
