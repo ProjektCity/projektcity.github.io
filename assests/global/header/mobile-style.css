@@ -5,6 +5,7 @@
 }
 
 .mb-head {
+    margin: 0 auto;
     min-width: 300px;
     max-width: 400px;
     /* Non selectable text */
@@ -85,11 +86,16 @@
 }
 
 .individual-mb-header-placeholder {
-
+    width: 100%;
 }
 
 .mb-bottom-menu {
-    
+    border: 1px solid #32333C;
+    border-radius: 5px;
+    background-color: #24262B;
+    height: 50px;
+    min-width: 298px;
+    max-width: 398px;
 }
 
 .mb-right-column {
@@ -97,7 +103,7 @@
 }
 
 .mb-others {
-    
+    display: flex;
 }
 
 .mb-clickelement {

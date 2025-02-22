@@ -112,7 +112,6 @@
             </div>
         </div>
     </header>
-    <div class="placeholder w500 h100"></div>
     <!-- Mobile Header -->
     <header id="mobile-header">
         <div class="gh-ui-navbar">
@@ -139,7 +138,6 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="individual-mb-header-placeholder"></div>
                                 </div>
                             </div>
                         </div>
@@ -156,7 +154,7 @@
                                             </svg>
                                         </a>
                                     </div>
-                                    <div class="placeholder w34 h50"></div>
+                                    <div class="individual-mb-header-placeholder"></div>
                                     <div class="mb-clickelement">
                                         <a onclick="window.open(this.href); return false;" href="https://bit.ly/ProjektCityHelpcenter?utm_src=projektcity_cstm-header_right-col_qm-logo&amp;utm_medium=projektcity&amp;redirect_url=https%3A%2F%2Fitsmarian.wixsite.com%2Fhelpcenter%" target="_blank">
                                             <svg xmlns="http://www.w3.org/2000/svg" height="50" viewBox="0 -960 960 960" width="50" fill="#fff">
@@ -164,7 +162,7 @@
                                             </svg>
                                         </a>
                                     </div>
-                                    <div class="placeholder w34 h50"></div>
+                                    <div class="individual-mb-header-placeholder"></div>
                                     <div class="mb-clickelement">
                                         <a onclick="window.open(this.href); return false;" href="https://bit.ly/ProjektCityLinktree?utm_src=projektcity_cstm-header_right-col_lt-logo&amp;utm_medium=projektcity&amp;redirect_url=https%3A%2F%2Flinktr.ee%2FProjektCity" target="_blank">
                                             <svg xmlns="http://www.w3.org/2000/svg" height="50" viewBox="0 -960 960 960" width="50" fill="#fff">
@@ -172,8 +170,14 @@
                                             </svg>
                                         </a>
                                     </div>
-                                    <div class="placeholder w34 h50"></div>
-                                    <div class="mb-clickelement"></div>
+                                    <div class="individual-mb-header-placeholder"></div>
+                                    <div class="mb-clickelement">
+                                        <a id="mb-menu-opener">
+                                            <svg xmlns="http://www.w3.org/2000/svg" height="50" viewBox="0 -960 960 960" width="50" fill="#fff">
+                                                <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/>
+                                            </svg>
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -453,6 +457,7 @@
                 // Mobile Elements
                 document.querySelector(".mb-trailer-container").style.display = "flex";
                 document.querySelector(".mb-image-slider").style.display = "flex";
+                document.getElementById("mobile-header").style.display = "block";
                 // Removing Desktop Elements
                 document.querySelector(".dt-trailer-container").style.display = "none";
                 document.querySelector(".dt-image-slider").style.display = "none";
@@ -461,10 +466,10 @@
                 document.querySelector(".dt-p-header").style.display = "block";
                 document.querySelector(".dt-main").style.display = "block";
                 document.querySelector(".dt-footer").style.display = "block";
-                document.getElementById("mobile-information").remove();
                 // Mobile Elements
                 document.querySelector(".mb-trailer-container").style.display = "none";
                 document.querySelector(".mb-image-slider").style.display = "none";
+                document.getElementById("mobile-header").style.display = "none";
                 return "desktop";
             }
         }
