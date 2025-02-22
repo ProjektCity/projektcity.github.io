@@ -5,23 +5,10 @@
 }
 
 .dt-gf-div-line {
+    font-size: 1em;
     width: auto;
 }
 
 .dt-gf-div-copy {
-    font-size: 28px;
-}
-
-/* Mobile */
-.mb-gf-div-lines {
-    min-width: 300px;
-    max-width: 400px;
-}
-
-.mb-gf-div-line {
-    width: auto;
-}
-
-.mb-gf-div-copy {
-    font-size: 18px;
+    font-size: 1em;
 }
