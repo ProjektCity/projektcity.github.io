@@ -218,9 +218,7 @@
             </div>
         </div>
     </header>
-    <!-- Main Content -->
     <main class="dt-main" style="display: none; overflow-x: hidden;">
-        <!-- Download Count --> 
         <section class="dt-section" id="download-count" data-tagname="download-count" style="opacity: 0;">
             <div class="dt-download-count">
                 <div class="dt-download-container">
@@ -476,24 +474,6 @@
     <script src="assests/global/script.js"></script>
     <script src="assests/pages/mainpage/script.js"></script>
     <script src="assests/pages/mainpage/purecounter.js"></script>
-    <script>
-        document.getElementById("menu-opener").addEventListener("click", function() {
-            const menu = document.getElementById("mb-menu");
-            if (menu.style.display === "block") {
-                document.querySelector(".mb-bottom-menu").classList.add("hidden");
-                document.querySelector(".mb-bottom-items").style.display = "none";
-                setTimeout(() => {
-                    document.querySelector(".mb-bottom-menu").classList.remove("hidden");
-                    document.querySelector(".mb-bottom-menu").style.display = "none";
-                }, 250);
-            } else {
-                menu.style.display = "block";
-                setTimeout(() => {
-                    document.querySelector(".mb-bottom-items").style.display = "flex";
-                }, 175);
-            }
-        });
-
         function getDeviceType() {
             const userAgent = navigator.userAgent.toLowerCase();
             if (/mobile|android|iphone|ipad|ipod|blackberry|windows phone/i.test(userAgent)) {
