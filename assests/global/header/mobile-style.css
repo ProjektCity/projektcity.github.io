@@ -5,10 +5,8 @@
 }
 
 .mb-head {
-    height: 116.5px;
-    margin: 0 auto;
-    overflow: hidden;
-    width: 400px;
+    min-width: 300px;
+    max-width: 400px;
     /* Non selectable text */
     -webkit-touch-callout: none;
     -webkit-user-select: none;
@@ -19,61 +17,79 @@
 }
 
 .mb-header {
-    height: 116.5px;
-    width: 400px;
+    min-width: 300px;
+    max-width: 400px;
 }
 
 .mb-top-menu {
     border: 1px solid #32333C;
-    background-color: #24262B;
     border-radius: 5px;
-    width: 398px;
+    background-color: #24262B;
+    height: 50px;
+    min-width: 298px;
+    max-width: 398px;
 }
 
 .mb-box-container {
-    width: 393px;
-    height: 50px;
-    padding: 2.5px;
+    min-width: 298px;
+    max-width: 398px;
 }
 
 .mb-left-column {
-    height: 50px;
-    width: 393px;
+    
 }
 
 .mb-information {
     display: flex;
-    height: 50px;
-    justify-content: space-around;
-    position: relative;
-    width: 393px;
+}
+
+.mb-img-frame {
+    height: 47.5px;
+    margin: 1.25px;
+    width: 47.5px;
 }
 
 .mb-img {
-    height: 50px;
-    width: 50px;
-}
-
-.mb-img {
-    border-radius: 5px;
-    width: 50px;
-    height: 50px;
+    border-radius: 2.5px;
+    height: 47.5px;
+    width: 47.5px;
 }
 
 .mb-text {
-    width: 338px;
+    height: 50px;
+    margin-left: 2.5px;
+    min-width: 250px;
+    max-width: 350px;
 }
 
 .mb-text-inner {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 100;
+    background-color: #24262B;
+    border-radius: 5px;
+    color: white;
     height: 50px;
-    width: 338px;
+    margin: 0;
+    overflow: hidden;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    width: calc(100% - 5px);
+}
+
+.flexible-mb-head-iframe {
+    width: 100%;
+}
+
+.individual-mb-header-placeholder {
+
 }
 
 .mb-bottom-menu {
-    border: 1px solid #32333C;
-    background-color: #24262B;
-    border-radius: 5px;
-    width: 398px;
+    
 }
 
 .mb-right-column {
@@ -81,17 +97,12 @@
 }
 
 .mb-others {
-    display: flex;
-    height: 50px;
-    justify-content: space-around;
-    position: relative;
+    
 }
 
 .mb-clickelement {
-    width: 50px;
-    height: 50px;
+    
 }
-
 
 @keyframes initialMBWidth {
     from {
@@ -99,11 +110,11 @@
     }
 
     to {
-        width: 335px;
+        width: 348px;
     }
 }
 
-@keyframes infiniteScroll {
+@keyframes infiniteMBScroll {
     from {
         transform: translateX(0);
     }
@@ -116,7 +127,6 @@
 .mb-container {
     width: 180px;
     height: 50px;
-    font-weight: 100;
     overflow: hidden;
     animation-name: initialMBWidth;
     animation-duration: 1s;
@@ -131,12 +141,12 @@
         width = [TW * 1.5]
         TW = total width of text
     */
-    animation-name: infiniteScroll;
+    animation-name: infiniteMBScroll;
     animation-duration: 20s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
 }
 
 .mb-scrolling-item {
-white-space: nowrap;
+    white-space: nowrap;
 }
