@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>dir /download</title>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4788944561931875" crossorigin="anonymous"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-1CGCZF5S7L"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
@@ -14,5 +17,27 @@
 </head>
 <body>
     <a>UNKNOWN DIRECTORY</a>
+    <script>
+        function getBrowser() {
+            const userAgent = navigator.userAgent;
+            if (userAgent.indexOf("Firefox") > -1) {
+                return "mf_mozilla-firefox";
+            } else if (userAgent.indexOf("SamsungBrowser") > -1) {
+                return "si_samsung-internet";
+            } else if (userAgent.indexOf("Opera") > -1 || userAgent.indexOf("OPR") > -1) {
+                return "op_opera";
+            } else if (userAgent.indexOf("Trident") > -1) {
+                return "ie_internet-Explorer";
+            } else if (userAgent.indexOf("Edge") > -1) {
+                return "me_microsoft-edge";
+            } else if (userAgent.indexOf("Chrome") > -1) {
+                return "gc_google-chrome";
+            } else if (userAgent.indexOf("Safari") > -1) {
+                return "as_apple-safari";
+            } else {
+                return "uk_unknown";
+            }
+        }
+    </script>
 </body>
 </html>

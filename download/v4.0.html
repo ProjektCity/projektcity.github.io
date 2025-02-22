@@ -12,6 +12,9 @@
     <link rel="stylesheet" href="../assests/global/main/basic-style.css">
     <link rel="stylesheet" href="../assests/pages/download/style.css">
     <link rel="stylesheet" href="../assests/global/footer/legal.css">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4788944561931875" crossorigin="anonymous"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-1CGCZF5S7L"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
@@ -381,10 +384,11 @@
                 document.querySelector(".dt-footer").style.display = "block";
                 document.getElementById("mb-placeholder").style.display = "block";
                 document.querySelector(".dt-download-project-information-text-bottom").style.fontSize = "25px";
-                document.querySelector(".dt-dwnld-cl-changelog").style.fontSize = "20px";
-                document.querySelector(".dt-dwnld-cl-ul").style.fontSize = "20px";
+                document.querySelectorAll(".dt-dwnld-cl-ul").forEach(el => {
+                    el.style.fontSize = "20px";
+                });
                 document.getElementById("cookie-banner").remove();
-                document.getElementById("download-v4-0").remove();
+                document.getElementById("download-v5-0").remove();
                 document.querySelectorAll(".dt-dwnld-td-c3").forEach(el => {
                     el.remove();
                 });
@@ -398,21 +402,21 @@
         function getBrowser() {
             const userAgent = navigator.userAgent;
             if (userAgent.indexOf("Firefox") > -1) {
-                return "Mozilla Firefox";
+                return "mf_mozilla-firefox";
             } else if (userAgent.indexOf("SamsungBrowser") > -1) {
-                return "Samsung Internet";
+                return "si_samsung-internet";
             } else if (userAgent.indexOf("Opera") > -1 || userAgent.indexOf("OPR") > -1) {
-                return "Opera";
+                return "op_opera";
             } else if (userAgent.indexOf("Trident") > -1) {
-                return "Internet Explorer";
+                return "ie_internet-Explorer";
             } else if (userAgent.indexOf("Edge") > -1) {
-                return "Microsoft Edge";
+                return "me_microsoft-edge";
             } else if (userAgent.indexOf("Chrome") > -1) {
-                return "Google Chrome";
+                return "gc_google-chrome";
             } else if (userAgent.indexOf("Safari") > -1) {
-                return "Apple Safari";
+                return "as_apple-safari";
             } else {
-                return "unknown";
+                return "uk_unknown";
             }
         }
 
