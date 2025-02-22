@@ -343,14 +343,14 @@ p {
 /* Close Button */
 .cb-close-btn {
     height: 36px;
-    margin-bottom: 10px;
-    margin-top: 10px;
+    margin-bottom: 6px;
+    margin-top: 6px;
     width: 36px;
 }
 .close-btn {
     cursor: pointer;
     height: 25px;
-    margin: 5.5px;
+    margin: 5px;
     width: 25px;
 }
 
