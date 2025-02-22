@@ -210,6 +210,7 @@
                 </div>
             </div>
         </section>
+        <div class="placeholder w300 h20" id="mb-placeholder" style="display: none;"></div>
         <section class="dt-section" id="project-description" data-tagname="project-description">
             <div class="dt-description">
                 <div class="dt-des-header">
@@ -461,6 +462,7 @@
                 document.querySelector(".mb-trailer-container").style.display = "flex";
                 document.querySelector(".mb-image-slider").style.display = "flex";
                 document.getElementById("mobile-header").style.display = "block";
+                document.getElementById("mb-placeholder").style.display = "block";
                 // Removing Desktop Elements
                 document.querySelector(".dt-trailer-container").style.display = "none";
                 document.querySelector(".dt-image-slider").style.display = "none";
@@ -470,10 +472,11 @@
                 document.querySelector(".dt-p-header").style.display = "block";
                 document.querySelector(".dt-main").style.display = "block";
                 document.querySelector(".dt-footer").style.display = "block";
-                // Mobile Elements
+                // Removing Mobile Elements
                 document.querySelector(".mb-trailer-container").style.display = "none";
                 document.querySelector(".mb-image-slider").style.display = "none";
                 document.getElementById("mobile-header").style.display = "none";
+                document.getElementById("mb-placeholder").style.display = "none";
                 return "desktop";
             }
         }
