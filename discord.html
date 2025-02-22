@@ -303,7 +303,7 @@
                 document.querySelector(".dt-p-header").style.display = "none";
                 document.querySelector(".dt-main").style.display = "block";
                 document.querySelector(".dt-footer").style.display = "block";
-                document.getElementById("cookie-banner").style.display = "none";
+                document.getElementById("cookie-banner").remove();
                 return "mobile";
             } else {
                 document.querySelector(".dt-p-header").style.display = "block";
