@@ -8,10 +8,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400&family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assests/global/style.css">
     <link rel="stylesheet" href="assests/global/header/navbar-style.css">
-    <link rel="stylesheet" href="../assests/global/header/mobile-style.css">
+    <link rel="stylesheet" href="assests/global/header/mobile-style.css">
     <link rel="stylesheet" href="assests/global/main/basic-style.css">
     <link rel="stylesheet" href="assests/pages/download/style.css">
     <link rel="stylesheet" href="assests/global/footer/legal.css">
+    <link rel="stylesheet" href="assests/global/header/mobile-style.css">
+    <link rel="stylesheet" href="assests/pages/download/mobile-style.css">
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
@@ -19,9 +21,6 @@
 
         gtag('config', 'G-1CGCZF5S7L');
     </script>
-    <!-- Mobile -->
-    <link rel="stylesheet" href="assests/global/header/mobile-style.css">
-    <link rel="stylesheet" href="assests/pages/download/mobile-style.css">
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4788944561931875" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -187,6 +186,7 @@
         </div>
     </header>
     <main class="dt-main" style="display: block;">
+        <div class="placeholder w300 h30" id="mb-placeholder" style="display: none;"></div>
         <section class="dt-section" id="download-area" data-tagname="download-area">
             <div class="dt-download">
                 <div class="dt-download-header">
@@ -214,6 +214,11 @@
                     </div>
                 </div>
                 <div class="placeholder w1000 h20"></div>
+                <!-- Mobile -->
+                <div class="mb-download-table" style="display: none;">
+                    <img src="assests/images/download/Mobile-Download-Table.png" style="width: 100%;">
+                </div>
+                <!-- Desktop -->
                 <div class="dt-download-table">
                     <table class="dt-table" style="border-top: none; cursor: pointer;">
                         <thead class="dt-thead" style="border-top: none">
@@ -535,11 +540,8 @@
                 document.getElementById("mb-placeholder").style.display = "block";
                 document.getElementById("cookie-banner").remove();
                 // Table
-                document.querySelectorAll("dt-td-date").forEach(el => {
-                    el.style.display = "none";
-                    el.remove();
-                });
-                document.getElementById("cookie-banner").remove();
+                document.querySelector(".mb-download-table").style.display = "block";
+                document.querySelector(".dt-download-table").style.display = "block";
                 return "mobile";
             } else {
                 document.querySelector(".mb-p-header").style.display = "none";

@@ -51,6 +51,11 @@
     width: 1000px;
 }
 
+/* Mobile Table */
+.mb-download-table {
+
+}
+
 /* Table */
 .dt-table {
     font-size: 20px;
@@ -346,11 +351,6 @@ li {
 
 .mb-download-project-information-text-bottom {
     width: auto;
-}
-
-.mb-download-table {
-    margin: 0 auto;
-    width: 1000px;
 }
 
 /* Table */
