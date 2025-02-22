@@ -452,6 +452,7 @@
             if (/mobile|android|iphone|ipad|ipod|blackberry|windows phone/i.test(userAgent)) {
                 document.querySelector(".dt-p-header").style.display = "none";
                 document.querySelector(".dt-main").style.display = "block";
+                document.querySelector(".dt-footer").style.display = "block";
                 document.querySelector(".dt-p-header").remove();
                 document.getElementById("cookie-banner").remove();
                 // Mobile Elements
@@ -461,6 +462,7 @@
                 // Removing Desktop Elements
                 document.querySelector(".dt-trailer-container").style.display = "none";
                 document.querySelector(".dt-image-slider").style.display = "none";
+                document.getElementById("download-count").style.display = "none";
                return "mobile";
             } else {
                 document.querySelector(".dt-p-header").style.display = "block";
