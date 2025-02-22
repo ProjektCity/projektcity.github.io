@@ -46,21 +46,3 @@ if (localStorage.getItem('cookiesAccepted')) {
 document.getElementById("close-cookie-banner").addEventListener("click", function() {
     document.querySelector('.cookie-banner').remove();
 });
-
-// Mobile Navbar
-document.getElementById("menu-opener").addEventListener("click", function() {
-    const menu = document.getElementById("mb-menu");
-    if (menu.style.display === "block") {
-        document.querySelector(".mb-bottom-menu").classList.add("hidden");
-        document.querySelector(".mb-bottom-items").style.display = "none";
-        setTimeout(() => {
-            document.querySelector(".mb-bottom-menu").classList.remove("hidden");
-            document.querySelector(".mb-bottom-menu").style.display = "none";
-        }, 250);
-    } else {
-        menu.style.display = "block";
-        setTimeout(() => {
-            document.querySelector(".mb-bottom-items").style.display = "flex";
-        }, 175);
-    }
-});
