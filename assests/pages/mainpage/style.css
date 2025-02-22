@@ -247,6 +247,10 @@
     width: 711px;
 }
 
+.flexible-iframe {
+    
+}
+
 iframe {
     border-radius: 7.5px;
 }
@@ -259,6 +263,12 @@ iframe {
     font-weight: 200;
 }
 
+.flexible-img {
+    height: auto;
+    width: 100%;
+}
+
+/* FAQ Container */
 .dt-faq-container {
     font-size: 20px;
     font-weight: 200;

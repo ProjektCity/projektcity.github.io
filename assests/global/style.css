@@ -54,6 +54,9 @@ html, body {
 /* Classes */
 .header1 {
     text-align: center;
+    height: auto;
+    min-width: 300px;
+    max-width: 1150px;
 }
 
 /* Basic header style */
