@@ -31,11 +31,17 @@
 })();
 
 // Cookie Banner
+document.querySelector(".cb-close-btn").addEventListener("click", function() {
+    document.querySelector('.cookie-banner').style.display = 'none';
+    document.querySelector('.cookie-banner').remove();
+    console.log("New user did not accept cookies!")
+});
+
 function acceptCookies() {
     document.querySelector('.cookie-banner').style.display = 'none';
     document.querySelector('.cookie-banner').remove();
     localStorage.setItem('cookiesAccepted', 'true');
-    console.log("New user accepted cookies! User action was saved into cache.");
+    console.log("New user accepted cookies! Action was saved into cache.");
 }
 
 if (localStorage.getItem('cookiesAccepted')) {
