@@ -392,6 +392,24 @@
     </div>
     <script src="../assests/global/script.js"></script>
     <script>
+        // Mobile Navbar
+        document.getElementById("menu-opener").addEventListener("click", function() {
+            const menu = document.getElementById("mb-menu");
+            if (menu.style.display === "block") {
+                document.querySelector(".mb-bottom-menu").classList.add("hidden");
+                document.querySelector(".mb-bottom-items").style.display = "none";
+                setTimeout(() => {
+                    document.querySelector(".mb-bottom-menu").classList.remove("hidden");
+                    document.querySelector(".mb-bottom-menu").style.display = "none";
+                }, 250);
+            } else {
+                menu.style.display = "block";
+                setTimeout(() => {
+                    document.querySelector(".mb-bottom-items").style.display = "flex";
+                }, 175);
+            }
+        });
+
         document.getElementById("download-v3-0").addEventListener('click', function() {
             window.open("https://www.curseforge.com/minecraft/worlds/projekt-city/download/4326053", "_blank")
         });
@@ -409,7 +427,7 @@
                     el.style.fontSize = "20px";
                 });
                 document.getElementById("cookie-banner").remove();
-                document.getElementById("download-v5-0").remove();
+                document.getElementById("download-v3-0").remove();
                 document.querySelectorAll(".dt-dwnld-td-c3").forEach(el => {
                     el.remove();
                 });
@@ -449,24 +467,6 @@
 
         console.log(`set-userdevice=${deviceType}`);
         console.log(`set-userbrowser=${browser}`);
-        
-        // Mobile Navbar
-        document.getElementById("menu-opener").addEventListener("click", function() {
-            const menu = document.getElementById("mb-menu");
-            if (menu.style.display === "block") {
-                document.querySelector(".mb-bottom-menu").classList.add("hidden");
-                document.querySelector(".mb-bottom-items").style.display = "none";
-                setTimeout(() => {
-                    document.querySelector(".mb-bottom-menu").classList.remove("hidden");
-                    document.querySelector(".mb-bottom-menu").style.display = "none";
-                }, 250);
-            } else {
-                menu.style.display = "block";
-                setTimeout(() => {
-                    document.querySelector(".mb-bottom-items").style.display = "flex";
-                }, 175);
-            }
-        });
     </script>
 </body>
 </html>
