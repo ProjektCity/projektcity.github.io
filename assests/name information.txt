@@ -1,3 +1,0 @@
-gh- Global Header element
-gm- Global Main Content element
-gf- Global Footer element
