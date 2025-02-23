@@ -356,13 +356,14 @@
                     el.style.fontSize = "20px";
                     el.style.lineHeight = "30px";
                 });
-                document.getElementById("mobile-header").style.display = "block";
-                document.querySelector(".dt-p-header").style.display = "none";
-                document.querySelector(".dt-main").style.display = "block";
-                document.getElementById("mb-placeholder").style.display = "block";
                 document.getElementById("cookie-banner").remove();
                 return "mobile";
             } else {
+                document.getElementById("mobile-header").remove();
+                document.querySelector(".dt-p-header").style.display = "block";
+                document.querySelector(".dt-main").style.display = "block";
+                document.querySelector(".dt-footer").style.display = "block";
+                document.querySelector(".dt-p-header").style.display = "block";
                 document.querySelector(".dt-p-header").style.display = "block";
                 return "desktop";
             }
@@ -394,6 +395,24 @@
 
         console.log(`set-userdevice=${deviceType}`);
         console.log(`set-userbrowser=${browser}`);
+        
+        // Mobile Navbar
+        document.getElementById("menu-opener").addEventListener("click", function() {
+            const menu = document.getElementById("mb-menu");
+            if (menu.style.display === "block") {
+                document.querySelector(".mb-bottom-menu").classList.add("hidden");
+                document.querySelector(".mb-bottom-items").style.display = "none";
+                setTimeout(() => {
+                    document.querySelector(".mb-bottom-menu").classList.remove("hidden");
+                    document.querySelector(".mb-bottom-menu").style.display = "none";
+                }, 250);
+            } else {
+                menu.style.display = "block";
+                setTimeout(() => {
+                    document.querySelector(".mb-bottom-items").style.display = "flex";
+                }, 175);
+            }
+        });
     </script>
 </body>
 </html>

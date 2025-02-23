@@ -289,20 +289,12 @@
             </div>
         </div>
     </div>
-    <div id="mobile-information" style="display: none;">
-        <a>Projekt City is not yet supported on mobile devices!</a>
-        <br>
-        <a>Please switch to a desktop or use our old website.</a>
-    </div>
     <script src="../assests/global/header/navbar-script.js"></script>
     <script src="../assests/global/script.js"></script>
     <script>
         function getDeviceType() {
             const userAgent = navigator.userAgent.toLowerCase();
             if (/mobile|android|iphone|ipad|ipod|blackberry|windows phone/i.test(userAgent)) {
-                // document.querySelector(".mb-p-header").style.display = "block";
-                // document.querySelector(".mb-main").style.display = "block";
-                // document.querySelector(".mb-footer").style.display = "block";
                 document.getElementById("mobile-information").style.display = "block";
                 document.querySelector(".dt-p-header").style.display = "none";
                 document.querySelector(".dt-main").style.display = "none";
@@ -316,16 +308,10 @@
                 window.open("https://itsmarian.wixsite.com/helpcenter?utm_src=githubpage-mobile-device-detector-script&utm_medium=projektcity&utm_content=%3Ca%3EProjekt%20City%20is%20not%20yet%20supported%20on%20mobile%20devices%21%3C%2Fa%3E%3Cbr%3E%3Ca%3EPlease%20switch%20to%20a%20desktop%20or%20use%20our%20old%20website%2E%3C%2Fa%3E", "_parent")
                 return "mobile";
             } else {
-                // document.querySelector(".mb-p-header").style.display = "none";
-                // document.querySelector(".mb-main").style.display = "none";
-                // document.querySelector(".mb-footer").style.display = "none";
+                document.getElementById("mobile-header").remove();
                 document.querySelector(".dt-p-header").style.display = "block";
                 document.querySelector(".dt-main").style.display = "block";
                 document.querySelector(".dt-footer").style.display = "block";
-                // document.querySelector(".mb-p-header").remove();
-                // document.querySelector(".mb-main").remove();
-                // document.querySelector(".mb-footer").remove();
-                document.getElementById("mobile-information").remove();
                 return "desktop";
             }
         }
@@ -356,6 +342,24 @@
 
         console.log(`set-userdevice=${deviceType}`);
         console.log(`set-userbrowser=${browser}`);
+        
+        // Mobile Navbar
+        document.getElementById("menu-opener").addEventListener("click", function() {
+            const menu = document.getElementById("mb-menu");
+            if (menu.style.display === "block") {
+                document.querySelector(".mb-bottom-menu").classList.add("hidden");
+                document.querySelector(".mb-bottom-items").style.display = "none";
+                setTimeout(() => {
+                    document.querySelector(".mb-bottom-menu").classList.remove("hidden");
+                    document.querySelector(".mb-bottom-menu").style.display = "none";
+                }, 250);
+            } else {
+                menu.style.display = "block";
+                setTimeout(() => {
+                    document.querySelector(".mb-bottom-items").style.display = "flex";
+                }, 175);
+            }
+        });
     </script>
 </body>
 </html>
