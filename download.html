@@ -246,7 +246,7 @@
                 </div>
                 <div class="placeholder w1000 h20"></div>
                 <!-- Mobile Table -->
-                <div class="mb-download-table" style="display: block;">
+                <div class="mb-download-table" style="display: none;">
                     <table class="mb-table" style="border-top: none; cursor: pointer;">
                         <thead class="mb-thead" style="border-top: none">
                             <tr class="mb-tr" style="border-top: none">
@@ -751,6 +751,7 @@
         function getDeviceType() {
             const userAgent = navigator.userAgent.toLowerCase();
             if (/mobile|android|iphone|ipad|ipod|blackberry|windows phone/i.test(userAgent)) {
+                document.querySelector(".mb-download-table").style.display = "block";
                 document.getElementById("mobile-header").style.display = "block";
                 document.querySelector(".dt-p-header").style.display = "none";
                 document.querySelector(".dt-main").style.display = "block";
