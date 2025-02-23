@@ -42,20 +42,3 @@ if (localStorage.getItem('cookiesAccepted')) {
     document.querySelector('.cookie-banner').remove();
     console.log("User already accepted cookies. Cookie banner removed.");
 }
-
-// Share Button
-document.getElementById('shareButton').addEventListener('click', async () => {
-    if (navigator.share) {
-        try {
-            await navigator.share({
-                title: 'Projekt City - by SuffixHD & itsmarian',
-                text: 'Check out the official Projekt City website and play it for FREE today. \nWebsite: ',
-                url: 'https://bit.ly/ProjektCity',
-            });
-        } catch (error) {
-            console.error('Error sharing:', error);
-        }
-    } else {
-        alert('Sharing is not supported in this browser.');
-    }
-});
