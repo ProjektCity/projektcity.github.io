@@ -51,9 +51,8 @@
     width: 1000px;
 }
 
-/* Mobile Table */
-.mb-download-table {
-
+.dt-dwnld-cl-ul {
+    font-size: 25px;
 }
 
 /* Table */
