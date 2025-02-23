@@ -217,7 +217,7 @@
         </div>
     </header>
     <main class="dt-main">
-        <div class="placeholder w300 h30" id="mb-placeholder" style="display: none;"></div>
+        <div class="placeholder w300 h60" id="mb-placeholder" style="display: none;"></div>
         <section class="dt-section" id="header-information">
             <div class="dt-legal-header">
                 <h1>Privacy Policy</h1>
@@ -1143,6 +1143,7 @@
         function getDeviceType() {
             const userAgent = navigator.userAgent.toLowerCase();
             if (/mobile|android|iphone|ipad|ipod|blackberry|windows phone/i.test(userAgent)) {
+                document.querySelector(".dt-p-header").style.display = "none";
                 document.querySelectorAll(".dt-legal-text-section").forEach(el => {
                     el.style.fontSize = "20px";
                     el.style.lineHeight = "30px";
