@@ -401,6 +401,27 @@
     </div>
     <script src="../assests/global/script.js"></script>
     <script>
+        document.getElementById("download-v2-0").addEventListener('click', function() {
+            window.open("https://www.curseforge.com/minecraft/worlds/projekt-city/download/4283975", "_blank")
+        });
+        
+        // Share Button
+        document.getElementById('shareButton').addEventListener('click', async () => {
+            if (navigator.share) {
+                try {
+                    await navigator.share({
+                        title: 'Projekt City - by SuffixHD & itsmarian',
+                        text: 'Check out the official Projekt City website and play it for FREE today.',
+                        url: 'https://bit.ly/ProjektCity',
+                    });
+                } catch (error) {
+                    console.error('Error sharing:', error);
+                }
+            } else {
+                alert('Sharing is not supported in this browser.');
+            }
+        });
+        
         // Mobile Navbar
         document.getElementById("menu-opener").addEventListener("click", function() {
             const menu = document.getElementById("mb-menu");
@@ -419,10 +440,6 @@
             }
         });
 
-        document.getElementById("download-v2-0").addEventListener('click', function() {
-            window.open("https://www.curseforge.com/minecraft/worlds/projekt-city/download/4283975", "_blank")
-        });
-        
         function getDeviceType() {
             const userAgent = navigator.userAgent.toLowerCase();
             if (/mobile|android|iphone|ipad|ipod|blackberry|windows phone/i.test(userAgent)) {
