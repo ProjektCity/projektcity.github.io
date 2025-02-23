@@ -218,14 +218,26 @@
     <main class="dt-main">
         <div class="placeholder w300 h30" id="mb-placeholder" style="display: none;"></div>
         <section class="dt-section" id="discord-callback" data-tagname="discord-callback">
-            <div class="dt-discord-header">
-                <h1>Projekt City Authorization</h1>
-            </div>
-            <div id="successmsg" style="display: none;">
-                <a>Success</a>
-            </div>
-            <div id="errormsg" style="display: none;">
-                <a>Error</a>
+            <div class="dt-discord-container">
+                <div class="placeholder w300 h15"></div>
+                <div class="dt-discord-header">
+                    <h1>Projekt City Authorization</h1>
+                </div>
+                <div class="placeholder w300 h15"></div>
+                <div style="background-color: #fff; height: 1px; margin: 0 auto; width: 88%;"></div>
+                <div class="placeholder w300 h15"></div>
+                <div id="successmsg" style="display: none;">
+                    <h3 class="bold">SUCCESS</h3>
+                    <a>The authentication was successful. You can now close this window.</a>
+                    <div class="placeholder w300 h20"></div>
+                    <a style="font-size: 10px;">Authorization Code:</a>
+                    <a id="successID"></a>
+                </div>
+                <div id="errormsg" style="display: none;">
+                    <h3 class="bold">ERROR</h3>
+                    <div class="placeholder w300 h20"></div>
+                    <a id="errorDescription"></a>
+                </div>
             </div>
         </section>
     </main>
@@ -300,18 +312,20 @@
         // Discord Callback
         window.addEventListener("DOMContentLoaded", () => {
             const urlParams = new URLSearchParams(window.location.search);
-            const successmsg = document.getElementById('successmsg-frame');
-            const errormsg = document.getElementById('errormsg-frame');
-            const messageContainer = document.getElementById('message-container');
+            const successmsg = document.getElementById("successmsg");
+            const errormsg = document.getElementById("errormsg");
+            const errorDescription = document.getElementById("errorDescription");
+            const authorizationCode = document.getElementById("successID");
 
             if (urlParams.has('code')) {
                 successmsg.style.display = 'block';
-                messageContainer.innerText = `Authorization Code: ${urlParams.get('code')}`;
+                authorizationCode.innerText = `${urlParams.get('code')}`;
             } else if (urlParams.has('error')) {
                 errormsg.style.display = 'block';
-                messageContainer.innerText = `Error: ${urlParams.get('error')}\nDescription: ${urlParams.get('error_description')}`;
+                errorDescription.innerHTML = `<a style="color: #fff; text-decoration: underline;">Error type:</a><a style="color: #fff;">&nbsp;${urlParams.get('error')}</a><br><a style="color: #ff9898; text-decoration: underline;">Description:</a><a style="color: #ff9898;">&nbsp;${urlParams.get('error_description')}</a>`;
             } else {
                 errormsg.style.display = 'block';
+                errorDescription.innerText = `No callback code recieved.`;
             }
         });
 
