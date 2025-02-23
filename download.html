@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="assests/global/main/basic-style.css">
     <link rel="stylesheet" href="assests/global/footer/legal.css">
     <link rel="stylesheet" href="assests/global/header/mobile-style.css">
+    <!-- Indivual Page Stylesheet -->
     <link rel="stylesheet" href="assests/pages/download/style.css">
     <link rel="stylesheet" href="assests/pages/download/mobile-style.css">
     <!-- Google tag (gtag.js) -->
@@ -788,12 +789,13 @@
         function getDeviceType() {
             const userAgent = navigator.userAgent.toLowerCase();
             if (/mobile|android|iphone|ipad|ipod|blackberry|windows phone/i.test(userAgent)) {
-                document.querySelector(".mb-download-table").style.display = "block";
                 document.getElementById("mobile-header").style.display = "block";
                 document.querySelector(".dt-p-header").style.display = "none";
                 document.querySelector(".dt-main").style.display = "block";
                 document.querySelector(".dt-footer").style.display = "block";
                 document.getElementById("mb-placeholder").style.display = "block";
+                document.querySelector(".mb-download-table").style.display = "block";
+                document.querySelector(".dt-download-table").style.display = "none";
                 document.getElementById("cookie-banner").style.display = "none";
                 document.getElementById("cookie-banner").remove();
                 document.querySelectorAll(".dt-gf-div-line").forEach(el => {
