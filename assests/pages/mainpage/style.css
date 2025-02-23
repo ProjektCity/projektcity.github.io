@@ -108,6 +108,11 @@
     font-size: 30px;
 }
 
+/* Download with Python */
+.dt-downloadwith-container {
+    font-size: 22px;
+}
+
 /* Images */
 .dt-image-slider {
     font-family: Arial, sans-serif;
