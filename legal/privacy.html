@@ -1146,12 +1146,15 @@
             const userAgent = navigator.userAgent.toLowerCase();
             if (/mobile|android|iphone|ipad|ipod|blackberry|windows phone/i.test(userAgent)) {
                 document.querySelector(".dt-p-header").style.display = "none";
+                document.getElementById("mb-placeholder").style.display = "block";
+                document.getElementById("cookie-banner").remove();
                 document.querySelectorAll(".dt-legal-text-section").forEach(el => {
                     el.style.fontSize = "20px";
                     el.style.lineHeight = "30px";
                 });
-                document.getElementById("mb-placeholder").style.display = "block";
-                document.getElementById("cookie-banner").remove();
+                document.querySelectorAll(".dt-gf-div-line").forEach(el => {
+                    el.style.fontSize = "13px";
+                });
                 return "mobile";
             } else {
                 document.getElementById("mobile-header").remove();

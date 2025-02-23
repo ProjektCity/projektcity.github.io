@@ -426,6 +426,9 @@
                 document.getElementById("mb-placeholder").style.display = "block";
                 document.getElementById("cookie-banner").style.display = "none";
                 document.getElementById("cookie-banner").remove();
+                document.querySelectorAll(".dt-gf-div-line").forEach(el => {
+                    el.style.fontSize = "13px";
+                });
                 return "mobile";
             } else {
                 document.getElementById("mobile-header").remove();
