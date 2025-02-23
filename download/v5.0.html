@@ -28,7 +28,6 @@
     </script>
 </head>
 <body>
-    <!-- Global Header -->
     <header class="dt-p-header" style="display: block;">
         <div class="dt-gh-ui-navbar">
             <div class="dt-head">
@@ -113,7 +112,6 @@
             </div>
         </div>
     </header>
-    <!-- Mobile Header -->
     <header id="mobile-header">
         <div class="mb-header-fixed">
             <div class="mb-gh-ui-navbar">
@@ -716,7 +714,7 @@
                 });
                 return "mobile";
             } else {
-                document.getElementById("mobile-header").remove();
+                document.getElementById("mobile-header").style.display = "none";
                 document.querySelector(".dt-main").style.display = "block";
                 document.querySelector(".dt-footer").style.display = "block";
                 document.querySelector(".dt-p-header").style.display = "block";
