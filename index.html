@@ -475,6 +475,24 @@
     <script src="assests/pages/mainpage/script.js"></script>
     <script src="assests/pages/mainpage/purecounter.js"></script>
     <script>
+        // Mobile Navbar
+        document.getElementById("menu-opener").addEventListener("click", function() {
+            const menu = document.getElementById("mb-menu");
+            if (menu.style.display === "block") {
+                document.querySelector(".mb-bottom-menu").classList.add("hidden");
+                document.querySelector(".mb-bottom-items").style.display = "none";
+                setTimeout(() => {
+                    document.querySelector(".mb-bottom-menu").classList.remove("hidden");
+                    document.querySelector(".mb-bottom-menu").style.display = "none";
+                }, 250);
+            } else {
+                menu.style.display = "block";
+                setTimeout(() => {
+                    document.querySelector(".mb-bottom-items").style.display = "flex";
+                }, 175);
+            }
+        });
+
         function getDeviceType() {
             const userAgent = navigator.userAgent.toLowerCase();
             if (/mobile|android|iphone|ipad|ipod|blackberry|windows phone/i.test(userAgent)) {
@@ -498,6 +516,9 @@
                 document.querySelector(".dt-special-information").style.fontSize = "5px";
                 document.querySelectorAll(".dt-map-content-text").forEach(el => {
                     el.style.fontSize = "18px";
+                });
+                document.querySelectorAll(".dt-gf-div-line").forEach(el => {
+                    el.style.fontSize = "9px";
                 });
                return "mobile";
             } else {
@@ -539,24 +560,6 @@
 
         console.log(`set-userdevice=${deviceType}`);
         console.log(`set-userbrowser=${browser}`);
-
-        // Mobile Navbar
-        document.getElementById("menu-opener").addEventListener("click", function() {
-            const menu = document.getElementById("mb-menu");
-            if (menu.style.display === "block") {
-                document.querySelector(".mb-bottom-menu").classList.add("hidden");
-                document.querySelector(".mb-bottom-items").style.display = "none";
-                setTimeout(() => {
-                    document.querySelector(".mb-bottom-menu").classList.remove("hidden");
-                    document.querySelector(".mb-bottom-menu").style.display = "none";
-                }, 250);
-            } else {
-                menu.style.display = "block";
-                setTimeout(() => {
-                    document.querySelector(".mb-bottom-items").style.display = "flex";
-                }, 175);
-            }
-        });
     </script>
 </body>
 </html>
