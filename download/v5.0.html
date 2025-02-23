@@ -341,7 +341,7 @@
                         </ul>
                         <div class="placeholder w1000 h20"></div>
                         <p>The next update will include:</p>
-                        <ul>
+                        <ul class="dt-dwnld-cl-ul">
                             <li>[V5.0.1] General improvement of the map</li>
                             <li>[V5.1] Flying planes and Airport</li>
                             <li>[V5.2] City Update (Building all houses, adding Redstone and power System, and much more)</li>
@@ -443,13 +443,13 @@
                 document.querySelector(".dt-main").style.display = "block";
                 document.querySelector(".dt-footer").style.display = "block";
                 document.querySelector(".dt-download-project-information-text-bottom").style.fontSize = "25px";
-                document.getElementById(".dt-dwnld-cl-ul").forEach(el => {
-                    el.style.fontSize = "20px";
-                });
                 document.getElementById("cookie-banner").remove();
                 document.getElementById("download-v5-0").remove();
                 document.querySelectorAll(".dt-dwnld-td-c3").forEach(el => {
                     el.remove();
+                });
+                document.querySelectorAll(".dt-dwnld-cl-ul").forEach(el => {
+                    el.style.fontSize = "20px";
                 });
                 return "mobile";
             } else {
