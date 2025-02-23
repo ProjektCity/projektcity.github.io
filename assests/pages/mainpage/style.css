@@ -113,6 +113,15 @@
     font-size: 22px;
 }
 
+.dt-downloadwith-line {
+    display: flex;
+}
+
+.dt-downloadwith-left {
+    font-weight: 400;
+    margin-right: 5px;
+}
+
 /* Images */
 .dt-image-slider {
     font-family: Arial, sans-serif;
