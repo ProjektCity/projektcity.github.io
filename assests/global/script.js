@@ -44,7 +44,9 @@ function acceptCookies() {
     console.log("New user accepted cookies! Action was saved into cache.");
     gtag("consent", "update", {
         analytics_storage: "granted",
-        ad_storage: "granted"
+        ad_personalization: "granted",
+        ad_storage: "granted",
+        ad_user_data: "granted",
     });
 }
 
