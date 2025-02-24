@@ -50,7 +50,7 @@ function allConsentGranted() {
         'ad_storage': 'granted',
         'ad_user_data': 'granted',
         'ad_personalization': 'granted',
-        'analytics_storage': 'granted'
+        'analytics_storage': 'granted',
       });
   }
 
