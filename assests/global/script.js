@@ -42,6 +42,10 @@ function acceptCookies() {
     document.querySelector('.cookie-banner').remove();
     localStorage.setItem('cookiesAccepted', 'true');
     console.log("New user accepted cookies! Action was saved into cache.");
+    gtag("consent", "update", {
+        analytics_storage: "granted",
+        ad_storage: "granted"
+    });
 }
 
 if (localStorage.getItem('cookiesAccepted')) {
