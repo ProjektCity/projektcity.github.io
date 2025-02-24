@@ -83,7 +83,7 @@ h3 {
 }
 
 h4 {
-    font-weight: 300;
+    font-weight: 400;
     font-size: 30px;
 }
 
@@ -332,7 +332,7 @@ p {
 .cb-right-btns {
     min-height: 46px;
     max-height: 140px;
-    width: 188px;
+    width: 400px;
 }
 
 .cb-right-btns-inner {
@@ -389,9 +389,9 @@ p {
 .legal-btn {
     border: 1px solid #fff;
     cursor: pointer;
-    height: 50px;
+    height: 36px;
     margin: 5px;
-    width: 100px;
+    width: 200px;
 }
 
 .legal-btn:hover {
@@ -399,8 +399,179 @@ p {
 }
 
 .legal-btn-inner {
-    font-size: 12px;
-    height: 17px;
-    margin-bottom: 16.5px;
-    margin-top: 16.5px;
+    font-size: 15px;
+    height: 21px;
+    margin-bottom: 8px;
+    margin-top: 7px;
+    width: 200px;
+}
+
+/* Cookie Container */
+.cookie-selector-background {
+    background-color: #000;
+    bottom: 0;
+    color: #fff;
+    display: none;
+    left: 0;
+    height: 100%;
+    opacity: 0.5;;
+    padding: 15px;
+    position: fixed;
+    text-align: center;
+    width: 100%;
+    z-index: 1000; 
+}
+
+.cookie-selector {
+    background-color: #24262B;
+    border-radius: 10px;
+    bottom: 0;
+    color: #fff;
+    display: none;
+    height: 500px;
+    left: 50%;
+    margin: 0 auto;
+    padding: 15px;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 750px;
+    z-index: 1000;
+}
+
+.cookie-container {
+
+}
+
+.cookie-chooser-header {
+
+}
+
+.cookie-chooser-maincontent {
+
+}
+
+.cookie-chooser-actions {
+    height: 375px;
+    overflow-y: scroll;
+    text-align: left;
+}
+
+.cookie-chooser-action {
+    display: flex;
+}
+
+.cookie-chooser-left {
+    float: left;
+    width: 697.5px;
+}
+
+.cookie-chooser-header {
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.cookie-chooser-description {
+    font-size: 11px;
+    font-weight: 300;
+}
+
+.cookie-chooser-switcher:disabled {
+    cursor: pointer;
+}
+
+.cookie-hr {
+    background-color: #ccc;
+    height: 0.5px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+.cookie-chooser-bottom {
+    
+}
+
+.cookie-chooser-bottom-inner {
+    display: flex;
+}
+
+.cookie-bottom-close-button {
+    border: 1px solid #fff;
+    cursor: pointer;
+    border-radius: 5px;
+    height: 30px;
+    margin: 2.5px;
+    width: 30px;
+}
+
+.cookie-bottom-close-btn {
+
+}
+
+.cookie-bottom-button {
+    border: 1px solid #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    height: 30px;
+    margin: 2.5px;
+    width: 198.4px;
+}
+
+.cookie-bottom-btn {
+    height: 22.4;
+    margin-bottom: 1.3px;
+    margin-top: 2.5px;
+}
+
+/* IDs */
+.cookie-checkbox {
+    height: 38.18px;
+    margin-top: 0px;
+    position: relative;
+    width: 38.18px;
+}
+
+#neccessarryCookies {
+    cursor: not-allowed;
+}
+
+#statisticAndAnalyticsCookies {
+    cursor: pointer;
+}
+
+#preferencesAndPersonalizationCookies {
+    cursor: pointer;
+}
+
+#marketingAndAdvertisementCookies {
+    cursor: pointer;
+}
+
+#unclassifiedCookies {
+    cursor: pointer;
+}
+
+/* Checkbox */
+
+input[type="checkbox"] {
+    appearance: none;
+    background-color: #24262B;
+    border: 1px solid #fff;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+input[type="checkbox"]::before {
+    content: "✔";
+    font-size: 25px;
+    color: transparent;
+}
+
+input[type="checkbox"]:checked::before {
+    color: #fff;
 }
