@@ -42,13 +42,17 @@ function acceptCookies() {
     document.querySelector('.cookie-banner').remove();
     localStorage.setItem('cookiesAccepted', 'true');
     console.log("New user accepted cookies! Action was saved into cache.");
-    gtag("consent", "update", {
-        analytics_storage: "granted",
-        ad_personalization: "granted",
-        ad_storage: "granted",
-        ad_user_data: "granted",
-    });
+    allConsentGranted()
 }
+
+function allConsentGranted() {
+    gtag('consent', 'update', {
+      'ad_user_data': 'granted',
+      'ad_personalization': 'granted',
+      'ad_storage': 'granted',
+      'analytics_storage': 'granted'
+    });
+  }
 
 if (localStorage.getItem('cookiesAccepted')) {
     document.querySelector('.cookie-banner').remove();
