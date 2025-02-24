@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", function () {
         'ad_user_data': 'denied',
         'ad_personalization': 'denied',
         'analytics_storage': 'denied',
-        'functionality_storage': 'granted',
+        'functionality_storage': 'denied',
         'personalization_storage': 'denied',
         'security_storage': 'denied'
     });
@@ -75,9 +75,6 @@ document.getElementById("acceptCookiesAndCloseBanner").addEventListener("click",
     acceptCookies()
     document.getElementById("cookie-banner").remove();
 });
-
-// ------------------------------------------------------
-
 // Cookie selector/chooser
 
 // UI
