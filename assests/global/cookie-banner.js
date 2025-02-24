@@ -18,6 +18,11 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
+if (localStorage.getItem('cookiesAccepted')) {
+    document.querySelector('.cookie-banner').remove();
+    console.log("User already accepted cookies. Cookie banner removed.");
+}
+
 function acceptCookies() {
     document.querySelector('.cookie-banner').style.display = 'none';
     document.querySelector('.cookie-banner').remove();
@@ -34,12 +39,22 @@ function acceptCookies() {
     console.log("User accepted all cookies: set the values 'ad_storage', 'ad_user_data', 'ad_personalization', 'analytics_storage', 'functionality_storage', 'personalization_storage' and 'security_storage' to granted!")
 }
 
-function manageCookies() {
+function openCookieMenu() {
     document.getElementById("cookie-selector").style.display = "block";
     document.querySelector(".cookie-selector-background").style.display = "block";
     document.documentElement.style.overflowY = "hidden";
 }
 
+// Banner Options
+document.getElementById("acceptCookies").addEventListener("click", function() {
+    acceptCookies();
+});
+
+document.getElementById("cookieManager").addEventListener("click", function() {
+    openCookieMenu();
+});
+
+// Menu Options
 document.querySelector(".cookie-bottom-close-button").addEventListener("click", function() {
     document.getElementById("cookie-selector").style.display = "none";
     document.querySelector(".cookie-selector-background").style.display = "none";
@@ -60,21 +75,12 @@ document.getElementById("acceptCookiesAndCloseBanner").addEventListener("click",
     acceptCookies()
     document.getElementById("cookie-banner").remove();
 });
-// if (localStorage.getItem('cookiesAccepted')) {
-//    document.querySelector('.cookie-banner').remove();
-//    console.log("User already accepted cookies. Cookie banner removed.");
-//}
 
 // ------------------------------------------------------
-
-
-
 
 // Cookie selector/chooser
 
 // UI
-
-
 window.onload = function() {
     document.getElementById("statisticAndAnalyticsCookies").addEventListener('change', statisticAndAnalyticsCookies);
     document.getElementById("preferencesAndPersonalizationCookies").addEventListener('change', preferencesAndPersonalizationCookies);
