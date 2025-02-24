@@ -1,6 +1,6 @@
 document.querySelector(".cb-close-btn").addEventListener("click", function() {
-    document.querySelector('.cookie-banner').style.display = 'none';
-    document.querySelector('.cookie-banner').remove();
+    document.getElementById("cookie-banner").style.display = 'none';
+    document.getElementById("cookie-banner").remove();
     console.log("New user did not accept cookies!")
 });
 
@@ -16,12 +16,13 @@ document.addEventListener("DOMContentLoaded", function () {
         'personalization_storage': 'denied',
         'security_storage': 'denied'
     });
+    
+    if (localStorage.getItem('cookiesAccepted')) {
+        document.getElementById("cookie-banner").style.display = "none";
+        document.getElementById("cookie-banner").remove();
+        console.log("User already accepted cookies. Cookie banner removed.");
+    }
 });
-
-if (localStorage.getItem('cookiesAccepted')) {
-    document.querySelector('.cookie-banner').remove();
-    console.log("User already accepted cookies. Cookie banner removed.");
-}
 
 function acceptCookies() {
     document.querySelector('.cookie-banner').style.display = 'none';
