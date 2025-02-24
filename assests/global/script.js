@@ -37,6 +37,17 @@ document.querySelector(".cb-close-btn").addEventListener("click", function() {
     console.log("New user did not accept cookies!")
 });
 
+document.addEventListener('DOMContentLoaded', function() {
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('consent', 'default', {
+        'ad_storage': 'denied',
+        'ad_user_data': 'denied',
+        'ad_personalization': 'denied',
+        'analytics_storage': 'denied'
+    });
+});
+
 function acceptCookies() {
     document.querySelector('.cookie-banner').style.display = 'none';
     document.querySelector('.cookie-banner').remove();
