@@ -1,7 +1,10 @@
 document.querySelector(".cb-close-btn").addEventListener("click", function() {
     document.getElementById("cookie-banner").style.display = 'none';
     document.getElementById("cookie-banner").remove();
-    console.log("New user did not accept cookies!")
+    gtag('consent', 'update', {
+        'functionality_storage': 'granted',
+    });
+    console.log("New user did not accept cookies. Only granted functional cookies!")
 });
 
 document.addEventListener("DOMContentLoaded", function () {
