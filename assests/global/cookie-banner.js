@@ -44,11 +44,6 @@ function acceptCookies() {
         'personalization_storage': 'granted',
         'security_storage': 'granted'
     });
-    document.getElementById("neccessarryCookies").checked = true;
-    document.getElementById("statisticAndAnalyticsCookies").checked = true;
-    document.getElementById("preferencesAndPersonalizationCookies").checked = true;
-    document.getElementById("marketingAndAdvertisementCookies").checked = true;
-    document.getElementById("unclassifiedCookies").checked = true;
     console.log("User accepted all cookies: set the values 'ad_storage', 'ad_user_data', 'ad_personalization', 'analytics_storage', 'functionality_storage', 'personalization_storage' and 'security_storage' to granted!")
 }
 
@@ -188,17 +183,14 @@ document.getElementById("mbCookieCloser").addEventListener("click", function() {
 
 document.getElementById("MBstatisticAndAnalyticsCookies").addEventListener("change", function() {
     var checkbox = document.getElementById("MBstatisticAndAnalyticsCookies");
-    if (checkbox.checked) {
-        gtag('consent', 'update', {
-            'analytics_storage': 'granted'
-        });
-        console.log("'analytics_storage' granted!");
-    } else {
-        gtag('consent', 'update', {
-            'analytics_storage': 'denied'
-        });
-        console.log("'analytics_storage' denied!");
-    }
+    
+    gtag('consent', 'update', {
+        'analytics_storage': checkbox.checked ? 'granted' : 'denied'
+    });
+
+    console.log("'analytics_storage' " + (checkbox.checked ? "granted" : "denied") + "!");
+
+    checkbox.checked = checkbox.checked; // Erzwingt UI-Update
 });
 
 document.getElementById("MBpreferencesAndPersonalizationCookies").addEventListener("change", function() {
