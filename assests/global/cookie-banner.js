@@ -14,8 +14,8 @@ document.addEventListener("DOMContentLoaded", function () {
     if (localStorage.getItem('cookiesAccepted')) {
         document.getElementById("cookie-banner").style.display = "none";
         document.getElementById("cookie-banner").remove();
-        document.querySelector(".mb-cookie-banner").remove();
-        document.getElementById("mb-cookie-selector").remove()
+        document.querySelector(".mb-cookie-banner").style.display = "none";
+        document.getElementById("mb-cookie-selector").style.display = "none";
         console.log("User already accepted cookies. Cookie banner removed.");
     } else {
         console.log("NO COOKIES!")
