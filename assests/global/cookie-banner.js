@@ -75,6 +75,7 @@ document.querySelector(".cookie-bottom-close-button").addEventListener("click", 
 });
 
 document.getElementById("cookieSaveChanges").addEventListener("click", function() {
+    localStorage.setItem('cookiesAccepted', 'true');
     document.getElementById("cookie-selector").style.display = "none";;
     document.querySelector(".cookie-selector-background").style.display = "none";
     document.documentElement.style.overflowY = "scroll";
@@ -82,6 +83,7 @@ document.getElementById("cookieSaveChanges").addEventListener("click", function(
 });
 
 document.getElementById("acceptCookiesAndCloseBanner").addEventListener("click", function() {
+    localStorage.setItem('cookiesAccepted', 'true');
     document.getElementById("cookie-selector").style.display = "none";
     document.querySelector(".cookie-selector-background").style.display = "none";
     document.documentElement.style.overflowY = "scroll";
@@ -162,6 +164,7 @@ document.getElementById("mbCookieOpener").addEventListener("click", function() {
 });
 
 document.getElementById("MBcookieSaveChanges").addEventListener("click", function() {
+    localStorage.setItem('cookiesAccepted', 'true');
     document.getElementById("mb-cookie-selector").style.display = "none";;
     document.querySelector(".cookie-selector-background").style.display = "none";
     document.documentElement.style.overflowY = "scroll";
@@ -169,6 +172,7 @@ document.getElementById("MBcookieSaveChanges").addEventListener("click", functio
 });
 
 document.getElementById("MBacceptCookiesAndCloseBanner").addEventListener("click", function() {
+    localStorage.setItem('cookiesAccepted', 'true');
     document.getElementById("mb-cookie-selector").style.display = "none";;
     document.querySelector(".cookie-selector-background").style.display = "none";
     document.documentElement.style.overflowY = "scroll";
