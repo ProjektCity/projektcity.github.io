@@ -20,11 +20,11 @@ document.addEventListener("DOMContentLoaded", function () {
         'security_storage': 'denied'
     });
     
-    if (localStorage.getItem('cookiesAccepted')) {
-        document.getElementById("cookie-banner").style.display = "none";
-        document.getElementById("cookie-banner").remove();
-        console.log("User already accepted cookies. Cookie banner removed.");
-    }
+// if (localStorage.getItem('cookiesAccepted')) {
+//  document.getElementById("cookie-banner").style.display = "none";
+//  document.getElementById("cookie-banner").remove();
+//  console.log("User already accepted cookies. Cookie banner removed.");
+// }
 });
 
 function acceptCookies() {

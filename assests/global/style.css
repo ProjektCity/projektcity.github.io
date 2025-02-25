@@ -177,10 +177,42 @@ p {
     width: 5px;
 }
 
+/* Cookie Chooser Scrollbar */
+.cookie-chooser-actions::-webkit-scrollbar {
+    -webkit-appearance: none;
+    width: 5px;
+}
+
+.cookie-chooser-actions::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background-color: transparent; 
+    -webkit-box-shadow: 0 0 1px rgba(255,255,255,.5);
+}
+
+.cookie-chooser-actions::-webkit-scrollbar {
+    width: 5px;
+}
+
+.cookie-chooser-actions::-webkit-scrollbar-track {
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+    background: transparent;
+}
+
+.cookie-chooser-actions::-webkit-scrollbar-thumb {
+    background: #707070;
+}
+
+.cookie-chooser-actions::-webkit-scrollbar-thumb:hover {
+    background: #646464;
+}
+
+.cookie-chooser-actions::-webkit-overflow-scrolling:touch {
+    background: #707070;
+    width: 5px;
+}
 
 /* Mobile */
-
-
 .mb-p-header {
     background-color: #1B1D1E;
     position: fixed;
@@ -464,7 +496,7 @@ p {
 
 .cookie-chooser-left {
     float: left;
-    width: 697.5px;
+    width: 700.02px;
 }
 
 .cookie-chooser-header {
@@ -554,7 +586,6 @@ p {
 }
 
 /* Checkbox */
-
 input[type="checkbox"] {
     appearance: none;
     background-color: #24262B;
