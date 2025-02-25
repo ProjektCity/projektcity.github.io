@@ -1,5 +1,4 @@
 document.addEventListener("DOMContentLoaded", function () {
-    getDeviceTypeAndSetBanner();
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('consent', 'default', {
@@ -23,24 +22,6 @@ document.addEventListener("DOMContentLoaded", function () {
     }, 10);
 
 });
-
-// Detect user device
-function getDeviceTypeAndSetBanner() {
-    const userAgent = navigator.userAgent.toLowerCase();
-    if (/mobile|android|iphone|ipad|ipod|blackberry|windows phone/i.test(userAgent)) {
-        document.getElementById("cookie-selector").style.display = "none";
-        document.getElementById("cookie-banner").style.display = "none";
-        document.getElementById("mb-cookie-selector").style.display = "block";
-        document.querySelector(".mb-cookie-banner").style.display = "block";
-        document.querySelector(".cookie-selector-background").style.display = "none";
-    } else {
-        document.getElementById("cookie-selector").style.display = "none";
-        document.getElementById("cookie-banner").style.display = "block";
-        document.getElementById("mb-cookie-selector").style.display = "none";
-        document.querySelector(".mb-cookie-banner").style.display = "none";
-        document.querySelector(".cookie-selector-background").style.display = "none";
-    }
-}
 
 document.querySelector(".cb-close-btn").addEventListener("click", function() {
     document.getElementById("cookie-banner").style.display = 'none';

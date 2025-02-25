@@ -860,8 +860,9 @@
                 // Cookie Banner
                 document.getElementById("cookie-selector").style.display = "none";
                 document.getElementById("cookie-banner").style.display = "none";
+                document.getElementById("mb-cookie-selector").style.display = "none";
                 document.querySelector(".mb-cookie-banner").style.display = "block";
-
+                document.querySelector(".cookie-selector-background").style.display = "none";
                 // Removing Desktop Elements
                 document.querySelector(".dt-trailer-container").style.display = "none";
                 document.querySelector(".dt-image-slider").style.display = "none";
@@ -870,13 +871,11 @@
                 document.querySelector(".dt-p-header").style.display = "none";
                 document.querySelector(".dt-main").style.display = "block";
                 document.querySelector(".dt-footer").style.display = "block";
-
                 // Mobile Elements
                 document.querySelector(".mb-trailer-container").style.display = "flex";
                 document.querySelector(".mb-image-slider").style.display = "flex";
                 document.getElementById("mobile-header").style.display = "block";
                 document.getElementById("mb-placeholder").style.display = "block";
-
                 // Set Font Sizes
                 document.querySelector(".dt-des-content").style.fontSize = "20px";
                 document.querySelector(".dt-v5-0-content").style.fontSize = "20px";
@@ -890,6 +889,13 @@
                 });
                return "mobile";
             } else {
+                // Cookie Banner
+                document.getElementById("cookie-selector").style.display = "none";
+                document.getElementById("cookie-banner").style.display = "block";
+                document.getElementById("mb-cookie-selector").style.display = "none";
+                document.querySelector(".mb-cookie-banner").style.display = "none";
+                document.querySelector(".cookie-selector-background").style.display = "none";
+                // Desktop elements
                 document.querySelector(".dt-p-header").style.display = "block";
                 document.querySelector(".dt-main").style.display = "block";
                 document.querySelector(".dt-footer").style.display = "block";
