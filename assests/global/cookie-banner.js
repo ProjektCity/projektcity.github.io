@@ -1,3 +1,21 @@
+// Detect user device
+function getDeviceTypeAndSetBanner() {
+    const userAgent = navigator.userAgent.toLowerCase();
+    if (/mobile|android|iphone|ipad|ipod|blackberry|windows phone/i.test(userAgent)) {
+        document.getElementById("cookie-selector").style.display = "none";
+        document.getElementById("cookie-banner").style.display = "none";
+        document.getElementById("mb-cookie-selector").style.display = "block";
+        document.querySelector(".mb-cookie-banner").style.display = "block";
+        document.querySelector(".cookie-selector-background").style.display = "none";
+    } else {
+        document.getElementById("cookie-selector").style.display = "none";
+        document.getElementById("cookie-banner").style.display = "none";
+        document.getElementById("mb-cookie-selector").style.display = "none";
+        document.querySelector(".mb-cookie-banner").style.display = "none";
+        document.querySelector(".cookie-selector-background").style.display = "none";
+    }
+}
+
 document.querySelector(".cb-close-btn").addEventListener("click", function() {
     document.getElementById("cookie-banner").style.display = 'none';
     document.getElementById("cookie-banner").remove();
@@ -8,6 +26,7 @@ document.querySelector(".cb-close-btn").addEventListener("click", function() {
 });
 
 document.addEventListener("DOMContentLoaded", function () {
+    getDeviceTypeAndSetBanner();
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('consent', 'default', {
@@ -20,11 +39,13 @@ document.addEventListener("DOMContentLoaded", function () {
         'security_storage': 'denied'
     });
     
-// if (localStorage.getItem('cookiesAccepted')) {
-//  document.getElementById("cookie-banner").style.display = "none";
-//  document.getElementById("cookie-banner").remove();
-//  console.log("User already accepted cookies. Cookie banner removed.");
-// }
+    if (localStorage.getItem('cookiesAccepted')) {
+        document.getElementById("cookie-banner").style.display = "none";
+        document.getElementById("cookie-banner").remove();
+        document.querySelector(".mb-cookie-banner").remove();
+        document.getElementById("mb-cookie-selector").remove()
+        console.log("User already accepted cookies. Cookie banner removed.");
+    }
 });
 
 function acceptCookies() {
