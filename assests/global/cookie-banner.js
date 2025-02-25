@@ -71,7 +71,7 @@ document.querySelector(".cookie-bottom-close-button").addEventListener("click", 
 });
 
 document.getElementById("cookieSaveChanges").addEventListener("click", function() {
-    document.getElementById("cookie-selector").style.display = "none";
+    document.getElementById("cookie-selector").style.display = "none";;
     document.querySelector(".cookie-selector-background").style.display = "none";
     document.documentElement.style.overflowY = "scroll";
     document.getElementById("cookie-banner").remove();
@@ -81,26 +81,13 @@ document.getElementById("acceptCookiesAndCloseBanner").addEventListener("click",
     document.getElementById("cookie-selector").style.display = "none";
     document.querySelector(".cookie-selector-background").style.display = "none";
     document.documentElement.style.overflowY = "scroll";
-    acceptCookies()
     document.getElementById("cookie-banner").remove();
+    acceptCookies();
 });
+
 // Cookie selector/chooser
-
-// UI
-window.onload = function() {
-    document.getElementById("statisticAndAnalyticsCookies").addEventListener('change', statisticAndAnalyticsCookies);
-    document.getElementById("preferencesAndPersonalizationCookies").addEventListener('change', preferencesAndPersonalizationCookies);
-    document.getElementById("marketingAndAdvertisementCookies").addEventListener('change', marketingAndAdvertisementCookies);
-    document.getElementById("unclassifiedCookies").addEventListener('change', unclassifiedCookies);
-
-    statisticAndAnalyticsCookies({target: document.getElementById("statisticAndAnalyticsCookies")});
-    preferencesAndPersonalizationCookies({target: document.getElementById("preferencesAndPersonalizationCookies")});
-    marketingAndAdvertisementCookies({target: document.getElementById("marketingAndAdvertisementCookies")});
-    unclassifiedCookies({target: document.getElementById("unclassifiedCookies")});
-}
-
-function statisticAndAnalyticsCookies(event) {
-    var checkbox = event.target;
+document.getElementById("statisticAndAnalyticsCookies").addEventListener("change", function() {
+    var checkbox = document.getElementById("statisticAndAnalyticsCookies")
     if (checkbox.checked) {
         gtag('consent', 'update', {
             'analytics_storage': 'granted'
@@ -112,10 +99,10 @@ function statisticAndAnalyticsCookies(event) {
         });
         console.log("'analytics_storage' denied!");
     }
-}
+});
 
-function preferencesAndPersonalizationCookies(event) {
-    var checkbox = event.target;
+document.getElementById("preferencesAndPersonalizationCookies").addEventListener("change", function() {
+    var checkbox = document.getElementById("preferencesAndPersonalizationCookies")
     if (checkbox.checked) {
         gtag('consent', 'update', {
             'personalization_storage': 'granted'
@@ -126,11 +113,11 @@ function preferencesAndPersonalizationCookies(event) {
             'personalization_storage': 'denied'
         });
         console.log("'analytics_storage' and 'personalization_storage' denied!");
-    }
-}
+    }   
+});
 
-function marketingAndAdvertisementCookies(event) {
-    var checkbox = event.target;
+document.getElementById("marketingAndAdvertisementCookies").addEventListener("change", function() {
+    var checkbox = document.getElementById("marketingAndAdvertisementCookies");
     if (checkbox.checked) {
         gtag('consent', 'update', {
             'ad_storage': 'granted',
@@ -146,10 +133,10 @@ function marketingAndAdvertisementCookies(event) {
         });
         console.log("'ad_storage', 'ad_user_data' and 'ad_personalization' denied!");
     }
-}
+});
 
-function unclassifiedCookies(event) {
-    var checkbox = event.target;
+document.getElementById("unclassifiedCookies").addEventListener("change", function() {
+    var checkbox = document.getElementById("unclassifiedCookies");
     if (checkbox.checked) {
         gtag('consent', 'update', { 
             'security_storage': 'granted',
@@ -161,4 +148,96 @@ function unclassifiedCookies(event) {
         });
         console.log("'security_storage' denied!");
     }
-}
+});
+
+// Mobile Cookie Banner
+document.getElementById("mbCookieOpener").addEventListener("click", function() {
+    document.getElementById("mb-cookie-selector").style.display = "block";
+    document.querySelector(".cookie-selector-background").style.display = "block";
+    document.documentElement.style.overflowY = "hidden";
+});
+
+document.getElementById("MBcookieSaveChanges").addEventListener("click", function() {
+    document.getElementById("mb-cookie-selector").style.display = "none";;
+    document.querySelector(".cookie-selector-background").style.display = "none";
+    document.documentElement.style.overflowY = "scroll";
+    document.querySelector(".mb-cookie-banner").remove();
+});
+
+document.getElementById("MBacceptCookiesAndCloseBanner").addEventListener("click", function() {
+    document.getElementById("mb-cookie-selector").style.display = "none";;
+    document.querySelector(".cookie-selector-background").style.display = "none";
+    document.documentElement.style.overflowY = "scroll";
+    document.querySelector(".mb-cookie-banner").remove();
+    acceptCookies();
+});
+
+document.getElementById("mbCookieCloser").addEventListener("click", function() {
+    document.getElementById("mb-cookie-selector").style.display = "none";;
+    document.querySelector(".cookie-selector-background").style.display = "none";
+    document.documentElement.style.overflowY = "scroll";
+})
+
+document.getElementById("MBstatisticAndAnalyticsCookies").addEventListener("change", function() {
+    var checkbox = document.getElementById("MBstatisticAndAnalyticsCookies")
+    if (checkbox.checked) {
+        gtag('consent', 'update', {
+            'analytics_storage': 'granted'
+        });
+        console.log("'analytics_storage' granted!");
+    } else {
+        gtag('consent', 'update', {
+            'analytics_storage': 'denied'
+        });
+        console.log("'analytics_storage' denied!");
+    }
+});
+
+document.getElementById("MBpreferencesAndPersonalizationCookies").addEventListener("change", function() {
+    var checkbox = document.getElementById("MBpreferencesAndPersonalizationCookies")
+    if (checkbox.checked) {
+        gtag('consent', 'update', {
+            'personalization_storage': 'granted'
+        });
+        console.log("'analytics_storage' and 'personalization_storage' granted!");
+    } else {
+        gtag('consent', 'update', {
+            'personalization_storage': 'denied'
+        });
+        console.log("'analytics_storage' and 'personalization_storage' denied!");
+    }   
+});
+
+document.getElementById("MBmarketingAndAdvertisementCookies").addEventListener("change", function() {
+    var checkbox = document.getElementById("MBmarketingAndAdvertisementCookies");
+    if (checkbox.checked) {
+        gtag('consent', 'update', {
+            'ad_storage': 'granted',
+            'ad_user_data': 'granted',
+            'ad_personalization': 'granted',
+        });
+        console.log("'ad_storage', 'ad_user_data' and 'ad_personalization' granted!");
+    } else {
+        gtag('consent', 'update', {
+            'ad_storage': 'denied',
+            'ad_user_data': 'denied',
+            'ad_personalization': 'denied',
+        });
+        console.log("'ad_storage', 'ad_user_data' and 'ad_personalization' denied!");
+    }
+});
+
+document.getElementById("MBunclassifiedCookies").addEventListener("change", function() {
+    var checkbox = document.getElementById("MBunclassifiedCookies");
+    if (checkbox.checked) {
+        gtag('consent', 'update', { 
+            'security_storage': 'granted',
+        });
+        console.log("'security_storage' granted!");
+    } else {
+        gtag('consent', 'update', { 
+            'security_storage': 'denied',
+        });
+        console.log("'security_storage' denied!");
+    }
+});
