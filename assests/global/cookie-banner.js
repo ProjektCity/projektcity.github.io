@@ -40,6 +40,11 @@ function acceptCookies() {
         'personalization_storage': 'granted',
         'security_storage': 'granted'
     });
+    document.getElementById("neccessarryCookies").checked = true;
+    document.getElementById("statisticAndAnalyticsCookies").checked = true;
+    document.getElementById("preferencesAndPersonalizationCookies").checked = true;
+    document.getElementById("marketingAndAdvertisementCookies").checked = true;
+    document.getElementById("unclassifiedCookies").checked = true;
     console.log("User accepted all cookies: set the values 'ad_storage', 'ad_user_data', 'ad_personalization', 'analytics_storage', 'functionality_storage', 'personalization_storage' and 'security_storage' to granted!")
 }
 
