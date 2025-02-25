@@ -13,27 +13,27 @@ document.addEventListener("DOMContentLoaded", function () {
     
     if (localStorage.getItem('cookiesAccepted')) {
         document.getElementById("cookie-banner").style.display = "none";
-        document.getElementById("cookie-banner").remove();
+        document.getElementById("cookie-banner").style.display = "none";
         document.querySelector(".mb-cookie-banner").style.display = "none";
         document.getElementById("mb-cookie-selector").style.display = "none";
         console.log("User already accepted cookies. Cookie banner removed.");
     } else {
-        console.log("NO COOKIES!")
+        console.log("NO COOKIES!");
     };
 });
 
 document.querySelector(".cb-close-btn").addEventListener("click", function() {
     document.getElementById("cookie-banner").style.display = 'none';
-    document.getElementById("cookie-banner").remove();
+    document.getElementById("cookie-banner").style.display = "none";
     gtag('consent', 'update', {
         'functionality_storage': 'granted',
     });
-    console.log("New user did not accept cookies. Only granted functional cookies!")
+    console.log("New user did not accept cookies. Only granted functional cookies!");
 });
 
 function acceptCookies() {
     document.querySelector('.cookie-banner').style.display = 'none';
-    document.querySelector('.cookie-banner').remove();
+    document.querySelector('.cookie-banner').style.display = "none";
     localStorage.setItem('cookiesAccepted', 'true');
     gtag('consent', 'update', {
         'ad_storage': 'granted',
@@ -76,10 +76,10 @@ document.querySelector(".cookie-bottom-close-button").addEventListener("click", 
 
 document.getElementById("cookieSaveChanges").addEventListener("click", function() {
     localStorage.setItem('cookiesAccepted', 'true');
-    document.getElementById("cookie-selector").style.display = "none";;
+    document.getElementById("cookie-selector").style.display = "none";
     document.querySelector(".cookie-selector-background").style.display = "none";
     document.documentElement.style.overflowY = "scroll";
-    document.getElementById("cookie-banner").remove();
+    document.getElementById("cookie-banner").style.display = "none";
 });
 
 document.getElementById("acceptCookiesAndCloseBanner").addEventListener("click", function() {
@@ -87,13 +87,13 @@ document.getElementById("acceptCookiesAndCloseBanner").addEventListener("click",
     document.getElementById("cookie-selector").style.display = "none";
     document.querySelector(".cookie-selector-background").style.display = "none";
     document.documentElement.style.overflowY = "scroll";
-    document.getElementById("cookie-banner").remove();
+    document.getElementById("cookie-banner").style.display = "none";
     acceptCookies();
 });
 
 // Cookie selector/chooser
 document.getElementById("statisticAndAnalyticsCookies").addEventListener("change", function() {
-    var checkbox = document.getElementById("statisticAndAnalyticsCookies")
+    var checkbox = document.getElementById("statisticAndAnalyticsCookies");
     if (checkbox.checked) {
         gtag('consent', 'update', {
             'analytics_storage': 'granted'
@@ -108,7 +108,7 @@ document.getElementById("statisticAndAnalyticsCookies").addEventListener("change
 });
 
 document.getElementById("preferencesAndPersonalizationCookies").addEventListener("change", function() {
-    var checkbox = document.getElementById("preferencesAndPersonalizationCookies")
+    var checkbox = document.getElementById("preferencesAndPersonalizationCookies");
     if (checkbox.checked) {
         gtag('consent', 'update', {
             'personalization_storage': 'granted'
@@ -165,29 +165,29 @@ document.getElementById("mbCookieOpener").addEventListener("click", function() {
 
 document.getElementById("MBcookieSaveChanges").addEventListener("click", function() {
     localStorage.setItem('cookiesAccepted', 'true');
-    document.getElementById("mb-cookie-selector").style.display = "none";;
+    document.getElementById("mb-cookie-selector").style.display = "none";
     document.querySelector(".cookie-selector-background").style.display = "none";
     document.documentElement.style.overflowY = "scroll";
-    document.querySelector(".mb-cookie-banner").remove();
+    document.querySelector(".mb-cookie-banner").style.display = "none";
 });
 
 document.getElementById("MBacceptCookiesAndCloseBanner").addEventListener("click", function() {
     localStorage.setItem('cookiesAccepted', 'true');
-    document.getElementById("mb-cookie-selector").style.display = "none";;
+    document.getElementById("mb-cookie-selector").style.display = "none";
     document.querySelector(".cookie-selector-background").style.display = "none";
     document.documentElement.style.overflowY = "scroll";
-    document.querySelector(".mb-cookie-banner").remove();
+    document.querySelector(".mb-cookie-banner").style.display = "none";
     acceptCookies();
 });
 
 document.getElementById("mbCookieCloser").addEventListener("click", function() {
-    document.getElementById("mb-cookie-selector").style.display = "none";;
+    document.getElementById("mb-cookie-selector").style.display = "none";
     document.querySelector(".cookie-selector-background").style.display = "none";
     document.documentElement.style.overflowY = "scroll";
-})
+});
 
 document.getElementById("MBstatisticAndAnalyticsCookies").addEventListener("change", function() {
-    var checkbox = document.getElementById("MBstatisticAndAnalyticsCookies")
+    var checkbox = document.getElementById("MBstatisticAndAnalyticsCookies");
     if (checkbox.checked) {
         gtag('consent', 'update', {
             'analytics_storage': 'granted'
@@ -202,7 +202,7 @@ document.getElementById("MBstatisticAndAnalyticsCookies").addEventListener("chan
 });
 
 document.getElementById("MBpreferencesAndPersonalizationCookies").addEventListener("change", function() {
-    var checkbox = document.getElementById("MBpreferencesAndPersonalizationCookies")
+    var checkbox = document.getElementById("MBpreferencesAndPersonalizationCookies");
     if (checkbox.checked) {
         gtag('consent', 'update', {
             'personalization_storage': 'granted'
