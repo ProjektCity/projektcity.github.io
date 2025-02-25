@@ -11,16 +11,15 @@ document.addEventListener("DOMContentLoaded", function () {
         'security_storage': 'denied'
     });
     
-    setTimeout(() => {
-        if (localStorage.getItem('cookiesAccepted')) {
-            document.getElementById("cookie-banner").style.display = "none";
-            document.getElementById("cookie-banner").remove();
-            document.querySelector(".mb-cookie-banner").remove();
-            document.getElementById("mb-cookie-selector").remove()
-            console.log("User already accepted cookies. Cookie banner removed.");
-        }   
-    }, 10);
-
+    if (localStorage.getItem('cookiesAccepted')) {
+        document.getElementById("cookie-banner").style.display = "none";
+        document.getElementById("cookie-banner").remove();
+        document.querySelector(".mb-cookie-banner").remove();
+        document.getElementById("mb-cookie-selector").remove()
+        console.log("User already accepted cookies. Cookie banner removed.");
+    } else {
+        console.log("NO COOKIES!")
+    };
 });
 
 document.querySelector(".cb-close-btn").addEventListener("click", function() {
