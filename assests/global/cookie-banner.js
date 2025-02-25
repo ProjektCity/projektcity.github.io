@@ -1,30 +1,3 @@
-// Detect user device
-function getDeviceTypeAndSetBanner() {
-    const userAgent = navigator.userAgent.toLowerCase();
-    if (/mobile|android|iphone|ipad|ipod|blackberry|windows phone/i.test(userAgent)) {
-        document.getElementById("cookie-selector").style.display = "none";
-        document.getElementById("cookie-banner").style.display = "none";
-        document.getElementById("mb-cookie-selector").style.display = "block";
-        document.querySelector(".mb-cookie-banner").style.display = "block";
-        document.querySelector(".cookie-selector-background").style.display = "none";
-    } else {
-        document.getElementById("cookie-selector").style.display = "none";
-        document.getElementById("cookie-banner").style.display = "none";
-        document.getElementById("mb-cookie-selector").style.display = "none";
-        document.querySelector(".mb-cookie-banner").style.display = "none";
-        document.querySelector(".cookie-selector-background").style.display = "none";
-    }
-}
-
-document.querySelector(".cb-close-btn").addEventListener("click", function() {
-    document.getElementById("cookie-banner").style.display = 'none';
-    document.getElementById("cookie-banner").remove();
-    gtag('consent', 'update', {
-        'functionality_storage': 'granted',
-    });
-    console.log("New user did not accept cookies. Only granted functional cookies!")
-});
-
 document.addEventListener("DOMContentLoaded", function () {
     getDeviceTypeAndSetBanner();
     window.dataLayer = window.dataLayer || [];
@@ -39,13 +12,43 @@ document.addEventListener("DOMContentLoaded", function () {
         'security_storage': 'denied'
     });
     
-    if (localStorage.getItem('cookiesAccepted')) {
+    setTimeout(() => {
+        if (localStorage.getItem('cookiesAccepted')) {
+            document.getElementById("cookie-banner").style.display = "none";
+            document.getElementById("cookie-banner").remove();
+            document.querySelector(".mb-cookie-banner").remove();
+            document.getElementById("mb-cookie-selector").remove()
+            console.log("User already accepted cookies. Cookie banner removed.");
+        }   
+    }, 10);
+
+});
+
+// Detect user device
+function getDeviceTypeAndSetBanner() {
+    const userAgent = navigator.userAgent.toLowerCase();
+    if (/mobile|android|iphone|ipad|ipod|blackberry|windows phone/i.test(userAgent)) {
+        document.getElementById("cookie-selector").style.display = "none";
         document.getElementById("cookie-banner").style.display = "none";
-        document.getElementById("cookie-banner").remove();
-        document.querySelector(".mb-cookie-banner").remove();
-        document.getElementById("mb-cookie-selector").remove()
-        console.log("User already accepted cookies. Cookie banner removed.");
+        document.getElementById("mb-cookie-selector").style.display = "block";
+        document.querySelector(".mb-cookie-banner").style.display = "block";
+        document.querySelector(".cookie-selector-background").style.display = "none";
+    } else {
+        document.getElementById("cookie-selector").style.display = "none";
+        document.getElementById("cookie-banner").style.display = "block";
+        document.getElementById("mb-cookie-selector").style.display = "none";
+        document.querySelector(".mb-cookie-banner").style.display = "none";
+        document.querySelector(".cookie-selector-background").style.display = "none";
     }
+}
+
+document.querySelector(".cb-close-btn").addEventListener("click", function() {
+    document.getElementById("cookie-banner").style.display = 'none';
+    document.getElementById("cookie-banner").remove();
+    gtag('consent', 'update', {
+        'functionality_storage': 'granted',
+    });
+    console.log("New user did not accept cookies. Only granted functional cookies!")
 });
 
 function acceptCookies() {
