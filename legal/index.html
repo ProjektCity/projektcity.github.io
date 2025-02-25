@@ -384,7 +384,7 @@
                                 <a>Others & unclassified cookies</a>
                             </div>
                             <div class="cookie-chooser-description">
-                                <a>Unclassified cookies are cookies that we are in the process of classifying, together with the providers of individual cookies.</a>
+                                <a>Unclassified cookies are cookies that cannot be assigned to a specific category or class, either because they are too irrelevant or too useless. Nevertheless, we are working on classifying all cookies as best we can.</a>
                             </div>
                         </div>
                         <div class="cookie-chooser-switcher">
@@ -411,6 +411,144 @@
                     </div>
                     <div class="cookie-bottom-button" id="acceptCookiesAndCloseBanner" style="background-color: #fff; color: #000; float: right;">
                         <div class="cookie-bottom-btn">
+                            <a>Accept all</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="mb-cookie-banner" style="display: none;">
+        <div class="mb-cookie-banner-inner">
+            <div class="mb-cookie-chooser-frame">
+                </div>
+                <div class="mb-cookie-chooser-maincontent">
+                    <a>Projekt City uses cookies and similar technologies for analysis purposes, to deliver you personalized and embedded content, to ensure legal, website and user security, to give you the best experience and to constantly improve its services.</a>
+                    <a>By using our services, you consent to the use of your data in accordance with our</a>
+                    <a class="linkout" href="https://bit.ly/ProjektCityPrivacy" target="_blank">Privacy Policy</a>
+                    <a>and</a>
+                    <a class="linkout" href="https://bit.ly/ProjektCityTerms">Terms of Use</a>
+                </div>
+                <div class="placeholder w200 h20"></div>
+                <div class="mb-cookie-chooser-footer">
+                    <div class="legal-btn" id="mbCookieOpener" style="margin: 0 auto; width: 200px;">
+                        <div class="legal-btn-inner" style="width: 200px;">
+                            <a>Manage Cookies</a>
+                        </div>
+                    </div>
+                    <div class="placeholder w200 h20"></div>
+                    <div class="legal-filled-btn" id="MBacceptCookiesAndCloseBanner" style="margin: 0 auto; width: 200px;">
+                        <div class="legal-filled-btn-inner" style="width: 200px;">
+                            <a>Accept</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="mb-cookie-selector" id="mb-cookie-selector">
+        <div class="mb-cookie-container">
+            <div class="mb-cookie-chooser-header">
+                <a style="font-weight: 400; font-size: 30px;">Projekt City requires your consent!</a>
+            </div>
+            <div class="mb-cookie-hr"></div>
+            <div class="mb-cookie-chooser-maincontent">
+                <div class="mb-cookie-chooser-actions">
+                    <div class="mb-cookie-chooser-action">
+                        <div class="mb-cookie-chooser-left">
+                            <div class="mb-cookie-chooser-header">
+                                <a>Neccessarry Cookies</a>
+                            </div>
+                            <div class="mb-cookie-chooser-description">
+                                <a>Cookies are small text files that can be used by websites to make a user's experience more efficient.</a>
+                                <br>
+                                <a>The law states that we can store cookies on your device if they are strictly necessary for the operation of this site. For all other types of cookies we need your permission.</a>
+                                <br>
+                                <a>This site uses different types of cookies. Some cookies are placed by third party services that appear on our pages.</a>
+                                <br>
+                                <a>You can at any time change or withdraw your consent from the Cookie Declaration on our website.</a>
+                            </div>
+                        </div>
+                        <div class="mb-cookie-chooser-switcher">
+                            <input class="mb-cookie-checkbox" id="MBneccessarryCookies" type="checkbox" checked disabled>
+                        </div>
+                    </div>
+                    <div class="mb-cookie-hr"></div>
+                    <div class="mb-cookie-chooser-action">
+                        <div class="mb-cookie-chooser-left">
+                            <div class="mb-cookie-chooser-header">
+                                <a>Statistics and Analytics</a>
+                            </div>
+                            <div class="mb-cookie-chooser-description">
+                                <a>Statistics and analysis cookies, also known as "performance cookies," help the website to track how users interact with the site, how long they visit it, which pages are particularly popular and which pages the users come from. This information allows us to better analyze and customize our site to give our users an even better experience.</a>
+                            </div>
+                        </div>
+                        <div class="mb-cookie-chooser-switcher">
+                            <input class="mb-cookie-checkbox" id="MBstatisticAndAnalyticsCookies" type="checkbox">
+                        </div>
+                    </div>
+                    <div class="mb-cookie-hr"></div>
+                    <div class="mb-cookie-chooser-action">
+                        <div class="mb-cookie-chooser-left">
+                            <div class="mb-cookie-chooser-header">
+                                <a>Preferences and Personalization</a>
+                            </div>
+                            <div class="mb-cookie-chooser-description">
+                                <a>Preference cookies, are cookies that allow the website to remember your choices you made through your use of our website, such as your language, region, cookies, or what your username and password are so that they can be retrieved automatically the next time you load the page, leading to a overall better performance of the webpage.</a>
+                            </div>
+                        </div>
+                        <div class="mb-cookie-chooser-switcher">
+                            <input class="mb-cookie-checkbox" id="MBpreferencesAndPersonalizationCookies" onclick="preferencesAndPersonalizationCookiesforMB()" type="checkbox">
+                        </div>
+                    </div>
+                    <div class="mb-cookie-hr"></div>
+                    <div class="mb-cookie-chooser-action">
+                        <div class="mb-cookie-chooser-left">
+                            <div class="mb-cookie-chooser-header">
+                                <a>Marketing and Advertisement</a>
+                            </div>
+                            <div class="mb-cookie-chooser-description">
+                                <a>Marketing cookies are mainly used for advertising purposes by third parties. If this function is activated, your online activities are tracked in order to provide you with personalized and appropriate advertising and to prevent you from seeing the same advertising more than once.</a>
+                            </div>
+                        </div>
+                        <div class="mb-cookie-chooser-switcher">
+                            <input class="mb-cookie-checkbox" id="MBmarketingAndAdvertisementCookies" type="checkbox">
+                        </div>
+                    </div>
+                    <div class="mb-cookie-hr"></div>
+                    <div class="mb-cookie-chooser-action">
+                        <div class="mb-cookie-chooser-left">
+                            <div class="mb-cookie-chooser-header">
+                                <a>Others & unclassified cookies</a>
+                            </div>
+                            <div class="mb-cookie-chooser-description">
+                                <a>Unclassified cookies are cookies that cannot be assigned to a specific category or class, either because they are too irrelevant or too useless. Nevertheless, we are working on classifying all cookies as best we can.</a>
+                            </div>
+                        </div>
+                        <div class="mb-cookie-chooser-switcher">
+                            <input class="mb-cookie-checkbox" id="MBunclassifiedCookies" type="checkbox">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="placeholder w300 h15"></div>
+            <div class="mb-cookie-chooser-bottom">
+                <div class="mb-cookie-chooser-bottom-inner">
+                    <div class="mb-cookie-bottom-close-button" id="mbCookieCloser" style="float: left;">
+                        <div class="mb-cookie-bottom-close-btn">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="30" viewBox="0 -960 960 960" width="30" fill="#fff">
+                                <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="placeholder w24-54 h10"></div>
+                    <div class="mb-cookie-bottom-button" id="MBcookieSaveChanges" style="float: right; width: 125px;">
+                        <div class="mb-cookie-bottom-btn">
+                            <a>Save changes</a>
+                        </div>
+                    </div>
+                    <div class="mb-cookie-bottom-button" id="MBacceptCookiesAndCloseBanner" style="background-color: #fff; color: #000; float: right;">
+                        <div class="mb-cookie-bottom-btn">
                             <a>Accept all</a>
                         </div>
                     </div>
