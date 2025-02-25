@@ -743,6 +743,13 @@
                 });
                 return "mobile";
             } else {
+                // Cookie Banner
+                document.getElementById("cookie-selector").style.display = "none";
+                document.getElementById("cookie-banner").style.display = "block";
+                document.getElementById("mb-cookie-selector").style.display = "none";
+                document.querySelector(".mb-cookie-banner").style.display = "none";
+                document.querySelector(".cookie-selector-background").style.display = "none";
+                // Desktop elements
                 document.getElementById("mobile-header").style.display = "none";
                 document.querySelector(".dt-main").style.display = "block";
                 document.querySelector(".dt-footer").style.display = "block";
