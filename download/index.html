@@ -1063,6 +1063,13 @@
         function getDeviceType() {
             const userAgent = navigator.userAgent.toLowerCase();
             if (/mobile|android|iphone|ipad|ipod|blackberry|windows phone/i.test(userAgent)) {
+                // Cookie Banner
+                document.getElementById("cookie-selector").style.display = "none";
+                document.getElementById("cookie-banner").style.display = "none";
+                document.getElementById("mb-cookie-selector").style.display = "none";
+                document.querySelector(".mb-cookie-banner").style.display = "block";
+                document.querySelector(".cookie-selector-background").style.display = "none";
+                // Desktop Elements
                 document.getElementById("mobile-header").style.display = "block";
                 document.querySelector(".dt-p-header").style.display = "none";
                 document.querySelector(".dt-main").style.display = "block";
@@ -1071,7 +1078,6 @@
                 document.querySelector(".mb-download-table").style.display = "block";
                 document.querySelector(".dt-download-table").style.display = "none";
                 document.getElementById("cookie-banner").style.display = "none";
-                document.getElementById("cookie-banner").remove();
                 document.querySelectorAll(".dt-gf-div-line").forEach(el => {
                     el.style.fontSize = "13px";
                 });
