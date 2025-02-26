@@ -15,6 +15,16 @@ document.addEventListener("DOMContentLoaded", function () {
         'personalization_storage': getStoredConsent('preferencesAndPersonalizationCookies'),
         'security_storage': getStoredConsent('unclassifiedCookies')
     });
+
+    gtag('consent', 'default', {
+        'ad_storage': getStoredConsent('MBmarketingAndAdvertisementCookies'),
+        'ad_user_data': getStoredConsent('MBmarketingAndAdvertisementCookies'),
+        'ad_personalization': getStoredConsent('MBmarketingAndAdvertisementCookies'),
+        'analytics_storage': getStoredConsent('MBstatisticAndAnalyticsCookies'),
+        'functionality_storage': 'granted',
+        'personalization_storage': getStoredConsent('MBpreferencesAndPersonalizationCookies'),
+        'security_storage': getStoredConsent('MBunclassifiedCookies')
+    });
     
     if (localStorage.getItem('cookiesAccepted')) {
         document.getElementById("cookie-banner").style.display = "none";
