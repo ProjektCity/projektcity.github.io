@@ -21,22 +21,34 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     function updateCheckboxesFromStorage() {
-        const categories = [
-            "statisticAndAnalyticsCookies",
-            "preferencesAndPersonalizationCookies",
-            "marketingAndAdvertisementCookies",
-            "unclassifiedCookies",
-            "MBstatisticAndAnalyticsCookies",
-            "MBpreferencesAndPersonalizationCookies",
-            "MBmarketingAndAdvertisementCookies",
-            "MBunclassifiedCookies"
-        ];
-        categories.forEach(category => {
+        const categories = {
+            "statisticAndAnalyticsCookies": "analytics_storage",
+            "preferencesAndPersonalizationCookies": "personalization_storage",
+            "marketingAndAdvertisementCookies": ["ad_storage", "ad_user_data", "ad_personalization"],
+            "unclassifiedCookies": "security_storage",
+            "MBstatisticAndAnalyticsCookies": "analytics_storage",
+            "MBpreferencesAndPersonalizationCookies": "personalization_storage",
+            "MBmarketingAndAdvertisementCookies": ["ad_storage", "ad_user_data", "ad_personalization"],
+            "MBunclassifiedCookies": "security_storage"
+        };
+
+        Object.keys(categories).forEach(category => {
             const storedValue = localStorage.getItem(category);
-            if (storedValue === "true") {
-                document.getElementById(category).checked = true;
-            } else {
-                document.getElementById(category).checked = false;
+            const checkbox = document.getElementById(category);
+            if (checkbox) {
+                checkbox.checked = storedValue === "true";
+                
+                if (Array.isArray(categories[category])) {
+                    let updateData = {};
+                    categories[category].forEach(setting => {
+                        updateData[setting] = checkbox.checked ? 'granted' : 'denied';
+                    });
+                    gtag('consent', 'update', updateData);
+                } else {
+                    gtag('consent', 'update', {
+                        [categories[category]]: checkbox.checked ? 'granted' : 'denied'
+                    });
+                }
             }
         });
     }
