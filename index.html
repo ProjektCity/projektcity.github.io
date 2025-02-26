@@ -854,6 +854,9 @@
         function getDeviceType() {
             const userAgent = navigator.userAgent.toLowerCase();
             if (/mobile|android|iphone|ipad|ipod|blackberry|windows phone/i.test(userAgent)) {
+                document.querySelectorAll(".dt-gf-div-line").forEach(el => {
+                    el.style.fontSize = "13px";
+                });
                 // Cookie Banner
                 document.getElementById("cookie-selector").style.display = "none";
                 document.getElementById("cookie-banner").style.display = "none";
@@ -879,9 +882,6 @@
                 document.querySelector(".dt-special-information").style.fontSize = "5px";
                 document.querySelectorAll(".dt-map-content-text").forEach(el => {
                     el.style.fontSize = "18px";
-                });
-                document.querySelectorAll(".dt-gf-div-line").forEach(el => {
-                    el.style.fontSize = "13px";
                 });
                return "mobile";
             } else {
