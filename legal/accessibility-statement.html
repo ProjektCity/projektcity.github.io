@@ -727,6 +727,11 @@
         function getDeviceType() {
             const userAgent = navigator.userAgent.toLowerCase();
             if (/mobile|android|iphone|ipad|ipod|blackberry|windows phone/i.test(userAgent)) {
+                // Font Sizes and Copyright
+                document.querySelectorAll(".dt-gf-div-line").forEach(el => {
+                    el.style.fontSize = "13px";
+                });
+                document.querySelector(".dt-gf-div-copy").innerHTML = "<a>&copy; 2025 Projekt City Ltd.</a><br><a>All rights reserved!</a>"
                 // Cookie Banner
                 document.getElementById("cookie-selector").style.display = "none";
                 document.getElementById("cookie-banner").style.display = "none";
@@ -734,14 +739,11 @@
                 document.querySelector(".mb-cookie-banner").style.display = "block";
                 document.querySelector(".cookie-selector-background").style.display = "none";
                 // Removing Desktop Elements
-                document.querySelectorAll(".dt-legal-text-section").forEach(el => {
                 document.getElementById("mb-placeholder").style.display = "block";
                 document.getElementById("cookie-banner").remove();
+                document.querySelectorAll(".dt-legal-text-section").forEach(el => {
                     el.style.fontSize = "20px";
                     el.style.lineHeight = "30px";
-                });
-                document.querySelectorAll(".dt-gf-div-line").forEach(el => {
-                    el.style.fontSize = "13px";
                 });
                 return "mobile";
             } else {
