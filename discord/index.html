@@ -689,6 +689,24 @@
             }
         });
         
+        // Mobile Navbar
+        document.getElementById("menu-opener").addEventListener("click", function() {
+            const menu = document.getElementById("mb-menu");
+            if (menu.style.display === "block") {
+                document.querySelector(".mb-bottom-menu").classList.add("hidden");
+                document.querySelector(".mb-bottom-items").style.display = "none";
+                setTimeout(() => {
+                    document.querySelector(".mb-bottom-menu").classList.remove("hidden");
+                    document.querySelector(".mb-bottom-menu").style.display = "none";
+                }, 250);
+            } else {
+                menu.style.display = "block";
+                setTimeout(() => {
+                    document.querySelector(".mb-bottom-items").style.display = "flex";
+                }, 175);
+            }
+        });
+        
         function getDeviceType() {
             const userAgent = navigator.userAgent.toLowerCase();
             if (/mobile|android|iphone|ipad|ipod|blackberry|windows phone/i.test(userAgent)) {
@@ -704,6 +722,7 @@
                 document.querySelector(".dt-main").style.display = "block";
                 document.querySelector(".dt-footer").style.display = "block";
                 document.getElementById("mb-placeholder").style.display = "block";
+                document.getElementById("cookie-banner").style.display = "none";
                 document.querySelectorAll(".dt-gf-div-line").forEach(el => {
                     el.style.fontSize = "13px";
                 });
@@ -723,7 +742,7 @@
                 document.querySelector(".dt-p-header").style.display = "block";
                 return "desktop";
             }
-        };
+        }
 
         function getBrowser() {
             const userAgent = navigator.userAgent;
@@ -744,31 +763,13 @@
             } else {
                 return "uk_unknown";
             }
-        };
+        }
 
         const deviceType = getDeviceType();
         const browser = getBrowser();
 
         console.log(`set-userdevice=${deviceType}`);
         console.log(`set-userbrowser=${browser}`);
-        
-        // Mobile Navbar
-        document.getElementById("menu-opener").addEventListener("click", function() {
-            const menu = document.getElementById("mb-menu");
-            if (menu.style.display === "block") {
-                document.querySelector(".mb-bottom-menu").classList.add("hidden");
-                document.querySelector(".mb-bottom-items").style.display = "none";
-                setTimeout(() => {
-                    document.querySelector(".mb-bottom-menu").classList.remove("hidden");
-                    document.querySelector(".mb-bottom-menu").style.display = "none";
-                }, 250);
-            } else {
-                menu.style.display = "block";
-                setTimeout(() => {
-                    document.querySelector(".mb-bottom-items").style.display = "flex";
-                }, 175);
-            }
-        });
     </script>
 </body>
 </html>
