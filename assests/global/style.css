@@ -749,6 +749,6 @@ input[type="checkbox"]:checked::before {
     color: #fff;
     display: block;
     text-align: center;
-    font-size: 20px;
+    font-size: 25px;
     line-height: 20px;
 }
