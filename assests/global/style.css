@@ -337,6 +337,9 @@ p {
 }
 
 /* Cookie Banner */
+#CookieChanger {
+    cursor: pointer;
+}
 .cookie-banner {
     background-color: #000;
     bottom: 0;
