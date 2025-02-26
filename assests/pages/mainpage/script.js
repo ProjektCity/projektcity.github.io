@@ -139,7 +139,7 @@ function createIndicators() {
 }
 
 function updateMBIndicators() {
-    const buttons = mbindicatorsContainer.querySelectorAll('button');
+    const buttons = document.querySelectorAll('button');
     buttons.forEach((button, i) => {
         const progress = button.querySelector('.mb-progress');
         button.classList.remove('mb-active');

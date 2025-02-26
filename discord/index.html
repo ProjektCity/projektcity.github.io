@@ -722,7 +722,7 @@
                 document.querySelector(".dt-p-header").style.display = "block";
                 return "desktop";
             }
-        }
+        };
 
         function getBrowser() {
             const userAgent = navigator.userAgent;
@@ -743,7 +743,7 @@
             } else {
                 return "uk_unknown";
             }
-        }
+        };
 
         const deviceType = getDeviceType();
         const browser = getBrowser();
