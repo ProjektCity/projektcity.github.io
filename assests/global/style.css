@@ -746,6 +746,8 @@ input[type="checkbox"] {
 
 input[type="checkbox"]:checked::before {
     content: "✔";
-    font-size: 25px;
-    color: transparent;
+    display: block;
+    text-align: center;
+    font-size: 16px;
+    line-height: 20px;
 }
