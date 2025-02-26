@@ -748,6 +748,6 @@ input[type="checkbox"]:checked::before {
     content: "✔";
     display: block;
     text-align: center;
-    font-size: 16px;
+    font-size: 18px;
     line-height: 20px;
 }
