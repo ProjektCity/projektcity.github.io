@@ -166,14 +166,14 @@ document.getElementById("MBcookieSaveChanges").addEventListener("click", functio
     document.querySelector(".mb-cookie-banner").style.display = "none";
 });
 
-document.getElementById("MBacceptCookiesAndCloseBanner").addEventListener("click", function() {
+function MBacceptCookiesAndCloseBanner() {
     localStorage.setItem('cookiesAccepted', 'true');
     document.getElementById("mb-cookie-selector").style.display = "none";
     document.querySelector(".cookie-selector-background").style.display = "none";
     document.documentElement.style.overflowY = "scroll";
     document.querySelector(".mb-cookie-banner").style.display = "none";
     acceptCookies();
-});
+};
 
 document.getElementById("mbCookieCloser").addEventListener("click", function() {
     document.getElementById("mb-cookie-selector").style.display = "none";
