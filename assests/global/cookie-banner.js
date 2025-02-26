@@ -1,14 +1,19 @@
 document.addEventListener("DOMContentLoaded", function () {
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
+    
+    function getStoredConsent(category) {
+        return localStorage.getItem(category) === "true" ? "granted" : "denied";
+    }
+
     gtag('consent', 'default', {
-        'ad_storage': 'denied',
-        'ad_user_data': 'denied',
-        'ad_personalization': 'denied',
-        'analytics_storage': 'denied',
-        'functionality_storage': 'denied',
-        'personalization_storage': 'denied',
-        'security_storage': 'denied'
+        'ad_storage': getStoredConsent('marketingAndAdvertisementCookies'),
+        'ad_user_data': getStoredConsent('marketingAndAdvertisementCookies'),
+        'ad_personalization': getStoredConsent('marketingAndAdvertisementCookies'),
+        'analytics_storage': getStoredConsent('statisticAndAnalyticsCookies'),
+        'functionality_storage': 'granted',
+        'personalization_storage': getStoredConsent('preferencesAndPersonalizationCookies'),
+        'security_storage': getStoredConsent('unclassifiedCookies')
     });
     
     if (localStorage.getItem('cookiesAccepted')) {
@@ -21,34 +26,22 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     function updateCheckboxesFromStorage() {
-        const categories = {
-            "statisticAndAnalyticsCookies": "analytics_storage",
-            "preferencesAndPersonalizationCookies": "personalization_storage",
-            "marketingAndAdvertisementCookies": ["ad_storage", "ad_user_data", "ad_personalization"],
-            "unclassifiedCookies": "security_storage",
-            "MBstatisticAndAnalyticsCookies": "analytics_storage",
-            "MBpreferencesAndPersonalizationCookies": "personalization_storage",
-            "MBmarketingAndAdvertisementCookies": ["ad_storage", "ad_user_data", "ad_personalization"],
-            "MBunclassifiedCookies": "security_storage"
-        };
-
-        Object.keys(categories).forEach(category => {
+        const categories = [
+            "statisticAndAnalyticsCookies",
+            "preferencesAndPersonalizationCookies",
+            "marketingAndAdvertisementCookies",
+            "unclassifiedCookies",
+            "MBstatisticAndAnalyticsCookies",
+            "MBpreferencesAndPersonalizationCookies",
+            "MBmarketingAndAdvertisementCookies",
+            "MBunclassifiedCookies"
+        ];
+        categories.forEach(category => {
             const storedValue = localStorage.getItem(category);
-            const checkbox = document.getElementById(category);
-            if (checkbox) {
-                checkbox.checked = storedValue === "true";
-                
-                if (Array.isArray(categories[category])) {
-                    let updateData = {};
-                    categories[category].forEach(setting => {
-                        updateData[setting] = checkbox.checked ? 'granted' : 'denied';
-                    });
-                    gtag('consent', 'update', updateData);
-                } else {
-                    gtag('consent', 'update', {
-                        [categories[category]]: checkbox.checked ? 'granted' : 'denied'
-                    });
-                }
+            if (storedValue === "true") {
+                document.getElementById(category).checked = true;
+            } else {
+                document.getElementById(category).checked = false;
             }
         });
     }
