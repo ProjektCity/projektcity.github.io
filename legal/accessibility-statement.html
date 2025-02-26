@@ -723,7 +723,7 @@
                 }, 175);
             }
         });
-
+        
         function getDeviceType() {
             const userAgent = navigator.userAgent.toLowerCase();
             if (/mobile|android|iphone|ipad|ipod|blackberry|windows phone/i.test(userAgent)) {
@@ -739,12 +739,12 @@
                 document.querySelector(".mb-cookie-banner").style.display = "block";
                 document.querySelector(".cookie-selector-background").style.display = "none";
                 // Removing Desktop Elements
+                document.getElementById("mobile-header").style.display = "block";
+                document.querySelector(".dt-p-header").style.display = "none";
+                document.querySelector(".dt-main").style.display = "block";
+                document.querySelector(".dt-footer").style.display = "block";
                 document.getElementById("mb-placeholder").style.display = "block";
-                document.getElementById("cookie-banner").remove();
-                document.querySelectorAll(".dt-legal-text-section").forEach(el => {
-                    el.style.fontSize = "20px";
-                    el.style.lineHeight = "30px";
-                });
+                document.getElementById("cookie-banner").style.display = "none";
                 return "mobile";
             } else {
                 // Cookie Banner
@@ -758,7 +758,6 @@
                 document.querySelector(".dt-p-header").style.display = "block";
                 document.querySelector(".dt-main").style.display = "block";
                 document.querySelector(".dt-footer").style.display = "block";
-                document.querySelector(".dt-p-header").style.display = "block";
                 document.querySelector(".dt-p-header").style.display = "block";
                 return "desktop";
             }
