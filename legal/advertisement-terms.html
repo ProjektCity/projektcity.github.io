@@ -4,15 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="../assests/images/logos/mainlogo.png" type="image/x-icon" />
-    <title>Advertisement Terms | Projekt City Helpcenter</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400&family=Roboto&display=swap" rel="stylesheet">
+    <title>Advertisement Terms | Projekt City</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../assests/global/style.css">
     <link rel="stylesheet" href="../assests/global/header/navbar-style.css">
     <link rel="stylesheet" href="../assests/global/header/mobile-style.css">
     <link rel="stylesheet" href="../assests/global/header/mobile-menu.css">
     <link rel="stylesheet" href="../assests/global/main/basic-style.css">
     <link rel="stylesheet" href="../assests/global/footer/legal.css">
-    <!-- Indivual Page Stylesheet -->
+    <!-- Indivual Page Stylesheets -->
     <link rel="stylesheet" href="../assests/pages/legal/style.css">
     <!-- Google tag (gtag.js) -->
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4788944561931875" crossorigin="anonymous"></script>
@@ -807,12 +807,12 @@
                 document.querySelector(".mb-cookie-banner").style.display = "block";
                 document.querySelector(".cookie-selector-background").style.display = "none";
                 // Removing Desktop Elements
-                document.querySelectorAll(".dt-legal-text-section").forEach(el => {
+                document.getElementById("mobile-header").style.display = "block";
+                document.querySelector(".dt-p-header").style.display = "none";
+                document.querySelector(".dt-main").style.display = "block";
+                document.querySelector(".dt-footer").style.display = "block";
                 document.getElementById("mb-placeholder").style.display = "block";
-                document.getElementById("cookie-banner").remove();
-                    el.style.fontSize = "20px";
-                    el.style.lineHeight = "30px";
-                });
+                document.getElementById("cookie-banner").style.display = "none";
                 document.querySelectorAll(".dt-gf-div-line").forEach(el => {
                     el.style.fontSize = "13px";
                 });
@@ -829,7 +829,6 @@
                 document.querySelector(".dt-p-header").style.display = "block";
                 document.querySelector(".dt-main").style.display = "block";
                 document.querySelector(".dt-footer").style.display = "block";
-                document.querySelector(".dt-p-header").style.display = "block";
                 document.querySelector(".dt-p-header").style.display = "block";
                 return "desktop";
             }
