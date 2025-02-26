@@ -854,9 +854,13 @@
         function getDeviceType() {
             const userAgent = navigator.userAgent.toLowerCase();
             if (/mobile|android|iphone|ipad|ipod|blackberry|windows phone/i.test(userAgent)) {
+                // Setting font sizes
                 document.querySelectorAll(".dt-gf-div-line").forEach(el => {
                     el.style.fontSize = "13px";
                 });
+                document.querySelector(".dt-des-content").style.fontSize = "20px";
+                document.querySelector(".dt-map-content").style.fontSize = "20px";
+                document.querySelector(".dt-faq-container").style.fontSize = "20px";
                 // Cookie Banner
                 document.getElementById("cookie-selector").style.display = "none";
                 document.getElementById("cookie-banner").style.display = "none";
