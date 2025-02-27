@@ -241,12 +241,110 @@
         <div class="placeholder w300 h30" id="mb-placeholder" style="display: none;"></div>
         <section class="dt-section" id="header-information">
             <div class="dt-helpcenter-header">
-                <h1>Projekt City Helpcenter</h1>
+                <h1>Import World</h1>
             </div>
         </section>
         <div class="placeholder w1150 h40"></div>
         <section class="dt-section">
-            <!-- Content -->
+            <div class="dt-import-world-container">
+                <h4 class="bold">#1 Import the world into your Minecraft folder</h4>
+                <a>If you want to import the world to your minecraft folder, you must perform the following steps:</a>
+                <div class="dt-helpcenter-enumerations">
+                    <div class="dt-helpcenter-enumeration">
+                        <div class="dt-helpcenter-enumeration-left">
+                            <a>#1</a>
+                        </div>
+                        <div class="dt-helpcenter-enumeration-right">
+                            <a>Right click on the .zip file "Projekt City [V5.0]" and click "extract all"</a>
+                        </div>
+                    </div>
+                    <div class="dt-helpcenter-enumeration">
+                        <div class="dt-helpcenter-enumeration-left">
+                            <a>#2</a>
+                        </div>
+                        <div class="dt-helpcenter-enumeration-right">
+                            <a>Click on "extract"</a>
+                        </div>
+                    </div>
+                    <div class="dt-helpcenter-enumeration">
+                        <div class="dt-helpcenter-enumeration-left">
+                            <a>#3</a>
+                        </div>
+                        <div class="dt-helpcenter-enumeration-right">
+                            <a>Right click on the file and copy it</a>
+                        </div>
+                    </div>
+                    <div class="dt-helpcenter-enumeration">
+                        <div class="dt-helpcenter-enumeration-left">
+                            <a>#4</a>
+                        </div>
+                        <div class="dt-helpcenter-enumeration-right">
+                            <a>Press the windows symbol and type " run " and open the app, enter "%appdata%" and click " Ok "</a>
+                        </div>
+                    </div>
+                    <div class="dt-helpcenter-enumeration">
+                        <div class="dt-helpcenter-enumeration-left">
+                            <a>#5</a>
+                        </div>
+                        <div class="dt-helpcenter-enumeration-right">
+                            <a>Go into " .minecraft " --> " saves " and paste the copied folder</a>
+                        </div>
+                    </div>
+                </div>
+                <h4 class="bold">#1 Import the world into your Minecraft folder</h4>
+                <div class="dt-helpcenter-enumerations">
+                    <div class="dt-helpcenter-enumeration">
+                        <div class="dt-helpcenter-enumeration-left">
+                            <a>#1</a>
+                        </div>
+                        <div class="dt-helpcenter-enumeration-right">
+                            <a>Right click on the .zip file "Projekt City [V5.0]" and click "extract all"</a>
+                        </div>
+                    </div>
+                    <div class="dt-helpcenter-enumeration">
+                        <div class="dt-helpcenter-enumeration-left">
+                            <a>#2</a>
+                        </div>
+                        <div class="dt-helpcenter-enumeration-right">
+                            <a>Click on "extract"</a>
+                        </div>
+                    </div>
+                    <div class="dt-helpcenter-enumeration">
+                        <div class="dt-helpcenter-enumeration-left">
+                            <a>#3</a>
+                        </div>
+                        <div class="dt-helpcenter-enumeration-right">
+                            <a>Right click on the file and copy it</a>
+                        </div>
+                    </div>
+                    <div class="dt-helpcenter-enumeration">
+                        <div class="dt-helpcenter-enumeration-left">
+                            <a>#4</a>
+                        </div>
+                        <div class="dt-helpcenter-enumeration-right">
+                            <a>Go to your server folder</a>
+                        </div>
+                    </div>
+                    <div class="dt-helpcenter-enumeration">
+                        <div class="dt-helpcenter-enumeration-left">
+                            <a>#5</a>
+                        </div>
+                        <div class="dt-helpcenter-enumeration-right">
+                            <a>Paste the copied folder in the root directory of the server</a>
+                        </div>
+                    </div>
+                    <div class="dt-helpcenter-enumeration">
+                        <div class="dt-helpcenter-enumeration-left">
+                            <a>#6</a>
+                        </div>
+                        <div class="dt-helpcenter-enumeration-right">
+                            <a>Rename the folder if neccessary to "world" and if you have an existing "world" folder, remove the old folder. (When removing the old world folder, you are removing the world of your server which has been generated so far. Deleting this file can not be undone and you will lose any progress made in the world. Please keep that in mind!)</a>
+                        </div>
+                    </div>
+                </div>
+                <a>You can also add the world as a new world with the help of multiverse core! Apex Hosting has very good step-by-step instructions for this, available at the following address:</a>
+                <a class="linkout" href="https://apexminecrafthosting.com/multiverse-core-plugin?utm_src=projektcity_helpcenter_import-world_page_tutorial_information_linkout&utm_medium=projektcity&utm_content=apexhosting" target="_blank">https://apexminecrafthosting.com/multiverse-core-plugin/</a>
+            </div>
         </section>
     </main>
     <footer class="dt-footer" style="overflow-x: hidden;">
@@ -615,6 +713,9 @@
                 });
                 document.querySelector(".dt-gf-div-copy").innerHTML = "<a>&copy; 2025 Projekt City Ltd.</a><br><a>All rights reserved!</a>"
                 // Cookie Banner
+                document.querySelectorAll(".dt-import-world-container").forEach(el => {
+                    el.fontSize = "20px";
+                });
                 document.getElementById("cookie-selector").style.display = "none";
                 document.getElementById("cookie-banner").style.display = "none";
                 document.getElementById("mb-cookie-selector").style.display = "none";

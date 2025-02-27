@@ -23,3 +23,19 @@
     margin-block-start: 0em;
     margin-block-end: 0em;
 }
+
+.dt-import-world-container {
+    font-size: 25px;
+}
+
+.dt-helpcenter-enumeration {
+    display: flex;
+}
+
+.dt-helpcenter-enumeration-left {
+    margin-right: 10px;
+}
+
+.dt-helpcenter-enumeration-right {
+    
+}
