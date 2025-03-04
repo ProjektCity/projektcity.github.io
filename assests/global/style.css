@@ -788,7 +788,7 @@ input[type="checkbox"]:checked::before {
 @media (max-width: 480px) {
     .modal {
         min-width: 200px;
-        max-width: 95%;
+        max-width: 100%;
     }
 }
 
