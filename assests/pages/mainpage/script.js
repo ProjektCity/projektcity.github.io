@@ -1,9 +1,8 @@
-
 fetch('https://pcapi-k48687951-6e4e.vercel.app/api')
 .then(response => response.json())
 .then(data => {
     const downloadCount = data.downloads;
-    const maxValue = 20000;
+    const maxValue = 30000;
 
     // Formatting number
     const formattedDownloadCount = new Intl.NumberFormat('en-US').format(downloadCount);
