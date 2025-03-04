@@ -778,7 +778,7 @@ input[type="checkbox"]:checked::before {
 
 /* Mobile Devces */
 @media (max-width: 768px) {
-    .element {
+    .modal {
         min-width: 250px;
         max-width: 90%;
     }
@@ -786,7 +786,7 @@ input[type="checkbox"]:checked::before {
 
 /* Desktop Devices */
 @media (max-width: 480px) {
-    .element {
+    .modal {
         min-width: 200px;
         max-width: 95%;
     }
@@ -866,6 +866,7 @@ input[type="checkbox"]:checked::before {
     text-align: center;
 }
 
+/* Standard Keyframes für größere Bildschirme (Computer) */
 @keyframes slideIn {
     from {
         bottom: -100%;
@@ -881,5 +882,27 @@ input[type="checkbox"]:checked::before {
     }
     to {
         bottom: -100%;
+    }
+}
+
+/* Media Query für mobile Geräte */
+@media (max-width: 768px) {
+    /* Animation für mobile Geräte */
+    @keyframes slideIn {
+        from {
+            bottom: -100%;
+        }
+        to {
+            bottom: 0px; /* Setzt den Wert auf 0px für mobile Geräte */
+        }
+    }
+
+    @keyframes slideOut {
+        from {
+            bottom: 0px; /* Startwert für mobile Geräte */
+        }
+        to {
+            bottom: -100%; /* Endwert bleibt unverändert */
+        }
     }
 }
