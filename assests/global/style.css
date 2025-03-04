@@ -757,3 +757,129 @@ input[type="checkbox"]:checked::before {
     font-size: 25px;
     line-height: 20px;
 }
+
+/* Menu */
+.modal {
+    background-color: #1D1D1E;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    bottom: -100%;
+    box-sizing: border-box;
+    color: white;
+    height: 100%;
+    left: 50%;
+    min-width: 300px;
+    max-width: 1150px;
+    padding: 0px;
+    position: fixed;
+    transform: translateX(-50%);
+    width: 100%;
+}
+
+/* Mobile Devces */
+@media (max-width: 768px) {
+    .element {
+        min-width: 250px;
+        max-width: 90%;
+    }
+}
+
+/* Desktop Devices */
+@media (max-width: 480px) {
+    .element {
+        min-width: 200px;
+        max-width: 95%;
+    }
+}
+
+
+.modal-content {
+    height: calc(100% - 40px);
+}
+
+.modal-header {
+    border-bottom: 1px solid #fff;
+    display: flex;
+    height: 22.3px;
+    padding: 7.5px;
+}
+
+/* "Done" Button*/
+.modal-ui-close-btn {
+    color: #007bff;
+    cursor: pointer;
+    height: 22.3px;
+    font-weight: 400;
+}
+
+.modal-ui-close-btn-inner {
+    height: 22.3px;
+}
+
+/* Site information */
+.modal-ui-information-middle {
+    text-align: center;
+    width: 100%;
+}
+
+/* Secured information */
+.modal-ui-security-information {
+
+}
+
+.modal-ui-security-svg {
+
+}
+
+/* Main Content */
+.modal-ui-maincontent {
+
+}
+
+.scroll-container::-webkit-scrollbar {
+  width: 8px;
+}
+
+.scroll-container::-webkit-scrollbar-thumb {
+  background-color: #979596;
+  border-radius: 4px;
+}
+
+.scroll-container::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+.scroll-container::-webkit-scrollbar:horizontal {
+  height: 8px;
+}
+
+.scroll-container::-webkit-scrollbar-thumb:horizontal {
+  background-color: #979596;
+  border-radius: 4px;
+}
+
+.scroll-container::-webkit-scrollbar-track:horizontal {
+  background-color: transparent;
+}
+
+.main-content {
+    text-align: center;
+}
+
+@keyframes slideIn {
+    from {
+        bottom: -100%;
+    }
+    to {
+        bottom: -95px;
+    }
+}
+
+@keyframes slideOut {
+    from {
+        bottom: -95px;
+    }
+    to {
+        bottom: -100%;
+    }
+}

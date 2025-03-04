@@ -564,6 +564,28 @@
         </div>
         <div class="gm-line-hr-h1-w100"></div>
     </footer>
+    <div class="modal" id="modal">
+        <div class="modal-header">
+            <div class="modal-ui-close-btn" id="modal-ui-close">
+                <div class="modal-ui-close-btn-inner">
+                    <a>Done</a>
+                </div>
+            </div>
+            <div class="placeholder w10 h22-3"></div>
+            <div class="modal-ui-information-middle">
+                <a>Share Projekt City</a>
+            </div>
+            <div class="placeholder w10 h22-3"></div>
+            <div class="modal-ui-security-information">
+                <svg xmlns="http://www.w3.org/2000/svg" height="22.3" viewBox="0 -960 960 960" width="22.3" fill="#fff">
+                    <path d="M240-80q-33 0-56.5-23.5T160-160v-400q0-33 23.5-56.5T240-640h40v-80q0-83 58.5-141.5T480-920q83 0 141.5 58.5T680-720v80h40q33 0 56.5 23.5T800-560v400q0 33-23.5 56.5T720-80H240Zm0-80h480v-400H240v400Zm240-120q33 0 56.5-23.5T560-360q0-33-23.5-56.5T480-440q-33 0-56.5 23.5T400-360q0 33 23.5 56.5T480-280ZM360-640h240v-80q0-50-35-85t-85-35q-50 0-85 35t-35 85v80ZM240-160v-400 400Z"/>
+                </svg>
+            </div>
+        </div>
+        <div class="modal-ui-maincontent">
+
+        </div>
+    </div>
     <div class="cookie-banner" id="cookie-banner">
         <div class="cb-inner">
             <div class="cb-middle-text">
@@ -843,23 +865,6 @@
     <script src="assests/pages/mainpage/script.js"></script>
     <script src="assests/pages/mainpage/purecounter.js"></script>
     <script>
-        // Share Button
-        document.getElementById('shareButton').addEventListener('click', async () => {
-            if (navigator.share) {
-                try {
-                    await navigator.share({
-                        title: 'Projekt City - by SuffixHD & itsmarian',
-                        text: 'Check out the official Projekt City website and play it for FREE today.',
-                        url: 'https://bit.ly/ProjektCity',
-                    });
-                } catch (error) {
-                    console.error('Error sharing:', error);
-                }
-            } else {
-                console.log('Sharing is not supported in this browser.');
-            }
-        });
-        
         // Mobile Navbar
         document.getElementById("menu-opener").addEventListener("click", function() {
             const menu = document.getElementById("mb-menu");
