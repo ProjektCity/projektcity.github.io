@@ -16,4 +16,11 @@
     padding-top: 15px;
     padding-left: 5px;
     padding-right: 5px;
+    /* Non selectable text */
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none; 
+    user-select: none;
 }
