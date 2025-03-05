@@ -594,7 +594,7 @@
                 authorizationCode.innerText = `${urlParams.get('code')}`;
             } else if (urlParams.has('error')) {
                 errormsg.style.display = 'block';
-                errorDescription.innerHTML = `<a style="color: #fff; text-decoration: underline;">Error type:</a><a style="color: #fff;">&nbsp;${urlParams.get('error')}</a><br><a style="color: #ff9898; text-decoration: underline;">Description:</a><a style="color: #ff9898;">&nbsp;${urlParams.get('error_description')}</a>`;
+                errorDescription.innerHTML = `<a style="color: #fff; text-decoration: underline;">Error type:</a><a style="color: #fff;">&nbsp;${urlParams.get('error')}</a><br><a style="color: #fff; text-decoration: underline;">Description:</a><a style="color: #fff;">&nbsp;${urlParams.get('error_description')}</a>`;
             } else {
                 errormsg.style.display = 'block';
                 errorDescription.innerText = `No callback code recieved.`;
