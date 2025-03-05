@@ -1,4 +1,15 @@
-// Mobile
+/*!
+    * ©️ 2025 Projekt City Ltd. | All rights reserved
+    * 
+    * This code is the property of Projekt City Ltd. and may not be copied or redistributed without permission
+    * Legal basis: This code is intended for use solely on the sites of Projekt City
+    * Redistribution or use on other sites, not related to Projekt City, is strictly prohibited
+    * For more information, please contact us at: projektcityofficial@gmail.com
+    * 
+    * Script version: 1.0
+*/
+
+// Desktop Elements
 document.getElementById('redirect-v5-0').addEventListener('click', function() {
     window.open("/download/v5.0?utm_src=projektcity_downloadbtn_versiondownload&version=5.0&version_id=v5-0&return_url=https%3A%2F%2Fprojektcity.github.io&2Fdownload", "_parent");
 });
@@ -31,7 +42,7 @@ document.getElementById('redirect-v1-0').addEventListener('click', function() {
     window.open("/download/v1.0?utm_src=projektcity_downloadbtn_versiondownload&version=1.0&version_id=v1-0&return_url=https%3A%2F%2Fprojektcity.github.io&2Fdownload", "_parent");
 });
 
-// Mobile 
+// Mobile Elements
 document.getElementById('mb-redirect-v5-0').addEventListener('click', function() {
     window.open("/download/v5.0?utm_src=projektcity_downloadbtn_versiondownload&version=5.0&version_id=v5-0&return_url=https%3A%2F%2Fprojektcity.github.io&2Fdownload", "_parent");
 });

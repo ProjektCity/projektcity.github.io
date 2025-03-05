@@ -4,6 +4,7 @@
     * Version: 1.5.0
     * Url: https://github.com/srexi/purecounterjs
     * License: MIT
+    * Third party code - Projekt City Ltd. has no control over this code and therefore cannot guarantee its functionality or security!
 */
 ! function(e, t) {
     "object" == typeof exports && "object" == typeof module ? module.exports = t() : "function" == typeof define && define.amd ? define([], t) : "object" == typeof exports ? exports.PureCounter = t() : e.PureCounter = t()
