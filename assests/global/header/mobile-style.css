@@ -10,12 +10,6 @@
     margin: 0 auto;
     padding-top: 5px;
     padding-bottom: 5px;
-}
-
-.mb-head {
-    min-width: 300px;
-    margin: 0 auto;
-    max-width: 400px;
     /* Non selectable text */
     -webkit-touch-callout: none;
     -webkit-user-select: none;
@@ -23,6 +17,12 @@
     -moz-user-select: none;
     -ms-user-select: none; 
     user-select: none;
+}
+
+.mb-head {
+    min-width: 300px;
+    margin: 0 auto;
+    max-width: 400px;
 }
 
 .mb-header {
