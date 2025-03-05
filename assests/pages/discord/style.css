@@ -76,8 +76,7 @@
     min-height: 35.2px;
     max-height: 300px;
     padding: 4.9px;
-    min-width: 300px;
-    max-width: 1000px;
+    width: 100%;
 }
 
 .dt-dsc-invitejoiner {
@@ -90,6 +89,13 @@
     margin: 0 auto;
     min-width: 300px;
     max-width: 470px;
+    /* Non selectable text */
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none; 
+    user-select: none;
 }
 
 .dt-dsc-logo {
@@ -105,6 +111,12 @@
     padding-bottom: 13.5px;
     padding-top: 13.5px;
     padding-right: 17px;
+    text-align: center;
+    width: 100%;
+}
+
+.dt-discord-footer-information {
+    font-size: 10px;
     text-align: center;
     width: 100%;
 }
