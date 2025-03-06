@@ -11,15 +11,15 @@
 
 /* Information about changes */
 document.getElementById("information-notifier-close").addEventListener("click", function() {
-    document.getElementById("information-notifier-close").style.display = "none";
+    document.getElementById("update-informatiob-notifier").style.display = "none";
     localStorage.setItem('changesNotificationBannerClosed', 'true');
 });
 
 document.addEventListener("DOMContentLoaded", function() {
     if (localStorage.getItem('changesNotificationBannerClosed') === 'true') {
-        document.getElementById("information-notifier-close").style.display = "none";
+        document.getElementById("update-informatiob-notifier").style.display = "none";
     } else {
-        document.getElementById("information-notifier-close").style.display = "block";
+        document.getElementById("update-informatiob-notifier").style.display = "block";
     }
 });
 
