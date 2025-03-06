@@ -71,13 +71,13 @@ function createIndicators() {
         button.dataset.index = i;
         button.appendChild(progress);
         button.onclick = () => showSlide(i, true);
-        dispatchEventindicatorsContainer.appendChild(button);
+        dtindicatorsContainer.appendChild(button);
     });
     updateIndicators();
 }
 
 function updateIndicators() {
-    const buttons = dispatchEventindicatorsContainer.querySelectorAll('button');
+    const buttons = dtindicatorsContainer.querySelectorAll('button');
     buttons.forEach((button, i) => {
         const progress = button.querySelector('.dt-progress');
         button.classList.remove('dt-active');
@@ -98,7 +98,7 @@ function showSlide(newIndex, stopAutoSlide = false) {
 
     index = newIndex;
     const offset = -index * 100;
-    DOMStringListcarousel.style.transform = `translateX(${offset}%)`;
+    dtcarousel.style.transform = `translateX(${offset}%)`;
     updateIndicators();
 
     if (stopAutoSlide) {

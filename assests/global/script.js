@@ -9,6 +9,20 @@
     * Script version: 1.0
 */
 
+/* Information about changes */
+document.getElementById("information-notifier-close").addEventListener("click", function() {
+    document.getElementById("information-notifier-close").style.display = "none";
+    localStorage.setItem('changesNotificationBannerClosed', 'true');
+});
+
+document.addEventListener("DOMContentLoaded", function() {
+    if (localStorage.getItem('changesNotificationBannerClosed') === 'true') {
+        document.getElementById("information-notifier-close").style.display = "none";
+    } else {
+        document.getElementById("information-notifier-close").style.display = "block";
+    }
+});
+
 // Custom CSS styles based on DIV properties
 (function() {
     function generateStyles() {

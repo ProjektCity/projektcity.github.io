@@ -751,6 +751,32 @@ p {
     cursor: pointer;
 }
 
+/* Update and Notifier */
+.dt-update-information-notifier {
+    border: 1px solid #fff;
+    border-radius: 5px;
+    padding: 7.5px;
+}
+
+.dt-update-information-notifier-container {
+    display: flex;
+}
+
+.dt-update-information-notifier-text {
+    width: calc(100% - 30px);
+}
+
+.dt-update-information-notifier-btn {
+    cursor: pointer;
+    height: 30px;
+    width: 30px;
+}
+
+.dt-update-information-notifier-svg {
+    height: 30px;
+    width: 30px;
+}
+
 /* Checkbox */
 input[type="checkbox"] {
     appearance: none;
