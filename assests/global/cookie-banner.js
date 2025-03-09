@@ -10,11 +10,9 @@
  */
 
 document.addEventListener("DOMContentLoaded", () => {
-    // dataLayer initialisieren und gtag-Funktion definieren
     window.dataLayer = window.dataLayer || [];
     const gtag = (...args) => dataLayer.push(args);
   
-    // Cookie-Kategorien (Desktop und Mobile)
     const COOKIE_CATEGORIES = [
       "statisticAndAnalyticsCookies",
       "preferencesAndPersonalizationCookies",
@@ -25,12 +23,11 @@ document.addEventListener("DOMContentLoaded", () => {
       "MBmarketingAndAdvertisementCookies",
       "MBunclassifiedCookies"
     ];
-  
-    // Hilfsfunktion: Liest den in localStorage gespeicherten Wert aus und gibt "granted" oder "denied" zurück
+
     const getStoredConsent = category =>
       localStorage.getItem(category) === "true" ? "granted" : "denied";
   
-    // Standard-Consent für Desktop
+    // Standard-Consent for Desktop
     gtag('consent', 'default', {
       'ad_storage': getStoredConsent('marketingAndAdvertisementCookies'),
       'ad_user_data': getStoredConsent('marketingAndAdvertisementCookies'),
@@ -41,7 +38,7 @@ document.addEventListener("DOMContentLoaded", () => {
       'security_storage': getStoredConsent('unclassifiedCookies')
     });
   
-    // Standard-Consent für Mobile
+    // Standard-Consent for Mobile
     gtag('consent', 'default', {
       'ad_storage': getStoredConsent('MBmarketingAndAdvertisementCookies'),
       'ad_user_data': getStoredConsent('MBmarketingAndAdvertisementCookies'),
@@ -52,23 +49,34 @@ document.addEventListener("DOMContentLoaded", () => {
       'security_storage': getStoredConsent('MBunclassifiedCookies')
     });
   
-    // Falls Cookies bereits akzeptiert wurden, Banner ausblenden
+    // If Cookies have already been accepted, remove the banner
     if (localStorage.getItem('cookiesAccepted')) {
       document.getElementById("cookie-banner").style.display = "none";
       document.querySelector(".mb-cookie-banner").style.display = "none";
       document.getElementById("mb-cookie-selector").style.display = "none";
       console.log("User already accepted cookies. Cookie banner removed.");
     } else {
-      // Standardmäßig Desktop-Checkboxen zurücksetzen
-      ["statisticAndAnalyticsCookies", "preferencesAndPersonalizationCookies", "displayThirdPartyContent", "marketingAndAdvertisementCookies", "unclassifiedCookies"]
-        .forEach(id => {
-          const el = document.getElementById(id);
-          if (el) el.checked = false;
-        });
-      console.log("Cookies have not yet been accepted!");
+        // If cookies have not yet been accepted, reset all checkboxes
+        const ids = [
+            "statisticAndAnalyticsCookies",
+            "preferencesAndPersonalizationCookies",
+            "displayThirdPartyContent",
+            "marketingAndAdvertisementCookies",
+            "unclassifiedCookies",
+            "MBstatisticAndAnalyticsCookies",
+            "MBpreferencesAndPersonalizationCookies",
+            "MBdisplayThirdPartyContent",
+            "MBmarketingAndAdvertisementCookies",
+            "MBunclassifiedCookies"
+          ];
+          
+          ids.forEach(id => {
+            const el = document.getElementById(id);
+            if (el) el.checked = false;
+          });          
     }
   
-    // Aktualisiert Checkboxen anhand der in localStorage gespeicherten Werte
+    // Update the checkboxes based on the stored values
     const updateCheckboxesFromStorage = () => {
       COOKIE_CATEGORIES.forEach(category => {
         const checkbox = document.getElementById(category);
@@ -78,7 +86,7 @@ document.addEventListener("DOMContentLoaded", () => {
       });
     };
   
-    // Alle 1 Sekunde: Status der Checkboxen in localStorage speichern
+    // Update the checkboxes every second
     setInterval(() => {
       COOKIE_CATEGORIES.forEach(category => {
         const checkbox = document.getElementById(category);
@@ -93,7 +101,7 @@ document.addEventListener("DOMContentLoaded", () => {
     updateCheckboxesFromStorage();
     getThirdPartyContent();
   
-    // Lädt bzw. entfernt Drittanbieter-Inhalte basierend auf der Cookie-Zustimmung
+    // Loading/Removing third-party content based on the user's cookie preferences
     function getThirdPartyContent() {
       const allowContent = localStorage.getItem('displayThirdPartyContent') === 'true';
       const dtCheckbox = document.getElementById("displayThirdPartyContent");
@@ -126,7 +134,7 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     }
   
-    // Ermittelt den Gerätetyp anhand des User Agents
+    // Get the user's device type
     function getUserDeviceType() {
       const ua = navigator.userAgent.toLowerCase();
       return /mobile|android|iphone|ipad|ipod|blackberry|windows phone/i.test(ua)
@@ -134,7 +142,7 @@ document.addEventListener("DOMContentLoaded", () => {
         : "desktop";
     }
   
-    // Event: Schließen der Cookie-Banner, wenn der Nutzer nicht zustimmt
+    // Close cookie selector
     const closeBannerBtn = document.querySelector(".cb-close-btn");
     if (closeBannerBtn) {
       closeBannerBtn.addEventListener("click", () => {
@@ -144,7 +152,7 @@ document.addEventListener("DOMContentLoaded", () => {
       });
     }
   
-    // Funktion: Alle Cookies akzeptieren
+    // Accept all cookies
     function acceptCookies() {
       document.querySelectorAll('.cookie-banner').forEach(el => el.style.display = 'none');
       localStorage.setItem('cookiesAccepted', 'true');
@@ -159,7 +167,7 @@ document.addEventListener("DOMContentLoaded", () => {
         'personalization_storage': 'granted',
         'security_storage': 'granted'
       });
-      // Checkboxen für Desktop und Mobile setzen
+      // Set checkboxes for desktop and mobile
       [
         "statisticAndAnalyticsCookies", "preferencesAndPersonalizationCookies", "displayThirdPartyContent",
         "marketingAndAdvertisementCookies", "unclassifiedCookies",
@@ -173,7 +181,7 @@ document.addEventListener("DOMContentLoaded", () => {
       console.log("User accepted all cookies: all consents set to granted!");
     }
   
-    // Öffnet das Cookie-Menü
+    // Open Cookie Selector
     function openCookieMenu() {
       document.getElementById("cookie-selector").style.display = "block";
       document.querySelector(".cookie-selector-background").style.display = "block";
@@ -187,7 +195,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const cookieManagerBtn = document.getElementById("cookieManager");
     if (cookieManagerBtn) cookieManagerBtn.addEventListener("click", openCookieMenu);
   
-    // Menüoptionen zum Schließen/Speichern
+    // Menu options to close/save changes
     const cookieBottomCloseBtn = document.querySelector(".cookie-bottom-close-button");
     if (cookieBottomCloseBtn) {
       cookieBottomCloseBtn.addEventListener("click", () => {
@@ -214,7 +222,7 @@ document.addEventListener("DOMContentLoaded", () => {
       acceptCookies();
     });
   
-    // Desktop – Cookie-Auswahländerungen
+    // Desktop – cookie choices
     document.getElementById("statisticAndAnalyticsCookies").addEventListener("change", function() {
       const cb = this;
       gtag('consent', 'update', { 'analytics_storage': cb.checked ? 'granted' : 'denied' });
@@ -227,7 +235,7 @@ document.addEventListener("DOMContentLoaded", () => {
       console.log(`'personalization_storage' ${cb.checked ? "granted" : "denied"}!`);
     });
   
-    // Desktop – Drittanbieter-Inhalt umschalten
+    // Desktop – third party content switch
     document.getElementById("displayThirdPartyContent").addEventListener("change", function() {
       const cb = this;
       localStorage.setItem('displayThirdPartyContent', cb.checked);
@@ -244,7 +252,7 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     });
   
-    // Mobile – Drittanbieter-Inhalt umschalten
+    // Mobile – third party content switch
     document.getElementById("MBdisplayThirdPartyContent").addEventListener("change", function() {
       const cb = this;
       localStorage.setItem('MBdisplayThirdPartyContent', cb.checked);
@@ -260,7 +268,7 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     });
   
-    // Desktop – Marketing und Advertisement umschalten
+    // Desktop – Marketing and Advertisement switch
     document.getElementById("marketingAndAdvertisementCookies").addEventListener("change", function() {
       const cb = this;
       const status = cb.checked ? 'granted' : 'denied';
@@ -272,14 +280,14 @@ document.addEventListener("DOMContentLoaded", () => {
       console.log(`${cb.checked ? "Enabled" : "Disabled"} 'ad_storage', 'ad_user_data' and 'ad_personalization'!`);
     });
   
-    // Desktop – Unclassified Cookies umschalten
+    // Desktop – Unclassified Cookies switch
     document.getElementById("unclassifiedCookies").addEventListener("change", function() {
       const cb = this;
       gtag('consent', 'update', { 'security_storage': cb.checked ? 'granted' : 'denied' });
       console.log(`'security_storage' ${cb.checked ? "granted" : "denied"}!`);
     });
   
-    // Mobile – Cookie-Banner öffnen und schließen
+    // Mobile – Open Cookie Selector
     document.getElementById("mbCookieOpener").addEventListener("click", () => {
       document.documentElement.style.overflowY = "hidden";
       document.getElementById("mb-cookie-selector").style.display = "block";
@@ -294,22 +302,13 @@ document.addEventListener("DOMContentLoaded", () => {
       document.querySelector(".mb-cookie-banner").style.display = "none";
     });
   
-    function MBacceptCookiesAndCloseBanner() {
-      localStorage.setItem('cookiesAccepted', 'true');
-      document.documentElement.style.overflowY = "scroll";
-      document.getElementById("mb-cookie-selector").style.display = "none";
-      document.querySelector(".cookie-selector-background").style.display = "none";
-      document.querySelector(".mb-cookie-banner").style.display = "none";
-      acceptCookies();
-    }
-  
     document.getElementById("mbCookieCloser").addEventListener("click", () => {
       document.getElementById("mb-cookie-selector").style.display = "none";
       document.querySelector(".cookie-selector-background").style.display = "none";
       document.documentElement.style.overflowY = "scroll";
     });
   
-    // Mobile – Cookie-Auswahl ändern
+    // Mobile – Change cookie preferences
     document.getElementById("MBstatisticAndAnalyticsCookies").addEventListener("change", function() {
       const cb = this;
       gtag('consent', 'update', { 'analytics_storage': cb.checked ? 'granted' : 'denied' });
@@ -339,7 +338,7 @@ document.addEventListener("DOMContentLoaded", () => {
       console.log(`'security_storage' ${cb.checked ? "granted" : "denied"}!`);
     });
   
-    // Cookie Changer – Öffnet je nach Gerätetyp das entsprechende Menü
+    // Cookie Changer – opening menu depending on device type
     document.getElementById("CookieChanger").addEventListener("click", () => {
       const deviceType = getUserDeviceType();
       document.documentElement.style.overflowY = "hidden";
@@ -352,5 +351,13 @@ document.addEventListener("DOMContentLoaded", () => {
         document.getElementById("mb-cookie-banner").style.display = "none";
       }
     });
-  });
-  
+});
+
+function MBacceptCookiesAndCloseBanner() {
+    localStorage.setItem('cookiesAccepted', 'true');
+    document.documentElement.style.overflowY = "scroll";
+    document.getElementById("mb-cookie-selector").style.display = "none";
+    document.querySelector(".cookie-selector-background").style.display = "none";
+    document.querySelector(".mb-cookie-banner").style.display = "none";
+    acceptCookies();
+}
