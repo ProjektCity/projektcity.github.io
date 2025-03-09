@@ -269,6 +269,17 @@
     width: 711px;
 }
 
+.cookie-preferences-information-container {
+    margin: 0 auto;
+    position: relative;
+    top: 10px;
+    width: calc(100% - 20px);
+}
+
+.cookie-preferences-information-container a {
+    font-size: 20px;
+}
+
 .flexible-iframe {
     
 }

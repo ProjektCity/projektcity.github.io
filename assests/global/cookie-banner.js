@@ -43,7 +43,7 @@ document.addEventListener("DOMContentLoaded", function () {
         document.getElementById("mb-cookie-selector").style.display = "none";
         console.log("User already accepted cookies. Cookie banner removed.");
     } else {
-        console.log("NO COOKIES!");
+        console.log("Cookies have not yet been accepted!");
     }
 
     function updateCheckboxesFromStorage() {
@@ -87,8 +87,26 @@ document.addEventListener("DOMContentLoaded", function () {
     }, 1000);
 
     updateCheckboxesFromStorage();
+    getThirdPartyContent();
 });
 
+// Third Party Content
+function getThirdPartyContent() {
+    const allowThirdPartyContent = localStorage.getItem('displayThirdPartyContent') === 'true';
+    const ThirdPartyCheckbox = document.getElementById("displayThirdPartyContent");
+
+    if (allowThirdPartyContent) {
+        ThirdPartyCheckbox.checked = true;
+        console.log("Third party content will be displayed!");
+        document.querySelector(".dt-videocontainer").innerHTML = `<iframe src="https://www.youtube.com/embed/bB5IUyPRXO8?autohide=1&autoplay=1&hl=en&loop=1&mute=1&modestbranding=1&playlist=bB5IUyPRXO8&rel=0&showinfo=1&vq=hd1080" width="711" height="400" frameborder="0" allowfullscreen="allowfullscreen"></iframe>`;
+        document.querySelector(".mb-videocontainer").innerHTML = `<iframe src="https://www.youtube.com/embed/bB5IUyPRXO8?autohide=1&autoplay=1&hl=en&loop=1&mute=1&modestbranding=1&playlist=bB5IUyPRXO8&rel=0&showinfo=1&vq=hd1080" width="300" height="169" frameborder="0" allowfullscreen="allowfullscreen"></iframe>`;
+    } else {
+        ThirdPartyCheckbox.checked = false;
+        console.log("Third party content will not be displayed!");
+        document.querySelector(".dt-videocontainer").innerHTML = `<div class="cookie-preferences-information-container"><h4>This video can not be displayed</h4><a>Your cookie preferences do not allow YouTube videos to be played or third-party links and content to be loaded. To watch the video, change your cookie preferences.</a></div>`;
+        document.querySelector(".mb-videocontainer").innerHTML = `<div class="cookie-preferences-information-container"><h4>This video can not be displayed</h4><a>Your cookie preferences do not allow YouTube videos to be played or third-party links and content to be loaded. To watch the video, change your cookie preferences.</a></div>`;
+    }
+}
 
 // Set device type
 function getUserDeviceType() {
@@ -113,6 +131,8 @@ function acceptCookies() {
     document.querySelector('.cookie-banner').style.display = 'none';
     document.querySelector('.cookie-banner').style.display = "none";
     localStorage.setItem('cookiesAccepted', 'true');
+    localStorage.setItem('displayThirdPartyContent', 'true');
+    getThirdPartyContent();
     gtag('consent', 'update', {
         'ad_storage': 'granted',
         'ad_user_data': 'granted',
@@ -125,16 +145,18 @@ function acceptCookies() {
     // Desktop Checkboxes
     document.getElementById("statisticAndAnalyticsCookies").checked = "true";
     document.getElementById("preferencesAndPersonalizationCookies").checked = "true";
+    document.getElementById("displayThirdPartyContent").checked = "true";
     document.getElementById("marketingAndAdvertisementCookies").checked = "true";
     document.getElementById("unclassifiedCookies").checked = "true";
     // Mobile Checkboxes
     document.getElementById("MBstatisticAndAnalyticsCookies").checked = "true";
     document.getElementById("MBpreferencesAndPersonalizationCookies").checked = "true";
+    document.getElementById("MBdisplayThirdPartyContent").checked = "true";
     document.getElementById("MBmarketingAndAdvertisementCookies").checked = "true";
     document.getElementById("MBunclassifiedCookies").checked = "true";
     // Enable Scroll
     document.documentElement.style.overflowY = "scroll";
-    console.log("User accepted all cookies: set the values 'ad_storage', 'ad_user_data', 'ad_personalization', 'analytics_storage', 'functionality_storage', 'personalization_storage' and 'security_storage' to granted!")
+    console.log("User accepted all cookies: set the values 'ad_storage', 'ad_user_data', 'ad_personalization', 'analytics_storage', 'displayThirdPartyContent', 'functionality_storage', 'personalization_storage' and 'security_storage' to granted!")
 }
 
 function openCookieMenu() {
@@ -207,6 +229,19 @@ document.getElementById("preferencesAndPersonalizationCookies").addEventListener
     }   
 });
 
+document.getElementById("displayThirdPartyContent").addEventListener("change", function() {
+    var checkbox = document.getElementById("displayThirdPartyContent");
+    if (checkbox.checked) {
+        localStorage.setItem('displayThirdPartyContent', 'true');
+        console.log("Third party content will be displayed!");
+        document.querySelector(".dt-videocontainer").innerHTML = `<iframe src="https://www.youtube.com/embed/bB5IUyPRXO8?autohide=1&autoplay=1&hl=en&loop=1&mute=1&modestbranding=1&playlist=bB5IUyPRXO8&rel=0&showinfo=1&vq=hd1080" width="711" height="400" frameborder="0" allowfullscreen="allowfullscreen"></iframe>`;
+    } else {
+        localStorage.setItem('displayThirdPartyContent', 'false');
+        console.log("Third party content will not be displayed!");
+        document.querySelector(".dt-videocontainer").innerHTML = `<div class="cookie-preferences-information-container"><h4>This video can not be displayed</h4><a>Your cookie preferences do not allow YouTube videos to be played or third-party links and content to be loaded. To watch the video, change your cookie preferences.</a></div>`;
+    }
+});
+
 document.getElementById("marketingAndAdvertisementCookies").addEventListener("change", function() {
     var checkbox = document.getElementById("marketingAndAdvertisementCookies");
     if (checkbox.checked) {
@@ -215,14 +250,14 @@ document.getElementById("marketingAndAdvertisementCookies").addEventListener("ch
             'ad_user_data': 'granted',
             'ad_personalization': 'granted',
         });
-        console.log("'ad_storage', 'ad_user_data' and 'ad_personalization' granted!");
+        console.log("Enabled third party contents!");
     } else {
         gtag('consent', 'update', {
             'ad_storage': 'denied',
             'ad_user_data': 'denied',
             'ad_personalization': 'denied',
         });
-        console.log("'ad_storage', 'ad_user_data' and 'ad_personalization' denied!");
+        console.log("Disabled third party contents!");
     }
 });
 
