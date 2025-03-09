@@ -43,20 +43,12 @@ document.addEventListener("DOMContentLoaded", function () {
         document.getElementById("mb-cookie-selector").style.display = "none";
         console.log("User already accepted cookies. Cookie banner removed.");
     } else {
+        document.getElementById("statisticAndAnalyticsCookies").checked = false;
+        document.getElementById("preferencesAndPersonalizationCookies").checked = false;
+        document.getElementById("displayThirdPartyContent").checked = false;
+        document.getElementById("marketingAndAdvertisementCookies").checked = false;
+        document.getElementById("unclassifiedCookies").checked = false;
         console.log("Cookies have not yet been accepted!");
-        const categories = [
-            "statisticAndAnalyticsCookies",
-            "preferencesAndPersonalizationCookies",
-            "marketingAndAdvertisementCookies",
-            "unclassifiedCookies",
-            "MBstatisticAndAnalyticsCookies",
-            "MBpreferencesAndPersonalizationCookies",
-            "MBmarketingAndAdvertisementCookies",
-            "MBunclassifiedCookies"
-        ];
-        categories.forEach(category => {
-            document.getElementById(category).checked = false;
-        });
     }
 
     function updateCheckboxesFromStorage() {
