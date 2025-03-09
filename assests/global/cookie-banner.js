@@ -29,24 +29,13 @@ document.addEventListener("DOMContentLoaded", () => {
   
     // Standard-Consent for Desktop
     gtag('consent', 'default', {
-      'ad_storage': getStoredConsent('marketingAndAdvertisementCookies'),
-      'ad_user_data': getStoredConsent('marketingAndAdvertisementCookies'),
-      'ad_personalization': getStoredConsent('marketingAndAdvertisementCookies'),
-      'analytics_storage': getStoredConsent('statisticAndAnalyticsCookies'),
-      'functionality_storage': 'granted',
-      'personalization_storage': getStoredConsent('preferencesAndPersonalizationCookies'),
-      'security_storage': getStoredConsent('unclassifiedCookies')
-    });
-  
-    // Standard-Consent for Mobile
-    gtag('consent', 'default', {
-      'ad_storage': getStoredConsent('MBmarketingAndAdvertisementCookies'),
-      'ad_user_data': getStoredConsent('MBmarketingAndAdvertisementCookies'),
-      'ad_personalization': getStoredConsent('MBmarketingAndAdvertisementCookies'),
-      'analytics_storage': getStoredConsent('MBstatisticAndAnalyticsCookies'),
-      'functionality_storage': 'granted',
-      'personalization_storage': getStoredConsent('MBpreferencesAndPersonalizationCookies'),
-      'security_storage': getStoredConsent('MBunclassifiedCookies')
+        'ad_storage': 'denied',
+        'ad_user_data': 'denied',
+        'ad_personalization': 'denied',
+        'analytics_storage': 'denied',
+        'functionality_storage': 'denied',
+        'personalization_storage': 'denied',
+        'security_storage': 'denied'
     });
   
     // If Cookies have already been accepted, remove the banner
