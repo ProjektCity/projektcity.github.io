@@ -56,24 +56,16 @@ document.addEventListener("DOMContentLoaded", () => {
       document.getElementById("mb-cookie-selector").style.display = "none";
       console.log("User already accepted cookies. Cookie banner removed.");
     } else {
-        // If cookies have not yet been accepted, reset all checkboxes
-        const ids = [
-            "statisticAndAnalyticsCookies",
-            "preferencesAndPersonalizationCookies",
-            "displayThirdPartyContent",
-            "marketingAndAdvertisementCookies",
-            "unclassifiedCookies",
-            "MBstatisticAndAnalyticsCookies",
-            "MBpreferencesAndPersonalizationCookies",
-            "MBdisplayThirdPartyContent",
-            "MBmarketingAndAdvertisementCookies",
-            "MBunclassifiedCookies"
-          ];
-          
-          ids.forEach(id => {
-            const el = document.getElementById(id);
-            if (el) el.checked = false;
-          });          
+        document.getElementById("statisticAndAnalyticsCookies").checked = false;
+        document.getElementById("preferencesAndPersonalizationCookies").checked = false;
+        document.getElementById("displayThirdPartyContent").checked = false;
+        document.getElementById("marketingAndAdvertisementCookies").checked = false;
+        document.getElementById("unclassifiedCookies").checked = false;
+        document.getElementById("MBstatisticAndAnalyticsCookies").checked = false;
+        document.getElementById("MBpreferencesAndPersonalizationCookies").checked = false;
+        document.getElementById("MBdisplayThirdPartyContent").checked = false;
+        document.getElementById("MBmarketingAndAdvertisementCookies").checked = false;
+        document.getElementById("MBunclassifiedCookies").checked = false;         
     }
   
     // Update the checkboxes based on the stored values
