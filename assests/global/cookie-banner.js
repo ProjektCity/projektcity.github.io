@@ -44,6 +44,19 @@ document.addEventListener("DOMContentLoaded", function () {
         console.log("User already accepted cookies. Cookie banner removed.");
     } else {
         console.log("Cookies have not yet been accepted!");
+        const categories = [
+            "statisticAndAnalyticsCookies",
+            "preferencesAndPersonalizationCookies",
+            "marketingAndAdvertisementCookies",
+            "unclassifiedCookies",
+            "MBstatisticAndAnalyticsCookies",
+            "MBpreferencesAndPersonalizationCookies",
+            "MBmarketingAndAdvertisementCookies",
+            "MBunclassifiedCookies"
+        ];
+        categories.forEach(category => {
+            document.getElementById(category).checked = false;
+        });
     }
 
     function updateCheckboxesFromStorage() {
