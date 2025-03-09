@@ -233,13 +233,13 @@ document.getElementById("preferencesAndPersonalizationCookies").addEventListener
 });
 
 document.getElementById("MBdisplayThirdPartyContent").addEventListener("change", function() {
-    var checkbox = document.getElementById("displayThirdPartyContent");
+    var checkbox = document.getElementById("MBdisplayThirdPartyContent");
     if (checkbox.checked) {
-        localStorage.setItem('displayThirdPartyContent', 'true');
+        localStorage.setItem('MBdisplayThirdPartyContent', 'true');
         console.log("Third party content will be displayed!");
         document.querySelector(".mb-videocontainer").innerHTML = `<iframe src="https://www.youtube.com/embed/bB5IUyPRXO8?autohide=1&autoplay=1&hl=en&loop=1&mute=1&modestbranding=1&playlist=bB5IUyPRXO8&rel=0&showinfo=1&vq=hd1080" width="300" height="169" frameborder="0" allowfullscreen="allowfullscreen"></iframe>`;
     } else {
-        localStorage.setItem('displayThirdPartyContent', 'false');
+        localStorage.setItem('MBdisplayThirdPartyContent', 'false');
         console.log("Third party content will not be displayed!");
         document.querySelector(".mb-videocontainer").innerHTML = `<div class="cookie-preferences-information-container"><h4>This video can not be displayed</h4><a>Your cookie preferences do not allow YouTube videos to be played or third-party links and content to be loaded. To watch the video, change your cookie preferences.</a></div>`;
     }
