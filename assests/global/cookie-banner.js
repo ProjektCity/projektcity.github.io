@@ -23,9 +23,6 @@ document.addEventListener("DOMContentLoaded", () => {
       "MBmarketingAndAdvertisementCookies",
       "MBunclassifiedCookies"
     ];
-
-    const getStoredConsent = category =>
-      localStorage.getItem(category) === "true" ? "granted" : "denied";
   
     // Standard-Consent for Desktop
     gtag('consent', 'default', {
@@ -40,13 +37,13 @@ document.addEventListener("DOMContentLoaded", () => {
   
     // Standard-Consent for Mobile
     gtag('consent', 'default', {
-      'ad_storage': getStoredConsent('MBmarketingAndAdvertisementCookies'),
-      'ad_user_data': getStoredConsent('MBmarketingAndAdvertisementCookies'),
-      'ad_personalization': getStoredConsent('MBmarketingAndAdvertisementCookies'),
-      'analytics_storage': getStoredConsent('MBstatisticAndAnalyticsCookies'),
+      'ad_storage': 'denied',
+      'ad_user_data': 'denied',
+      'ad_personalization': 'denied',
+      'analytics_storage': 'denied',
       'functionality_storage': 'granted',
-      'personalization_storage': getStoredConsent('MBpreferencesAndPersonalizationCookies'),
-      'security_storage': getStoredConsent('MBunclassifiedCookies')
+      'personalization_storage': 'denied',
+      'security_storage': 'denied'
     });
   
     // If Cookies have already been accepted, remove the banner
@@ -91,9 +88,6 @@ document.addEventListener("DOMContentLoaded", () => {
       });
     }, 1000);
   
-    updateCheckboxesFromStorage();
-    getThirdPartyContent();
-  
     // Loading/Removing third-party content based on the user's cookie preferences
     function getThirdPartyContent() {
       const allowContent = localStorage.getItem('displayThirdPartyContent') === 'true';
@@ -126,6 +120,9 @@ document.addEventListener("DOMContentLoaded", () => {
           </div>`;
       }
     }
+
+    updateCheckboxesFromStorage();
+    getThirdPartyContent();
   
     // Get the user's device type
     function getUserDeviceType() {
