@@ -276,6 +276,17 @@
     width: calc(100% - 20px);
 }
 
+.mb-cookie-preferences-information-container {
+    margin: 0 auto;
+    position: relative;
+    top: 10px;
+    width: calc(100% - 20px);
+}
+
+.mb-cookie-preferences-information-container a {
+    font-size: 10px;
+}
+
 .cookie-preferences-information-container a {
     font-size: 20px;
 }
