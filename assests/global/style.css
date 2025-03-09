@@ -763,6 +763,7 @@ p {
 }
 
 .dt-update-information-notifier-text {
+    text-align: center;
     width: calc(100% - 30px);
 }
 
