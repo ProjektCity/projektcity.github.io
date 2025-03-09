@@ -56,6 +56,7 @@ document.addEventListener("DOMContentLoaded", () => {
       document.getElementById("mb-cookie-selector").style.display = "none";
       console.log("User already accepted cookies. Cookie banner removed.");
     } else {
+        console.log("User has not accepted cookies yet. Cookie banner displayed.");
         document.getElementById("statisticAndAnalyticsCookies").checked = false;
         document.getElementById("preferencesAndPersonalizationCookies").checked = false;
         document.getElementById("displayThirdPartyContent").checked = false;
