@@ -57,23 +57,15 @@ document.addEventListener("DOMContentLoaded", function () {
             "MBmarketingAndAdvertisementCookies",
             "MBunclassifiedCookies"
         ];
-        
         categories.forEach(category => {
             const storedValue = localStorage.getItem(category);
-            const checkbox = document.getElementById(category);
-    
-            if (checkbox) {
-                if (storedValue === null) {
-                    // Falls noch nichts in localStorage gespeichert ist, setze die Checkbox auf false
-                    checkbox.checked = false;
-                    localStorage.setItem(category, "false");
-                } else {
-                    // Falls ein Wert vorhanden ist, entsprechend setzen
-                    checkbox.checked = storedValue === "true";
-                }
+            if (storedValue === "true") {
+                document.getElementById(category).checked = true;
+            } else {
+                document.getElementById(category).checked = false;
             }
         });
-    }    
+    }
     
     setInterval(() => {
         const categories = [
