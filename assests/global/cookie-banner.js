@@ -232,6 +232,7 @@ document.getElementById("preferencesAndPersonalizationCookies").addEventListener
     }   
 });
 
+// Third Party Content
 document.getElementById("MBdisplayThirdPartyContent").addEventListener("change", function() {
     var checkbox = document.getElementById("MBdisplayThirdPartyContent");
     if (checkbox.checked) {
@@ -241,7 +242,7 @@ document.getElementById("MBdisplayThirdPartyContent").addEventListener("change",
     } else {
         localStorage.setItem('MBdisplayThirdPartyContent', 'false');
         console.log("Third party content will not be displayed!");
-        document.querySelector(".mb-videocontainer").innerHTML = `<div class="cookie-preferences-information-container"><h4>This video can not be displayed</h4><a>Your cookie preferences do not allow YouTube videos to be played or third-party links and content to be loaded. To watch the video, change your cookie preferences.</a></div>`;
+        document.querySelector(".mb-videocontainer").innerHTML = `<div class="cookie-preferences-information-container"><a>Your cookie preferences do not allow YouTube videos to be played or third-party links and content to be loaded. To watch the video, change your cookie preferences.</a></div>`;
     }
 });
 
@@ -258,6 +259,7 @@ document.getElementById("displayThirdPartyContent").addEventListener("change", f
     }
 });
 
+// Marketing and Advertisement
 document.getElementById("marketingAndAdvertisementCookies").addEventListener("change", function() {
     var checkbox = document.getElementById("marketingAndAdvertisementCookies");
     if (checkbox.checked) {
@@ -277,6 +279,7 @@ document.getElementById("marketingAndAdvertisementCookies").addEventListener("ch
     }
 });
 
+// Unclassified Cookies
 document.getElementById("unclassifiedCookies").addEventListener("change", function() {
     var checkbox = document.getElementById("unclassifiedCookies");
     if (checkbox.checked) {
