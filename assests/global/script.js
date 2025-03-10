@@ -40,17 +40,3 @@
     styleTag.appendChild(document.createTextNode(generateStyles()));
     document.head.appendChild(styleTag);
 })();
-
-/* Information about changes */
-document.getElementById("information-notifier-close").addEventListener("click", function() {
-    document.getElementById("update-information-notifier").style.display = "none";
-    localStorage.setItem('changesNotificationBannerClosed', 'true');
-});
-
-document.addEventListener("DOMContentLoaded", function() {
-    if (localStorage.getItem('changesNotificationBannerClosed') === 'true') {
-        document.getElementById("update-information-notifier").style.display = "none";
-    } else {
-        document.getElementById("update-information-notifier").style.display = "block";
-    }
-});

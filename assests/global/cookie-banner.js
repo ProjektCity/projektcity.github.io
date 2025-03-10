@@ -49,11 +49,6 @@ document.addEventListener('DOMContentLoaded', function() {
         document.getElementById("displayThirdPartyContent").checked = true;
         document.getElementById("MBdisplayThirdPartyContent").checked = true;
         console.log("Display third party content: Checked");
-        if (/mobile|android|iphone|ipad|ipod|blackberry|windows phone/i.test(navigator.userAgent)) {
-            document.querySelector(".mb-videocontainer").innerHTML = `<iframe src="https://www.youtube.com/embed/bB5IUyPRXO8?autohide=1&autoplay=1&hl=en&loop=1&mute=1&modestbranding=1&playlist=bB5IUyPRXO8&rel=0&showinfo=1&vq=hd1080" width="300" height="169" frameborder="0" allowfullscreen></iframe>`;
-        } else {
-            document.querySelector(".dt-videocontainer").innerHTML = `<iframe src="https://www.youtube.com/embed/bB5IUyPRXO8?autohide=1&autoplay=1&hl=en&loop=1&mute=1&modestbranding=1&playlist=bB5IUyPRXO8&rel=0&showinfo=1&vq=hd1080" width="711" height="400" frameborder="0" allowfullscreen></iframe>`;
-        }
     }
     if (marketingAndAdvertisementCookies == "granted") {
         document.getElementById("marketingAndAdvertisementCookies").checked = true;
@@ -112,8 +107,6 @@ function acceptAllCookies() {
     localStorage.setItem('displayThirdPartyContent', 'granted');
     localStorage.setItem('marketingAndAdvertisementCookies', 'granted');
     localStorage.setItem('unclassifiedCookies', 'granted');
-    // Enable third party content
-    document.querySelector(".dt-videocontainer").innerHTML = `<iframe src="https://www.youtube.com/embed/bB5IUyPRXO8?autohide=1&autoplay=1&hl=en&loop=1&mute=1&modestbranding=1&playlist=bB5IUyPRXO8&rel=0&showinfo=1&vq=hd1080" width="711" height="400" frameborder="0" allowfullscreen></iframe>`;
     // Checking checkboxes
     document.getElementById("statisticAndAnalyticsCookies").checked = true;
     document.getElementById("preferencesAndPersonalizationCookies").checked = true;
@@ -139,6 +132,8 @@ function acceptAllCookies() {
         document.getElementById("cookie-banner").style.display = "none";
         console.log("Desktop user accepted all cookies. Set the values 'ad_storage', 'ad_user_data', 'ad_personalization', 'analytics_storage', 'functionality_storage', 'personalization_storage', 'security_storage' to 'granted'.");;
     }
+    // Enable third party content
+    document.querySelector(".dt-videocontainer").innerHTML = `<iframe src="https://www.youtube.com/embed/bB5IUyPRXO8?autohide=1&autoplay=1&hl=en&loop=1&mute=1&modestbranding=1&playlist=bB5IUyPRXO8&rel=0&showinfo=1&vq=hd1080" width="711" height="400" frameborder="0" allowfullscreen></iframe>`;
 }
 
 // Defining the function to hide cookie selector
@@ -300,11 +295,9 @@ document.getElementById("displayThirdPartyContent").addEventListener("change", f
     if (checkbox.checked) {
         localStorage.setItem('displayThirdPartyContent', 'granted');
         console.log("Display third party content: Checked");
-        document.querySelector(".dt-videocontainer").innerHTML = `<iframe src="https://www.youtube.com/embed/bB5IUyPRXO8?autohide=1&autoplay=1&hl=en&loop=1&mute=1&modestbranding=1&playlist=bB5IUyPRXO8&rel=0&showinfo=1&vq=hd1080" width="711" height="400" frameborder="0" allowfullscreen></iframe>`;
     } else {
         localStorage.setItem('displayThirdPartyContent', 'denied');
         console.log("Display third party content: Unchecked");
-        document.querySelector(".dt-videocontainer").innerHTML = `<div class="cookie-preferences-information-container"><h4>This video can not be displayed</h4><a>Your cookie preferences do not allow YouTube videos to be played or third-party links and content to be loaded. To watch the video, change your cookie preferences or&nbsp;</a><a class="linkout" href="https://youtu.be/bB5IUyPRXO8" target="_blank">watch the video in a separate tab</a><a>.</a></div>`;
     }
 
 });
