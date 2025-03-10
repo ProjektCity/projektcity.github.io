@@ -74,24 +74,24 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     // If Cookies have already been accepted, remove the banner
-    if (localStorage.getItem('cookiesAccepted')) {
-        document.getElementById("cookie-banner").style.display = "none";
-        document.querySelector(".mb-cookie-banner").style.display = "none";
-        document.getElementById("mb-cookie-selector").style.display = "none";
-        console.log("User already accepted cookies. Cookie banner removed.");
-    } else {
-        console.log("User has not accepted cookies yet. Cookie banner displayed.");
-        document.getElementById("statisticAndAnalyticsCookies").checked = false;
-        document.getElementById("preferencesAndPersonalizationCookies").checked = false;
-        document.getElementById("displayThirdPartyContent").checked = false;
-        document.getElementById("marketingAndAdvertisementCookies").checked = false;
-        document.getElementById("unclassifiedCookies").checked = false;
-        document.getElementById("MBstatisticAndAnalyticsCookies").checked = false;
-        document.getElementById("MBpreferencesAndPersonalizationCookies").checked = false;
-        document.getElementById("MBdisplayThirdPartyContent").checked = false;
-        document.getElementById("MBmarketingAndAdvertisementCookies").checked = false;
-        document.getElementById("MBunclassifiedCookies").checked = false;
-      }
+//    if (localStorage.getItem('cookiesAccepted')) {
+//         document.getElementById("cookie-banner").style.display = "none";
+//         document.querySelector(".mb-cookie-banner").style.display = "none";
+//         document.getElementById("mb-cookie-selector").style.display = "none";
+//         console.log("User already accepted cookies. Cookie banner removed.");
+//    } else {
+//         console.log("User has not accepted cookies yet. Cookie banner displayed.");
+//         document.getElementById("statisticAndAnalyticsCookies").checked = false;
+//         document.getElementById("preferencesAndPersonalizationCookies").checked = false;
+//         document.getElementById("displayThirdPartyContent").checked = false;
+//         document.getElementById("marketingAndAdvertisementCookies").checked = false;
+//         document.getElementById("unclassifiedCookies").checked = false;
+//         document.getElementById("MBstatisticAndAnalyticsCookies").checked = false;
+//         document.getElementById("MBpreferencesAndPersonalizationCookies").checked = false;
+//         document.getElementById("MBdisplayThirdPartyContent").checked = false;
+//         document.getElementById("MBmarketingAndAdvertisementCookies").checked = false;
+//         document.getElementById("MBunclassifiedCookies").checked = false;
+//      }
 });
 
 // Defining the function to accept all cookies
