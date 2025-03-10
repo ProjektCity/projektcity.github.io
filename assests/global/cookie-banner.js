@@ -202,7 +202,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   
     // Mobile – Open Cookie Selector
-    document.getElementById("mbCookieOpener").addEventListener("click", () => {
+    document.getElementById("MBcookieOpener").addEventListener("click", () => {
       document.documentElement.style.overflowY = "hidden";
       document.getElementById("mb-cookie-selector").style.display = "block";
       document.querySelector(".cookie-selector-background").style.display = "block";

@@ -156,19 +156,47 @@ function hideCookieSelector() {
         }
     });
 
+    // Open Cookie Changer in Cookie Banner
+    document.getElementById("cookieManager").addEventListener("click", function() {
+        document.querySelector(".cookie-selector-background").style.display = "block";
+        document.getElementById("cookie-selector").style.display = "block";
+        document.getElementById("mb-cookie-selector").style.display = "none";
+        console.log("Displaying desktop cookie selector.");
+    });
+
     // Cookie Selector: Close Button
     document.querySelector(".cookie-bottom-close-button").addEventListener("click", function() {
         hideCookieSelector();
     });
 
+    document.getElementById("mbCookieCloser").addEventListener("click", function() {
+        hideCookieSelector();
+    });
 
     // Cookie Selector: Save changes
     document.getElementById("cookieSaveChanges").addEventListener("click", function() {
         hideCookieSelector();
     });
 
+    document.getElementById("MBcookieSaveChanges").addEventListener("click", function() {
+        hideCookieSelector();
+    });
+
     // Cookie Selector: Accept all cookies
     document.getElementById("acceptCookiesAndCloseBanner").addEventListener("click", function() {
+        acceptAllCookies();
+    });
+
+    document.getElementById("MBcookieAcceptAll").addEventListener("click", function() {
+        acceptAllCookies();
+    });
+
+    // Accept all Cookies in Cookie Banner
+    document.getElementById("acceptCookies").addEventListener("click", function() {
+        acceptAllCookies();
+    });
+
+    document.getElementById("MBacceptCookies").addEventListener("click", function() {
         acceptAllCookies();
     });
 
