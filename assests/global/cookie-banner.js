@@ -143,6 +143,7 @@ function acceptAllCookies() {
 
 // Defining the function to hide cookie selector
 function hideCookieSelector() {
+    localStorage.setItem('cookiesAccepted', 'true');
     if (/mobile|android|iphone|ipad|ipod|blackberry|windows phone/i.test(navigator.userAgent)) {
         document.querySelector(".cookie-selector-background").style.display = "none";
         document.querySelector(".mb-cookie-banner").style.display = "none";
