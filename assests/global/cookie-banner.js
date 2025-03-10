@@ -1,3 +1,14 @@
+/*!
+    * ©️ 2025 Projekt City Ltd. | All rights reserved
+    * 
+    * This code is the property of Projekt City Ltd. and may not be copied or redistributed without permission
+    * Legal basis: This code is intended for use solely on the sites of Projekt City
+    * Redistribution or use on other sites, not related to Projekt City, is strictly prohibited
+    * For more information, please contact us at: projektcityofficial@gmail.com
+    * 
+    * Script version: 2.0
+*/
+
 document.addEventListener('DOMContentLoaded', function() {
     // Setting basic Google Tag Manager consent
     gtag('consent', 'default', {
