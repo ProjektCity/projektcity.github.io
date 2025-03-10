@@ -10,20 +10,6 @@
  */
 
 document.addEventListener("DOMContentLoaded", () => {
-    window.dataLayer = window.dataLayer || [];
-    const gtag = (...args) => dataLayer.push(args);
-  
-    const COOKIE_CATEGORIES = [
-      "statisticAndAnalyticsCookies",
-      "preferencesAndPersonalizationCookies",
-      "marketingAndAdvertisementCookies",
-      "unclassifiedCookies",
-      "MBstatisticAndAnalyticsCookies",
-      "MBpreferencesAndPersonalizationCookies",
-      "MBmarketingAndAdvertisementCookies",
-      "MBunclassifiedCookies"
-    ];
-  
     // Standard-Consent for Desktop
     gtag('consent', 'default', {
         'ad_storage': 'denied',
@@ -63,30 +49,8 @@ document.addEventListener("DOMContentLoaded", () => {
         document.getElementById("MBpreferencesAndPersonalizationCookies").checked = false;
         document.getElementById("MBdisplayThirdPartyContent").checked = false;
         document.getElementById("MBmarketingAndAdvertisementCookies").checked = false;
-        document.getElementById("MBunclassifiedCookies").checked = false;         
+        document.getElementById("MBunclassifiedCookies").checked = false;
     }
-  
-    // Update the checkboxes based on the stored values
-    const updateCheckboxesFromStorage = () => {
-      COOKIE_CATEGORIES.forEach(category => {
-        const checkbox = document.getElementById(category);
-        if (checkbox) {
-          checkbox.checked = localStorage.getItem(category) === "true";
-        }
-      });
-    };
-  
-    // Update the checkboxes every second
-    setInterval(() => {
-      COOKIE_CATEGORIES.forEach(category => {
-        const checkbox = document.getElementById(category);
-        if (checkbox) {
-          localStorage.setItem(category, checkbox.checked);
-        } else {
-          console.error(`Checkbox with id ${category} not found!`);
-        }
-      });
-    }, 1000);
   
     // Loading/Removing third-party content based on the user's cookie preferences
     function getThirdPartyContent() {
@@ -123,14 +87,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
     updateCheckboxesFromStorage();
     getThirdPartyContent();
-  
-    // Get the user's device type
-    function getUserDeviceType() {
-      const ua = navigator.userAgent.toLowerCase();
-      return /mobile|android|iphone|ipad|ipod|blackberry|windows phone/i.test(ua)
-        ? "mobile"
-        : "desktop";
-    }
   
     // Close cookie selector
     const closeBannerBtn = document.querySelector(".cb-close-btn");
@@ -212,19 +168,6 @@ document.addEventListener("DOMContentLoaded", () => {
       acceptCookies();
     });
   
-    // Desktop – cookie choices
-    document.getElementById("statisticAndAnalyticsCookies").addEventListener("change", function() {
-      const cb = this;
-      gtag('consent', 'update', { 'analytics_storage': cb.checked ? 'granted' : 'denied' });
-      console.log(`'analytics_storage' ${cb.checked ? "granted" : "denied"}!`);
-    });
-  
-    document.getElementById("preferencesAndPersonalizationCookies").addEventListener("change", function() {
-      const cb = this;
-      gtag('consent', 'update', { 'personalization_storage': cb.checked ? 'granted' : 'denied' });
-      console.log(`'personalization_storage' ${cb.checked ? "granted" : "denied"}!`);
-    });
-  
     // Desktop – third party content switch
     document.getElementById("displayThirdPartyContent").addEventListener("change", function() {
       const cb = this;
@@ -256,25 +199,6 @@ document.addEventListener("DOMContentLoaded", () => {
             <a style="font-size: 10px">Your cookie preferences do not allow YouTube videos or third-party content. To watch the video, change your cookie preferences.</a>
           </div>`;
       }
-    });
-  
-    // Desktop – Marketing and Advertisement switch
-    document.getElementById("marketingAndAdvertisementCookies").addEventListener("change", function() {
-      const cb = this;
-      const status = cb.checked ? 'granted' : 'denied';
-      gtag('consent', 'update', {
-        'ad_storage': status,
-        'ad_user_data': status,
-        'ad_personalization': status
-      });
-      console.log(`${cb.checked ? "Enabled" : "Disabled"} 'ad_storage', 'ad_user_data' and 'ad_personalization'!`);
-    });
-  
-    // Desktop – Unclassified Cookies switch
-    document.getElementById("unclassifiedCookies").addEventListener("change", function() {
-      const cb = this;
-      gtag('consent', 'update', { 'security_storage': cb.checked ? 'granted' : 'denied' });
-      console.log(`'security_storage' ${cb.checked ? "granted" : "denied"}!`);
     });
   
     // Mobile – Open Cookie Selector
@@ -327,22 +251,33 @@ document.addEventListener("DOMContentLoaded", () => {
       gtag('consent', 'update', { 'security_storage': cb.checked ? 'granted' : 'denied' });
       console.log(`'security_storage' ${cb.checked ? "granted" : "denied"}!`);
     });
-  
-    // Cookie Changer – opening menu depending on device type
-    document.getElementById("CookieChanger").addEventListener("click", () => {
-      const deviceType = getUserDeviceType();
-      document.documentElement.style.overflowY = "hidden";
-      document.querySelector(".cookie-selector-background").style.display = "block";
-      if (deviceType === "mobile") {
-        document.getElementById("mb-cookie-selector").style.display = "block";
-        document.getElementById("cookie-banner").style.display = "none";
-      } else {
-        document.getElementById("cookie-selector").style.display = "block";
-        document.getElementById("mb-cookie-banner").style.display = "none";
-      }
-    });
 });
 
+
+  
+// Get the user's device type
+function getUserDeviceType() {
+  const ua = navigator.userAgent.toLowerCase();
+  return /mobile|android|iphone|ipad|ipod|blackberry|windows phone/i.test(ua)
+  ? "mobile"
+  : "desktop";
+}
+
+// Cookie Changer – opening menu depending on device type
+document.getElementById("CookieChanger").addEventListener("click", () => {
+  const deviceType = getUserDeviceType();
+  document.documentElement.style.overflowY = "hidden";
+  document.querySelector(".cookie-selector-background").style.display = "block";
+  if (deviceType === "mobile") {
+    document.getElementById("mb-cookie-selector").style.display = "block";
+    document.getElementById("cookie-banner").style.display = "none";
+  } else {
+    document.getElementById("cookie-selector").style.display = "block";
+    document.getElementById("mb-cookie-banner").style.display = "none";
+  }
+    });
+
+    
 function MBacceptCookiesAndCloseBanner() {
     localStorage.setItem('cookiesAccepted', 'true');
     document.documentElement.style.overflowY = "scroll";
