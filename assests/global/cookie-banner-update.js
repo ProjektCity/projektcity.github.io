@@ -95,29 +95,26 @@ function acceptAllCookies() {
         'personalization_storage': 'granted',
         'security_storage': 'granted'
     });
+    // Setting the values in cache
+    localStorage.setItem('statisticAndAnalyticsCookies', 'granted');
+    localStorage.setItem('preferencesAndPersonalizationCookies', 'granted');
+    localStorage.setItem('displayThirdPartyContent', 'granted');
+    localStorage.setItem('marketingAndAdvertisementCookies', 'granted');
+    localStorage.setItem('unclassifiedCookies', 'granted');
+    // Enable third party content
+    document.querySelector(".dt-videocontainer").innerHTML = `<iframe src="https://www.youtube.com/embed/bB5IUyPRXO8?autohide=1&autoplay=1&hl=en&loop=1&mute=1&modestbranding=1&playlist=bB5IUyPRXO8&rel=0&showinfo=1&vq=hd1080" width="711" height="400" frameborder="0" allowfullscreen></iframe>`;
+    // Checking checkboxes
+    document.getElementById("statisticAndAnalyticsCookies").checked = true;
+    document.getElementById("preferencesAndPersonalizationCookies").checked = true;
+    document.getElementById("displayThirdPartyContent").checked = true;
+    document.getElementById("marketingAndAdvertisementCookies").checked = true;
+    document.getElementById("unclassifiedCookies").checked = true;
     if (/mobile|android|iphone|ipad|ipod|blackberry|windows phone/i.test(navigator.userAgent)) {
         document.querySelector(".mb-cookie-banner").style.display = "none";
         document.getElementById("mb-cookie-selector").style.display = "none";
         console.log("Mobile user accepted all cookies. Set the values 'ad_storage', 'ad_user_data', 'ad_personalization', 'analytics_storage', 'functionality_storage', 'personalization_storage', 'security_storage' to 'granted'.");
+        document.querySelector(".mb-videocontainer").innerHTML = `<iframe src="https://www.youtube.com/embed/bB5IUyPRXO8?autohide=1&autoplay=1&hl=en&loop=1&mute=1&modestbranding=1&playlist=bB5IUyPRXO8&rel=0&showinfo=1&vq=hd1080" width="300" height="169" frameborder="0" allowfullscreen></iframe>`;
     } else {
-        // Setting the values in cache
-        localStorage.setItem('statisticAndAnalyticsCookies', 'granted');
-        localStorage.setItem('preferencesAndPersonalizationCookies', 'granted');
-        localStorage.setItem('displayThirdPartyContent', 'granted');
-        localStorage.setItem('marketingAndAdvertisementCookies', 'granted');
-        localStorage.setItem('unclassifiedCookies', 'granted');
-        // Enable third party content
-        if (/mobile|android|iphone|ipad|ipod|blackberry|windows phone/i.test(navigator.userAgent)) {
-            document.querySelector(".mb-videocontainer").innerHTML = `<iframe src="https://www.youtube.com/embed/bB5IUyPRXO8?autohide=1&autoplay=1&hl=en&loop=1&mute=1&modestbranding=1&playlist=bB5IUyPRXO8&rel=0&showinfo=1&vq=hd1080" width="300" height="169" frameborder="0" allowfullscreen></iframe>`;
-        } else {
-            document.querySelector(".dt-videocontainer").innerHTML = `<iframe src="https://www.youtube.com/embed/bB5IUyPRXO8?autohide=1&autoplay=1&hl=en&loop=1&mute=1&modestbranding=1&playlist=bB5IUyPRXO8&rel=0&showinfo=1&vq=hd1080" width="711" height="400" frameborder="0" allowfullscreen></iframe>`;
-        }
-        // Checking checkboxes
-        document.getElementById("statisticAndAnalyticsCookies").checked = true;
-        document.getElementById("preferencesAndPersonalizationCookies").checked = true;
-        document.getElementById("displayThirdPartyContent").checked = true;
-        document.getElementById("marketingAndAdvertisementCookies").checked = true;
-        document.getElementById("unclassifiedCookies").checked = true;
         // Hiding the cookie selector
         document.querySelector(".cookie-selector-background").style.display = "none";
         document.getElementById("cookie-selector").style.display = "none";
@@ -156,14 +153,6 @@ function hideCookieSelector() {
         }
     });
 
-    // Open Cookie Changer in Cookie Banner
-    document.getElementById("cookieManager").addEventListener("click", function() {
-        document.querySelector(".cookie-selector-background").style.display = "block";
-        document.getElementById("cookie-selector").style.display = "block";
-        document.getElementById("mb-cookie-selector").style.display = "none";
-        console.log("Displaying desktop cookie selector.");
-    });
-
     // Cookie Selector: Close Button
     document.querySelector(".cookie-bottom-close-button").addEventListener("click", function() {
         hideCookieSelector();
@@ -198,6 +187,20 @@ function hideCookieSelector() {
 
     document.getElementById("MBacceptCookies").addEventListener("click", function() {
         acceptAllCookies();
+    });
+
+    // Manage Cookies in Cookie Banner
+    document.getElementById("cookieManager").addEventListener("click", function() {
+        document.querySelector(".cookie-selector-background").style.display = "block";
+        document.getElementById("cookie-selector").style.display = "block";
+        document.getElementById("mb-cookie-selector").style.display = "none";
+        console.log("Displaying desktop cookie selector.");
+    });
+
+    document.getElementById("MBcookieOpener").addEventListener("click", function() {
+        document.querySelector(".cookie-selector-background").style.display = "block";
+        document.getElementById("mb-cookie-selector").style.display = "none";
+        console.log("Displaying mobile cookie selector.");
     });
 
 // Checkbox actions
