@@ -109,6 +109,12 @@ function acceptAllCookies() {
     document.getElementById("displayThirdPartyContent").checked = true;
     document.getElementById("marketingAndAdvertisementCookies").checked = true;
     document.getElementById("unclassifiedCookies").checked = true;
+    // Checking mobile checkboxes
+    document.getElementById("MBstatisticAndAnalyticsCookies").checked = true;
+    document.getElementById("MBpreferencesAndPersonalizationCookies").checked = true;
+    document.getElementById("MBdisplayThirdPartyContent").checked = true;
+    document.getElementById("MBmarketingAndAdvertisementCookies").checked = true;
+    document.getElementById("MBunclassifiedCookies").checked = true;
     if (/mobile|android|iphone|ipad|ipod|blackberry|windows phone/i.test(navigator.userAgent)) {
         document.querySelector(".cookie-selector-background").style.display = "none";
         document.querySelector(".mb-cookie-banner").style.display = "none";
@@ -201,7 +207,7 @@ function hideCookieSelector() {
 
     document.getElementById("MBcookieOpener").addEventListener("click", function() {
         document.querySelector(".cookie-selector-background").style.display = "block";
-        document.getElementById("mb-cookie-selector").style.display = "none";
+        document.getElementById("mb-cookie-selector").style.display = "block";
         console.log("Displaying mobile cookie selector.");
     });
 
