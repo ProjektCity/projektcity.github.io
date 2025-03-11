@@ -6,7 +6,7 @@
     * Redistribution or use on other sites, not related to Projekt City, is strictly prohibited
     * For more information, please contact us at: projektcityofficial@gmail.com
     * 
-    * Script version: 2.0
+    * Script version: 2.1.2
 */
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -43,7 +43,7 @@ document.addEventListener('DOMContentLoaded', function() {
         gtag('consent', 'update', {
             'personalization_storage': 'granted',
         });
-        console.log("set-cookies=personalization_storage_granted'");
+        console.log("set-cookies=personalization_storage_granted");
     }
     if (displayThirdPartyContent == "granted") {
         document.getElementById("displayThirdPartyContent").checked = true;
@@ -75,9 +75,9 @@ document.addEventListener('DOMContentLoaded', function() {
         document.getElementById("cookie-banner").style.display = "none";
         document.querySelector(".mb-cookie-banner").style.display = "none";
         document.getElementById("mb-cookie-selector").style.display = "none";
-        console.log("set-cookies=cookiesAccepted_true', cookie banner removed");
+        console.log("set-cookies=cookiesAccepted_true, display_desktop_cookie_selector=false");
     } else {
-        console.log("User has not accepted cookies yet. Cookie banner displayed.");
+        console.log("loaded-cookies=cookiesAccepted_false, display_desktop_cookie_selector=true");
         document.getElementById("statisticAndAnalyticsCookies").checked = false;
         document.getElementById("preferencesAndPersonalizationCookies").checked = false;
         document.getElementById("displayThirdPartyContent").checked = false;
@@ -149,12 +149,12 @@ function hideCookieSelector() {
         document.querySelector(".cookie-selector-background").style.display = "none";
         document.querySelector(".mb-cookie-banner").style.display = "none";
         document.getElementById("mb-cookie-selector").style.display = "none";
-        console.log("Mobile user saved changes. Cookie banner removed.");
+        console.log("display_mobile_cookie_selector=false");
     } else {
         document.querySelector(".cookie-selector-background").style.display = "none";
         document.getElementById("cookie-selector").style.display = "none";
         document.getElementById("cookie-banner").style.display = "none";
-        console.log("Desktop user saved changes. Cookie banner removed.");;
+        console.log("display_desktop_cookie_selector=false");;
     }
 }
 
@@ -166,12 +166,12 @@ function hideCookieSelector() {
             document.querySelector(".cookie-selector-background").style.display = "block";
             document.getElementById("mb-cookie-selector").style.display = "block";
             document.getElementById("cookie-selector").style.display = "none";
-            console.log("Displaying mobile cookie selector.");
+            console.log("display_mobile_cookie_selector=true");
         } else {
             document.querySelector(".cookie-selector-background").style.display = "block";
             document.getElementById("cookie-selector").style.display = "block";
             document.getElementById("mb-cookie-selector").style.display = "none";
-            console.log("Displaying desktop cookie selector.");
+            console.log("display_desktop_cookie_selector=true");
         }
     });
 
