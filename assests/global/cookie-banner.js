@@ -6,7 +6,7 @@
     * Redistribution or use on other sites, not related to Projekt City, is strictly prohibited
     * For more information, please contact us at: projektcityofficial@gmail.com
     * 
-    * Script version: 2.1.4
+    * Script version: 2.2
 */
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -217,14 +217,14 @@ function hideCookieSelector() {
         document.querySelector(".cookie-selector-background").style.display = "block";
         document.getElementById("cookie-selector").style.display = "block";
         document.getElementById("mb-cookie-selector").style.display = "none";
-        console.log("Displaying desktop cookie selector.");
+        console.log("display_desktop_cookie_selector=true");
     });
 
     document.getElementById("MBcookieOpener").addEventListener("click", function() {
         document.documentElement.style.overflowY = "hidden";
         document.querySelector(".cookie-selector-background").style.display = "block";
         document.getElementById("mb-cookie-selector").style.display = "block";
-        console.log("Displaying mobile cookie selector.");
+        console.log("display_mobile_cookie_selector=true");
     });
 
 // Checkbox actions

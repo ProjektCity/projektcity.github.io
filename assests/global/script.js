@@ -11,7 +11,7 @@
     * Script format: W.X.Y.Z
     * W = Finished code, contains no errors, works perfectly
     * X = Finished code, might contains a few problems, which do not affect tge user experience, bug improvements from W version
-    * Y = Experimental code, contains errors, can limit user experience and make website unusable
+    * Y = Experimental code, contains errors, can limit user experience
     * Z = Test and experimental code, probably contains bugs that limit the user experience or make the service unusable, use with caution
 */
 
