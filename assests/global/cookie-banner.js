@@ -72,28 +72,31 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // If Cookies have already been accepted, remove the banner
     if (localStorage.getItem('cookiesAccepted')) {
-         document.getElementById("cookie-banner").style.display = "none";
-         document.querySelector(".mb-cookie-banner").remove();
-         document.getElementById("mb-cookie-selector").remove();
-         console.log("set-cookies=cookiesAccepted_true', cookie banner removed");
+        document.getElementById("cookie-banner").style.display = "none";
+        document.querySelector(".mb-cookie-banner").style.display = "none";
+        document.getElementById("mb-cookie-selector").style.display = "none";
+        console.log("set-cookies=cookiesAccepted_true', cookie banner removed");
     } else {
-         console.log("User has not accepted cookies yet. Cookie banner displayed.");
-         document.getElementById("statisticAndAnalyticsCookies").checked = false;
-         document.getElementById("preferencesAndPersonalizationCookies").checked = false;
-         document.getElementById("displayThirdPartyContent").checked = false;
-         document.getElementById("marketingAndAdvertisementCookies").checked = false;
-         document.getElementById("unclassifiedCookies").checked = false;
-         document.getElementById("MBstatisticAndAnalyticsCookies").checked = false;
-         document.getElementById("MBpreferencesAndPersonalizationCookies").checked = false;
-         document.getElementById("MBdisplayThirdPartyContent").checked = false;
-         document.getElementById("MBmarketingAndAdvertisementCookies").checked = false;
-         document.getElementById("MBunclassifiedCookies").checked = false;
-      }
+        console.log("User has not accepted cookies yet. Cookie banner displayed.");
+        document.getElementById("statisticAndAnalyticsCookies").checked = false;
+        document.getElementById("preferencesAndPersonalizationCookies").checked = false;
+        document.getElementById("displayThirdPartyContent").checked = false;
+        document.getElementById("marketingAndAdvertisementCookies").checked = false;
+        document.getElementById("unclassifiedCookies").checked = false;
+        document.getElementById("MBstatisticAndAnalyticsCookies").checked = false;
+        document.getElementById("MBpreferencesAndPersonalizationCookies").checked = false;
+        document.getElementById("MBdisplayThirdPartyContent").checked = false;
+        document.getElementById("MBmarketingAndAdvertisementCookies").checked = false;
+        document.getElementById("MBunclassifiedCookies").checked = false;
+    }
+    // Enable scroll if not yet enabled
+    document.documentElement.style.overflowY = "scroll";
 });
 
 // Defining the function to accept all cookies
 function acceptAllCookies() {
     localStorage.setItem('cookiesAccepted', 'true');
+    document.documentElement.style.overflowY = "scroll";
     gtag('consent', 'default', {
         'ad_storage': 'granted',
         'ad_user_data': 'granted',
@@ -141,6 +144,7 @@ function acceptAllCookies() {
 // Defining the function to hide cookie selector
 function hideCookieSelector() {
     localStorage.setItem('cookiesAccepted', 'true');
+    document.documentElement.style.overflowY = "scroll";
     if (/mobile|android|iphone|ipad|ipod|blackberry|windows phone/i.test(navigator.userAgent)) {
         document.querySelector(".cookie-selector-background").style.display = "none";
         document.querySelector(".mb-cookie-banner").style.display = "none";
@@ -157,6 +161,7 @@ function hideCookieSelector() {
 // Cookie Selector options
     // Open Cookie Changer Menu in Footer
     document.getElementById("CookieChanger").addEventListener("click", function() {
+        document.documentElement.style.overflowY = "hidden";
         if (/mobile|android|iphone|ipad|ipod|blackberry|windows phone/i.test(navigator.userAgent)) {
             document.querySelector(".cookie-selector-background").style.display = "block";
             document.getElementById("mb-cookie-selector").style.display = "block";
@@ -208,6 +213,7 @@ function hideCookieSelector() {
 
     // Manage Cookies in Cookie Banner
     document.getElementById("cookieManager").addEventListener("click", function() {
+        document.documentElement.style.overflowY = "hidden";
         document.querySelector(".cookie-selector-background").style.display = "block";
         document.getElementById("cookie-selector").style.display = "block";
         document.getElementById("mb-cookie-selector").style.display = "none";
@@ -215,6 +221,7 @@ function hideCookieSelector() {
     });
 
     document.getElementById("MBcookieOpener").addEventListener("click", function() {
+        document.documentElement.style.overflowY = "hidden";
         document.querySelector(".cookie-selector-background").style.display = "block";
         document.getElementById("mb-cookie-selector").style.display = "block";
         console.log("Displaying mobile cookie selector.");
