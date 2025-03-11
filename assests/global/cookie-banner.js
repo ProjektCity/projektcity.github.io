@@ -6,7 +6,7 @@
     * Redistribution or use on other sites, not related to Projekt City, is strictly prohibited
     * For more information, please contact us at: projektcityofficial@gmail.com
     * 
-    * Script version: 2.1.3
+    * Script version: 2.1.4
 */
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -75,9 +75,9 @@ document.addEventListener('DOMContentLoaded', function() {
         document.getElementById("cookie-banner").style.display = "none";
         document.querySelector(".mb-cookie-banner").style.display = "none";
         document.getElementById("mb-cookie-selector").style.display = "none";
-        console.log("set-cookies=cookiesAccepted_true, display_desktop_cookie_selector=false");
+        console.log("set-cookies=cookiesAccepted_true, display_desktop_cookie_banner=false");
     } else {
-        console.log("loaded-cookies=cookiesAccepted_false, display_desktop_cookie_selector=true");
+        console.log("loaded-cookies=cookiesAccepted_false, display_desktop_cookie_banner=true");
         document.getElementById("statisticAndAnalyticsCookies").checked = false;
         document.getElementById("preferencesAndPersonalizationCookies").checked = false;
         document.getElementById("displayThirdPartyContent").checked = false;
