@@ -7,9 +7,16 @@ document.addEventListener("DOMContentLoaded", function () {
             const targetElement = document.getElementById(targetId);
             
             if (targetElement) {
-                const offset = 110;
-                const targetPosition = targetElement.getBoundingClientRect().top + window.scrollY - offset;
-                window.scrollTo({ top: targetPosition, behavior: "smooth" });
+                if (/mobile|android|iphone|ipad|ipod|blackberry|windows phone/i.test(navigator.userAgent)) {
+                    const offset = 10;
+                    const targetPosition = targetElement.getBoundingClientRect().top + window.scrollY - offset;
+                    window.scrollTo({ top: targetPosition, behavior: "smooth" });
+
+                } else {
+                    const offset = 110;
+                    const targetPosition = targetElement.getBoundingClientRect().top + window.scrollY - offset;
+                    window.scrollTo({ top: targetPosition, behavior: "smooth" });
+                }
             }
         });
     });
