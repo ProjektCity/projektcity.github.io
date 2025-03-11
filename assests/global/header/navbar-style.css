@@ -24,6 +24,8 @@
 
 .dt-header {
     background-color: #24262B;
+    border: 1px solid #32333C;
+    border-radius: 10px;
     height: 53px;
     padding: 10px;
 }

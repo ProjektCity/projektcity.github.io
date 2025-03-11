@@ -37,6 +37,27 @@
     text-align: left;
 }
 
+.dt-legal-contents {
+
+}
+
+.dt-legal-content {
+    display: flex;
+}
+
+.dt-legal-content-l a, .dt-legal-content-r a {
+    cursor: pointer;
+}
+
+.dt-legal-content-l {
+    font-weight: 400;
+}
+
+.dt-legal-content-r {
+    margin-left: 5px;
+    width: 100%;
+}
+
 .dt-legal-h1 {
     font-size: 35px;
     font-weight: 500;
@@ -50,6 +71,42 @@
 .dt-legal-ul {
     margin-block-start: 0em;
     margin-block-end: 0em;
+}
+
+.dt-btt-btn {
+    background-color: #24262B;
+    bottom: 25px;
+    border: 1px solid #32333C;
+    border-radius: 20px;
+    color: #fff;
+    cursor: pointer;
+    display: none;
+    height: 50px;
+    left: 50%;
+    padding: 10px;
+    position: fixed;
+    text-align: center;
+    transform: translateX(-50%);
+    width: 278.19px;
+    z-index: 1000;
+}
+
+.dt-btt-button {
+    display: flex;
+}
+
+.dt-btt-svg {
+    height: 50px;
+    rotate: -90deg;
+    width: 50px;
+}
+
+.dt-btt-text {
+    font-size: 29px;
+    height: 40px;
+    margin: 5px;
+    text-align: center;
+    width: 100%;
 }
 
 /*  Every section: <div class="placeholder w1150 h30"></div>

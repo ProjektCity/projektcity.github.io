@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', function() {
         gtag('consent', 'update', {
             'analytics_storage': 'granted',
         });
-        console.log("Analytics storage granted");
+        console.log("set-cookies=analytics_storage_granted");
     }
     if (preferencesAndPersonalizationCookies == "granted") {
         document.getElementById("preferencesAndPersonalizationCookies").checked = true;
@@ -43,12 +43,12 @@ document.addEventListener('DOMContentLoaded', function() {
         gtag('consent', 'update', {
             'personalization_storage': 'granted',
         });
-        console.log("Personalization storage granted");
+        console.log("set-cookies=personalization_storage_granted'");
     }
     if (displayThirdPartyContent == "granted") {
         document.getElementById("displayThirdPartyContent").checked = true;
         document.getElementById("MBdisplayThirdPartyContent").checked = true;
-        console.log("Display third party content: Checked");
+        console.log("set-cookies=displayThirdPartyContent_granted");
     }
     if (marketingAndAdvertisementCookies == "granted") {
         document.getElementById("marketingAndAdvertisementCookies").checked = true;
@@ -58,22 +58,24 @@ document.addEventListener('DOMContentLoaded', function() {
             'ad_user_data': 'granted',
             'ad_personalization': 'granted'
         });
-        console.log("Ad storage granted");
+        console.log("set-cookies=ad_storage_granted");
+        console.log("set-cookies=ad_user_data_granted");
+        console.log("set-cookies=ad_personalization_granted");
     }
     if (unclassifiedCookies == "granted") {
         document.getElementById("unclassifiedCookies").checked = true;
         gtag('consent', 'update', {
             'security_storage': 'granted'
         });
-        console.log("Security storage granted");
+        console.log("set-cookies=security_storage_granted");
     }
 
     // If Cookies have already been accepted, remove the banner
     if (localStorage.getItem('cookiesAccepted')) {
          document.getElementById("cookie-banner").style.display = "none";
-         document.querySelector(".mb-cookie-banner").style.display = "none";
-         document.getElementById("mb-cookie-selector").style.display = "none";
-         console.log("User already accepted cookies. Cookie banner removed.");
+         document.querySelector(".mb-cookie-banner").remove();
+         document.getElementById("mb-cookie-selector").remove();
+         console.log("set-cookies=cookiesAccepted_true', cookie banner removed");
     } else {
          console.log("User has not accepted cookies yet. Cookie banner displayed.");
          document.getElementById("statisticAndAnalyticsCookies").checked = false;
