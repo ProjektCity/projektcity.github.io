@@ -67,6 +67,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
     if (unclassifiedCookies == "granted") {
         document.getElementById("unclassifiedCookies").checked = true;
+        document.getElementById("MBunclassifiedCookies").checked = true;
         gtag('consent', 'update', {
             'security_storage': 'granted'
         });
