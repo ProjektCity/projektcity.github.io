@@ -1151,11 +1151,10 @@
                 });
                 document.querySelector(".dt-gf-div-copy").innerHTML = "<a>&copy; 2025 Projekt City Ltd.</a><br><a>All rights reserved!</a>"
                 // Cookie Banner
+                document.documentElement.style.overflowY = "hidden";
                 document.getElementById("cookie-selector").style.display = "none";
                 document.getElementById("cookie-banner").style.display = "none";
                 document.getElementById("mb-cookie-selector").style.display = "none";
-                document.querySelector(".mb-cookie-banner").style.display = "block";
-                document.querySelector(".cookie-selector-background").style.display = "none";
                 // Desktop Elements
                 document.getElementById("mobile-header").style.display = "block";
                 document.querySelector(".dt-p-header").style.display = "none";
@@ -1169,11 +1168,10 @@
                 return "mobile";
             } else {
                 // Cookie Banner
+                document.documentElement.style.overflowY = "hidden";
                 document.getElementById("cookie-selector").style.display = "none";
-                document.getElementById("cookie-banner").style.display = "block";
+                document.getElementById("cookie-banner").style.display = "none";
                 document.getElementById("mb-cookie-selector").style.display = "none";
-                document.querySelector(".mb-cookie-banner").style.display = "none";
-                document.querySelector(".cookie-selector-background").style.display = "none";
                 // Desktop elements
                 document.getElementById("mobile-header").remove();
                 document.querySelector(".dt-p-header").style.display = "block";
