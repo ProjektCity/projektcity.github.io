@@ -138,15 +138,12 @@ function acceptAllCookies() {
         document.getElementById("cookie-banner").style.display = "none";
         document.getElementById("mb-cookie-selector").style.display = "none";
         console.log("set-cookies=cookiesAccepted_true, display_mobile_cookie_selector=false, display_mobile_cookie_banner=false. Set the values 'ad_storage', 'ad_user_data', 'ad_personalization', 'analytics_storage', 'functionality_storage', 'personalization_storage', 'security_storage' to 'granted'.");
-        document.querySelector(".mb-videocontainer").innerHTML = `<iframe src="https://www.youtube.com/embed/bB5IUyPRXO8?autohide=1&autoplay=1&hl=en&loop=1&mute=1&modestbranding=1&playlist=bB5IUyPRXO8&rel=0&showinfo=1&vq=hd1080" width="300" height="169" frameborder="0" allowfullscreen></iframe>`;
     } else {
         // Hiding the cookie selector
         document.getElementById("cookie-selector").style.display = "none";
         document.getElementById("cookie-banner").style.display = "none";
         console.log("set-cookies=cookiesAccepted_true, display_desktop_cookie_selector=false, display_desktop_cookie_banner=false. Set the values 'ad_storage', 'ad_user_data', 'ad_personalization', 'analytics_storage', 'functionality_storage', 'personalization_storage', 'security_storage' to 'granted'.");;
     }
-    // Enable third party content
-    document.querySelector(".dt-videocontainer").innerHTML = `<iframe src="https://www.youtube.com/embed/bB5IUyPRXO8?autohide=1&autoplay=1&hl=en&loop=1&mute=1&modestbranding=1&playlist=bB5IUyPRXO8&rel=0&showinfo=1&vq=hd1080" width="711" height="400" frameborder="0" allowfullscreen></iframe>`;
 }
 
 // Defining the function to hide cookie selector
@@ -320,11 +317,9 @@ document.getElementById("MBdisplayThirdPartyContent").addEventListener("change",
     if (checkbox.checked) {
         localStorage.setItem('displayThirdPartyContent', 'granted');
         console.log("Display third party content: Checked");
-        document.querySelector(".mb-videocontainer").innerHTML = `<iframe src="https://www.youtube.com/embed/bB5IUyPRXO8?autohide=1&autoplay=1&hl=en&loop=1&mute=1&modestbranding=1&playlist=bB5IUyPRXO8&rel=0&showinfo=1&vq=hd1080" width="300" height="169" frameborder="0" allowfullscreen></iframe>`;
     } else {
         localStorage.setItem('displayThirdPartyContent', 'denied');
         console.log("Display third party content: Unchecked");
-        document.querySelector(".mb-videocontainer").innerHTML = `<div class="cookie-preferences-information-container"><a style="font-size: 10px">Your cookie preferences do not allow YouTube videos or third-party content. To watch the video, change your cookie preferences.</a></div>`;
     }
 
 });

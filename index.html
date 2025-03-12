@@ -935,8 +935,8 @@
         }
     }
 
-    document.getElementById("displayThirdPartyContent").addEventListener("change", function() {
-        const checkbox = document.getElementById("displayThirdPartyContent");
+    document.getElementById("MBdisplayThirdPartyContent").addEventListener("change", function() {
+        const checkbox = document.getElementById("MBdisplayThirdPartyContent");
         if (checkbox.checked) {
             document.querySelector(".dt-videocontainer").innerHTML = `<iframe src="https://www.youtube.com/embed/bB5IUyPRXO8?autohide=1&autoplay=1&hl=en&loop=1&mute=1&modestbranding=1&playlist=bB5IUyPRXO8&rel=0&showinfo=1&vq=hd1080" width="711" height="400" frameborder="0" allowfullscreen></iframe>`;
         } else {
@@ -1041,7 +1041,7 @@
                 // Cookie Banner
                 document.documentElement.style.overflowY = "hidden";
                 document.getElementById("cookie-selector").style.display = "none";
-                document.getElementById("cookie-banner").style.display = "none";
+                document.getElementById("cookie-banner").style.display = "block";
                 document.getElementById("mb-cookie-selector").style.display = "none";
                 // Desktop elements
                 document.querySelector(".dt-p-header").style.display = "block";
