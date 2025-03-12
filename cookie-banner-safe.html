@@ -1,0 +1,104 @@
+
+<div class="cookie-banner" id="cookie-banner">
+    <div class="cb-inner">
+        <div class="cb-middle-text">
+            <a>Projekt City uses cookies and similar technologies for analysis purposes, to deliver you personalized and third-party content, to ensure legal, website and user security, to give you the best experience and to constantly improve its services. You can change your cookie preferences at any time by using our cookie selector at the bottom of any of our pages. By using our services, you agree to the use of your data in accordance with our&nbsp;</a><a class="linkout" href="https://bit.ly/ProjektCityPrivacy?utm_src=projektcity_global_cookie_banner_information_link&utm_medium=projektcity&utm_content=privacypolicy" target="_blank">Privacy Policy</a><a>&nbsp;and accept the&nbsp;</a><a class="linkout" href="https://projektcity.github.io/legal/eula" target="_blank">End-User Licence Agreement</a><a>&nbsp;and&nbsp;</a><a class="linkout" href="https://bit.ly/ProjektCityTerms?utm_src=projektcity_global_cookie_banner_information_link&utm_medium=projektcity&utm_content=termsofuse" target="_blank">Terms of Use</a><a>!</a>
+        </div>
+        <div class="cb-right-btns">
+            <div class="cb-right-btns-inner">
+                <div class="legal-btn" id="cookieManager">
+                    <div class="legal-btn-inner">
+                        <a>Manage options</a>
+                    </div>
+                </div>
+                <div class="legal-filled-btn" id="acceptCookies">
+                    <div class="legal-filled-btn-inner">
+                        <a>Accept</a>
+                    </div>
+                </div>
+                <div class="cb-close-btn">
+                    <div class="close-btn" id="close-cookie-banner">
+                        <svg class="close-btn-svg" xmlns="http://www.w3.org/2000/svg" height="25" viewBox="0 -960 960 960" width="25" fill="#fff">
+                            <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+/* Cookie Banner */
+#CookieChanger {
+    cursor: pointer;
+}
+.cookie-banner {
+    animation: slide-up 0.5s;
+    background-color: #000;
+    bottom: 0;
+    color: #fff;
+    display: none;
+    left: 0;
+    padding: 15px;
+    position: fixed;
+    text-align: center;
+    width: calc(100% - 30px);
+    z-index: 1000;
+}
+
+@keyframes slide-up {
+    0% {
+        bottom: -100%;
+    }
+    100% {
+        bottom: 0;
+    }
+}
+
+.cb-inner {
+    display: flex;
+    height: auto;
+}
+
+.cb-middle-text {
+    font-size: 15px;
+    min-height: 46px;
+    max-height: 140px;
+    width: 100%;
+}
+
+.cb-right-btns {
+    min-height: 46px;
+    max-height: 140px;
+    width: 400px;
+}
+
+.cb-right-btns-inner {
+    display: flex;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 48px;
+}
+
+/* Close Button */
+.cb-close-btn {
+    height: 36px;
+    margin-bottom: 6px;
+    margin-top: 6px;
+    width: 36px;
+}
+.close-btn {
+    cursor: pointer;
+    height: 25px;
+    margin: 5px;
+    width: 25px;
+}
+
+.close-btn:hover {
+    opacity: 0.7;
+}
+
+.close-btn-svg {
+}
