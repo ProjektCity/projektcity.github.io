@@ -6,7 +6,7 @@
     * Redistribution or use on other sites, not related to Projekt City, is strictly prohibited
     * For more information, please contact us at: projektcityofficial@gmail.com
     * 
-    * Script version: 2.2.2
+    * Script version: 2.3
 */
 
 document.addEventListener('DOMContentLoaded', function() {
