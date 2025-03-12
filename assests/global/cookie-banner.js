@@ -104,7 +104,7 @@ document.addEventListener('DOMContentLoaded', function() {
 function acceptAllCookies() {
     localStorage.setItem('cookiesAccepted', 'true');
     document.documentElement.style.overflowY = "scroll";
-    gtag('consent', 'default', {
+    gtag('consent', 'update', {
         'ad_storage': 'granted',
         'ad_user_data': 'granted',
         'ad_personalization': 'granted',
