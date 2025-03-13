@@ -934,12 +934,7 @@
             document.querySelector(".dt-videocontainer").innerHTML = `<iframe src="https://www.youtube.com/embed/bB5IUyPRXO8?autohide=1&autoplay=1&hl=en&loop=1&mute=1&modestbranding=1&playlist=bB5IUyPRXO8&rel=0&showinfo=1&vq=hd1080" width="711" height="400" frameborder="0" allowfullscreen></iframe>`;
         }
     }
-
-    document.getElementById("MBcookieAcceptAll").addEventListener("click", function() {
-        acceptAllCookies();
-        location.reload();
-    });
-
+    
     document.getElementById("MBdisplayThirdPartyContent").addEventListener("change", function() {
         const checkbox = document.getElementById("MBdisplayThirdPartyContent");
         if (checkbox.checked) {
