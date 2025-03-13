@@ -935,6 +935,11 @@
         }
     }
 
+    document.getElementById("MBcookieAcceptAll").addEventListener("click", function() {
+        acceptAllCookies();
+        location.reload();
+    });
+
     document.getElementById("MBdisplayThirdPartyContent").addEventListener("change", function() {
         const checkbox = document.getElementById("MBdisplayThirdPartyContent");
         if (checkbox.checked) {
