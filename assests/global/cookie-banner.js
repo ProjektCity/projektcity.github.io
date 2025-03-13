@@ -207,6 +207,7 @@ function hideCookieSelector() {
 
     document.getElementById("MBcookieAcceptAll").addEventListener("click", function() {
         acceptAllCookies();
+        location.reload();
     });
 
     // Accept all Cookies in Cookie Banner
