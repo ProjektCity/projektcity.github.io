@@ -11,6 +11,10 @@
     width: auto;
 }
 
+.nodecoration:hover {
+    text-decoration: underline;
+}
+
 .dt-footer-content {
     padding-bottom: 15px;
     padding-top: 15px;
