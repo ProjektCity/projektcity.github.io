@@ -203,6 +203,7 @@ function hideCookieSelector() {
     // Cookie Selector: Accept all cookies
     document.getElementById("acceptCookiesAndCloseBanner").addEventListener("click", function() {
         acceptAllCookies();
+        location.reload();
     });
 
     document.getElementById("MBcookieAcceptAll").addEventListener("click", function() {
@@ -310,7 +311,6 @@ document.getElementById("displayThirdPartyContent").addEventListener("change", f
         localStorage.setItem('displayThirdPartyContent', 'denied');
         console.log("Display third party content: Unchecked");
     }
-
 });
 
 document.getElementById("MBdisplayThirdPartyContent").addEventListener("change", function() {
