@@ -149,13 +149,22 @@
         <a style="color: gray; text-decoration: none;">[</a><a style="font-size: 35px; color: #72b147; text-decoration: none;" title="Minecraft">Minecraft: SuffixHD & itsmarian</a><a style="color: gray; text-decoration: none;">]</a>
     </span>
     <br><br>
-</h1
+</h1>
 <!-- Specials -->
 <p align="center">
-    <a href="https://bit.ly/ProjektCityAG?utm_src=projektcity_github_footer&return_url=https%3A%2f%2Fgithub.com%2Fitsmarianmc%2FProjekt-City&footer_line=1&footer_max_lines=2">Application Guidelines</a>&nbsp;•&nbsp;<a href="https://bit.ly/ProjektCityAccessebilityStatement?utm_src=projektcity_github_footer&return_url=https%3A%2f%2Fgithub.com%2Fitsmarianmc%2FProjekt-City&footer_line=1&footer_max_lines=2">Accessebility statement</a>&nbsp;•&nbsp;<a href="https://bit.ly/ProjektCityAdvertisementTerms?utm_src=projektcity_github_footer&return_url=https%3A%2f%2Fgithub.com%2Fitsmarianmc%2FProjekt-City&footer_line=1&footer_max_lines=2">Advertisement Terms</a>
+    <a href="https://projektcity.github.io/legal/application-guidelines?utm_src=projektcity_github_footer&return_url=https%3A%2f%2Fgithub.com%2FProjektCity%2FProjekt-City">Application Guidelines</a>
+    <a>•</a>
+    <a href="https://projektcity.github.io/legal/accessebility-statement?utm_src=projektcity_github_footer&return_url=https%3A%2f%2Fgithub.com%2FProjektCity%2FProjekt-City">Accessebility statement</a>
+    <a>•</a>
+    <a href="https://projektcity.github.io/legal/advertisement-terms?utm_src=projektcity_github_footer&return_url=https%3A%2f%2Fgithub.com%2FProjektCity%2FProjekt-City">Advertisement Terms</a>
+    <a>•</a>
+    <a href="https://projektcity.github.io/legal/eula?utm_src=projektcity_github_footer&return_url=https%3A%2f%2Fgithub.com%2FProjektCity%2FProjekt-City">EULA</a>
     <br>
-    <a href="https://bit.ly/ProjektCityImprint?utm_src=projektcity_github_footer&return_url=https%3A%2f%2Fgithub.com%2Fitsmarianmc%2FProjekt-City&footer_line=2&footer_max_lines=2">Imprint</a>&nbsp;•&nbsp;<a href="https://bit.ly/ProjektCityPrivacy?utm_src=projektcity_github_footer&return_url=https%3A%2f%2Fgithub.com%2Fitsmarianmc%2FProjekt-City&footer_line=2&footer_max_lines=2">Privacy Policy</a>&nbsp;•&nbsp;<a href="https://bit.ly/ProjektCityTerms?utm_src=projektcity_github_footer&return_url=https%3A%2f%2Fgithub.com%2Fitsmarianmc%2FProjekt-City&footer_line=2&footer_max_lines=2">Terms of use</a>&nbsp;•&nbsp;<a href="https://bit.ly/ProjektCityUseOurWorld?utm_src=projektcity_github_footer&return_url=https%3A%2f%2Fgithub.com%2Fitsmarianmc%2FProjekt-City&footer_line=2&footer_max_lines=2">Use Our World</a>
+    <a href="https://projektcity.github.io/legal/imprint?utm_src=projektcity_github_footer&return_url=https%3A%2f%2Fgithub.com%2FProjektCity%2FProjekt-City">Imprint</a>
+    <a>•</a>
+    <a href="https://projektcity.github.io/legal/privacy?utm_src=projektcity_github_footer&return_url=https%3A%2f%2Fgithub.com%2FProjektCity%2FProjekt-City">Privacy Policy</a>
+    <a>•</a>
+    <a href="https://projektcity.github.io/legal/terms?utm_src=projektcity_github_footer&return_url=https%3A%2f%2Fgithub.com%2FProjektCity%2FProjekt-City">Terms of use</a>
+    <a>•</a>
+    <a href="https://projektcity.github.io/legal/use-our-world?utm_src=projektcity_github_footer&return_url=https%3A%2f%2Fgithub.com%2FProjektCity%2FProjekt-City">Use Our World</a>
 </p>
-<!-- Projekt City -->
-<!-- POWERED BY PROJEKT CITY -->
-<!-- ©️ 2024 ProjektCity | All rights reserved!-->
