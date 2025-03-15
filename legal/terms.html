@@ -895,29 +895,6 @@
             }
         });
         
-        // Mobile Navbar
-        document.getElementById("menu-opener").addEventListener("click", function() {
-            const menu = document.querySelector(".mobile-menu");
-            document.querySelector(".cookie-banner-dark-background").style.display = "block";
-            document.documentElement.style.overflowY = "hidden";
-            menu.classList.remove("closing");
-            menu.style.display = "block";
-            console.log("set-menu=mobile_display-block");
-        });
-
-        document.getElementById("menu-closer").addEventListener("click", function() {
-            const menu = document.querySelector(".mobile-menu");
-            menu.classList.add("closing");
-            document.querySelector(".cookie-banner-dark-background").style.display = "none";
-            document.documentElement.style.overflowY = "scroll";
-
-            setTimeout(() => {
-                menu.style.display = "none";
-                menu.classList.remove("closing");
-                console.log("set-menu=mobile_display-none");
-            }, 250);
-        });
-        
         function getDeviceType() {
             const userAgent = navigator.userAgent.toLowerCase();
             if (/mobile|android|iphone|ipad|ipod|blackberry|windows phone/i.test(userAgent)) {
