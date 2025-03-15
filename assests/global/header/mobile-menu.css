@@ -6,13 +6,13 @@
     color: #fff;
     display: none;
     height: 100%;
-    left: 60px;
+    left: 75px;
     margin: 0 auto;
     position: fixed;
     text-align: center;
     top: 50%;
     transform: translateY(-50%);
-    width: calc(100% - 60px);
+    width: calc(100% - 75px);
     z-index: 1000;
 }
 
@@ -25,13 +25,13 @@
         left: 100%;
     }
     100% {
-        left: 60px;
+        left: 75px;
     }
 }
 
 @keyframes righttoleft-reverse {
     0% {
-        left: 60px;
+        left: 75px;
     }
     100% {
         left: 100%;
