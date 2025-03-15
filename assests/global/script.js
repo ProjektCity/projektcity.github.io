@@ -38,6 +38,25 @@ document.getElementById("menu-closer").addEventListener("click", function() {
     }, 250);
 });
 
+// Share Button
+document.getElementById('shareButton').addEventListener('click', async () => {
+    if (navigator.share) {
+        try {
+            await navigator.share({
+                title: 'Projekt City - by SuffixHD & itsmarian',
+                text: 'Check out the official Projekt City website and play it for FREE today.',
+                url: 'https://bit.ly/ProjektCity',
+                image: 'https://projektcity.github.io/assests/images/logos/mainlogo.png',
+                hashtag: '#ProjektCity',
+            });
+        } catch (error) {
+            console.error('Error sharing:', error);
+        }
+    } else {
+        alert('Sharing is not supported in this browser.');
+    }
+});
+
 // Custom CSS styles based on DIV properties
 (function() {
     function generateStyles() {
