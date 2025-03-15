@@ -190,7 +190,7 @@ p {
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: transparent;
+    background: #a0a0a0;
 }
 
 ::-webkit-overflow-scrolling:touch {

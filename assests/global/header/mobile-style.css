@@ -116,7 +116,9 @@
 }
 
 .mb-clickelement {
+    cursor: pointer;
     height: 50px;
+    width: 50px;
 }
 
 @keyframes initialMBWidth {
