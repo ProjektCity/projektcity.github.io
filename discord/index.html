@@ -210,36 +210,6 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="placeholder w300 h2-5"></div>
-                        <div class="mb-bottom-menu" id="mb-menu" style="display: none;">
-                            <div class="mb-bottom-container">
-                                <div class="mb-bottom-items">
-                                    <div class="mb-bottom-item">
-                                        <div class="mb-bottom-item-container">
-                                            <a class="nodecoration" href="/?ref=navbar_home" target="_parent">Home</a>
-                                        </div>
-                                    </div>
-                                    <div class="individual-mb-header-placeholder h30"></div>
-                                    <div class="mb-bottom-item">
-                                        <div class="mb-bottom-item-container">
-                                            <a class="nodecoration" href="/v5-0" target="_parent">V5.0</a>
-                                        </div>
-                                    </div>
-                                    <div class="individual-mb-header-placeholder h30"></div>
-                                    <div class="mb-bottom-item">
-                                        <div class="mb-bottom-item-container">
-                                            <a class="nodecoration" href="/download" target="_parent">Download</a>
-                                        </div>
-                                    </div>
-                                    <div class="individual-mb-header-placeholder h30"></div>
-                                    <div class="mb-bottom-item">
-                                        <div class="mb-bottom-item-container">
-                                            <a class="nodecoration" href="/discord" target="_parent">Discord</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -423,6 +393,51 @@
     <!-- Cookie Banner -->
     <div class="cookie-banner-dark-background"></div>
     <div class="cookie-banner-background"></div>
+    <div class="mobile-menu">
+        <div class="mobile-menu-inner">
+            <div class="mbm-header-items">
+                <div class="mbm-header">
+                    <a>Projekt City</a>
+                </div>
+                <div class="mbm-close" id="menu-closer">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="50" viewBox="0 -960 960 960" width="50" fill="#fff">
+                        <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"></path>
+                    </svg>
+                </div>
+            </div>
+            <div class="placeholder w200 h10"></div>
+            <div class="gm-line-hr-h1-w100"></div>
+            <div class="placeholder w200 h20"></div>
+            <div class="mbm-maincontent">
+                <div class="mbm-maincontent-items">
+                    <div class="mbm-maincontent-item">
+                        <a class="nodecoration" href="/?ref=navbar_home_mobile" target="_parent">Home</a>
+                    </div>
+                    <div class="placeholder w200 h20"></div>
+                    <div class="mbm-maincontent-item">
+                        <a class="nodecoration" href="/v5-0" target="_parent">V5.0</a>
+                    </div>
+                    <div class="placeholder w200 h20"></div>
+                    <div class="mbm-maincontent-item">
+                        <a class="nodecoration" href="/download" target="_parent">Download</a>
+                    </div>
+                    <div class="placeholder w200 h20"></div>
+                    <div class="mbm-maincontent-item">
+                        <a class="nodecoration" href="/discord" target="_parent">Discord</a>
+                    </div>
+                </div>
+            </div>
+            <div class="mbm-footer">
+                <a class="nodecoration" href="https://projektcity.github.io/legal/eula?utm_src=projektcity_mobile_menu_footer&utm_medium=projektcity&utm_content=eula" target="_blank">EULA</a>
+                <a>•</a>
+                <a class="nodecoration" href="https://bit.ly/ProjektCityPrivacy?utm_src=projektcity_mobile_menu_footer&utm_medium=projektcity&utm_content=privacypolicy" target="_blank">Privacy Policy</a>
+                <a>•</a>
+                <a class="nodecoration" href="https://bit.ly/ProjektCityTerms?utm_src=projektcity_mobile_menu_footer&utm_medium=projektcity&utm_content=termsofuse" target="_blank">Terms of Use</a>
+                <a>•</a>
+                <a class="nodecoration" href="https://bit.ly/ProjektCityUseOurWorld?utm_src=projektcity_mobile_menu_footer&utm_medium=projektcity&utm_content=useourworld" target="_blank">Use Our World</a>
+            </div>
+        </div>
+    </div>
     <div class="cookie-banner" id="cookie-banner">
         <div class="cb-inner">
             <div class="cb-top-elements">
@@ -786,20 +801,12 @@
         
         // Mobile Navbar
         document.getElementById("menu-opener").addEventListener("click", function() {
-            const menu = document.getElementById("mb-menu");
-            if (menu.style.display === "block") {
-                document.querySelector(".mb-bottom-menu").classList.add("hidden");
-                document.querySelector(".mb-bottom-items").style.display = "none";
-                setTimeout(() => {
-                    document.querySelector(".mb-bottom-menu").classList.remove("hidden");
-                    document.querySelector(".mb-bottom-menu").style.display = "none";
-                }, 250);
-            } else {
-                menu.style.display = "block";
-                setTimeout(() => {
-                    document.querySelector(".mb-bottom-items").style.display = "flex";
-                }, 175);
-            }
+            const menu = document.querySelector(".mobile-menu");
+            document.querySelector(".cookie-banner-dark-background").style.display = "block";
+            document.documentElement.style.overflowY = "hidden";
+            menu.classList.remove("closing");
+            menu.style.display = "block";
+            console.log("set-menu=mobile_display-block");
         });
         
         function getDeviceType() {
