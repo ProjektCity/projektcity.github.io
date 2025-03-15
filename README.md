@@ -104,13 +104,6 @@
 <p align="center">
     <span style="font-size: 18px;">Large and huge forests with gaint, detailed trees which are positionated on hills and mountians to ensure a beautiful nature.</span>
 </p>
-<!-- Trailer -->
-<p>
-    <img style="padding-top: 75px; padding-bottom: 25px;" src="https://projektcity.github.io/assests/images/header/Trailer.png" width="100%"/>
-</p>
-<h1 align="center">
-    <iframe src="https://www.youtube.com/embed/bB5IUyPRXO8?autohide=1&amp;autoplay=1&amp;hl=en&amp;loop=1&amp;mute=1&amp;modestbranding=1&amp;playlist=bB5IUyPRXO8&amp;rel=0&amp;showinfo=1&amp;vq=hd1080" width="711" height="400" frameborder="0" allowfullscreen=""></iframe>
-</h1>
 <!-- Support -->
 <p>
     <img style="padding-top: 75px; padding-bottom: 25px;" src="https://projektcity.github.io/assests/images/header/Socials.png" width="100%"/>
