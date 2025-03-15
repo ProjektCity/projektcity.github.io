@@ -1,6 +1,6 @@
 <!-- Header -->
 <p>
-    <img style="display: block; margin-left: auto; margin-right: auto; padding-bottom: 25px;" src="https://i.ibb.co/FX8H96g/Projekt-City-Header.png" width="100%" />
+    <img style="display: block; margin-left: auto; margin-right: auto; padding-bottom: 25px;" src="https://projektcity.github.io/assests/images/header/Projekt%20City%20Header.png" width="100%" />
 </p>
 <!-- Our mission -->
 <p align="center">
