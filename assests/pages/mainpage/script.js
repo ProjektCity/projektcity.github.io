@@ -53,5 +53,17 @@ fetch('https://pcapi-k48687951-6e4e.vercel.app/api')
     });
 })
 .catch(error => {
-    console.error("Fehler beim Abrufen der Daten:", error);
+    console.error("Error while fetching data:", error);
 });
+
+function toggleContent(id, triangleId) {
+    var content = document.getElementById(id);
+    var triangle = document.getElementById(triangleId);
+    if (content.style.display === "none") {
+        content.style.display = "block";
+        triangle.classList.add('rotated');
+    } else {
+        content.style.display = "none";
+        triangle.classList.remove('rotated');
+    }
+}
