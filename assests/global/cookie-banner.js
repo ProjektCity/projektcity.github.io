@@ -214,6 +214,7 @@ function hideCookieSelector() {
     // Accept all Cookies in Cookie Banner
     document.getElementById("acceptCookies").addEventListener("click", function() {
         acceptAllCookies();
+        location.reload();
     });
 
     // Manage Cookies in Cookie Banner
