@@ -6,14 +6,37 @@
     * Redistribution or use on other sites, not related to Projekt City, is strictly prohibited
     * For more information, please contact us at: projektcityofficial@gmail.com
     * 
-    * Script version: 1.1
+    * Script version: 1.2
     * 
     * Script format: W.X.Y.Z
     * W = Finished code, contains no errors, works perfectly
-    * X = Finished code, might contains a few problems, which do not affect tge user experience, bug improvements from W version
+    * X = Finished code, might contains a few problems, which do not affect tge user experience / bug improvements from W version
     * Y = Experimental code, contains errors, can limit user experience
     * Z = Test and experimental code, probably contains bugs that limit the user experience or make the service unusable, use with caution
 */
+  
+// Mobile Navbar
+document.getElementById("menu-opener").addEventListener("click", function() {
+    const menu = document.querySelector(".mobile-menu");
+    document.querySelector(".cookie-banner-dark-background").style.display = "block";
+    document.documentElement.style.overflowY = "hidden";
+    menu.classList.remove("closing");
+    menu.style.display = "block";
+    console.log("set-menu=mobile_display-block");
+});
+
+document.getElementById("menu-closer").addEventListener("click", function() {
+    const menu = document.querySelector(".mobile-menu");
+    menu.classList.add("closing");
+    document.querySelector(".cookie-banner-dark-background").style.display = "none";
+    document.documentElement.style.overflowY = "scroll";
+
+    setTimeout(() => {
+        menu.style.display = "none";
+        menu.classList.remove("closing");
+        console.log("set-menu=mobile_display-none");
+    }, 250);
+});
 
 // Custom CSS styles based on DIV properties
 (function() {
