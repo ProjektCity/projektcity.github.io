@@ -82,6 +82,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
     else {
         localStorage.setItem('language', 'en_US');
+        document.getElementById("english-en_US").style.display = "block";
         console.log("loaded-cookies=cookiesAccepted_false, display_desktop_cookie_banner=true");
         document.documentElement.style.overflowY = "hidden";
         document.querySelector(".cookie-banner-dark-background").style.display = "block";
