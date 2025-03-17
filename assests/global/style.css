@@ -765,13 +765,21 @@ p {
 }
 
 .ui-text-overay.fade-out-animation {
+    display: none;
     animation: moveUp 0.5s ease-out;
 }
 
 @keyframes moveDown {
     0% {
         top: -100px;
-    } 100% { 
+        opacity: 0;
+        visibility: hidden;
+    }
+    10% {
+        opacity: 1;
+        visibility: visible;
+    }
+    100% { 
         top: 22.5px;
     }
 }
@@ -779,8 +787,13 @@ p {
 @keyframes moveUp {
     0% {
         top: 22.5px;
-    } 100% {
+        opacity: 1;
+        visibility: visible;
+    }
+    100% {
         top: -100px;
+        opacity: 0;
+        visibility: hidden;
     }
 }
 

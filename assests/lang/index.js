@@ -6,7 +6,7 @@
     * Redistribution or use on other sites, not related to Projekt City, is strictly prohibited
     * For more information, please contact us at: projektcityofficial@gmail.com
     * 
-    * Script version: 1.2
+    * Script version: 1.3
 */
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -37,6 +37,7 @@ document.getElementById("english-en_US").addEventListener("click", function() {
         document.getElementById("ui-text-overay").classList.add("fade-out-animation");
         setTimeout(() => {
             document.getElementById("ui-text-overay").style.display = "none";
+            document.getElementById("ui-text-overay").classList.remove("fade-out-animation");
             document.getElementById("ui-content").innerHTML = ``
         }, 500);
     }, 3000);
@@ -55,6 +56,7 @@ document.getElementById("german-de_DE").addEventListener("click", function() {
         document.getElementById("ui-text-overay").classList.add("fade-out-animation");
         setTimeout(() => {
             document.getElementById("ui-text-overay").style.display = "none";
+            document.getElementById("ui-text-overay").classList.remove("fade-out-animation");
             document.getElementById("ui-content").innerHTML = ``
             location.reload();
         }, 500);
