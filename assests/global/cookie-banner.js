@@ -11,8 +11,8 @@
 
 document.addEventListener('DOMContentLoaded', function() {
     setTimeout(() => {
-        console.log('%cStop!', 'color: red; font-size: 30px; font-weight: bold;');
-        console.log('%cThis is a browser feature intended for developers only and may contain sensitive links and information. If someone has told you to copy-paste something here to unlock a feature, share certain information or hack an account, this is fraud and your data is at risk!', 'color: red; font-size: 12.5px;');   
+        console.log('%cWARNING!', 'color: red; font-size: 30px; font-weight: bold;');
+        console.log('%cThis is a browser feature intended for developers only and may contain sensitive links and information. Scammers have been known to encourage people to copy or/and paste information here to hack accounts. If you do not know what you are doing, do not proceed!', 'color: red; font-size: 12.5px;');   
     }, 250);
 
     // Setting basic Google Tag Manager consent

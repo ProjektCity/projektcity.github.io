@@ -38,7 +38,7 @@ document.getElementById("english-en_US").addEventListener("click", function() {
         setTimeout(() => {
             document.getElementById("ui-text-overay").style.display = "none";
             document.getElementById("ui-content").innerHTML = ``
-        }, 250);
+        }, 500);
     }, 3000);
     updateToGerman();
 });
@@ -57,7 +57,7 @@ document.getElementById("german-de_DE").addEventListener("click", function() {
             document.getElementById("ui-text-overay").style.display = "none";
             document.getElementById("ui-content").innerHTML = ``
             location.reload();
-        }, 250);
+        }, 500);
     }, 3000);
 });
 
