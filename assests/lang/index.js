@@ -1,6 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
     var language = localStorage.getItem('language');
-    var languagecontainer = document.getElementById("language-container");
 
     if (language === "de_DE") {
         console.log("set-internal-langue=de_DE");

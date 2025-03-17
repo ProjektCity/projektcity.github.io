@@ -81,6 +81,7 @@ document.addEventListener('DOMContentLoaded', function() {
         document.documentElement.style.overflowY = "scroll";
     }
     else {
+        localStorage.setItem('language', 'en_US');
         console.log("loaded-cookies=cookiesAccepted_false, display_desktop_cookie_banner=true");
         document.documentElement.style.overflowY = "hidden";
         document.querySelector(".cookie-banner-dark-background").style.display = "block";
@@ -102,6 +103,7 @@ document.addEventListener('DOMContentLoaded', function() {
 // Defining the function to accept all cookies
 function acceptAllCookies() {
     localStorage.setItem('cookiesAccepted', 'true');
+    localStorage.setItem('language', 'en_US');
     document.documentElement.style.overflowY = "scroll";
     gtag('consent', 'update', {
         'ad_storage': 'granted',
@@ -134,6 +136,7 @@ function acceptAllCookies() {
     document.querySelector(".cookie-banner-dark-background").style.display = "none";
     document.querySelector(".cookie-banner-background").style.display = "none";
     if (/mobile|android|iphone|ipad|ipod|blackberry|windows phone/i.test(navigator.userAgent)) {
+        // Hiding the cookie selector
         document.getElementById("cookie-banner").style.display = "none";
         document.getElementById("mb-cookie-selector").style.display = "none";
         console.log("set-cookies=cookiesAccepted_true, display_mobile_cookie_selector=false, display_mobile_cookie_banner=false. Set the values 'ad_storage', 'ad_user_data', 'ad_personalization', 'analytics_storage', 'functionality_storage', 'personalization_storage', 'security_storage' to 'granted'.");
@@ -201,7 +204,49 @@ function hideCookieSelector() {
 
     // Cookie Selector: Accept all cookies
     document.getElementById("acceptCookiesAndCloseBanner").addEventListener("click", function() {
-        acceptAllCookies();
+        localStorage.setItem('cookiesAccepted', 'true');
+        document.documentElement.style.overflowY = "scroll";
+        gtag('consent', 'update', {
+            'ad_storage': 'granted',
+            'ad_user_data': 'granted',
+            'ad_personalization': 'granted',
+            'analytics_storage': 'granted',
+            'functionality_storage': 'granted',
+            'personalization_storage': 'granted',
+            'security_storage': 'granted'
+        });
+        // Setting the values in cache
+        localStorage.setItem('statisticAndAnalyticsCookies', 'granted');
+        localStorage.setItem('preferencesAndPersonalizationCookies', 'granted');
+        localStorage.setItem('displayThirdPartyContent', 'granted');
+        localStorage.setItem('marketingAndAdvertisementCookies', 'granted');
+        localStorage.setItem('unclassifiedCookies', 'granted');
+        // Checking checkboxes
+        document.getElementById("statisticAndAnalyticsCookies").checked = true;
+        document.getElementById("preferencesAndPersonalizationCookies").checked = true;
+        document.getElementById("displayThirdPartyContent").checked = true;
+        document.getElementById("marketingAndAdvertisementCookies").checked = true;
+        document.getElementById("unclassifiedCookies").checked = true;
+        // Checking mobile checkboxes
+        document.getElementById("MBstatisticAndAnalyticsCookies").checked = true;
+        document.getElementById("MBpreferencesAndPersonalizationCookies").checked = true;
+        document.getElementById("MBdisplayThirdPartyContent").checked = true;
+        document.getElementById("MBmarketingAndAdvertisementCookies").checked = true;
+        document.getElementById("MBunclassifiedCookies").checked = true;
+        // Hiding the background
+        document.querySelector(".cookie-banner-dark-background").style.display = "none";
+        document.querySelector(".cookie-banner-background").style.display = "none";
+        if (/mobile|android|iphone|ipad|ipod|blackberry|windows phone/i.test(navigator.userAgent)) {
+            // Hiding the cookie selector
+            document.getElementById("cookie-banner").style.display = "none";
+            document.getElementById("mb-cookie-selector").style.display = "none";
+            console.log("set-cookies=cookiesAccepted_true, display_mobile_cookie_selector=false, display_mobile_cookie_banner=false. Set the values 'ad_storage', 'ad_user_data', 'ad_personalization', 'analytics_storage', 'functionality_storage', 'personalization_storage', 'security_storage' to 'granted'.");
+        } else {
+            // Hiding the cookie selector
+            document.getElementById("cookie-selector").style.display = "none";
+            document.getElementById("cookie-banner").style.display = "none";
+            console.log("set-cookies=cookiesAccepted_true, display_desktop_cookie_selector=false, display_desktop_cookie_banner=false. Set the values 'ad_storage', 'ad_user_data', 'ad_personalization', 'analytics_storage', 'functionality_storage', 'personalization_storage', 'security_storage' to 'granted'.");;
+        }
         location.reload();
     });
 
