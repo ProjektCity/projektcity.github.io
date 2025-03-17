@@ -104,7 +104,7 @@ img {
 /* About & others */
 .dt-right-column {
     height: 50px;
-    width: 220px;
+    width: 200px;
 }
 
 .dt-others {
@@ -117,6 +117,44 @@ img {
 .dt-cf {
     height: 50px;
     width: 50px;
+}
+
+.dt-language {
+    height: 50px;
+    width: 50px;
+}
+
+#language-container:hover {
+    border: 1px solid #808080;
+    border-radius: 5px;
+}
+
+.flexible-language-container {
+    border: 1px solid #24262B;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    width: 48px;
+}
+
+.flexible-language-symbol {
+    height: 30px;
+    margin: 0 auto;
+    width: 48px;
+}
+
+.flexible-language-svg {
+    height: 30px;
+    margin-left: 4px;
+    margin-right: 4px;
+    width: 40px;
+}
+
+.flexible-language-text {
+    font-size: 13px;
+    height: 18.4px;
+    text-align: center;
+    width: 48px;
 }
 
 /* Scrolling items */

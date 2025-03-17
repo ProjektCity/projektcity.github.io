@@ -132,12 +132,39 @@
                                         </svg>
                                     </a>
                                 </div>
-                                <div>
-                                    <a onclick="window.open(this.href); return false;" href="https://bit.ly/ProjektCityLinktree?utm_src=projektcity_cstm-header_right-col_lt-logo&amp;utm_medium=projektcity&amp;redirect_url=https%3A%2F%2Flinktr.ee%2FProjektCity" target="_blank">
-                                        <svg height="50" viewBox="0 0 417 512.238" width="50" xmlns="http://www.w3.org/2000/svg">
-                                            <path fill="#fff" fill-rule="nonzero" d="M171.274 344.942h74.09v167.296h-74.09V344.942zM0 173.468h126.068l-89.622-85.44 49.591-50.985 85.439 87.829V0h74.086v124.872L331 37.243l49.552 50.785-89.58 85.24H417v70.502H290.252l90.183 87.629L331 381.192 208.519 258.11 86.037 381.192l-49.591-49.591 90.218-87.631H0v-70.502z"/>
-                                        </svg>
-                                    </a>
+                                <div class="dt-language">
+                                    <div class="header-language-container">
+                                        <div class="flexible-language-container" id="language-container">
+                                            <div id="german-de_DE" style="display: none;" title="Change language to English (US)">
+                                                <div class="flexible-language-symbol">
+                                                    <svg class="flexible-language-svg" height="30" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 480">
+                                                        <path fill="#fc0" d="M0 320h640v160H0z"/>
+                                                        <path fill="#000001" d="M0 0h640v160H0z"/>
+                                                        <path fill="red" d="M0 160h640v160H0z"/>
+                                                    </svg>
+                                                </div>
+                                                <div class="flexible-language-text">
+                                                    <a>DE (DE)</a>
+                                                </div>
+                                            </div>
+                                            <div id="english-en_US" style="display: none;" title="Change language to German (DE)">
+                                                <div class="flexible-language-symbol">
+                                                    <svg class="flexible-language-svg" height="30" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 480">
+                                                        <path fill="#bd3d44" d="M0 0h640v480H0"/>
+                                                        <path stroke="#fff" stroke-width="37" d="M0 55.3h640M0 129h640M0 203h640M0 277h640M0 351h640M0 425h640"/>
+                                                        <path fill="#192f5d" d="M0 0h364.8v258.5H0"/>
+                                                        <marker id="us-a" markerHeight="30" markerWidth="30">
+                                                            <path fill="#fff" d="m14 0 9 27L0 10h28L5 27z"/>
+                                                        </marker>
+                                                        <path fill="none" marker-mid="url(#us-a)" d="m0 0 16 11h61 61 61 61 60L47 37h61 61 60 61L16 63h61 61 61 61 60L47 89h61 61 60 61L16 115h61 61 61 61 60L47 141h61 61 60 61L16 166h61 61 61 61 60L47 192h61 61 60 61L16 218h61 61 61 61 60z"/>
+                                                    </svg>
+                                                </div>
+                                                <div class="flexible-language-text">
+                                                    <a>EN (US)</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -345,20 +372,11 @@
             <!-- Mobile Trailer -->
             <div class="mb-trailer-container">
                 <div class="mb-videocontainer">
-                    <div class="mb-cookie-preferences-information-container">
-                        <a>Your cookie preferences do not allow YouTube videos to be played or third-party links and content to be loaded. To watch the video, change your cookie preferences or</a>
-                        <a class="linkout" href="https://youtu.be/bB5IUyPRXO8" target="_blank">watch the video in a separate tab</a><a>.</a>                    </div>
                 </div>
             </div>
             <!-- Desktop Trailer -->
             <div class="dt-trailer-container" style="display: none;">
-                <div class="dt-videocontainer">
-                    <div class="cookie-preferences-information-container">
-                        <h4>This video can not be displayed</h4>
-                        <a>Your cookie preferences do not allow YouTube videos to be played or third-party links and content to be loaded. To watch the video, change your cookie preferences or</a>
-                        <a class="linkout" href="https://youtu.be/bB5IUyPRXO8" target="_blank">watch the video in a separate tab</a><a>.</a>
-                    </div>
-                </div>
+                <div class="dt-videocontainer"></div>
             </div>
             <div class="placeholder w350 h20"></div>
         </section>
@@ -941,37 +959,70 @@
             </div>
         </div>
     </div>
+    <div class="ui-text-overay" id="ui-text-overay">
+        <div class="ui-overlay-inner" id="ui-content"></div>
+    </div>
     <script src="assests/global/cookie-banner.js"></script>
     <script src="assests/global/header/navbar-script.js"></script>
     <script src="assests/global/script.js"></script>
     <script src="assests/pages/mainpage/script.js"></script>
     <script src="assests/pages/mainpage/purecounter.js"></script>
+    <script src="assests/lang/index.js"></script>
     <script>
-    if (localStorage.getItem("displayThirdPartyContent") == "granted") {
-        if (/mobile|android|iphone|ipad|ipod|blackberry|windows phone/i.test(navigator.userAgent)) {
-            document.querySelector(".mb-videocontainer").innerHTML = `<iframe src="https://www.youtube.com/embed/bB5IUyPRXO8?autohide=1&autoplay=1&hl=en&loop=1&mute=1&modestbranding=1&playlist=bB5IUyPRXO8&rel=0&showinfo=1&vq=hd1080" width="300" height="169" frameborder="0" playsinline playsInline allowfullscreen></iframe>`;
-        } else {
-            document.querySelector(".dt-videocontainer").innerHTML = `<iframe src="https://www.youtube.com/embed/bB5IUyPRXO8?autohide=1&autoplay=1&hl=en&loop=1&mute=1&modestbranding=1&playlist=bB5IUyPRXO8&rel=0&showinfo=1&vq=hd1080" width="711" height="400" frameborder="0" allowfullscreen></iframe>`;
-        }
-    }
+        document.addEventListener("DOMContentLoaded", function() {
+            const language = localStorage.getItem('language');
+            const displayThirdPartyContent = localStorage.getItem("displayThirdPartyContent");
+            if (displayThirdPartyContent === "granted") {
+                document.querySelector(".dt-videocontainer").innerHTML = `<iframe src="https://www.youtube.com/embed/bB5IUyPRXO8?autohide=1&autoplay=1&hl=en&loop=1&mute=1&modestbranding=1&playlist=bB5IUyPRXO8&rel=0&showinfo=1&vq=hd1080" width="711" height="400" frameborder="0" allowfullscreen></iframe>`;
+                document.querySelector(".mb-videocontainer").innerHTML = `<iframe src="https://www.youtube.com/embed/bB5IUyPRXO8?autohide=1&autoplay=1&hl=en&loop=1&mute=1&modestbranding=1&playlist=bB5IUyPRXO8&rel=0&showinfo=1&vq=hd1080" width="300" height="169" frameborder="0" playsinline playsInline allowfullscreen></iframe>`;
+            } else {
+                if (language === "de_DE") {
+                    document.querySelector(".dt-videocontainer").innerHTML = `<div class="cookie-preferences-information-container"><h4>Dieses Video kann nicht abgespielt werden</h4><a>Deine Cookie-Einstellungen erlauben es nicht, YouTube-Videos abzuspielen oder Links und Inhalte Dritter zu laden. Um das Video anzusehen, ändere deine Cookie-Einstellungen oder&nbsp;</a><a class="linkout" href="https://youtu.be/bB5IUyPRXO8" target="_blank">schaue das Video in einem separaten Tab</a><a>.</a></div>`;
+                    document.querySelector(".mb-videocontainer").innerHTML = `<div class="mb-cookie-preferences-information-container"><a>Deine Cookie-Einstellungen erlauben es nicht, YouTube-Videos abzuspielen oder Links und Inhalte Dritter zu laden. Um das Video anzusehen, ändere deine Cookie-Einstellungen oder&nbsp;</a><a class="linkout" href="https://youtu.be/bB5IUyPRXO8" target="_blank">schaue das Video in einem separaten Tab</a><a>.</a></div>`;
+                } if (language === "en_US") {
+                    document.querySelector(".dt-videocontainer").innerHTML = `<div class="cookie-preferences-information-container"><h4>This video can not be displayed</h4><a>Your cookie preferences do not allow YouTube videos to be played or third-party links and content to be loaded. To watch the video, change your cookie preferences or&nbsp;</a><a class="linkout" href="https://youtu.be/bB5IUyPRXO8" target="_blank">watch the video in a separate tab</a><a>.</a></div>`;
+                    document.querySelector(".mb-videocontainer").innerHTML = `<div class="mb-cookie-preferences-information-container"><a>Your cookie preferences do not allow YouTube videos to be played or third-party links and content to be loaded. To watch the video, change your cookie preferences or&nbsp;</a><a class="linkout" href="https://youtu.be/bB5IUyPRXO8" target="_blank">watch the video in a separate tab</a><a>.</a></div>`;
+                } else {
+                    console.log("No language set!")
+                }
+            }
+        });
 
-    document.getElementById("displayThirdPartyContent").addEventListener("change", function() {
-        const checkbox = document.getElementById("displayThirdPartyContent");
-        if (checkbox.checked) {
-            document.querySelector(".dt-videocontainer").innerHTML = `<iframe src="https://www.youtube.com/embed/bB5IUyPRXO8?autohide=1&autoplay=1&hl=en&loop=1&mute=1&modestbranding=1&playlist=bB5IUyPRXO8&rel=0&showinfo=1&vq=hd1080" width="711" height="400" frameborder="0" allowfullscreen></iframe>`;
-        } else {
-            document.querySelector(".dt-videocontainer").innerHTML = `<div class="cookie-preferences-information-container"><h4>This video can not be displayed</h4><a>Your cookie preferences do not allow YouTube videos to be played or third-party links and content to be loaded. To watch the video, change your cookie preferences or</a><a class="linkout" href="https://youtu.be/bB5IUyPRXO8" target="_blank">watch the video in a separate tab</a><a>.</a></div>`;
+        if (localStorage.getItem("displayThirdPartyContent") == "granted") {
+            if (/mobile|android|iphone|ipad|ipod|blackberry|windows phone/i.test(navigator.userAgent)) {
+                document.querySelector(".mb-videocontainer").innerHTML = `<iframe src="https://www.youtube.com/embed/bB5IUyPRXO8?autohide=1&autoplay=1&hl=en&loop=1&mute=1&modestbranding=1&playlist=bB5IUyPRXO8&rel=0&showinfo=1&vq=hd1080" width="300" height="169" frameborder="0" playsinline playsInline allowfullscreen></iframe>`;
+            } else {
+                document.querySelector(".dt-videocontainer").innerHTML = `<iframe src="https://www.youtube.com/embed/bB5IUyPRXO8?autohide=1&autoplay=1&hl=en&loop=1&mute=1&modestbranding=1&playlist=bB5IUyPRXO8&rel=0&showinfo=1&vq=hd1080" width="711" height="400" frameborder="0" allowfullscreen></iframe>`;
+            }
         }
-    });
-    
-    document.getElementById("MBdisplayThirdPartyContent").addEventListener("change", function() {
-        const checkbox = document.getElementById("MBdisplayThirdPartyContent");
-        if (checkbox.checked) {
-            document.querySelector(".mb-videocontainer").innerHTML = `<iframe src="https://www.youtube.com/embed/bB5IUyPRXO8?autohide=1&autoplay=1&hl=en&loop=1&mute=1&modestbranding=1&playlist=bB5IUyPRXO8&rel=0&showinfo=1&vq=hd1080" width="300" height="169" frameborder="0" playsinline playsInline allowfullscreen></iframe>`;
-        } else {
-            document.querySelector(".mb-videocontainer").innerHTML = `<a>Your cookie preferences do not allow YouTube videos to be played or third-party links and content to be loaded. To watch the video, change your cookie preferences or</a><a class="linkout" href="https://youtu.be/bB5IUyPRXO8" target="_blank">watch the video in a separate tab</a><a>.</a>`;
-        }
-    });
+
+        document.getElementById("displayThirdPartyContent").addEventListener("click", function() {
+            const checkbox = document.getElementById("displayThirdPartyContent");
+            const language = localStorage.getItem('language');
+            if (checkbox.checked) {
+                document.querySelector(".dt-videocontainer").innerHTML = `<iframe src="https://www.youtube.com/embed/bB5IUyPRXO8?autohide=1&autoplay=1&hl=en&loop=1&mute=1&modestbranding=1&playlist=bB5IUyPRXO8&rel=0&showinfo=1&vq=hd1080" width="711" height="400" frameborder="0" allowfullscreen></iframe>`;
+            } else {
+                if (language === "de_DE") {
+                    document.querySelector(".dt-videocontainer").innerHTML = `<div class="cookie-preferences-information-container"><h4>Dieses Video kann nicht abgespielt werden</h4><a>Deine Cookie-Einstellungen erlauben es nicht, YouTube-Videos abzuspielen oder Links und Inhalte Dritter zu laden. Um das Video anzusehen, ändere deine Cookie-Einstellungen oder&nbsp;</a><a class="linkout" href="https://youtu.be/bB5IUyPRXO8" target="_blank">schaue das Video in einem separaten Tab</a><a>.</a></div>`;
+                } if (language === "en_US") {
+                    document.querySelector(".dt-videocontainer").innerHTML = `<div class="cookie-preferences-information-container"><h4>This video can not be displayed</h4><a>Your cookie preferences do not allow YouTube videos to be played or third-party links and content to be loaded. To watch the video, change your cookie preferences or&nbsp;</a><a class="linkout" href="https://youtu.be/bB5IUyPRXO8" target="_blank">watch the video in a separate tab</a><a>.</a></div>`;
+                }
+            }
+        });
+        
+        document.getElementById("MBdisplayThirdPartyContent").addEventListener("click", function() {
+            const checkbox = document.getElementById("MBdisplayThirdPartyContent");
+            const language = localStorage.getItem('language');
+            if (checkbox.checked) {
+                document.querySelector(".mb-videocontainer").innerHTML = `<iframe src="https://www.youtube.com/embed/bB5IUyPRXO8?autohide=1&autoplay=1&hl=en&loop=1&mute=1&modestbranding=1&playlist=bB5IUyPRXO8&rel=0&showinfo=1&vq=hd1080" width="300" height="169" frameborder="0" playsinline playsInline allowfullscreen></iframe>`;
+            } else {
+                if (language === "de_DE") {
+                    document.querySelector(".mb-videocontainer").innerHTML = `<div class="mb-cookie-preferences-information-container"><a>Deine Cookie-Einstellungen erlauben es nicht, YouTube-Videos abzuspielen oder Links und Inhalte Dritter zu laden. Um das Video anzusehen, ändere deine Cookie-Einstellungen oder</a><a class="linkout" href="https://youtu.be/bB5IUyPRXO8" target="_blank">schaue das Video in einem separaten Tab</a><a>.</a></div>`;
+                } if (language === "en_US") {
+                    document.querySelector(".mb-videocontainer").innerHTML = `<div class="mb-cookie-preferences-information-container"><a>Your cookie preferences do not allow YouTube videos to be played or third-party links and content to be loaded. To watch the video, change your cookie preferences or</a><a class="linkout" href="https://youtu.be/bB5IUyPRXO8" target="_blank">watch the video in a separate tab</a><a>.</a></div>`;
+                }
+            }
+        });
     </script>
     <script>
         // Information about changes

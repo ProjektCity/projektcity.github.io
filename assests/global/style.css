@@ -742,6 +742,33 @@ p {
     margin-top: 2.5px;
 }
 
+/* UI Overlay */
+.ui-text-overay {
+    background-color: #181818;
+    border: 1px solid #383939;
+    border-radius: 10px;
+    bottom: 0;
+    box-sizing: border-box;
+    color: #fff;
+    display: none;
+    height: 50px;
+    left: 50%;
+    position: fixed;
+    text-align: center;
+    top: 22.5px;
+    transform: translateX(-50%);
+    max-width: 530px;
+    min-width: 300px;
+    z-index: 1000;
+    width: 100%;
+}
+
+.ui-overlay-inner {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
 /* IDs */
 .cookie-checkbox {
     height: 38.18px;
