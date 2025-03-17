@@ -744,6 +744,7 @@ p {
 
 /* UI Overlay */
 .ui-text-overay {
+    animation: moveDown 0.5s ease-in;
     background-color: #181818;
     border: 1px solid #383939;
     border-radius: 10px;
@@ -761,6 +762,26 @@ p {
     min-width: 300px;
     z-index: 1000;
     width: 100%;
+}
+
+.ui-text-overay.fade-out-animation {
+    animation: moveUp 0.5s ease-out;
+}
+
+@keyframes moveDown {
+    0% {
+        top: -100px;
+    } 100% { 
+        top: 22.5px;
+    }
+}
+
+@keyframes moveUp {
+    0% {
+        top: 22.5px;
+    } 100% {
+        top: -100px;
+    }
 }
 
 .ui-overlay-inner {
