@@ -11,6 +11,11 @@ document.addEventListener('DOMContentLoaded', function() {
         console.log("set-internal-langue=en_US");
         document.getElementById("english-en_US").style.display = "block";
         document.getElementById("german-de_DE").style.display = "none";
+    } else {
+        localStorage.setItem('language', 'en_US');
+        setTimeout(() => {
+            location.reload();
+        }, 250);
     }
 });
 
