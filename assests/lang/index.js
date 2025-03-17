@@ -24,7 +24,6 @@ document.getElementById("english-en_US").addEventListener("click", function() {
     document.getElementById("german-de_DE").style.display = "block";
     document.getElementById("english-en_US").style.display = "none";
     console.log("set-internal-langue=de_DE");
-    updateToGerman();
     // Language Banner
     document.getElementById("ui-text-overay").style.display = "block";
     document.getElementById("ui-content").innerHTML = `<a>Changed the language to "German (DE)"</a>`
@@ -32,6 +31,7 @@ document.getElementById("english-en_US").addEventListener("click", function() {
         document.getElementById("ui-text-overay").style.display = "none";
         document.getElementById("ui-content").innerHTML = ``
     }, 3000);
+    updateToGerman();
 });
     
 document.getElementById("german-de_DE").addEventListener("click", function() {
