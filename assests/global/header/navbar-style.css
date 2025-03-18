@@ -121,12 +121,19 @@ img {
 
 .dt-language {
     height: 50px;
-    width: 50px;
+    width: 55px;
+}
+
+.header-language-container {
+    height: 50px;
+    width: 55px;
 }
 
 #language-container:hover {
     border: 1px solid #808080;
     border-radius: 5px;
+    height: 50px;
+    width: 53px;
 }
 
 .flexible-language-container {
@@ -134,19 +141,17 @@ img {
     cursor: pointer;
     display: flex;
     flex-direction: column;
-    width: 48px;
+    width: 53px;
 }
 
 .flexible-language-symbol {
     height: 30px;
     margin: 0 auto;
-    width: 48px;
+    width: 40px;
 }
 
 .flexible-language-svg {
     height: 30px;
-    margin-left: 4px;
-    margin-right: 4px;
     width: 40px;
 }
 
@@ -154,7 +159,7 @@ img {
     font-size: 13px;
     height: 18.4px;
     text-align: center;
-    width: 48px;
+    width: 53px;
 }
 
 /* Scrolling items */
