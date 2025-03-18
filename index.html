@@ -745,7 +745,7 @@
     <div class="cookie-selector" id="cookie-selector">
         <div class="cookie-container">
             <div class="cookie-chooser-header">
-                <a style="font-weight: 400; font-size: 30px;">Projekt City requires your consent!</a>
+                <a id="cookieChooserHeader" style="font-weight: 400; font-size: 30px;">Projekt City requires your consent!</a>
             </div>
             <div class="cookie-hr"></div>
             <div class="cookie-chooser-maincontent">
@@ -753,9 +753,9 @@
                     <div class="cookie-chooser-action">
                         <div class="cookie-chooser-left">
                             <div class="cookie-chooser-header">
-                                <a>Neccessarry Cookies</a>
+                                <a id="neccessarryCookiesHeader">Neccessarry Cookies</a>
                             </div>
-                            <div class="cookie-chooser-description">
+                            <div class="cookie-chooser-description" id="neccessarryCookiesText">
                                 <a>Cookies are small text files that are sent to the user's browser, desktop client or device when they visit the website. These are automatically provided by the device when the page is visited again. Cookies are mostly used by websites to improve the user experience, increase the performance of the site and - if activated - display personalized content.</a>
                                 <br>
                                 <a>The law states that companies may automatically store necessary cookies on devices without user consent if they are necessary for the operation of the site.</a>
@@ -773,9 +773,9 @@
                     <div class="cookie-chooser-action">
                         <div class="cookie-chooser-left">
                             <div class="cookie-chooser-header">
-                                <a>Statistics and Analytics</a>
+                                <a id="statisticAndAnalyticsHeader">Statistics and Analytics</a>
                             </div>
-                            <div class="cookie-chooser-description">
+                            <div class="cookie-chooser-description" id="statisticAndAnalyticsText">
                                 <a>Statistics and analysis cookies, also known as "performance cookies," help the website to track how users interact with the site, which link is clicked by them, how long they visit it, which pages are particularly popular and which pages the users come from. This information is collected anonymously and is not trackable and helps us to better understand our site and users and their behavior in order to provide a better experience.</a>
                             </div>
                         </div>
@@ -787,9 +787,9 @@
                     <div class="cookie-chooser-action">
                         <div class="cookie-chooser-left">
                             <div class="cookie-chooser-header">
-                                <a>Preferences and Personalization</a>
+                                <a id="preferencesAndPersonalizationHeader">Preferences and Personalization</a>
                             </div>
-                            <div class="cookie-chooser-description">
+                            <div class="cookie-chooser-description" id="preferencesAndPersonalizationText">
                                 <a>Preference cookies, are cookies that allow the website to remember your choices you made through your use of our website, such as language and regional preferences, or what your username and password are so that they can be retrieved automatically the next time you load the page, leading to a overall better performance of the webpage.</a>
                             </div>
                         </div>
@@ -801,9 +801,9 @@
                     <div class="cookie-chooser-action">
                         <div class="cookie-chooser-left">
                             <div class="cookie-chooser-header">
-                                <a>Third-party content</a>
+                                <a id="ThirdPartyHeader">Third-party content</a>
                             </div>
-                            <div class="cookie-chooser-description">
+                            <div class="cookie-chooser-description" id="ThirdPartyText">
                                 <a>Third-party cookies include embedded videos, widgets, images or other types of third-party content. If this feature is activated, a connection to other servers is established and external content is loaded. Some content may not be created or managed by Projekt City. This feature is disabled by default to protect your privacy.</a>
                             </div>
                         </div>
@@ -815,9 +815,9 @@
                     <div class="cookie-chooser-action">
                         <div class="cookie-chooser-left">
                             <div class="cookie-chooser-header">
-                                <a>Marketing and Advertisement</a>
+                                <a id="marketingAndAdvertisementHeader">Marketing and Advertisement</a>
                             </div>
-                            <div class="cookie-chooser-description">
+                            <div class="cookie-chooser-description" id="marketingAndAdvertisementText">
                                 <a>Marketing cookies are mainly used for advertising purposes by us and our third parties. If this function is activated, your online activities are tracked in order to provide you with personalized, relevant, meaningfull and appropriate advertising and to prevent you from seeing the same advertising multiple times. This can help us track how efficient advertising campaigns are, both for our own services and other websites. All data is passed on anonymously to the advertising partners.</a>
                             </div>
                         </div>
@@ -829,9 +829,9 @@
                     <div class="cookie-chooser-action">
                         <div class="cookie-chooser-left">
                             <div class="cookie-chooser-header">
-                                <a>Others & unclassified cookies</a>
+                                <a id="unclassifiedHeader">Others & unclassified cookies</a>
                             </div>
-                            <div class="cookie-chooser-description">
+                            <div class="cookie-chooser-description" id="unclassifiedText">
                                 <a>Unclassified cookies are cookies that cannot be assigned to a specific category or class, either because they are too irrelevant or not worth to categorize. Nevertheless, we are working on classifying all cookies as best we can.</a>
                             </div>
                         </div>
@@ -1013,8 +1013,6 @@
                 } if (language === "en_US") {
                     document.querySelector(".dt-videocontainer").innerHTML = `<div class="cookie-preferences-information-container"><h4>This video can not be displayed</h4><a>Your cookie preferences do not allow YouTube videos to be played or third-party links and content to be loaded. To watch the video, change your cookie preferences or&nbsp;</a><a class="linkout" href="https://youtu.be/bB5IUyPRXO8" target="_blank">watch the video in a separate tab</a><a>.</a></div>`;
                     document.querySelector(".mb-videocontainer").innerHTML = `<div class="mb-cookie-preferences-information-container"><a>Your cookie preferences do not allow YouTube videos to be played or third-party links and content to be loaded. To watch the video, change your cookie preferences or&nbsp;</a><a class="linkout" href="https://youtu.be/bB5IUyPRXO8" target="_blank">watch the video in a separate tab</a><a>.</a></div>`;
-                } else {
-                    console.log("No language set!")
                 }
             }
         });

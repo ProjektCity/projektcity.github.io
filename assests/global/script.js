@@ -16,6 +16,10 @@
 */
 
 document.addEventListener("DOMContentLoaded", function () {
+    setTimeout(() => {
+        console.log('%cWARNING!', 'color: red; font-size: 30px; font-weight: bold;');
+        console.log('%cThis is a browser feature intended for developers and debuggers only and may contain sensitive links and information about you, your data, account/s, device and browser. \nScammers have been known to encourage people to copy and/or paste information or run commands on the command line to hack accounts or access sensitive data. If you do not know what you are doing, do not proceed and close the debug menu! \nThe information that is/will be visible above and below this text is only for the development and improvement of the site and helps to find and fix bugs and other problems in JavaScript faster. \nFor more information visit: https://projektcity.github.io/helpcenter/debug-menu', 'color: red; font-size: 12.5px;');
+    }, 250);
     const urlParams = new URLSearchParams(window.location.search);
     const lang = urlParams.get('lang');
         
