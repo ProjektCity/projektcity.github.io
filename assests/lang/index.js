@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 document.getElementById("english-en_US").addEventListener("click", function() {
-    funForEn()
+    funcForEn()
 });
     
 document.getElementById("german-de_DE").addEventListener("click", function() {
@@ -38,7 +38,7 @@ document.getElementById("german-de_DE").addEventListener("click", function() {
 });
 
 document.getElementById("mb-english-en_US").addEventListener("click", function() {
-    funForEn()
+    funcForEn()
 });
     
 document.getElementById("mb-german-de_DE").addEventListener("click", function() {
@@ -62,9 +62,10 @@ function funcForGer() {
             location.reload();
         }, 500);
     }, 3000);
+    // Cookies
 }
 
-function funForEn() {
+function funcForEn() {
     localStorage.setItem('language', 'de_DE');
     document.getElementById("german-de_DE").style.display = "block";
     document.getElementById("mb-german-de_DE").style.display = "block";
