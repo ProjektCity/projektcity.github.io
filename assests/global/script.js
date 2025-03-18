@@ -14,7 +14,26 @@
     * Y = Experimental code, contains errors, can limit user experience
     * Z = Test and experimental code, probably contains bugs that limit the user experience or make the service unusable, use with caution
 */
-  
+
+document.addEventListener("DOMContentLoaded", function () {
+    const urlParams = new URLSearchParams(window.location.search);
+    const lang = urlParams.get('lang');
+        
+    if (lang === 'en') {
+        localStorage.setItem('language', 'en_US');
+        const url = window.location.origin + window.location.pathname;
+        window.location.replace(url);
+        return 'en';
+    } else if (lang === 'de') {
+        localStorage.setItem('language', 'de_DE');
+        const url = window.location.origin + window.location.pathname;
+        window.location.replace(url);
+        return 'de';
+    } else {
+        return 'not_given';
+    }
+});
+
 // Mobile Navbar
 document.getElementById("menu-opener").addEventListener("click", function() {
     const menu = document.querySelector(".mobile-menu");

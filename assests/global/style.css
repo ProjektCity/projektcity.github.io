@@ -199,31 +199,31 @@ p {
 }
 
 /* Cookie Chooser Scrollbar */
-.cookie-chooser-actions::-webkit-scrollbar, .cb-top-elements::-webkit-scrollbar {
+.cookie-chooser-actions::-webkit-scrollbar {
     -webkit-appearance: none;
     width: 5px;
 }
 
-.cookie-chooser-actions::-webkit-scrollbar-thumb, .cb-top-elements::-webkit-scrollbar {
+.cookie-chooser-actions::-webkit-scrollbar-thumb {
     border-radius: 4px;
     background-color: transparent; 
 }
 
-.cookie-chooser-actions::-webkit-scrollbar, .cb-top-elements::-webkit-scrollbar {
+.cookie-chooser-actions::-webkit-scrollbar {
     width: 5px;
 }
 
-.cookie-chooser-actions::-webkit-scrollbar-track, .cb-top-elements::-webkit-scrollbar-track {
+.cookie-chooser-actions::-webkit-scrollbar-track {
     border-bottom-right-radius: 5px;
     border-top-right-radius: 5px;
     background: transparent;
 }
 
-.cookie-chooser-actions::-webkit-scrollbar-thumb, .cb-top-elements::-webkit-scrollbar-thumb {
+.cookie-chooser-actions::-webkit-scrollbar-thumb {
     background: #707070;
 }
 
-.cookie-chooser-actions::-webkit-scrollbar-thumb:hover, .cb-top-elements::-webkit-scrollbar:hover {
+.cookie-chooser-actions::-webkit-scrollbar-thumb:hoverr {
     background: transparent;
 }
 
@@ -231,6 +231,13 @@ p {
     background: #707070;
     width: 5px;
 }
+
+.cb-top-elements {
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+
 
 /* Mobile */
 .mb-p-header {
@@ -462,6 +469,11 @@ p {
     overflow-x: hidden;
     padding: 15px;
     width: 100%;
+    scrollbar-width: none
+}
+
+.cb-top-elements::-webkit-scrollbar, .mb-cookie-chooser-maincontent::-webkit-scrollbar {
+    display: none;
 }
 
 .cb-header-text {
@@ -553,15 +565,16 @@ p {
 }
 
 .cookie-container {
-
+    width: 100%;
 }
 
 .cookie-chooser-header {
-
+    height: 41.25px;
+    width: 100%;
 }
 
 .cookie-chooser-maincontent {
-
+    width: 100%;
 }
 
 .cookie-chooser-actions {
@@ -602,7 +615,7 @@ p {
 }
 
 .cookie-chooser-bottom {
-    
+    width: 100%;
 }
 
 .cookie-chooser-bottom-inner {
@@ -619,7 +632,8 @@ p {
 }
 
 .cookie-bottom-close-btn {
-
+    height: 30px;
+    width: 30px;
 }
 
 .cookie-bottom-button {
@@ -657,20 +671,20 @@ p {
 }
 
 .mb-cookie-container {
-
+    width: auto;
 }
 
 .mb-cookie-chooser-header {
-
+    width: auto;
 }
 
 .mb-cookie-chooser-maincontent {
-
+    height: 330px;
+    overflow-y: scroll;
+    width: auto;
 }
 
 .mb-cookie-chooser-actions {
-    height: 330px;
-    overflow-y: scroll;
     text-align: left;
 }
 
