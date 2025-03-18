@@ -225,11 +225,42 @@
                                         </div>
                                         <div class="individual-mb-header-placeholder h50"></div>
                                         <div class="mb-clickelement">
-                                            <a onclick="window.open(this.href); return false;" href="https://bit.ly/ProjektCityLinktree?utm_src=projektcity_cstm-header_right-col_lt-logo&amp;utm_medium=projektcity&amp;redirect_url=https%3A%2F%2Flinktr.ee%2FProjektCity" target="_blank">
-                                                <svg xmlns="http://www.w3.org/2000/svg" height="50" viewBox="0 -960 960 960" width="50" fill="#fff">
-                                                    <path d="M600-160v-80H440v-200h-80v80H80v-240h280v80h80v-200h160v-80h280v240H600v-80h-80v320h80v-80h280v240H600Zm80-80h120v-80H680v80ZM160-440h120v-80H160v80Zm520-200h120v-80H680v80Zm0 400v-80 80ZM280-440v-80 80Zm400-200v-80 80Z"></path>
-                                                </svg>
-                                            </a>
+                                            <div class="dt-language">
+                                                <div class="header-language-container">
+                                                    <div class="mb-flexible-language-container" id="mb-language-container">
+                                                        <div id="mb-german-de_DE" style="display: none;" title="Change language to English (US)">
+                                                            <div class="flexible-language-symbol">
+                                                                <div class="placeholder w50 h1-6" id="mb-header-lang-placeholder"></div>
+                                                                <svg class="flexible-language-svg" height="30" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 480">
+                                                                    <path fill="#fc0" d="M0 320h640v160H0z"/>
+                                                                    <path fill="#000001" d="M0 0h640v160H0z"/>
+                                                                    <path fill="red" d="M0 160h640v160H0z"/>
+                                                                </svg>
+                                                            </div>
+                                                            <div class="flexible-language-text">
+                                                                <a>GERMAN</a>
+                                                            </div>
+                                                        </div>
+                                                        <div id="mb-english-en_US" style="display: none;" title="Change language to German (DE)">
+                                                            <div class="flexible-language-symbol">
+                                                                <div class="placeholder w50 h1-6" id="mb-header-lang-placeholder"></div>
+                                                                <svg class="flexible-language-svg" height="30" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 480">
+                                                                    <path fill="#bd3d44" d="M0 0h640v480H0"/>
+                                                                    <path stroke="#fff" stroke-width="37" d="M0 55.3h640M0 129h640M0 203h640M0 277h640M0 351h640M0 425h640"/>
+                                                                    <path fill="#192f5d" d="M0 0h364.8v258.5H0"/>
+                                                                    <marker id="us-a" markerHeight="30" markerWidth="30">
+                                                                        <path fill="#fff" d="m14 0 9 27L0 10h28L5 27z"/>
+                                                                    </marker>
+                                                                    <path fill="none" marker-mid="url(#us-a)" d="m0 0 16 11h61 61 61 61 60L47 37h61 61 60 61L16 63h61 61 61 61 60L47 89h61 61 60 61L16 115h61 61 61 61 60L47 141h61 61 60 61L16 166h61 61 61 61 60L47 192h61 61 60 61L16 218h61 61 61 61 60z"/>
+                                                                </svg>
+                                                            </div>
+                                                            <div class="flexible-language-text">
+                                                                <a>ENGLISH</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                         <div class="individual-mb-header-placeholder h50"></div>
                                         <div class="mb-clickelement" id="menu-opener">
@@ -1086,7 +1117,7 @@
                 document.getElementById("cookie-banner").style.display = "block";
                 document.getElementById("mb-cookie-selector").style.display = "none";
                 // Desktop elements
-                document.querySelector(".dt-p-header").style.display = "block";
+                document.querySelector(".dt-p-header").style.display = "none"; //!
                 document.querySelector(".dt-main").style.display = "block";
                 document.querySelector(".dt-footer").style.display = "block";
                 document.querySelector(".dt-trailer-container").style.display = "block";
@@ -1094,7 +1125,7 @@
                 document.querySelector(".mb-cookie-selector").style.display = "none";
                 document.querySelector(".mb-trailer-container").style.display = "none";
                 document.querySelector(".mb-image-slider").style.display = "none";
-                document.getElementById("mobile-header").style.display = "none";
+                document.getElementById("mobile-header").style.display = "block"; //!
                 document.getElementById("mb-placeholder").style.display = "none";
                 return "desktop";
             }

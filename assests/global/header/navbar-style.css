@@ -129,9 +129,24 @@ img {
     width: 55px;
 }
 
+#language-container {
+    border: 1px solid #24262B;
+}
+
 #language-container:hover {
     border: 1px solid #808080;
     border-radius: 5px;
+    height: 50px;
+    width: 53px;
+}
+
+.mb-flexible-language-container {
+    border-radius: 5px;
+    height: 50px;
+    width: 53px;
+}
+
+#german-de_DE {
     height: 50px;
     width: 53px;
 }
