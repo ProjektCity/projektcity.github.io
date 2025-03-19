@@ -9,26 +9,20 @@
     <h1>Discord Login</h1>
     <button id="loginBtn">Login with Discord</button>
     <button id="logoutBtn" style="display:none;">Logout</button>
-    <p id="userInfo"></p>
+    <p id="username"></p>
 
     <script>
-        document.getElementById("loginBtn").onclick = function() {
-            window.location.href = "https://projektcity-discordauthbackend.vercel.app/login";
-        };
+        const urlParams = new URLSearchParams(window.location.hash.substring(1));
+        const token = urlParams.get("access_token");
 
-        document.getElementById("logoutBtn").onclick = function() {
-            window.location.href = "https://projektcity-discordauthbackend.vercel.app/logout";
-        };
-
-        const urlParams = new URLSearchParams(window.location.search);
-        const userData = urlParams.get("user");
-
-        if (userData) {
-            const user = JSON.parse(decodeURIComponent(userData));
-            document.getElementById("userInfo").innerHTML = `<h2>Welcome, ${user.username}!</h2>`;
-            document.getElementById("loginBtn").style.display = "none";
-            document.getElementById("logoutBtn").style.display = "block";
+        if (token) {
+        fetch("https://discord.com/api/users/@me", { headers: { Authorization: `Bearer ${token}` }})
+            .then(res => res.json())
+            .then(user => {
+            document.getElementById("username").innerText = `Hello, ${user.username}`;
+            });
         }
+
     </script>
 </body>
 </html>
