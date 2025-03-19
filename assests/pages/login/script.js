@@ -35,7 +35,7 @@ function getUserInfo(token) {
             : `https://cdn.discordapp.com/embed/avatars/${user.discriminator % 5}.png`;
 
         document.getElementById("profile-pic").src = avatarUrl;
-        document.getElementById("user-info").style.display = 'block';
+        document.getElementById("profileinformation").style.display = 'block';
     })
     .catch(error => {
         console.error("Error while receiving user information:", error);
