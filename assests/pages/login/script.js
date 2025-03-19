@@ -10,7 +10,6 @@ window.onload = function() {
     } else {
         const token = localStorage.getItem('discord_token');
         if (token) {
-            document.getElementById("signincontainer").style.display = "none";
             document.getElementById("profileinformation").style.display = 'block';
             getUserInfo(token);
         }
