@@ -49,7 +49,7 @@
 
     <div class="login-container">
         <h2>Login with Discord</h2>
-        <a class="discord-btn" href="https://discord.com/oauth2/authorize?client_id=YOUR_CLIENT_ID&redirect_uri=YOUR_REDIRECT_URI&response_type=code&scope=identify%20email">
+        <a class="discord-btn" href="https://discord.com/oauth2/authorize?client_id=1308503690449256561&redirect_uri=https://projektcity.github.io/login&response_type=token&scope=identify%20email">
             Login with Discord
         </a>
 
@@ -61,12 +61,13 @@
     </div>
 
     <script>
-        // Wenn die Seite geladen wird, prüfe, ob ein Code in der URL vorhanden ist
+        // Wenn die Seite geladen wird, prüfe, ob ein Access-Token im Fragment der URL vorhanden ist
         window.onload = function() {
-            const urlParams = new URLSearchParams(window.location.search);
-            const code = urlParams.get('code');
-            if (code) {
-                exchangeCodeForToken(code);
+            const urlParams = new URLSearchParams(window.location.hash.substring(1));
+            const accessToken = urlParams.get('access_token');
+            if (accessToken) {
+                localStorage.setItem('discord_token', accessToken);
+                getUserInfo(accessToken);
             } else {
                 const token = localStorage.getItem('discord_token');
                 if (token) {
@@ -74,41 +75,6 @@
                 }
             }
         };
-
-        // Funktion, um den Code gegen ein Access Token zu tauschen
-        function exchangeCodeForToken(code) {
-            const clientId = 'YOUR_CLIENT_ID';  // Ersetze mit deiner Client-ID
-            const clientSecret = 'YOUR_CLIENT_SECRET';  // Ersetze mit deinem Client Secret
-            const redirectUri = 'YOUR_REDIRECT_URI';  // Ersetze mit deiner Redirect-URI
-
-            fetch('https://discord.com/api/oauth2/token', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/x-www-form-urlencoded',
-                },
-                body: new URLSearchParams({
-                    client_id: clientId,
-                    client_secret: clientSecret,
-                    code: code,
-                    grant_type: 'authorization_code',
-                    redirect_uri: redirectUri,
-                    scope: 'identify email',
-                }),
-            })
-            .then(res => res.json())
-            .then(data => {
-                const accessToken = data.access_token;
-                if (accessToken) {
-                    localStorage.setItem('discord_token', accessToken);
-                    getUserInfo(accessToken);
-                } else {
-                    console.error('Kein Access Token erhalten.');
-                }
-            })
-            .catch(error => {
-                console.error('Fehler beim Abrufen des Tokens:', error);
-            });
-        }
 
         // Funktion, um Benutzerdaten von Discord zu holen
         function getUserInfo(token) {
