@@ -13,8 +13,6 @@ window.onload = function() {
             document.getElementById("signincontainer").style.display = "none";
             document.getElementById("profileinformation").style.display = 'block';
             getUserInfo(token);
-        } else {
-            document.getElementById("signincontainer").style.display = "none";
         }
     }
 };
