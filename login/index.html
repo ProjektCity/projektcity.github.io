@@ -49,10 +49,12 @@
 <body>
 
     <div class="login-container">
-        <h2>Login with Discord</h2>
-        <a class="discord-btn" href="https://discord.com/oauth2/authorize?client_id=1308503690449256561&redirect_uri=https://projektcity.github.io/login&response_type=token&scope=identify%20email">
-            Login with Discord
-        </a>
+        <div class="container-login-btn">
+            <h2>Login with Discord</h2>
+            <a class="discord-btn" href="https://discord.com/oauth2/authorize?client_id=1308503690449256561&redirect_uri=https://projektcity.github.io/login&response_type=token&scope=identify%20email">
+                Login with Discord
+            </a>
+        </div>
 
         <div id="user-info">
             <h3>Welcome, <span id="username"></span></h3>
@@ -87,7 +89,7 @@
                 document.getElementById("username").textContent = user.username;
                 document.getElementById("email").textContent = user.email;
                 document.getElementById("user-info").style.display = 'block';
-                document.querySelector('.login-container').style.display = 'none';
+                document.querySelector('.container-login-btn').style.display = 'none';
             })
             .catch(error => {
                 console.error("Fehler beim Abrufen der Benutzerdaten:", error);
