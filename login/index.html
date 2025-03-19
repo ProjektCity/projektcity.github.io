@@ -226,11 +226,8 @@
             <div class="login-container">
                 <div class="container-login-btn">
                     <h2>Login with Discord</h2>
-                    <a class="discord-btn" href="https://discord.com/oauth2/authorize?client_id=1308503690449256561&redirect_uri=https://projektcity.github.io/login&response_type=token&scope=identify%20email">
-                        Login with Discord
-                    </a>
+                    <a class="discord-btn" href="https://discord.com/oauth2/authorize?client_id=1308503690449256561&redirect_uri=https://projektcity.github.io/login&response_type=token&scope=identify%20email" target="_parent">Login with Discord</a>
                 </div>
-
                 <div id="user-info">
                     <h3>Welcome, <span id="username"></span></h3>
                     <p>Email: <span id="email"></span></p>
@@ -682,14 +679,20 @@
     <script src="../assests/global/cookie-banner.js"></script>
     <script src="../assests/global/header/navbar-script.js"></script>
     <script src="../assests/global/script.js"></script>
-    <script src="../assests/pages/linkout/script.js"></script>
     <script>
         // Wenn die Seite geladen wird, prüfe, ob ein Access-Token im Fragment der URL vorhanden ist
         window.onload = function() {
             const urlParams = new URLSearchParams(window.location.hash.substring(1));
             const accessToken = urlParams.get('access_token');
+            
             if (accessToken) {
+                // Speichern des Tokens im localStorage
                 localStorage.setItem('discord_token', accessToken);
+
+                // Funktion, um die URL zu aktualisieren und das Token zu entfernen
+                removeAccessTokenFromURL();
+
+                // Benutzerdaten holen
                 getUserInfo(accessToken);
             } else {
                 const token = localStorage.getItem('discord_token');
@@ -698,6 +701,13 @@
                 }
             }
         };
+
+        // Funktion, um das Access-Token aus der URL zu entfernen
+        function removeAccessTokenFromURL() {
+            // Entferne den #access_token Teil aus der URL
+            const url = window.location.href.split('#')[0];
+            window.history.replaceState({}, document.title, url);
+        }
 
         // Funktion, um Benutzerdaten von Discord zu holen
         function getUserInfo(token) {
