@@ -31,18 +31,16 @@ function getUserInfo(token) {
         document.getElementById("username").textContent = user.username;
         document.getElementById("email").textContent = user.email;
 
-        // Profilbild-URL generieren
         const avatarUrl = user.avatar 
             ? `https://cdn.discordapp.com/avatars/${user.id}/${user.avatar}.png`
             : `https://cdn.discordapp.com/embed/avatars/${user.discriminator % 5}.png`;
 
         document.getElementById("profile-pic").src = avatarUrl;
-
         document.getElementById("user-info").style.display = 'block';
         document.querySelector('.container-login-btn').style.display = 'none';
     })
     .catch(error => {
-        console.error("Fehler beim Abrufen der Benutzerdaten:", error);
+        console.error("Error while receiving user information:", error);
         localStorage.removeItem('discord_token');
     });
 }
