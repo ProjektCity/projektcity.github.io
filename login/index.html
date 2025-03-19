@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="../assests/global/footer/legal.css">
     <link rel="stylesheet" href="../assests/global/header/mobile-style.css">
     <!-- Indivual Page Stylesheet -->
-    <link rel="stylesheet" href="../assests/pages/linkout/style.css">
+    <link rel="stylesheet" href="../assests/pages/login/style.css">
     <!-- Meta tag -->
     <meta charset="UTF-8">
     <meta name="author" content="Projekt City Ltd.">
@@ -223,11 +223,80 @@
     <main class="dt-main" style="display: none; overflow-x: hidden;">
         <div class="placeholder w300 h20" id="mb-placeholder" style="display: none;"></div>
         <section class="dt-section">
-            <div class="login-container">
-                <div class="container-login-btn">
-                    <h2>Login with Discord</h2>
-                    <a class="discord-btn" href="https://discord.com/oauth2/authorize?client_id=1308503690449256561&redirect_uri=https://projektcity.github.io/login&response_type=token&scope=identify%20email" target="_parent">Login with Discord</a>
+            <div class="placeholder w300 h40"></div>
+            <div class="container-frame">
+                <div class="container">
+                    <div class="login-container">
+                        <div class="header1">
+                            <h1>Welcome back!</h1>
+                        </div>
+                        <div class="signin-section" id="signincontainer">
+                            <a>You are currently not signed in!</a>
+                            <div class="placeholder w300 h10"></div>
+                            <div class="gm-line-hr-h1-w100"></div>
+                            <div class="placeholder w300 h40"></div>
+                            <div class="btn-frame" id="signinbtn">
+                                <div class="btn">
+                                    <div class="btn-svg">
+                                        <svg xmlns="http://www.w3.org/2000/svg" height="50" viewBox="0 -28.5 256 256" width="50" fill="#fff">
+                                            <path d="M216.856339,16.5966031 C200.285002,8.84328665 182.566144,3.2084988 164.041564,0 C161.766523,4.11318106 159.108624,9.64549908 157.276099,14.0464379 C137.583995,11.0849896 118.072967,11.0849896 98.7430163,14.0464379 C96.9108417,9.64549908 94.1925838,4.11318106 91.8971895,0 C73.3526068,3.2084988 55.6133949,8.86399117 39.0420583,16.6376612 C5.61752293,67.146514 -3.4433191,116.400813 1.08711069,164.955721 C23.2560196,181.510915 44.7403634,191.567697 65.8621325,198.148576 C71.0772151,190.971126 75.7283628,183.341335 79.7352139,175.300261 C72.104019,172.400575 64.7949724,168.822202 57.8887866,164.667963 C59.7209612,163.310589 61.5131304,161.891452 63.2445898,160.431257 C105.36741,180.133187 151.134928,180.133187 192.754523,160.431257 C194.506336,161.891452 196.298154,163.310589 198.110326,164.667963 C191.183787,168.842556 183.854737,172.420929 176.223542,175.320965 C180.230393,183.341335 184.861538,190.991831 190.096624,198.16893 C211.238746,191.588051 232.743023,181.531619 254.911949,164.955721 C260.227747,108.668201 245.831087,59.8662432 216.856339,16.5966031 Z M85.4738752,135.09489 C72.8290281,135.09489 62.4592217,123.290155 62.4592217,108.914901 C62.4592217,94.5396472 72.607595,82.7145587 85.4738752,82.7145587 C98.3405064,82.7145587 108.709962,94.5189427 108.488529,108.914901 C108.508531,123.290155 98.3405064,135.09489 85.4738752,135.09489 Z M170.525237,135.09489 C157.88039,135.09489 147.510584,123.290155 147.510584,108.914901 C147.510584,94.5396472 157.658606,82.7145587 170.525237,82.7145587 C183.391518,82.7145587 193.761324,94.5189427 193.539891,108.914901 C193.539891,123.290155 183.391518,135.09489 170.525237,135.09489 Z"></path>
+                                        </svg>
+                                    </div>
+                                    <div class="btn-text">
+                                        <a>Login with Discord</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="placeholder w300 h40"></div>
+                        </div>
+                        <div class="profileinformation" id="profileinformation">
+                            <div class="profile-banner">
+                                <div class="profile-picture-container">
+                                    <div class="profile-picture">
+                                        <img id="profile-pic" src="" alt="Profile Picture">
+                                    </div>
+                                    <div class="profile-online-circle"></div>
+                                </div>
+                                <div class="welcome-name-container">
+                                    <div class="welcome-name-header">
+                                        <a>Welcome back!</a>
+                                    </div>
+                                    <div class="welcome-name-username">
+                                        <span id="username">&nbsp;</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="placeholder w300 h40"></div>
+                            <div class="signout-container">
+                                <div class="signout-btn-frame">
+                                    <div class="signout-btn">
+                                        <div class="btn-svg">
+                                            <svg xmlns="http://www.w3.org/2000/svg" height="50" viewBox="0 -960 960 960" width="50" fill="#fff">
+                                                <path d="M200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h280v80H200v560h280v80H200Zm440-160-55-58 102-102H360v-80h327L585-622l55-58 200 200-200 200Z"/>
+                                            </svg>
+                                        </div>
+                                        <div class="signout-btn-text">
+                                            <a>Sign out</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="placeholder w300 h40"></div>
+                        </div>
+                        <div class="footer-container">
+                            <a id="email-header">Your email:</a>
+                            <span id="email"></span>
+                            <br>
+                            <a>Session ID:</a>
+                            <span id="session-id"></span>
+                        </div>
+                    </div>
                 </div>
+            </div>
+            <div class="placeholder w300 h40"></div>
+        </section>
+        <section class="dt-section">
+            <div class="login-container">
                 <div id="user-info">
                     <h3>Welcome, <span id="username"></span></h3>
                     <p>Email: <span id="email"></span></p>
@@ -679,60 +748,7 @@
     <script src="../assests/global/cookie-banner.js"></script>
     <script src="../assests/global/header/navbar-script.js"></script>
     <script src="../assests/global/script.js"></script>
-    <script>
-        // Wenn die Seite geladen wird, prüfe, ob ein Access-Token im Fragment der URL vorhanden ist
-        window.onload = function() {
-            const urlParams = new URLSearchParams(window.location.hash.substring(1));
-            const accessToken = urlParams.get('access_token');
-            
-            if (accessToken) {
-                // Speichern des Tokens im localStorage
-                localStorage.setItem('discord_token', accessToken);
-
-                // Funktion, um die URL zu aktualisieren und das Token zu entfernen
-                removeAccessTokenFromURL();
-
-                // Benutzerdaten holen
-                getUserInfo(accessToken);
-            } else {
-                const token = localStorage.getItem('discord_token');
-                if (token) {
-                    getUserInfo(token);
-                }
-            }
-        };
-
-        // Funktion, um das Access-Token aus der URL zu entfernen
-        function removeAccessTokenFromURL() {
-            // Entferne den #access_token Teil aus der URL
-            const url = window.location.href.split('#')[0];
-            window.history.replaceState({}, document.title, url);
-        }
-
-        // Funktion, um Benutzerdaten von Discord zu holen
-        function getUserInfo(token) {
-            fetch("https://discord.com/api/users/@me", {
-                headers: { Authorization: `Bearer ${token}` }
-            })
-            .then(res => res.json())
-            .then(user => {
-                document.getElementById("username").textContent = user.username;
-                document.getElementById("email").textContent = user.email;
-                document.getElementById("user-info").style.display = 'block';
-                document.querySelector('.container-login-btn').style.display = 'none';
-            })
-            .catch(error => {
-                console.error("Fehler beim Abrufen der Benutzerdaten:", error);
-                localStorage.removeItem('discord_token');
-            });
-        }
-
-        // Logout-Button
-        document.getElementById('logout-btn').addEventListener('click', function() {
-            localStorage.removeItem('discord_token');
-            window.open("/", "_parent");
-        });
-    </script>
+    <script src="../assests/pages/login/script.js"></script>
     <script>
         function getDeviceType() {
             const userAgent = navigator.userAgent.toLowerCase();
@@ -789,9 +805,11 @@
 
         const deviceType = getDeviceType();
         const browser = getBrowser();
-
-        console.log(`set-userdevice=${deviceType}`);
-        console.log(`set-userbrowser=${browser}`);
+        
+        setTimeout(() => {
+            console.log(`set-userdevice=${deviceType}`);
+            console.log(`set-userbrowser=${browser}`);
+        }, 1);
     </script>
 </body>
 </html>

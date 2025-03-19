@@ -1,0 +1,125 @@
+.container-frame {
+    border: 1px solid #fff;
+    border-radius: 10px;
+    margin: 0 auto;
+    min-width: 300px;
+    max-width: 750px;
+}
+
+.container {
+    margin: 5px;
+}
+
+.login-container {
+
+}
+
+.signin-section {
+    display: none;
+    text-align: center;
+}
+
+.signin-section a {
+    font-size: 25px;
+}
+
+.profile-banner {
+    display: flex;
+    height: 100px;
+}
+
+.profile-picture-container {
+    height: 100px;
+    width: 100px;
+}
+
+.profile-picture {
+    height: 100px;
+    position: absolute;
+    width: 100px;
+}
+
+#profile-pic {
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+}
+
+.profile-online-circle {
+    background-color: rgb(35, 165, 90);
+    border: 5px solid #1B1D1E;
+    border-radius: 50%;
+    height: 25px;
+    margin-left: 65px;
+    margin-top: 65px;
+    position: absolute;
+    width: 25px;
+}
+
+.welcome-name-container {
+    height: 77.01px;
+    margin-bottom: 11.5px;
+    margin-top: 11.5px;
+    text-align: center;
+    width: 200px;
+}
+
+.profileinformation {
+    display: none;
+    text-align: center;
+    font-size: 25px;
+    margin: 0 auto;
+    width: 300px;
+}
+
+/* Button */
+.btn-frame {
+    background-color: #5865F2;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 0 auto;
+    height: 60px;
+    width: 300px;
+}
+
+.btn {
+    display: flex;
+    padding: 5px;
+}
+
+.btn-svg {
+    height: 50px;
+    width: 50px;
+}
+
+.btn-text {
+    margin: 5px;
+    text-align: center;
+    width: 230px;
+}
+
+/* Sign out */
+.signout-btn-frame {
+    background-color: #888;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 0 auto;
+    height: 60px;
+    width: 200px;
+}
+
+.signout-btn {
+    display: flex;
+    padding: 5px;
+}
+
+.signout-btn-text {
+    margin: 5px;
+    text-align: center;
+    width: 150px;
+}
+
+.footer-container {
+    font-size: 10px;
+    text-align: center;
+}
