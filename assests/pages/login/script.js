@@ -36,7 +36,6 @@ function getUserInfo(token) {
 
         document.getElementById("profile-pic").src = avatarUrl;
         document.getElementById("user-info").style.display = 'block';
-        document.querySelector('.container-login-btn').style.display = 'none';
     })
     .catch(error => {
         console.error("Error while receiving user information:", error);
