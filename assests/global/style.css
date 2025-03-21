@@ -487,6 +487,23 @@ p {
     text-align: left;
 }
 
+.cb-main-flex {
+    display: flex;
+    align-items: center; /* Zentriert vertikal alle direkten Kinder */
+}
+
+
+.cb-main-flex-left {
+    top: 50%;
+    position: relative;
+}
+
+.cb-main-flex-l-inner {
+    margin: 5px 10px;
+    height: 30px;
+    width: 30px;
+}
+
 .cb-maincontent ul {
     margin-block-start: 0.25em;
     margin-block-end: 0.25em;
