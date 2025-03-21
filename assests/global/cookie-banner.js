@@ -10,7 +10,7 @@
 */
 
 document.addEventListener('DOMContentLoaded', function() {
-    console.log("[BUILD INFO] Release Channel: stable, Build Number: #556")
+    console.log("[BUILD INFO] Release Channel: stable, Build Number: #559, Update date: 03/21/2025")
     // Setting basic Google Tag Manager consent
     gtag('consent', 'default', {
         'ad_storage': 'denied',

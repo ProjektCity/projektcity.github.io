@@ -558,6 +558,7 @@ p {
 
 .cookie-selector {
     background-color: #181818;
+    border: 1px solid #383939;
     border-radius: 10px;
     bottom: 0;
     color: #fff;
@@ -664,6 +665,7 @@ p {
 /* Mobile Cookie Selector */
 .mb-cookie-selector {
     background-color: #181818;
+    border: 1px solid #383939;
     border-radius: 10px;
     bottom: 0;
     color: #fff;
