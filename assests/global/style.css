@@ -465,7 +465,7 @@ p {
     scrollbar-width: none
 }
 
-.cb-top-elements::-webkit-scrollbar, .mb-cookie-chooser-maincontent::-webkit-scrollbar {
+.cb-top-elements::-webkit-scrollbar,  .cookie-chooser-head-items::-webkit-scrollbar {
     display: none;
 }
 
@@ -505,7 +505,7 @@ p {
 
 .cb-footer {
     border-top: 1px solid rgba(243, 245, 247, 0.15);
-    height: 90px;
+    height: auto;
     padding: 15px;
     width: calc(100% - 30px);
 }
@@ -559,28 +559,36 @@ p {
 .cookie-selector {
     background-color: #181818;
     border: 1px solid #383939;
-    border-radius: 10px;
+    border-radius: 20px;
     bottom: 0;
+    box-sizing: border-box;
     color: #fff;
     display: none;
-    height: 500px;
-    left: 50%;
-    margin: 0 auto;
-    padding: 15px;
+    height: 600px;
+    margin-left: -calc(50% - 10px);
+    max-width: 530px;
+    min-width: 300px;
     position: fixed;
     text-align: center;
     top: 50%;
     transform: translate(-50%, -50%);
-    width: 750px;
     z-index: 1000;
+    width: calc(100% - 20px);
+    left: 50%;
 }
 
 .cookie-container {
+    height: 600px;
     width: 100%;
 }
 
+.cookie-chooser-head-items {
+    height: 462px;
+    overflow-y: scroll;
+    margin: 10px;
+}
+
 .cookie-chooser-header {
-    height: 41.25px;
     width: 100%;
 }
 
@@ -589,8 +597,7 @@ p {
 }
 
 .cookie-chooser-actions {
-    height: 375px;
-    overflow-y: scroll;
+    height: 325px;
     text-align: left;
 }
 
@@ -657,112 +664,6 @@ p {
 }
 
 .cookie-bottom-btn {
-    height: 22.4;
-    margin-bottom: 1.3px;
-    margin-top: 2.5px;
-}
-
-/* Mobile Cookie Selector */
-.mb-cookie-selector {
-    background-color: #181818;
-    border: 1px solid #383939;
-    border-radius: 10px;
-    bottom: 0;
-    color: #fff;
-    display: none;
-    height: 500px;
-    left: 50%;
-    margin: 0 auto;
-    padding: 15px;
-    position: fixed;
-    text-align: center;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    width: 300px;
-    z-index: 1000;
-}
-
-.mb-cookie-container {
-    width: auto;
-}
-
-.mb-cookie-chooser-header {
-    width: auto;
-}
-
-.mb-cookie-chooser-maincontent {
-    height: 330px;
-    overflow-y: scroll;
-    width: auto;
-}
-
-.mb-cookie-chooser-actions {
-    text-align: left;
-}
-
-.mb-cookie-chooser-action {
-    display: flex;
-}
-
-.mb-cookie-chooser-left {
-    float: left;
-    width: 700.02px;
-}
-
-.mb-cookie-chooser-header {
-    font-size: 25px;
-    font-weight: 400;
-}
-
-.mb-cookie-chooser-description {
-    font-size: 11px;
-    font-weight: 300;
-}
-
-.mb-cookie-chooser-switcher:disabled {
-    cursor: pointer;
-}
-
-.mb-cookie-hr {
-    background-color: #ccc;
-    height: 0.5px;
-    margin-top: 15px;
-    margin-bottom: 15px;
-    width: 100%;
-}
-
-.mb-cookie-chooser-bottom {
-    display: flex;
-}
-
-.mb-cookie-chooser-bottom-inner {
-    display: flex;
-    width: 100%;
-}
-
-.mb-cookie-bottom-close-button {
-    border: 1px solid #fff;
-    cursor: pointer;
-    border-radius: 5px;
-    height: 30px;
-    margin: 2.5px;
-    width: 30px;
-}
-
-.mb-cookie-bottom-button {
-    border: 1px solid #fff;
-    border-radius: 5px;
-    cursor: pointer;
-    height: 30px;
-    margin: 2.5px;
-    width: 100px;
-}
-
-.mb-cookie-bottom-close-btn {
-    height: 30px;
-}
-
-.mb-cookie-bottom-btn {
     height: 22.4;
     margin-bottom: 1.3px;
     margin-top: 2.5px;

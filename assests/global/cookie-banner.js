@@ -32,7 +32,6 @@ document.addEventListener('DOMContentLoaded', function() {
     // Setting the values in the cookie selector
     if (statisticAndAnalyticsCookies == "granted") {
         document.getElementById("statisticAndAnalyticsCookies").checked = true;
-        document.getElementById("MBstatisticAndAnalyticsCookies").checked = true;
         gtag('consent', 'update', {
             'analytics_storage': 'granted',
         });
@@ -40,7 +39,6 @@ document.addEventListener('DOMContentLoaded', function() {
     }
     if (preferencesAndPersonalizationCookies == "granted") {
         document.getElementById("preferencesAndPersonalizationCookies").checked = true;
-        document.getElementById("MBpreferencesAndPersonalizationCookies").checked = true;
         gtag('consent', 'update', {
             'personalization_storage': 'granted',
         });
@@ -48,12 +46,10 @@ document.addEventListener('DOMContentLoaded', function() {
     }
     if (displayThirdPartyContent == "granted") {
         document.getElementById("displayThirdPartyContent").checked = true;
-        document.getElementById("MBdisplayThirdPartyContent").checked = true;
         console.log("set-cookies=displayThirdPartyContent_granted");
     }
     if (marketingAndAdvertisementCookies == "granted") {
         document.getElementById("marketingAndAdvertisementCookies").checked = true;
-        document.getElementById("MBmarketingAndAdvertisementCookies").checked = true;
         gtag('consent', 'update', {
             'ad_storage': 'granted',
             'ad_user_data': 'granted',
@@ -65,7 +61,6 @@ document.addEventListener('DOMContentLoaded', function() {
     }
     if (unclassifiedCookies == "granted") {
         document.getElementById("unclassifiedCookies").checked = true;
-        document.getElementById("MBunclassifiedCookies").checked = true;
         gtag('consent', 'update', {
             'security_storage': 'granted'
         });
@@ -75,7 +70,6 @@ document.addEventListener('DOMContentLoaded', function() {
     // If Cookies have already been accepted, remove the banner
     if (localStorage.getItem('cookiesAccepted')) {
         document.getElementById("cookie-banner").style.display = "none";
-        document.getElementById("mb-cookie-selector").style.display = "none";
         console.log("set-cookies=cookiesAccepted_true, display_desktop_cookie_banner=false");
         document.documentElement.style.overflowY = "scroll";
     }
@@ -91,11 +85,6 @@ document.addEventListener('DOMContentLoaded', function() {
         document.getElementById("displayThirdPartyContent").checked = false;
         document.getElementById("marketingAndAdvertisementCookies").checked = false;
         document.getElementById("unclassifiedCookies").checked = false;
-        document.getElementById("MBstatisticAndAnalyticsCookies").checked = false;
-        document.getElementById("MBpreferencesAndPersonalizationCookies").checked = false;
-        document.getElementById("MBdisplayThirdPartyContent").checked = false;
-        document.getElementById("MBmarketingAndAdvertisementCookies").checked = false;
-        document.getElementById("MBunclassifiedCookies").checked = false;
         document.getElementById("english-en_US").style.display = "block";
     }
 });
@@ -126,19 +115,12 @@ function acceptAllCookies() {
     document.getElementById("displayThirdPartyContent").checked = true;
     document.getElementById("marketingAndAdvertisementCookies").checked = true;
     document.getElementById("unclassifiedCookies").checked = true;
-    // Checking mobile checkboxes
-    document.getElementById("MBstatisticAndAnalyticsCookies").checked = true;
-    document.getElementById("MBpreferencesAndPersonalizationCookies").checked = true;
-    document.getElementById("MBdisplayThirdPartyContent").checked = true;
-    document.getElementById("MBmarketingAndAdvertisementCookies").checked = true;
-    document.getElementById("MBunclassifiedCookies").checked = true;
     // Hiding the background
     document.querySelector(".cookie-banner-dark-background").style.display = "none";
     document.querySelector(".cookie-banner-background").style.display = "none";
     if (/mobile|android|iphone|ipad|ipod|blackberry|windows phone/i.test(navigator.userAgent)) {
         // Hiding the cookie selector
         document.getElementById("cookie-banner").style.display = "none";
-        document.getElementById("mb-cookie-selector").style.display = "none";
         console.log("set-cookies=cookiesAccepted_true, display_mobile_cookie_selector=false, display_mobile_cookie_banner=false. Set the values 'ad_storage', 'ad_user_data', 'ad_personalization', 'analytics_storage', 'functionality_storage', 'personalization_storage', 'security_storage' to 'granted'.");
     } else {
         // Hiding the cookie selector
@@ -155,7 +137,6 @@ function hideCookieSelector() {
     if (/mobile|android|iphone|ipad|ipod|blackberry|windows phone/i.test(navigator.userAgent)) {
         document.querySelector(".cookie-banner-dark-background").style.display = "none";
         document.querySelector(".cookie-banner-background").style.display = "none";
-        document.getElementById("mb-cookie-selector").style.display = "none";
         console.log("display_mobile_cookie_selector=false");
     } else {
         document.querySelector(".cookie-banner-dark-background").style.display = "none";
@@ -173,32 +154,17 @@ function hideCookieSelector() {
         document.querySelector(".cookie-banner-dark-background").style.display = "block";
         document.querySelector(".cookie-banner-background").style.display = "block";
         if (/mobile|android|iphone|ipad|ipod|blackberry|windows phone/i.test(navigator.userAgent)) {
-            document.getElementById("mb-cookie-selector").style.display = "block";
             document.getElementById("cookie-banner").style.display = "none";
             console.log("display_mobile_cookie_selector=true");
         } else {
             document.getElementById("cookie-selector").style.display = "block";
-            document.getElementById("mb-cookie-selector").style.display = "none";
             document.getElementById("cookie-banner").style.display = "none";
             console.log("display_desktop_cookie_selector=true");
         }
     });
 
-    // Cookie Selector: Close Button
-    document.querySelector(".cookie-bottom-close-button").addEventListener("click", function() {
-        hideCookieSelector();
-    });
-
-    document.getElementById("mbCookieCloser").addEventListener("click", function() {
-        hideCookieSelector();
-    });
-
     // Cookie Selector: Save changes
     document.getElementById("cookieSaveChanges").addEventListener("click", function() {
-        hideCookieSelector();
-    });
-
-    document.getElementById("MBcookieSaveChanges").addEventListener("click", function() {
         hideCookieSelector();
     });
 
@@ -227,19 +193,12 @@ function hideCookieSelector() {
         document.getElementById("displayThirdPartyContent").checked = true;
         document.getElementById("marketingAndAdvertisementCookies").checked = true;
         document.getElementById("unclassifiedCookies").checked = true;
-        // Checking mobile checkboxes
-        document.getElementById("MBstatisticAndAnalyticsCookies").checked = true;
-        document.getElementById("MBpreferencesAndPersonalizationCookies").checked = true;
-        document.getElementById("MBdisplayThirdPartyContent").checked = true;
-        document.getElementById("MBmarketingAndAdvertisementCookies").checked = true;
-        document.getElementById("MBunclassifiedCookies").checked = true;
         // Hiding the background
         document.querySelector(".cookie-banner-dark-background").style.display = "none";
         document.querySelector(".cookie-banner-background").style.display = "none";
         if (/mobile|android|iphone|ipad|ipod|blackberry|windows phone/i.test(navigator.userAgent)) {
             // Hiding the cookie selector
             document.getElementById("cookie-banner").style.display = "none";
-            document.getElementById("mb-cookie-selector").style.display = "none";
             console.log("set-cookies=cookiesAccepted_true, display_mobile_cookie_selector=false, display_mobile_cookie_banner=false. Set the values 'ad_storage', 'ad_user_data', 'ad_personalization', 'analytics_storage', 'functionality_storage', 'personalization_storage', 'security_storage' to 'granted'.");
         } else {
             // Hiding the cookie selector
@@ -247,11 +206,6 @@ function hideCookieSelector() {
             document.getElementById("cookie-banner").style.display = "none";
             console.log("set-cookies=cookiesAccepted_true, display_desktop_cookie_selector=false, display_desktop_cookie_banner=false. Set the values 'ad_storage', 'ad_user_data', 'ad_personalization', 'analytics_storage', 'functionality_storage', 'personalization_storage', 'security_storage' to 'granted'.");;
         }
-        location.reload();
-    });
-
-    document.getElementById("MBcookieAcceptAll").addEventListener("click", function() {
-        acceptAllCookies();
         location.reload();
     });
 
@@ -265,11 +219,9 @@ function hideCookieSelector() {
     document.getElementById("cookieManager").addEventListener("click", function() {
         document.documentElement.style.overflowY = "hidden"
         if (/mobile|android|iphone|ipad|ipod|blackberry|windows phone/i.test(navigator.userAgent)) {
-            document.getElementById("mb-cookie-selector").style.display = "block";
             document.getElementById("cookie-banner").style.display = "none";
         } else {
             document.getElementById("cookie-selector").style.display = "block";
-            document.getElementById("mb-cookie-selector").style.display = "none";
             document.getElementById("cookie-banner").style.display = "none";
             console.log("display_desktop_cookie_selector=true");
         }
@@ -278,24 +230,6 @@ function hideCookieSelector() {
 // Checkbox actions
 document.getElementById("statisticAndAnalyticsCookies").addEventListener("change", function() {
     const checkbox = document.getElementById("statisticAndAnalyticsCookies");
-    if (checkbox.checked) {
-        localStorage.setItem('statisticAndAnalyticsCookies', 'granted');
-        gtag('consent', 'update', {
-            'analytics_storage': 'granted',
-        });
-        console.log("Statistic and analytics cookies: Checked");
-    } else {
-        localStorage.setItem('statisticAndAnalyticsCookies', 'denied');
-        gtag('consent', 'update', {
-            'analytics_storage': 'denied',
-        });
-        console.log("Statistic and analytics cookies: Unchecked");
-    }
-});
-
-
-document.getElementById("MBstatisticAndAnalyticsCookies").addEventListener("change", function() {
-    const checkbox = document.getElementById("MBstatisticAndAnalyticsCookies");
     if (checkbox.checked) {
         localStorage.setItem('statisticAndAnalyticsCookies', 'granted');
         gtag('consent', 'update', {
@@ -329,23 +263,6 @@ document.getElementById("preferencesAndPersonalizationCookies").addEventListener
     }
 });
 
-document.getElementById("MBpreferencesAndPersonalizationCookies").addEventListener("change", function() {
-    const checkbox = document.getElementById("MBpreferencesAndPersonalizationCookies");
-    if (checkbox.checked) {
-        localStorage.setItem('preferencesAndPersonalizationCookies', 'granted');
-        gtag('consent', 'update', {
-            'personalization_storage': 'granted',
-        });
-        console.log("Preferences and personalization cookies: Checked");
-    } else {
-        localStorage.setItem('preferencesAndPersonalizationCookies', 'denied');
-        gtag('consent', 'update', {
-            'personalization_storage': 'denied',
-        });
-        console.log("Preferences and personalization cookies: Unchecked");
-    }
-});
-
 // Display Third Party Content
 document.getElementById("displayThirdPartyContent").addEventListener("change", function() {
     const checkbox = document.getElementById("displayThirdPartyContent");
@@ -356,18 +273,6 @@ document.getElementById("displayThirdPartyContent").addEventListener("change", f
         localStorage.setItem('displayThirdPartyContent', 'denied');
         console.log("Display third party content: Unchecked");
     }
-});
-
-document.getElementById("MBdisplayThirdPartyContent").addEventListener("change", function() {
-    const checkbox = document.getElementById("MBdisplayThirdPartyContent");
-    if (checkbox.checked) {
-        localStorage.setItem('displayThirdPartyContent', 'granted');
-        console.log("Display third party content: Checked");
-    } else {
-        localStorage.setItem('displayThirdPartyContent', 'denied');
-        console.log("Display third party content: Unchecked");
-    }
-
 });
 
 // Marketing and Advertisement Cookies
@@ -392,47 +297,9 @@ document.getElementById("marketingAndAdvertisementCookies").addEventListener("ch
     }
 });
 
-document.getElementById("MBmarketingAndAdvertisementCookies").addEventListener("change", function() {
-    const checkbox = document.getElementById("MBmarketingAndAdvertisementCookies");
-    if (checkbox.checked) {
-        localStorage.setItem('marketingAndAdvertisementCookies', 'granted');
-        gtag('consent', 'update', {
-            'ad_storage': 'granted',
-            'ad_user_data': 'granted',
-            'ad_personalization': 'granted'
-        });
-        console.log("Marketing and advertisement cookies: Checked");
-    } else {
-        localStorage.setItem('marketingAndAdvertisementCookies', 'denied');
-        gtag('consent', 'update', {
-            'ad_storage': 'denied',
-            'ad_user_data': 'denied',
-            'ad_personalization': 'denied'
-        });
-        console.log("Marketing and advertisement cookies: Unchecked");
-    }
-});
-
 // Unclassified Cookies
 document.getElementById("unclassifiedCookies").addEventListener("change", function() {
     const checkbox = document.getElementById("unclassifiedCookies");
-    if (checkbox.checked) {
-        localStorage.setItem('unclassifiedCookies', 'granted');
-        gtag('consent', 'update', {
-            'security_storage': 'granted'
-        });
-        console.log("Unclassified cookies: Checked");
-    } else {
-        localStorage.setItem('unclassifiedCookies', 'denied');
-        gtag('consent', 'update', {
-            'security_storage': 'denied'
-        });
-        console.log("Unclassified cookies: Unchecked");
-    }
-});
-
-document.getElementById("MBunclassifiedCookies").addEventListener("change", function() {
-    const checkbox = document.getElementById("MBunclassifiedCookies");
     if (checkbox.checked) {
         localStorage.setItem('unclassifiedCookies', 'granted');
         gtag('consent', 'update', {
