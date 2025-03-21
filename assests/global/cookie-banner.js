@@ -10,7 +10,7 @@
 */
 
 document.addEventListener('DOMContentLoaded', function() {
-    console.log("[BUILD INFO] Release Channel: stable, Build Number: #555")
+    console.log("[BUILD INFO] Release Channel: stable, Build Number: #556")
     // Setting basic Google Tag Manager consent
     gtag('consent', 'default', {
         'ad_storage': 'denied',
@@ -73,12 +73,12 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     // If Cookies have already been accepted, remove the banner
-    if (localStorage.getItem('cookiesAccepted')) {
+    /*if (localStorage.getItem('cookiesAccepted')) {
         document.getElementById("cookie-banner").style.display = "none";
         document.getElementById("mb-cookie-selector").style.display = "none";
         console.log("set-cookies=cookiesAccepted_true, display_desktop_cookie_banner=false");
         document.documentElement.style.overflowY = "scroll";
-    }
+    }*/
     else {
         localStorage.setItem('language', 'en_US');
         console.log("loaded-cookies=cookiesAccepted_false, display_desktop_cookie_banner=true");

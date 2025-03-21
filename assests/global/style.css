@@ -445,20 +445,20 @@ p {
     color: #fff;
     display: none;
     height: 600px;
-    left: 50%;
+    margin-left: -calc(50% - 10px);
+    max-width: 530px;
+    min-width: 300px;
     position: fixed;
     text-align: center;
     top: 50%;
     transform: translate(-50%, -50%);
-    max-width: 530px;
-    min-width: 300px;
     z-index: 1000;
-    width: 100%;
+    width: calc(100% - 20px);
+    left: 50%;
 }
 
 .cb-inner {
-    max-width: 500px;
-    width: calc(100% - 30px);
+    width: 100%;
 }
 
 
@@ -468,7 +468,7 @@ p {
     overflow-y: scroll;
     overflow-x: hidden;
     padding: 15px;
-    width: 100%;
+    width: calc(100% - 30px);
     scrollbar-width: none
 }
 
@@ -514,7 +514,7 @@ p {
     border-top: 1px solid rgba(243, 245, 247, 0.15);
     height: 90px;
     padding: 15px;
-    width: 100%;
+    width: calc(100% - 30px);
 }
 
 .cb-footer-inner {
@@ -527,7 +527,7 @@ p {
     border-radius: 10px;
     cursor: pointer;
     height: 36px;
-    width: 100%;
+    width: calc(100% - 2px);
 }
 
 .cb-footer-filled-btn {
