@@ -206,14 +206,12 @@ function hideCookieSelector() {
 
     // Manage Cookies in Cookie Banner
     document.getElementById("cookieManager").addEventListener("click", function() {
-        document.documentElement.style.overflowY = "hidden"
-        if (/mobile|android|iphone|ipad|ipod|blackberry|windows phone/i.test(navigator.userAgent)) {
-            document.getElementById("cookie-banner").style.display = "none";
-        } else {
-            document.getElementById("cookie-selector").style.display = "block";
-            document.getElementById("cookie-banner").style.display = "none";
-            console.log("display_desktop_cookie_selector=true");
-        }
+        document.documentElement.style.overflowY = "hidden";
+        document.querySelector(".cookie-banner-dark-background").style.display = "block";
+        document.querySelector(".cookie-banner-background").style.display = "block";
+        document.getElementById("cookie-selector").style.display = "block";
+        document.getElementById("cookie-banner").style.display = "none";
+        console.log("display_cookie_selector=true");
     });
 
 // Checkbox actions
