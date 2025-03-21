@@ -134,17 +134,11 @@ function acceptAllCookies() {
 function hideCookieSelector() {
     localStorage.setItem('cookiesAccepted', 'true');
     document.documentElement.style.overflowY = "scroll";
-    if (/mobile|android|iphone|ipad|ipod|blackberry|windows phone/i.test(navigator.userAgent)) {
-        document.querySelector(".cookie-banner-dark-background").style.display = "none";
-        document.querySelector(".cookie-banner-background").style.display = "none";
-        console.log("display_mobile_cookie_selector=false");
-    } else {
-        document.querySelector(".cookie-banner-dark-background").style.display = "none";
-        document.querySelector(".cookie-banner-background").style.display = "none";
-        document.getElementById("cookie-selector").style.display = "none";
-        document.getElementById("cookie-banner").style.display = "none";
-        console.log("display_desktop_cookie_selector=false");;
-    }
+    document.querySelector(".cookie-banner-dark-background").style.display = "none";
+    document.querySelector(".cookie-banner-background").style.display = "none";
+    document.getElementById("cookie-selector").style.display = "none";
+    document.getElementById("cookie-banner").style.display = "none";
+    console.log("display_cookie_selector=false");;
 }
 
 // Cookie Selector options
@@ -153,14 +147,9 @@ function hideCookieSelector() {
         document.documentElement.style.overflowY = "hidden";
         document.querySelector(".cookie-banner-dark-background").style.display = "block";
         document.querySelector(".cookie-banner-background").style.display = "block";
-        if (/mobile|android|iphone|ipad|ipod|blackberry|windows phone/i.test(navigator.userAgent)) {
-            document.getElementById("cookie-banner").style.display = "none";
-            console.log("display_mobile_cookie_selector=true");
-        } else {
-            document.getElementById("cookie-selector").style.display = "block";
-            document.getElementById("cookie-banner").style.display = "none";
-            console.log("display_desktop_cookie_selector=true");
-        }
+        document.getElementById("cookie-selector").style.display = "block";
+        document.getElementById("cookie-banner").style.display = "none";
+        console.log("display_cookie_selector=true");
     });
 
     // Cookie Selector: Save changes
