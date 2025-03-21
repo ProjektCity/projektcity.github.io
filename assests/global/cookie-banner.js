@@ -185,16 +185,10 @@ function hideCookieSelector() {
         // Hiding the background
         document.querySelector(".cookie-banner-dark-background").style.display = "none";
         document.querySelector(".cookie-banner-background").style.display = "none";
-        if (/mobile|android|iphone|ipad|ipod|blackberry|windows phone/i.test(navigator.userAgent)) {
-            // Hiding the cookie selector
-            document.getElementById("cookie-banner").style.display = "none";
-            console.log("set-cookies=cookiesAccepted_true, display_mobile_cookie_selector=false, display_mobile_cookie_banner=false. Set the values 'ad_storage', 'ad_user_data', 'ad_personalization', 'analytics_storage', 'functionality_storage', 'personalization_storage', 'security_storage' to 'granted'.");
-        } else {
-            // Hiding the cookie selector
-            document.getElementById("cookie-selector").style.display = "none";
-            document.getElementById("cookie-banner").style.display = "none";
-            console.log("set-cookies=cookiesAccepted_true, display_desktop_cookie_selector=false, display_desktop_cookie_banner=false. Set the values 'ad_storage', 'ad_user_data', 'ad_personalization', 'analytics_storage', 'functionality_storage', 'personalization_storage', 'security_storage' to 'granted'.");;
-        }
+        // Hiding the cookie selector
+        document.getElementById("cookie-selector").style.display = "none";
+        document.getElementById("cookie-banner").style.display = "none";
+        console.log("set-cookies=cookiesAccepted_true, display_desktop_cookie_selector=false, display_desktop_cookie_banner=false. Set the values 'ad_storage', 'ad_user_data', 'ad_personalization', 'analytics_storage', 'functionality_storage', 'personalization_storage', 'security_storage' to 'granted'.");;
         location.reload();
     });
 
