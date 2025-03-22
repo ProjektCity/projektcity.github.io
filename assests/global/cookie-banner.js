@@ -6,11 +6,11 @@
     * Redistribution or use on other sites, not related to Projekt City, is strictly prohibited
     * For more information, please contact us at: projektcityofficial@gmail.com
     * 
-    * Script version: 2.5
+    * Script version: 2.6
 */
 
 document.addEventListener('DOMContentLoaded', function() {
-    console.log("[BUILD INFO] Release Channel: stable, Build Number: #565, Update date: 03/22/2025")
+    console.log("[BUILD INFO] Release Channel: stable, Build Number: #567, Update date: 03/22/2025")
     // Setting basic Google Tag Manager consent
     gtag('consent', 'default', {
         'ad_storage': 'denied',
