@@ -58,11 +58,6 @@ document.getElementById('shareButton').addEventListener('click', async () => {
 });
 
 document.addEventListener("DOMContentLoaded", function() {
-    console.log("[BUILD INFO] Release Channel: stable, Build Number: #578, Update date: 03/23/2025");
-    setTimeout(() => {
-        console.log('%cWARNING!', 'color: red; font-size: 30px; font-weight: bold;');
-        console.log('%cThis is a browser feature intended for developers and debuggers only and may contain sensitive links and information about you, your data, account/s, device and browser. \nScammers have been known to encourage people to copy and/or paste information or run commands on the command line to hack accounts or access sensitive data. If you do not know what you are doing, do not proceed and close the debug menu! \nThe information that is/will be visible above and below this text is only for the development and improvement of the site and helps to find and fix bugs and other problems in JavaScript faster. \nAs this is a website related to, created, designed and managed by Projekt City please visit the folowing adress for more information: https://projektcity.github.io/helpcenter/debug-menu', 'color: red; font-size: 12.5px;');
-    }, 250);
 
     function generateStyles() {
         const elements = document.querySelectorAll('*');
@@ -132,9 +127,14 @@ document.addEventListener("DOMContentLoaded", function() {
     const deviceType = getDeviceType();
     const browser = getBrowser();
     
+    console.log("[BUILD INFO] Release Channel: stable, Build Number: #578, Update date: 03/23/2025");
     setTimeout(() => {
         console.log(`get-userdevice=${deviceType}`);
         console.log(`get-userbrowser=${browser}`);
-        console.log(`placeholder-stylesheet-count=${styles.split('\n').length}`);  
-    }, 10);
+        console.log(`placeholder-stylesheet-count=${styles.split('\n').length}`);
+        setTimeout(() => {
+            console.log('%cWARNING!', 'color: red; font-size: 30px; font-weight: bold;');
+            console.log('%cThis is a browser feature intended for developers and debuggers only and may contain sensitive links and information about you, your data, account/s, device and browser. \nScammers have been known to encourage people to copy and/or paste information or run commands on the command line to hack accounts or access sensitive data. If you do not know what you are doing, do not proceed and close the debug menu! \nThe information that is/will be visible above and below this text is only for the development and improvement of the site and helps to find and fix bugs and other problems in JavaScript faster. \nAs this is a website related to, created, designed and managed by Projekt City please visit the folowing adress for more information: https://projektcity.github.io/helpcenter/debug-menu', 'color: red; font-size: 12.5px;');  
+        }, 240);
+    }, 4);
 });

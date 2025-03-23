@@ -10,23 +10,25 @@
 */
 
 document.addEventListener('DOMContentLoaded', function() {
-    var language = localStorage.getItem('language');
+    setTimeout(() => {
+        var language = localStorage.getItem('language');
 
-    if (language === "de_DE") {
-        console.log("set-internal-langue=de_DE");
-        document.getElementById("german-de_DE").style.display = "block";
-        document.getElementById("mb-german-de_DE").style.display = "block";
-        document.getElementById("english-en_US").style.display = "none";
-        document.getElementById("mb-english-en_US").style.display = "none";
-        updateToGerman();
-    }
-    if (language === "en_US") {
-        console.log("set-internal-langue=en_US");
-        document.getElementById("english-en_US").style.display = "block";
-        document.getElementById("mb-english-en_US").style.display = "block";
-        document.getElementById("german-de_DE").style.display = "none";
-        document.getElementById("mb-german-de_DE").style.display = "none";
-    }
+        if (language === "de_DE") {
+            console.log("set-internal-langue=de_DE");
+            document.getElementById("german-de_DE").style.display = "block";
+            document.getElementById("mb-german-de_DE").style.display = "block";
+            document.getElementById("english-en_US").style.display = "none";
+            document.getElementById("mb-english-en_US").style.display = "none";
+            updateToGerman();
+        }
+        if (language === "en_US") {
+            console.log("set-internal-langue=en_US");
+            document.getElementById("english-en_US").style.display = "block";
+            document.getElementById("mb-english-en_US").style.display = "block";
+            document.getElementById("german-de_DE").style.display = "none";
+            document.getElementById("mb-german-de_DE").style.display = "none";
+        }
+    }, 10);
 });
 
 document.getElementById("english-en_US").addEventListener("click", function() {
