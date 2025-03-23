@@ -10,7 +10,7 @@
 */
 
 document.addEventListener('DOMContentLoaded', function() {
-    console.log("[BUILD INFO] Release Channel: stable, Build Number: #578, Update date: 03/23/2025")
+    setTimeout(() => {
     // Setting basic Google Tag Manager consent
     gtag('consent', 'default', {
         'ad_storage': 'denied',
@@ -87,6 +87,8 @@ document.addEventListener('DOMContentLoaded', function() {
         document.getElementById("unclassifiedCookies").checked = false;
         document.getElementById("english-en_US").style.display = "block";
     }
+        
+    }, 10);
 });
 
 // Defining the function to accept all cookies
