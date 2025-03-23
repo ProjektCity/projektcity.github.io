@@ -293,7 +293,7 @@
 }
 
 .flexible-iframe {
-    
+    width: auto;
 }
 
 iframe {
