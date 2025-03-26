@@ -52,7 +52,7 @@ document.getElementById("signinbtn").addEventListener('click', function() {
 
 document.getElementById('signout-btn').addEventListener('click', function() {
     localStorage.removeItem('discord_token');
-    window.open("/login/return", "_parent");
+    window.open("/login/return?signin-type=logout&redirect_url=https://projektcity.github.io/login?utm_src=logout", "_parent");
 });
 
 
