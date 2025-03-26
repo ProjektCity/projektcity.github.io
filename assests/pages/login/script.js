@@ -29,6 +29,7 @@ function getUserInfo(token) {
     .then(user => {
         document.getElementById("username").textContent = user.username;
         document.getElementById("email").textContent = user.email;
+        document.getElementById("email-header").style.display = 'block';
 
         const avatarUrl = user.avatar 
             ? `https://cdn.discordapp.com/avatars/${user.id}/${user.avatar}.png`
