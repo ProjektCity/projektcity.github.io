@@ -123,3 +123,7 @@
     font-size: 10px;
     text-align: center;
 }
+
+#email-header {
+    display: none;
+}
