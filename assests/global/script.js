@@ -128,7 +128,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const deviceType = getDeviceType();
     const browser = getBrowser();
     
-    console.log("[BUILD INFO] Release Channel: stable, Build Number: #601, Update date: 03/30/2025");
+    console.log("[BUILD INFO] Release Channel: stable, Build Number: #602, Update date: 03/30/2025");
     setTimeout(() => {
         console.log(`get-userdevice=${deviceType}`);
         console.log(`get-userbrowser=${browser}`);
