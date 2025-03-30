@@ -57,7 +57,7 @@
     <!-- End Google Tag Manager -->
 </head>
 <body>
-    <header class="dt-p-header" style="display: block;">
+    <header class="dt-p-header" style="display: none; overflow-x: hidden;">
         <div class="dt-gh-ui-navbar">
             <div class="dt-head">
                 <div class="dt-header">
@@ -88,22 +88,22 @@
                         <div class="placeholder w64 h50"></div>
                         <div class="dt-middle-column">
                             <div class="dt-menu">
-                                <div class="dt-menu-item" data-width="100" style="width: 100px;">
+                                <div class="dt-menu-item" data-width="100" style="width: 100px;" title="Home">
                                     <div class="dt-menu-item-inner">
                                         <a href="/?ref=navbar_home" style="color: #fff; text-decoration: none;">Home</a>
                                     </div>
                                 </div>
-                                <div class="dt-menu-item" data-width="100" style="width: 100px;">
+                                <div class="dt-menu-item" data-width="100" style="width: 100px;" title="V5.0">
                                     <div class="dt-menu-item-inner">
                                         <a href="/v5-0" style="color: #fff; text-decoration: none;">V5.0</a>
                                     </div>
                                 </div>
-                                <div class="dt-menu-item" data-width="100" style="width: 100px;">
+                                <div class="dt-menu-item" data-width="100" style="width: 100px;" title="Download">
                                     <div class="dt-menu-item-inner">
                                         <a href="/download" style="color: #fff; text-decoration: none;">Download</a>
                                     </div>
                                 </div>
-                                <div class="dt-menu-item" data-width="100" style="width: 100px;">
+                                <div class="dt-menu-item" data-width="100" style="width: 100px;" title="Discord">
                                     <div class="dt-menu-item-inner">
                                         <a href="/discord" style="color: #fff; text-decoration: none;">Discord</a>
                                     </div>
@@ -127,12 +127,39 @@
                                         </svg>
                                     </a>
                                 </div>
-                                <div>
-                                    <a onclick="window.open(this.href); return false;" href="https://bit.ly/ProjektCityLinktree?utm_src=projektcity_cstm-header_right-col_lt-logo&amp;utm_medium=projektcity&amp;redirect_url=https%3A%2F%2Flinktr.ee%2FProjektCity" target="_blank">
-                                        <svg height="50" viewBox="0 0 417 512.238" width="50" xmlns="http://www.w3.org/2000/svg">
-                                            <path fill="#fff" fill-rule="nonzero" d="M171.274 344.942h74.09v167.296h-74.09V344.942zM0 173.468h126.068l-89.622-85.44 49.591-50.985 85.439 87.829V0h74.086v124.872L331 37.243l49.552 50.785-89.58 85.24H417v70.502H290.252l90.183 87.629L331 381.192 208.519 258.11 86.037 381.192l-49.591-49.591 90.218-87.631H0v-70.502z"/>
-                                        </svg>
-                                    </a>
+                                <div class="dt-language">
+                                    <div class="header-language-container">
+                                        <div class="flexible-language-container" id="language-container">
+                                            <div id="german-de_DE" style="display: none;" title="Change language to English (US)">
+                                                <div class="flexible-language-symbol">
+                                                    <svg class="flexible-language-svg" height="30" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 480">
+                                                        <path fill="#fc0" d="M0 320h640v160H0z"/>
+                                                        <path fill="#000001" d="M0 0h640v160H0z"/>
+                                                        <path fill="red" d="M0 160h640v160H0z"/>
+                                                    </svg>
+                                                </div>
+                                                <div class="flexible-language-text">
+                                                    <a>GERMAN</a>
+                                                </div>
+                                            </div>
+                                            <div id="english-en_US" style="display: none;" title="Change language to German (DE)">
+                                                <div class="flexible-language-symbol">
+                                                    <svg class="flexible-language-svg" height="30" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 480">
+                                                        <path fill="#bd3d44" d="M0 0h640v480H0"/>
+                                                        <path stroke="#fff" stroke-width="37" d="M0 55.3h640M0 129h640M0 203h640M0 277h640M0 351h640M0 425h640"/>
+                                                        <path fill="#192f5d" d="M0 0h364.8v258.5H0"/>
+                                                        <marker id="us-a" markerHeight="30" markerWidth="30">
+                                                            <path fill="#fff" d="m14 0 9 27L0 10h28L5 27z"/>
+                                                        </marker>
+                                                        <path fill="none" marker-mid="url(#us-a)" d="m0 0 16 11h61 61 61 61 60L47 37h61 61 60 61L16 63h61 61 61 61 60L47 89h61 61 60 61L16 115h61 61 61 61 60L47 141h61 61 60 61L16 166h61 61 61 61 60L47 192h61 61 60 61L16 218h61 61 61 61 60z"/>
+                                                    </svg>
+                                                </div>
+                                                <div class="flexible-language-text">
+                                                    <a>ENGLISH</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -193,11 +220,42 @@
                                         </div>
                                         <div class="individual-mb-header-placeholder h50"></div>
                                         <div class="mb-clickelement">
-                                            <a onclick="window.open(this.href); return false;" href="https://bit.ly/ProjektCityLinktree?utm_src=projektcity_cstm-header_right-col_lt-logo&amp;utm_medium=projektcity&amp;redirect_url=https%3A%2F%2Flinktr.ee%2FProjektCity" target="_blank">
-                                                <svg xmlns="http://www.w3.org/2000/svg" height="50" viewBox="0 -960 960 960" width="50" fill="#fff">
-                                                    <path d="M600-160v-80H440v-200h-80v80H80v-240h280v80h80v-200h160v-80h280v240H600v-80h-80v320h80v-80h280v240H600Zm80-80h120v-80H680v80ZM160-440h120v-80H160v80Zm520-200h120v-80H680v80Zm0 400v-80 80ZM280-440v-80 80Zm400-200v-80 80Z"></path>
-                                                </svg>
-                                            </a>
+                                            <div class="dt-language">
+                                                <div class="header-language-container">
+                                                    <div class="mb-flexible-language-container" id="mb-language-container">
+                                                        <div id="mb-german-de_DE" style="display: none;" title="Change language to English (US)">
+                                                            <div class="flexible-language-symbol">
+                                                                <div class="placeholder w50 h1-6" id="mb-header-lang-placeholder"></div>
+                                                                <svg class="flexible-language-svg" height="30" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 480">
+                                                                    <path fill="#fc0" d="M0 320h640v160H0z"/>
+                                                                    <path fill="#000001" d="M0 0h640v160H0z"/>
+                                                                    <path fill="red" d="M0 160h640v160H0z"/>
+                                                                </svg>
+                                                            </div>
+                                                            <div class="flexible-language-text">
+                                                                <a>GERMAN</a>
+                                                            </div>
+                                                        </div>
+                                                        <div id="mb-english-en_US" style="display: none;" title="Change language to German (DE)">
+                                                            <div class="flexible-language-symbol">
+                                                                <div class="placeholder w50 h1-6" id="mb-header-lang-placeholder"></div>
+                                                                <svg class="flexible-language-svg" height="30" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 480">
+                                                                    <path fill="#bd3d44" d="M0 0h640v480H0"/>
+                                                                    <path stroke="#fff" stroke-width="37" d="M0 55.3h640M0 129h640M0 203h640M0 277h640M0 351h640M0 425h640"/>
+                                                                    <path fill="#192f5d" d="M0 0h364.8v258.5H0"/>
+                                                                    <marker id="us-a" markerHeight="30" markerWidth="30">
+                                                                        <path fill="#fff" d="m14 0 9 27L0 10h28L5 27z"/>
+                                                                    </marker>
+                                                                    <path fill="none" marker-mid="url(#us-a)" d="m0 0 16 11h61 61 61 61 60L47 37h61 61 60 61L16 63h61 61 61 61 60L47 89h61 61 60 61L16 115h61 61 61 61 60L47 141h61 61 60 61L16 166h61 61 61 61 60L47 192h61 61 60 61L16 218h61 61 61 61 60z"/>
+                                                                </svg>
+                                                            </div>
+                                                            <div class="flexible-language-text">
+                                                                <a>ENGLISH</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                         <div class="individual-mb-header-placeholder h50"></div>
                                         <div class="mb-clickelement" id="menu-opener">
@@ -243,7 +301,7 @@
                             <a>Projekt City</a>
                         </div>
                         <div class="dt-download-project-information-text-bottom">
-                            <a>by itsmarian_mc</a>
+                            <a id="dt-download-author">by itsmarian_mc</a>
                         </div>
                     </div>
                 </div>
@@ -256,8 +314,8 @@
                     <table class="dt-dwnld-page-table" style="border-top: none">
                         <thead class="dt-dwnld-page-thead" style="border-top: none">
                             <tr class="dt-dwnld-page-tr" style="border-top: none">
-                                <th class="dt-dwnld-page-th">Category</th>
-                                <th class="dt-dwnld-page-th">Information</th>
+                                <th class="dt-dwnld-page-th" id="dt-dwnld-page-th-category">Category</th>
+                                <th class="dt-dwnld-page-th" id="dt-dwnld-page-th-information">Information</th>
                                 <th class="dt-dwnld-page-th" id="download-v5-0" style="text-align: right;">
                                     <div class="dt-basic-btn" style="float: right;">
                                         <div class="dt-basic-btn-inner">
@@ -269,22 +327,22 @@
                         </thead>
                         <tbody>
                             <tr>
-                                <td class="dt-dwnld-td-c1">Uploaded</td>
+                                <td class="dt-dwnld-td-c1" id="dt-download-uploaded">Uploaded</td>
                                 <td class="dt-dwnld-td-c2">January 1, 2025</td>
                                 <td class="dt-dwnld-td-c3"></td>
                             </tr>
                             <tr>
-                                <td class="dt-dwnld-td-c1">Size</td>
+                                <td class="dt-dwnld-td-c1" id="dt-download-size">Size</td>
                                 <td class="dt-dwnld-td-c2">28.73 MB</td>
                                 <td class="dt-dwnld-td-c3"></td>
                             </tr>
                             <tr>
-                                <td class="dt-dwnld-td-c1">Version</td>
+                                <td class="dt-dwnld-td-c1" id="dt-download-version">Version</td>
                                 <td class="dt-dwnld-td-c2">1.20 - 1.20.6</td>
                                 <td class="dt-dwnld-td-c3"></td>
                             </tr>
                             <tr>
-                                <td class="dt-dwnld-td-c1">File Name</td>
+                                <td class="dt-dwnld-td-c1" id="dt-download-filename">File Name</td>
                                 <td class="dt-dwnld-td-c2">Projekt City [V5.0]</td>
                                 <td class="dt-dwnld-td-c3"></td>
                             </tr>
@@ -788,6 +846,7 @@
     </div>
     <script src="../assests/global/cookie-banner.js"></script>
     <script src="../assests/global/script.js"></script>
+    <script src="../assests/lang/download/v5.0.js"></script>
     <script>
         document.getElementById("download-v5-0").addEventListener('click', function() {
             window.open("https://www.curseforge.com/minecraft/worlds/projekt-city/download/6043384", "_blank")

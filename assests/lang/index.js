@@ -157,6 +157,8 @@ function updateToGerman() {
     document.getElementById("marketingAndAdvertisementText").innerHTML = `<a>Marketing-Cookies werden von uns und unseren Drittanbietern hauptsächlich zu Werbezwecken verwendet. Wenn diese Funktion aktiviert ist, werden Ihre Online-Aktivitäten nachverfolgt, um dir personalisierte, relevante, aussagekräftige und angemessene Werbung zu liefern und zu verhindern, dass du dieselbe Werbung mehrfach siehst. Auf diese Weise können wir feststellen, wie effizient Werbekampagnen sind, sowohl für unsere eigenen Dienste als auch für andere Websites. Alle Daten werden anonymisiert an die Werbepartner weitergegeben und sind nicht nachverfolgbar.</a>`;
     document.getElementById("unclassifiedHeader").innerText = `Nicht klassifizierte Cookies`;
     document.getElementById("unclassifiedText").innerHTML = `<a>Nicht klassifizierte Cookies sind Cookies, die keiner bestimmten Kategorie oder Klasse zugeordnet werden können, entweder weil sie zu irrelevant sind oder sich nicht lohnen, sie zu klassifizieren. Dennoch arbeiten wir daran, alle Cookies so gut wie möglich zu klassifizieren.</a>`;
+    document.getElementById("cookieSaveChanges").innerHTML = `<div class="cb-footer-btn-inner"><a>Speichern und Schließen</a></div>`;
+    document.getElementById("acceptCookiesAndCloseBanner").innerHTML = `<div class="cb-footer-filled-btn-inner"><a>Akzeptiere alle Cookies</a></div>`;
 }
 
 function updateToEnglish() {
@@ -208,4 +210,7 @@ function updateToEnglish() {
     document.getElementById("marketingAndAdvertisementText").innerHTML = `<a>Marketing-Cookies werden von uns und unseren Drittanbietern hauptsächlich zu Werbezwecken verwendet. Wenn diese Funktion aktiviert ist, werden Ihre Online-Aktivitäten nachverfolgt, um dir personalisierte, relevante, aussagekräftige und angemessene Werbung zu liefern und zu verhindern, dass du dieselbe Werbung mehrfach siehst. Auf diese Weise können wir feststellen, wie effizient Werbekampagnen sind, sowohl für unsere eigenen Dienste als auch für andere Websites. Alle Daten werden anonymisiert an die Werbepartner weitergegeben und sind nicht nachverfolgbar.</a>`;
     document.getElementById("unclassifiedHeader").innerText = `Nicht klassifizierte Cookies`;
     document.getElementById("unclassifiedText").innerHTML = `<a>Nicht klassifizierte Cookies sind Cookies, die keiner bestimmten Kategorie oder Klasse zugeordnet werden können, entweder weil sie zu irrelevant sind oder sich nicht lohnen, sie zu klassifizieren. Dennoch arbeiten wir daran, alle Cookies so gut wie möglich zu klassifizieren.</a>`;
+    document.getElementById("cookieSaveChanges").innerHTML = `<div class="cb-footer-btn-inner"><a>Save and close</a></div>`;
+    document.getElementById("acceptCookiesAndCloseBanner").innerHTML = `<div class="cb-footer-filled-btn-inner"><a>Accept all cookies</a></div>`;
+    document.getElementById("CookieChanger").innerHTML = `Change cookie preferences`;
 }
