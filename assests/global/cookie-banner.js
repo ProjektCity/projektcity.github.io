@@ -72,6 +72,9 @@ document.addEventListener('DOMContentLoaded', function() {
             document.getElementById("cookie-banner").style.display = "none";
             console.log("set-cookies=cookiesAccepted_true, display_desktop_cookie_banner=false");
             document.documentElement.style.overflowY = "scroll";
+            setTimeout(() => {
+                document.getElementById("cookie-banner").remove();
+            }, 1111);
         }
         else {
             localStorage.setItem('language', 'en_US');
@@ -138,7 +141,6 @@ function hideCookieSelector() {
     document.querySelector(".cookie-banner-dark-background").style.display = "none";
     document.querySelector(".cookie-banner-background").style.display = "none";
     document.getElementById("cookie-selector").style.display = "none";
-    document.getElementById("cookie-banner").style.display = "none";
     console.log("display_cookie_selector=false");;
 }
 
@@ -149,7 +151,6 @@ function hideCookieSelector() {
         document.querySelector(".cookie-banner-dark-background").style.display = "block";
         document.querySelector(".cookie-banner-background").style.display = "block";
         document.getElementById("cookie-selector").style.display = "block";
-        document.getElementById("cookie-banner").style.display = "none";
         console.log("display_cookie_selector=true");
     });
 
