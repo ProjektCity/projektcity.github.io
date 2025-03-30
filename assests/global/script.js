@@ -133,21 +133,6 @@ document.addEventListener("DOMContentLoaded", function() {
         console.log(`get-userbrowser=${browser}`);
         console.log(`placeholder-stylesheet-count=${styles.split('\n').length}`);
         setTimeout(() => {
-            console.log(
-                '\n' +
-                '/********/        /***********/\n' +
-                '/***     /***    /***********/\n' +
-                '/***      /***  /***         \n' +
-                '/***      /***  /***         \n' +
-                '/***     /***   /***         \n' +
-                '/********/      /***         \n' +
-                '/***            /***         \n' +
-                '/***            /***         \n' +
-                '/***             /***********/\n' +
-                '/***              /***********/\n' +
-                '                             \n' +
-                'Hey! Looks like you are enjoying to dig into our code. 👀?\n' +
-                'If you want to do this as a hobby and support Projekt City, check out https://projektcity.github.io/jobs');
             console.log('%cWARNING!', 'color: red; font-size: 30px; font-weight: bold;');
             console.log('%cThis is a browser feature intended for developers and debuggers only and may contain sensitive links and information about you, your data and private information, account/s, device, browser and current session. \nScammers have been known to encourage people to copy and/or paste information or run commands on the command line to hack accounts or access sensitive data. If you do not know what you are doing, do not proceed and close the debug menu! \nThe information that is/will be visible above and below this text is only for the development and improvement of the site and helps to find and fix bugs and other problems in JavaScript faster. \nFor more information about this message and what you can do if you have been taken in by a scam, please visit the following address: https://projektcity.github.io/helpcenter/debug-menu', 'color: red; font-size: 12.5px;');  
         }, 240);
