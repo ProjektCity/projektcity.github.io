@@ -87,7 +87,7 @@
     position: fixed;
     text-align: center;
     transform: translateX(-50%);
-    width: 278.19px;
+    width: 277.79px;
     z-index: 1000;
 }
 
@@ -97,7 +97,6 @@
 
 .dt-btt-svg {
     height: 50px;
-    rotate: -90deg;
     width: 50px;
 }
 

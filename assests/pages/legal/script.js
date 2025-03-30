@@ -21,12 +21,12 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 
-    const backToTopButton = document.getElementById("dt-btt-btn");
+    const backToTopButton = document.querySelector(".dt-btt-btn");
     if (backToTopButton) {
         backToTopButton.style.display = "none";
 
         window.addEventListener("scroll", function () {
-            if (window.scrollY > 500) {
+            if (window.scrollY > 100) {
                 backToTopButton.style.display = "block";
             } else {
                 backToTopButton.style.display = "none";
