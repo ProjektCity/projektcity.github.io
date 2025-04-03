@@ -276,11 +276,6 @@ p {
     max-width: 380px;
 }
 
-/* Classes */
-.header1 {
-    text-align: center;
-}
-
 /* Basic header style */
 h1 {
     font-size: 3em;
