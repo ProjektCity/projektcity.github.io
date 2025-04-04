@@ -6,11 +6,11 @@
     text-align: center;
 }
 
-.dt-legal-subheader {
+.legal-subheader {
     width: auto;
 }
 
-.dt-legal-text-section {
+.legal-text-section {
     font-size: 1.56em;
     line-height: 37.5px;
     min-width: 300px;
@@ -20,60 +20,60 @@
     text-align: left;
 }
 
-.dt-legal-text-enumerations {
+.legal-text-enumerations {
     text-align: left;
 }
 
-.dt-legal-text-enumeration-line {
+.legal-text-enumeration-line {
     display: flex;
 }
 
-.dt-legal-text-enumeration-left {
+.legal-text-enumeration-left {
     margin-left: 5px;
     margin-right: 10px;
 }
 
-.dt-legal-text-enumeration-right {
+.legal-text-enumeration-right {
     text-align: left;
 }
 
-.dt-legal-contents {
+.legal-contents {
     width: 100%;
 }
 
-.dt-legal-content {
+.legal-content {
     display: flex;
 }
 
-.dt-legal-content-l a, .dt-legal-content-r a {
+.legal-content-l a, .legal-content-r a {
     cursor: pointer;
 }
 
-.dt-legal-content-l {
+.legal-content-l {
     font-weight: 400;
 }
 
-.dt-legal-content-r {
+.legal-content-r {
     margin-left: 5px;
     width: 100%;
 }
 
-.dt-legal-h1 {
+.legal-h1 {
     font-size: 35px;
     font-weight: 500;
 }
 
-.dt-legal-h2 {
+.legal-h2 {
     font-size: 30px;
     font-weight: 500;
 }
 
-.dt-legal-ul {
+.legal-ul {
     margin-block-start: 0em;
     margin-block-end: 0em;
 }
 
-.dt-btt-btn {
+.btt-btn {
     background-color: #24262B;
     bottom: 25px;
     border: 1px solid #32333C;
@@ -91,16 +91,16 @@
     z-index: 1000;
 }
 
-.dt-btt-button {
+.btt-button {
     display: flex;
 }
 
-.dt-btt-svg {
+.btt-svg {
     height: 50px;
     width: 50px;
 }
 
-.dt-btt-text {
+.btt-text {
     font-size: 29px;
     height: 40px;
     margin: 5px;
@@ -115,12 +115,12 @@
     X.XX to X.XXX --> 20px
 
 Enoumeration:
-<div class="dt-legal-text-enumerations">
-    <div class="dt-legal-text-enumeration-line">
-        <div class="dt-legal-text-enumeration-left">
+<div class="legal-text-enumerations">
+    <div class="legal-text-enumeration-line">
+        <div class="legal-text-enumeration-left">
             <a></a>
         </div>
-        <div class="dt-legal-text-enumeration-right">
+        <div class="legal-text-enumeration-right">
             <a></a>
         </div>
     </div>
