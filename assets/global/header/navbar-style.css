@@ -233,3 +233,18 @@ img {
     font-weight: 100;
     white-space: nowrap;
 }
+
+.parallax-container {
+    perspective: 1000px;
+}
+
+.parallax-image {
+    width: 50px;
+    height: 50px;
+    background-image: url('https://media.forgecdn.net/avatars/911/517/638366219563911068.png');
+    background-size: cover;
+    background-position: center;
+    border-radius: 12px;
+    transform-style: preserve-3d;
+    transition: transform 0.05s ease;
+}

@@ -68,7 +68,9 @@
                             <a href="/?ref=mainpage_logo_text_scroller" style="text-decoration: none;">
                                 <div class="dt-information" style="display: flex;">
                                     <div class="dt-img" style="display: flex;">
-                                        <img height="50px" src="https://media.forgecdn.net/avatars/911/517/638366219563911068.png" width="50px">
+                                        <div class="parallax-container">
+                                            <div class="parallax-image" id="tiltImage"></div>
+                                        </div>
                                     </div>
                                     <div class="dt-text">
                                         <div class="dt-text-inner">
@@ -979,6 +981,56 @@
     <script src="assets/pages/mainpage/purecounter.js"></script>
     <script src="assets/lang/index.js"></script>
     <script src="assets/global/searching-devs.js"></script>
+    <script>
+        const image = document.getElementById('tiltImage');
+        let targetX = 0, targetY = 0;
+        let currentX = 0, currentY = 0;
+        let animationFrameId;
+        let isAnimating = false;
+        let mouseStillTimeout;
+    
+        function updateTilt(x, y) {
+            targetX = x * 15;
+            targetY = -y * 15;
+        
+            if (!isAnimating) {
+                isAnimating = true;
+                animate();
+            }
+        
+            // Reset inactivity timer
+            clearTimeout(mouseStillTimeout);
+            mouseStillTimeout = setTimeout(() => {
+                isAnimating = false;
+                cancelAnimationFrame(animationFrameId);
+            }, 100); // Pause after 100ms Stillstand
+        }
+    
+        image.addEventListener('mousemove', (e) => {
+            const rect = image.getBoundingClientRect();
+            const x = (e.clientX - rect.left) / rect.width - 0.5;
+            const y = (e.clientY - rect.top) / rect.height - 0.5;
+            updateTilt(x, y);
+        });
+    
+        image.addEventListener('mouseleave', () => {
+            targetX = 0;
+            targetY = 0;
+            isAnimating = true;
+            animate(); // animate zurück zur neutralen Position
+        });
+    
+        function animate() {
+            currentX += (targetX - currentX) * 0.5;
+            currentY += (targetY - currentY) * 0.5;
+        
+            image.style.transform = `rotateY(${currentX}deg) rotateX(${currentY}deg)`;
+        
+            if (isAnimating) {
+                animationFrameId = requestAnimationFrame(animate);
+            }
+        }
+    </script>
     <script>
         document.addEventListener("DOMContentLoaded", function() {
             const language = localStorage.getItem('language');
