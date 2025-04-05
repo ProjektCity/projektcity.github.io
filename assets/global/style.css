@@ -20,12 +20,13 @@ html, body {
 
 .dt-p-header {
     background-color: var(--main-color);
+    border-bottom: 2px solid #fff;
+    display: none;
+    height: 94.5px;
+    left: 0;
     position: fixed;
     top: 0;
-    left: 0;
     width: 100%;
-    border-bottom: 2px solid #fff;
-    height: 94.5px;
     z-index: 99999;
     /* Non selectable text */
     -webkit-touch-callout: none;
@@ -813,4 +814,24 @@ input[type="checkbox"]:checked::before {
     text-align: center;
     font-size: 25px;
     line-height: 20px;
+}
+
+@media (min-width: 310px) and (max-width: 500px) {
+    .dt-p-header {
+        display: none !important;
+    }
+ 
+    #mobile-header {
+        display: block !important;
+    }
+}
+
+@media (min-width: 500px) {
+    .dt-p-header {
+        display: block !important;
+    }
+ 
+    #mobile-header {
+        display: none !important;
+    }
 }
