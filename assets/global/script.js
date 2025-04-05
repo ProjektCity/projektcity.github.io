@@ -6,11 +6,11 @@
     * Redistribution or use on other sites, not related to Projekt City, is strictly prohibited
     * For more information, please contact us at: projektcityofficial@gmail.com
     * 
-    * Script version: 1.4
+    * Script version: 1.5
     * 
     * Script format: W.X.Y.Z
     * W = Finished code, contains no errors, works perfectly
-    * X = Finished code, might contains a few problems, which do not affect tge user experience / bug improvements from W version
+    * X = Finished code, might contains a few problems, which do not affect the user experience / bug improvements from W version
     * Y = Experimental code, contains errors, can limit user experience
     * Z = Test and experimental code, probably contains bugs that limit the user experience or make the service unusable, use with caution
 */
