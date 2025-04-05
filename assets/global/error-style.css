@@ -3,6 +3,7 @@
     display: flex;
     margin: 0 auto;
     max-width: 1200px;
+    overflow: hidden;
     padding: 10px;
     position: relative;
     transform: translateY(10%);
@@ -10,7 +11,7 @@
 
 .error-container-left {
     margin: 10px;
-    overflow: visible;
+    overflow: hidden;
     word-break: normal;
 }
 
@@ -63,5 +64,11 @@
 @media (max-width: 900px) {
     .error-container-right {
         display: none;
+    }
+}
+
+@media (max-width: 600px) {
+    .error-container-left p, .error-container-left a {
+        font-size: 20px;
     }
 }
