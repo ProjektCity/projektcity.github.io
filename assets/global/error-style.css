@@ -1,0 +1,67 @@
+.error-container {
+    color: var(--text-color);
+    display: flex;
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 10px;
+    position: relative;
+    transform: translateY(10%);
+}
+
+.error-container-left {
+    margin: 10px;
+    overflow: visible;
+    word-break: normal;
+}
+
+.error-container-left p, .error-container-left a {
+    font-size: 30px;
+    margin-block-start: 0.1em;
+    margin-block-end: 0.1em;
+}
+
+.error-container-left a {
+    margin-block-start: 0.1em;
+    margin-block-end: 0.1em;
+    text-align: center;
+}
+
+.error-container-left h1 {
+    font-size: 60px;
+    line-height: 70px;
+    margin-block-start: 0.5em;
+    margin-block-end: 0.5em;
+}
+
+.error-container-right {
+    perspective: 1000px;
+}
+
+.error-image {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.parallax-container {
+    perspective: 1000px;
+    width: fit-content;
+    height: fit-content;
+}
+
+.parallax-image {
+    width: 400px;
+    height: 400px;
+    background-image: url('/assets/images/logos/mainlogo.png');
+    background-size: cover;
+    background-position: center;
+    border-radius: 12px;
+    transform-style: preserve-3d;
+    transition: transform 0.1s ease;
+}
+
+@media (max-width: 900px) {
+    .error-container-right {
+        display: none;
+    }
+}

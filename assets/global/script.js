@@ -58,7 +58,6 @@ document.getElementById('shareButton').addEventListener('click', async () => {
 });
 
 document.addEventListener("DOMContentLoaded", function() {
-
     function generateStyles() {
         const elements = document.querySelectorAll('*');
         const styles = new Set();
@@ -89,8 +88,6 @@ document.addEventListener("DOMContentLoaded", function() {
     styleTag.type = 'text/css';
     styleTag.appendChild(document.createTextNode(styles));
     document.head.appendChild(styleTag);
-
-    //----------------------------------------//
 
     // Device
     function getDeviceType() {
