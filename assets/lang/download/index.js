@@ -181,7 +181,7 @@ function updateToEnglish() {
     const footerContent = document.querySelector(".dt-footer-content .dt-gf-div-lines");
     const divLines = Array.from(footerContent.querySelectorAll(".dt-gf-div-line"));
     // Change the texts
-    document.querySelector(".dt-download-project-information-text-bottom").innerHTML = `<a>von itsmarian</a>`;
+    document.querySelector(".dt-download-project-information-text-bottom").innerHTML = `<a>by itsmarian</a>`;
     document.getElementById("download-type").innerText = `Type`;
     document.getElementById("download-date").innerText = `Date`;
     document.getElementById("download-size").innerText = `Size`;

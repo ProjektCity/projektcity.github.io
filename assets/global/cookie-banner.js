@@ -297,3 +297,18 @@ document.getElementById("unclassifiedCookies").addEventListener("change", functi
         console.log("Unclassified cookies: Unchecked");
     }
 });
+
+// If ESC
+document.addEventListener('keydown', function(event) {
+    // Prüfen, ob die ESC-Taste gedrückt wurde (keyCode 27)
+    if (event.key === 'Escape') {
+      var div = document.getElementById('cookie-selector');  // Ersetze dies mit dem spezifischen Div, das du ansprechen möchtest
+      if (div && div.style.display !== 'none') {
+            div.style.display = 'none';  // Das DIV unsichtbar machen
+            document.querySelector(".cookie-banner-dark-background").style.display = "none";
+            document.querySelector(".cookie-banner-background").style.display = "none";
+            document.documentElement.style.overflowY = "scroll";
+      }
+      console.log("display_cookie_selector=false");
+    }
+  });

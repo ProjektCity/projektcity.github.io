@@ -816,6 +816,17 @@ input[type="checkbox"]:checked::before {
     line-height: 20px;
 }
 
+@media (min-width: 0px) and (max-width: 310px) {
+    .dt-p-header {
+        display: none !important;
+    }
+ 
+    #mobile-header {
+        display: none !important;
+    }
+    
+}
+
 @media (min-width: 310px) and (max-width: 500px) {
     .dt-p-header {
         display: none !important;
