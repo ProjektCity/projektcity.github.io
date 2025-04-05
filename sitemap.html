@@ -76,8 +76,9 @@
                 <br>
                 <a>sitemap/tree from https://projektcity.github.io/</a>
             </div>
+            <div class="placeholder w300 h10"></div>
             <div class="tree">
-                <a>https://projektcity.github.io/</a><br>
+                <a>https://projektcity.github.io/ [ROOT]</a><br>
                 <a>│</a><br>
                 <a>├── assets</a><br>
                 <a>│&nbsp;&nbsp;&nbsp;├── files</a><br>
@@ -171,10 +172,41 @@
                 <a>│&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;└── style.css</a><br>
                 <a>│&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└── searching-devs-beta.js</a><br>
                 <a>├── discord</a><br>
+                <a>│&nbsp;&nbsp;&nbsp;├── authentication.html</a><br>
+                <a>│&nbsp;&nbsp;&nbsp;├── callback.html</a><br>
+                <a>│&nbsp;&nbsp;&nbsp;└── index.html</a><br>
                 <a>├── download</a><br>
+                <a>│&nbsp;&nbsp;&nbsp;├── index.html</a><br>
+                <a>│&nbsp;&nbsp;&nbsp;├── v1.0.html</a><br>
+                <a>│&nbsp;&nbsp;&nbsp;├── v1.1.html</a><br>
+                <a>│&nbsp;&nbsp;&nbsp;├── v2.0.html</a><br>
+                <a>│&nbsp;&nbsp;&nbsp;├── v3.0.html</a><br>
+                <a>│&nbsp;&nbsp;&nbsp;├── v4.0.html</a><br>
+                <a>│&nbsp;&nbsp;&nbsp;├── v4.1.html</a><br>
+                <a>│&nbsp;&nbsp;&nbsp;├── v4.2.html</a><br>
+                <a>│&nbsp;&nbsp;&nbsp;├── v5.0.html</a><br>
+                <a>│&nbsp;&nbsp;&nbsp;└── versions.js</a><br>
                 <a>├── helpcenter</a><br>
+                <a>│&nbsp;&nbsp;&nbsp;├── debug-menu.html</a><br>
+                <a>│&nbsp;&nbsp;&nbsp;├── faq.html</a><br>
+                <a>│&nbsp;&nbsp;&nbsp;├── import-world.html</a><br>
+                <a>│&nbsp;&nbsp;&nbsp;└── index.html</a><br>
                 <a>├── legal</a><br>
+                <a>│&nbsp;&nbsp;&nbsp;├── accessibility-statement.html</a><br>
+                <a>│&nbsp;&nbsp;&nbsp;├── advertisement-terms.html</a><br>
+                <a>│&nbsp;&nbsp;&nbsp;├── application-guidelines.html</a><br>
+                <a>│&nbsp;&nbsp;&nbsp;├── eula.html</a><br>
+                <a>│&nbsp;&nbsp;&nbsp;├── github-privacy.html</a><br>
+                <a>│&nbsp;&nbsp;&nbsp;├── imprint.html</a><br>
+                <a>│&nbsp;&nbsp;&nbsp;├── index.html</a><br>
+                <a>│&nbsp;&nbsp;&nbsp;├── privacy.html</a><br>
+                <a>│&nbsp;&nbsp;&nbsp;├── privacy-policy.html</a><br>
+                <a>│&nbsp;&nbsp;&nbsp;├── terms-of-use.html</a><br>
+                <a>│&nbsp;&nbsp;&nbsp;├── terms.html</a><br>
+                <a>│&nbsp;&nbsp;&nbsp;└── use-our-world.html</a><br>
                 <a>├── login</a><br>
+                <a>│&nbsp;&nbsp;&nbsp;├── index.html</a><br>
+                <a>│&nbsp;&nbsp;&nbsp;└── index.html</a><br>
                 <a>├── 404.html</a><br>
                 <a>├── ads.txt</a><br>
                 <a>├── index.html</a><br>
@@ -185,6 +217,44 @@
             </div>
         </code>
     </main>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            function generateStyles() {
+                const elements = document.querySelectorAll('*');
+                const styles = new Set();
+
+                elements.forEach(element => {
+                    const classList = element.classList;
+
+                    classList.forEach(cls => {
+                        if (cls.startsWith('w') || cls.startsWith('h')) {
+                            const parts = cls.substring(1).split('-');
+                            const value = parts[0];
+                            const decimal = parts[1] ? '.' + parts[1] : ''; 
+                            const finalValue = value + decimal;
+                            const property = cls.charAt(0) === 'w' ? 'width' : 'height';
+
+                            if (!isNaN(finalValue)) {
+                                styles.add(`.${cls} { ${property}: ${finalValue}px; }`);
+                            }
+                        }
+                    });
+                });
+
+                return Array.from(styles).join('\n');
+            }
+
+            const styles = generateStyles();
+            const styleTag = document.createElement('style');
+            styleTag.type = 'text/css';
+            styleTag.appendChild(document.createTextNode(styles));
+            document.head.appendChild(styleTag);
+        });
+
+        document.getElementById("return").addEventListener("click", function() {
+            window.history.back();
+        });
+    </script>
     <script>
         function getDeviceType() {
             const userAgent = navigator.userAgent.toLowerCase();
