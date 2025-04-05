@@ -157,11 +157,26 @@ function hideCookieSelector() {
 
     // Cookie Selector: Save changes
     document.getElementById("cookieSaveChanges").addEventListener("click", function() {
-        hideCookieSelector();
+        if (localStorage.getItem('cookiesAccepted')) {
+            hideCookieSelector();
+        } else {
+            hideCookieSelector();
+            setTimeout(() => {
+                location.reload();
+            }, 100);
+        }
     });
 
     // Cookie Selector: Accept all cookies
     document.getElementById("acceptCookiesAndCloseBanner").addEventListener("click", function() {
+        if (localStorage.getItem('cookiesAccepted')) {
+            hideCookieSelector();
+        } else {
+            hideCookieSelector();
+            setTimeout(() => {
+                location.reload();
+            }, 100);
+        }
         localStorage.setItem('cookiesAccepted', 'true');
         document.documentElement.style.overflowY = "scroll";
         gtag('consent', 'update', {
@@ -192,7 +207,7 @@ function hideCookieSelector() {
         document.getElementById("cookie-selector").style.display = "none";
         document.getElementById("cookie-banner").style.display = "none";
         console.log("set-cookies=cookiesAccepted_true, display_desktop_cookie_selector=false, display_desktop_cookie_banner=false. Set the values 'ad_storage', 'ad_user_data', 'ad_personalization', 'analytics_storage', 'functionality_storage', 'personalization_storage', 'security_storage' to 'granted'.");;
-        location.reload();
+
     });
 
     // Accept all Cookies in Cookie Banner
