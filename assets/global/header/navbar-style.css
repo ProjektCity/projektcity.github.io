@@ -2,10 +2,9 @@
     border-radius: 10px;
     font-family: 'Poppins';
     font-weight: 200;
-    margin: 0;
+    height: 73.67px;
     margin: 0 auto;
     overflow: hidden;
-    height: 73.67px;
     width: 1148px;
     /* Non selectable text */
     -webkit-touch-callout: none;

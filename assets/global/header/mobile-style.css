@@ -1,6 +1,7 @@
 #mobile-header {
     background-color: #1B1D1E;
-    position: absolute;
+    position: fixed;
+    z-index: 99999;
     width: 100%;
 }
 
