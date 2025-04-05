@@ -80,6 +80,7 @@ document.addEventListener('DOMContentLoaded', function() {
             localStorage.setItem('language', 'en_US');
             console.log("loaded-cookies=cookiesAccepted_false, display_desktop_cookie_banner=true");
             document.documentElement.style.overflowY = "hidden";
+            document.querySelector(".main").style.display = "none";
             document.querySelector(".cookie-banner-dark-background").style.display = "block";
             document.querySelector(".cookie-banner-background").style.display = "block";
             document.getElementById("cookie-banner").style.display = "block";
