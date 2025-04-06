@@ -1,5 +1,6 @@
 document.getElementById("SendComplaint").addEventListener("click", function () {
     document.getElementById("report-container").style.display = "block";
+    document.documentElement.style.overflowY = "hidden";
     document.getElementById("action-tool-text").innerText = ``;
 });
 
@@ -8,11 +9,13 @@ document.getElementById("cancel-report").addEventListener("click", function () {
     document.querySelector(".reportc-dialog-textarea").value = '';
     document.querySelector(".reportc-dialog-email").value = '';
     document.getElementById("action-tool-text").innerText = ``;
+    document.documentElement.style.overflowY = "scroll";
 });
 
 document.getElementById("close-report-container").addEventListener("click", function () {
     document.getElementById("report-container").style.display = "none";
     document.getElementById("action-tool-text").innerText = ``;
+    document.documentElement.style.overflowY = "scroll";
 });
 
 document.getElementById('send-report').addEventListener('click', function () {
@@ -50,6 +53,7 @@ document.getElementById('send-report').addEventListener('click', function () {
             toolText.innerText = `Your complaint has been sent successfully!`;
             document.querySelector('.reportc-dialog-textarea').value = '';
             document.getElementById('report-promt-mail').value = '';
+            document.documentElement.style.overflowY = "scroll";
             setTimeout(() => {
                 document.getElementById('report-container').style.display = 'none';
                 toolText.innerText = ``;
