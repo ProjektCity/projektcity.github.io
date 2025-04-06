@@ -1,13 +1,17 @@
 :root {
-    --main-color: #1B1D1E;
-    --secondary-color: #2C2F31;
-    --text-color: #ffffff;
     --error-color: #FF0000;
+    --success-color: #28a745;
+    --gradient: linear-gradient(135deg, #f7941e 0%, #be2edd 60%, #2b88ca 100%);
+    --bg: #1B1D1E;
+    --bg-2: #2C2F31;
+    --tt: #ffffff;
+    --tt-2: #cccccc;
+    --tt-dark: #000000;
 }
 
 html, body {
-    background-color: var(--main-color);
-    color: var(--text-color);
+    background-color: var(--bg);
+    color: var(--tt);
     font-family: 'Poppins';
     font-weight: 200;
     margin: 0px;
@@ -19,7 +23,7 @@ html, body {
 }
 
 .dt-p-header {
-    background-color: var(--main-color);
+    background-color: var(--bg);
     border-bottom: 2px solid #fff;
     display: none;
     height: 94.5px;
@@ -119,7 +123,7 @@ p {
 }
 
 .linkout {
-    color: var(--text-color);
+    color: var(--tt);
     cursor: pointer;
     text-decoration: underline;
 }
@@ -129,7 +133,7 @@ p {
 }
 
 .nodecoration {
-    color: var(--text-color);
+    color: var(--tt);
     text-decoration: none;
 }
 
@@ -154,7 +158,7 @@ p {
 
 .dt-basic-btn:hover {
     border: 1px solid #fff;
-    background-color: var(--main-color);
+    background-color: var(--bg);
 }
 
 .dt-basic-btn-inner {
@@ -241,7 +245,7 @@ p {
 
 /* Mobile */
 .mb-p-header {
-    background-color: var(--main-color);
+    background-color: var(--bg);
     position: fixed;
     top: 0;
     left: 0;
@@ -317,12 +321,12 @@ p {
 }
 
 .linkout {
-    color: var(--text-color);
+    color: var(--tt);
     text-decoration: underline;
 }
 
 .nodecoration {
-    color: var(--text-color);
+    color: var(--tt);
     text-decoration: none;
 }
 
@@ -347,7 +351,7 @@ p {
 
 .mb-basic-btn:hover {
     border: 1px solid #fff;
-    background-color: var(--main-color);
+    background-color: var(--bg);
 }
 
 .mb-basic-btn-inner {
@@ -359,7 +363,7 @@ p {
 }
 
 .legal-filled-btn {
-    background-color: var(--text-color);
+    background-color: var(--tt);
     border: 1px solid #fff;
     color: #000;
     cursor: pointer;
@@ -404,7 +408,7 @@ p {
 .cookie-banner-dark-background {
     background-color: #000;
     bottom: 0;
-    color: var(--text-color);
+    color: var(--tt);
     display: none;
     left: 0;
     height: 100%;
@@ -419,7 +423,7 @@ p {
 .cookie-banner-background {
     backdrop-filter: blur(10px);
     bottom: 0;
-    color: var(--text-color);
+    color: var(--tt);
     display: none;
     left: 0;
     height: 100%;
@@ -436,7 +440,7 @@ p {
     border-radius: 20px;
     bottom: 0;
     box-sizing: border-box;
-    color: var(--text-color);
+    color: var(--tt);
     display: none;
     height: 600px;
     margin-left: -calc(50% - 10px);
@@ -525,7 +529,7 @@ p {
 }
 
 .cb-footer-filled-btn {
-    background-color: var(--text-color);
+    background-color: var(--tt);
     color: #000;
 }
 
@@ -545,7 +549,7 @@ p {
 .cookie-selector-background {
     background-color: #000;
     bottom: 0;
-    color: var(--text-color);
+    color: var(--tt);
     display: none;
     left: 0;
     height: 100%;
@@ -563,7 +567,7 @@ p {
     border-radius: 20px;
     bottom: 0;
     box-sizing: border-box;
-    color: var(--text-color);
+    color: var(--tt);
     display: none;
     height: 600px;
     margin-left: -calc(50% - 10px);
@@ -678,7 +682,7 @@ p {
     border-radius: 10px;
     bottom: 0;
     box-sizing: border-box;
-    color: var(--text-color);
+    color: var(--tt);
     display: none;
     height: 50px;
     left: 50%;
@@ -808,11 +812,125 @@ input[type="checkbox"] {
 
 input[type="checkbox"]:checked::before {
     content: "✔";
-    color: var(--text-color);
+    color: var(--tt);
     display: block;
     text-align: center;
     font-size: 25px;
     line-height: 20px;
+}
+
+.report-container {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: none;
+    left: 50%;
+    max-width: 700px;
+    position: fixed;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    user-select: none;
+    width: calc(100% - 20px);
+    z-index: 9999;
+}
+
+.reportc-dialog-titlebar {
+    background-color: #000;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    cursor: move;
+    display: flex;
+    font-size: 22px;
+    justify-content: space-between;
+    padding: 12.5px;
+}
+
+.reportc-dialog-title {
+    height: 31px;
+}
+
+.reportc-dialog-button {
+    cursor: pointer;
+    height: 31px;
+    right: 0;
+}
+
+.reportc-dialog-maincontent {
+    background-color: #222222;
+    margin-top: -0.75px;
+    padding: 30px;
+}
+
+.reportc-dialog-content {
+    width: 100%;
+}
+
+.reportc-dialog-textarea {
+    background-color: var(--bg);
+    border: 1px solid var(--bg-2);
+    border-radius: 7.5px;
+    color: var(--tt);
+    font-family: 'Poppins';
+    font-weight: 200;
+    height: 100px;
+    max-height: 400px !important;
+    padding: 5px;
+    outline: none;
+    resize: vertical;
+    width: calc(100% - 10px) !important;
+}
+
+.reportc-dialog-email {
+    background-color: var(--bg);
+    border: 1px solid var(--bg-2);
+    border-radius: 2.5px;
+    color: var(--tt);
+    font-family: 'Poppins';
+    font-weight: 200;
+    max-height: 400px !important;
+    padding: 5px;
+    outline: none;
+    resize: vertical;
+    width: calc(100% - 10px) !important;
+
+}
+
+.reportc-dialog-textarea:focus, .reportc-dialog-email:focus {
+    border: 1px solid var(--bg);
+    box-shadow: 0 0 2.5px var(--tt);
+}
+
+.reportc-dialog-footer {
+    background-color: #000;    
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin-top: -0.75px;
+}
+
+.reportc-dialog-footer-btns {
+    padding: 15px 25px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.reportc-dialog-footer-btn {
+    border-radius: 15px;
+    background-color: var(--tt);
+    color: var(--bg-2);
+    cursor: pointer;
+    display: inline-flex;
+    font-size: 20px;
+    height: 38px;
+    justify-content: center;
+    margin: 0 5px;
+    padding: 0 15px;
+    text-align: center;
+    max-width: 150px;
+    width: 100%;
+}
+
+.reportc-dialog-footer-btn-inner {
+    height: 28px;
+    margin: 5px 0px 5px 0px;
 }
 
 @media (min-width: 0px) and (max-width: 310px) {
@@ -822,6 +940,23 @@ input[type="checkbox"]:checked::before {
  
     #mobile-header {
         display: none !important;
+    }
+
+    /* Report Container */
+    .reportc-dialog-titlebar {
+        font-size: 17px;
+    }
+
+    .reportc-dialog-footer-btns {
+        display: block;
+    }
+
+    .reportc-dialog-footer-btn {
+        width: calc(100% - 30px);
+    }
+
+    #send-report {
+        margin-top: 10px;
     }
     
 }
@@ -833,6 +968,20 @@ input[type="checkbox"]:checked::before {
  
     #mobile-header {
         display: block !important;
+    }
+
+    /* Report Container */
+    .reportc-dialog-footer-btns {
+        display: block;
+    }
+
+    .reportc-dialog-footer-btn {
+        max-width: 100%;
+        width: calc(100% - 30px);
+    }
+
+    #send-report {
+        margin-top: 10px;
     }
 }
 

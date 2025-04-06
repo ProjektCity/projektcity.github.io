@@ -4,7 +4,7 @@ body {
 }
 
 .error-container {
-    color: var(--text-color);
+    color: var(--tt);
     display: flex;
     margin: 0 auto;
     max-width: 1200px;

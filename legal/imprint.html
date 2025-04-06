@@ -355,6 +355,8 @@
                 <div class="placeholder w350 h5"></div>
                 <div class="dt-gf-div-line">
                     <a class="nodecoration" id="CookieChanger">Change cookie preferences</a>
+                    <a>•</a>
+                    <a class="nodecoration" id="SendComplaint">Send a complaint</a>
                 </div>
             </div>
             <div class="placeholder w350 h20"></div>
@@ -752,6 +754,49 @@
     <div class="ui-text-overay" id="ui-text-overay">
         <div class="ui-overlay-inner" id="ui-content"></div>
     </div>
+    <div class="report-container" id="report-container">
+        <div class="reportc-dialog-titlebar" id="title-drag-container">
+            <div class="reportc-dialog-title">
+                <a>Send a complaint</a>
+            </div>
+            <div class="reportc-dialog-button" id="close-report-container">
+                <svg xmlns="http://www.w3.org/2000/svg" height="31" viewBox="0 -960 960 960" width="31" fill="#fff">
+                    <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/>
+                </svg>
+            </div>
+        </div>
+        <div class="reportc-dialog-maincontent">
+            <div class="reportc-dialog-content">
+                <div>
+                    <a>Enter the text of your complaint to the administration as detailed as possible:</a>
+                    <textarea class="reportc-dialog-textarea" id="report-promt-text" name="report-promt-text" placeholder="E.g.: Wrong / Misleading information in the heading"></textarea>
+                </div>
+                <div class="placeholder w300 h10"></div>
+                <div>
+                    <a>Your Email:</a>
+                    <input class="reportc-dialog-email" id="report-promt-mail" name="report-promt-mail" placeholder="example@mail.com" type="text">
+                </div>
+            </div>
+            <div style="text-align: center;">
+                <a id="action-tool-text"></a>
+            </div>
+        </div>
+        <div class="reportc-dialog-footer">
+            <div class="reportc-dialog-footer-btns">
+                <div class="reportc-dialog-footer-btn" id="cancel-report">
+                    <div class="reportc-dialog-footer-btn-inner">
+                        <a>Cancel</a>
+                    </div>
+                </div>
+                <div class="reportc-dialog-footer-btn" id="send-report">
+                    <div class="reportc-dialog-footer-btn-inner">
+                        <a>Send</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="assets/global/footer/report.js"></script>
     <script src="../assets/global/cookie-banner.js"></script>
     <script src="../assets/global/header/navbar-script.js"></script>
     <script src="../assets/global/script.js"></script>
