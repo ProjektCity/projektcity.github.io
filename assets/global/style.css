@@ -830,7 +830,7 @@ input[type="checkbox"]:checked::before {
     transform: translate(-50%, -50%);
     user-select: none;
     width: calc(100% - 20px);
-    z-index: 9999;
+    z-index: 100000;
 }
 
 .reportc-dialog-titlebar {
