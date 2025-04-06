@@ -265,6 +265,26 @@ ul {
     text-align: left;
 }
 
+.dt-dwnld-cl-ul {
+    font-size: 30px;
+}
+
+@media (max-width: 450px) {
+    .dt-dwnld-cl-ul li, .dt-dwnld-cl-changelog p{
+        font-size: 20px !important;
+    }
+
+    .dt-download-project-information-text-bottom {
+        font-size: 25px !important;
+    }
+}
+
+@media (max-width: 630px) {
+    #project-download-btn, .dt-dwnld-td-c3 { 
+        display: none;
+    }
+}
+
 .dt-download-footer-information {
     font-size: 10px;
     margin: 0 auto;

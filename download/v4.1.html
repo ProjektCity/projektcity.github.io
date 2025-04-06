@@ -256,8 +256,8 @@
                             <tr class="dt-dwnld-page-tr" style="border-top: none">
                                 <th class="dt-dwnld-page-th">Category</th>
                                 <th class="dt-dwnld-page-th">Information</th>
-                                <th class="dt-dwnld-page-th" id="download-v4-1" style="text-align: right;">
-                                    <div class="dt-basic-btn" style="float: right;">
+                                <th class="dt-dwnld-page-th" id="project-download-btn" style="text-align: right;">
+                                    <div class="dt-basic-btn" id="download-v4-1" style="float: right;">
                                         <div class="dt-basic-btn-inner">
                                             <a>Download</a>
                                         </div>
@@ -751,7 +751,7 @@
             </div>
             <div class="cookie-chooser-bottom">
                 <div class="cookie-chooser-bottom-inner">
-                    <div class="placeholder w150 h31-6"></div><!-- cookieSaveChanges -->
+                    <div class="placeholder w150 h31-6"></div>
                     <div class="cb-footer">
                         <div class="cb-footer-inner">
                             <div class="cb-footer-btn" id="cookieSaveChanges">
@@ -798,9 +798,6 @@
                 document.getElementById("download-v4-1").remove();
                 document.querySelectorAll(".dt-dwnld-td-c3").forEach(el => {
                     el.remove();
-                });
-                document.querySelectorAll(".dt-dwnld-cl-ul").forEach(el => {
-                    el.style.fontSize = "20px";
                 });
                 return "mobile";
             } else {
