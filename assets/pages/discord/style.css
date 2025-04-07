@@ -16,21 +16,14 @@
     overflow: hidden;
     min-width: 300px;
     max-width: 1150px;
-}
-
-.dt-dsc-container {
-    height: auto;
-    overflow: hidden;
     text-align: left;
-    min-width: 300px;
-    max-width: 1000px;
 }
 
 .dt-dsc-frame {
     height: auto;
     overflow: hidden;
     min-width: 300px;
-    max-width: 1000px;
+    max-width: 1150px;
 }
 
 .dt-dsc-information {
