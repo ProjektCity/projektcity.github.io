@@ -46,7 +46,6 @@ document.getElementById('send-comment').addEventListener('click', function () {
         return;
     }
 
-    // API-URL, die auf deine Vercel-Domain zeigt
     const apiUrl = "https://projektcity-api.vercel.app/api/comments";
 
     fetch(apiUrl, {
