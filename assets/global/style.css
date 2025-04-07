@@ -7,6 +7,8 @@
     --tt: #ffffff;
     --tt-2: #cccccc;
     --tt-dark: #000000;
+    /* Colors */
+    --color-orange: #E4840F;
 }
 
 html, body {
@@ -42,6 +44,7 @@ html, body {
 }
 
 .main {
+    display: block;
     padding-top: 104.5px;
     margin: 5px;
     min-height: 100px;

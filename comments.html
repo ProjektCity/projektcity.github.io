@@ -217,7 +217,7 @@
             </div>
         </div>
     </header>
-    <main class="main" style="display: none; overflow-x: hidden;">
+    <main class="main" style="overflow-x: hidden;">
         <div class="placeholder w300 h20" id="mb-placeholder" style="display: none;"></div>
         <section class="section">
             <div class="header1">
@@ -238,9 +238,9 @@
                         </div>
                         <div class="form-action" style="margin-top: 10px; width: 100%;">
                             <textarea id="comment-promt-text" name="comment-promt-text" placeholder="Write your comment here..."></textarea>
-                            <div style="color: var(--error-color); display: flex; font-size: 10px;">
+                            <div style="color: var(--color-orange); display: flex; font-size: 10px;">
                                 <div>
-                                    <svg xmlns="http://www.w3.org/2000/svg" height="28.8" viewBox="0 -960 960 960" width="28.8" fill="var(--error-color)">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="28.8" viewBox="0 -960 960 960" width="28.8" fill="var(--color-orange)">
                                         <path d="M480-280q17 0 28.5-11.5T520-320q0-17-11.5-28.5T480-360q-17 0-28.5 11.5T440-320q0 17 11.5 28.5T480-280Zm-40-160h80v-240h-80v240Zm40 360q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z"/>
                                     </svg>
                                 </div>
@@ -319,6 +319,14 @@
                 </div>
             </div>
             <div class="placeholder w300 h200"></div>
+            
+        </section>
+        <section class="section">
+            <div style="font-size: 10px; line-height: 12.5px; text-align: center;">
+                <a>The comment section is still in the beta phase. Comments can be posted which Project City may not manage or support.</a>
+                <br>
+                <a>Projekt City distances itself from any illegal, forbidden and legally reprehensible comments and always tries to ensure that such comments are not published.</a>
+            </div>
         </section>
     </main>
     <footer class="dt-footer" style="overflow-x: hidden;">
@@ -812,9 +820,6 @@
                 document.documentElement.style.overflowY = "hidden";
                 document.getElementById("cookie-selector").style.display = "none";
                 document.getElementById("cookie-banner").style.display = "block";
-                // Desktop elements
-                document.querySelector(".main").style.display = "block";
-                document.querySelector(".dt-footer").style.display = "block";
                 // Removing Mobile Elements
                 document.getElementById("mb-placeholder").style.display = "none";
                 // Cookie Banner
