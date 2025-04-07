@@ -9,7 +9,7 @@
     * Script version: 1.1
 */
 
-fetch('https://pcapi-k48687951-6e4e.vercel.app/api')
+fetch('https://projektcity-api.vercel.app/api/download')
 .then(response => response.json())
 .then(data => {
     const downloadCount = data.downloads;

@@ -12,13 +12,26 @@
 .form-actions {
     display: flex;
     justify-content: space-between;
+    gap: 5px;
     align-items: center;
+    width: 100%;
 }
 
 .form-action {
     flex-grow: 1;
-    padding: 5px;
     width: 33%;
+}
+
+.form-approval {
+    display: flex;
+}
+
+.submit-button {
+    width: auto;
+}
+
+#comment-tooltip {
+    position: relative;
 }
 
 .form-input {
@@ -46,7 +59,6 @@
     padding: 0 15px;
     text-align: center;
     max-width: 150px;
-    width: 100%;
 }
 
 .comment-form-send:hover {
@@ -112,23 +124,41 @@
 
 }
 
+.comments-nocomment {
+    display: flex;
+}
+
+.comments-nocomment-left {
+    height: 33px;
+}
+
+.comments-nocomment-right {
+    font-size: 20px;
+    min-height: 28px;
+    margin: 2.5px;
+}
+
 @media (max-width: 635px) {
     .form-action {
         width: 100%;
         margin: 0;
     }
+
     .form-actions {
         flex-direction: column;
+        gap: 10px;
     }
-    .form-actions > * {
-        margin-bottom: 10px;
-    }
+
     .reportc-dialog-footer-btns {
         display: block;
     }
 
     .comment-form-send {
-        max-width: 100%;
-        width: calc(100% - 30px);
+        max-width: 100% !important;
+        width: calc(100% - 30px) !important;
+    }
+
+    .submit-button {
+        width: 100%;
     }
 }

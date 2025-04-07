@@ -736,7 +736,7 @@ p {
 }
 
 /* IDs */
-.cookie-checkbox {
+.cookie-checkbox, .checkbox {
     height: 38.18px;
     margin-top: 0px;
     position: relative;
@@ -804,6 +804,7 @@ input[type="checkbox"] {
     background-color: #181818;
     border: 1px solid #fff;
     border-radius: 4px;
+    margin: 3px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -894,7 +895,7 @@ input[type="text"] {
     color: var(--tt);
     font-family: 'Poppins';
     font-weight: 200;
-    max-height: 400px !important;
+    height: 30px !important;
     padding: 5px;
     outline: none;
     resize: vertical;

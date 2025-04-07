@@ -34,39 +34,41 @@ document.getElementById('send-report').addEventListener('click', function () {
         return;
     }
 
-    const webhookUrl = "https://discord.com/api/webhooks/1358501813040582823/XdqtuqW5YWFdCP2fBlzvTPwr76Wiv27S_tjFkbXOF07o7c48tJ0H-ZGpvqjtFKYDlTG1";
+    const apiUrl = "https://projektcity-api.vercel.app/api/reports";
 
-    const payload = {
-        content: `📢 **New notification!**\n\n📝 **Message of user:** ${complaintText} \n📧 **Email of user:** ${email}`
-    };
-
-    fetch(webhookUrl, {
+    fetch(apiUrl, {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
         },
-        body: JSON.stringify(payload),
+        body: JSON.stringify({
+            complaintText: complaintText,
+            email: email
+        }),
     })
     .then(response => {
-        if (response.ok) {
+        return response.json();
+    })
+    .then(data => {
+        if (data.success) {
             toolText.style.color = "var(--success-color)";
             toolText.innerText = `Your complaint has been sent successfully!`;
             document.querySelector('.reportc-dialog-textarea').value = '';
             document.getElementById('report-promt-mail').value = '';
-            document.documentElement.style.overflowY = "scroll";
             setTimeout(() => {
+                document.documentElement.style.overflowY = "scroll";
                 document.getElementById('report-container').style.display = 'none';
                 toolText.innerText = ``;
             }, 3000);
         } else {
             toolText.style.color = "var(--error-color)";
-            toolText.innerText = `An error occurred while sending! Refresh the page and try again.`;
+            toolText.innerText = `An error occurred while sending!`;
         }
     })
     .catch(error => {
         console.error('Fehler:', error);
         toolText.style.color = "var(--error-color)";
-        toolText.innerText = `An error occurred!`;
+        toolText.innerText = `An error occurred while sending!`;
     });
 });
 
