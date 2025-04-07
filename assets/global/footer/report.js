@@ -74,19 +74,34 @@ const container = document.getElementById('report-container');
 const dragField = document.getElementById("title-drag-container");
 let offsetX, offsetY, isDragging = false;
 
-dragField.addEventListener('mousedown', function(e) {
+dragField.addEventListener('mousedown', (e) => {
     isDragging = true;
     offsetX = e.clientX - container.offsetLeft;
     offsetY = e.clientY - container.offsetTop;
 });
 
-document.addEventListener('mouseup', function() {
-    isDragging = false;
+document.addEventListener('mouseup', () => isDragging = false);
+
+document.addEventListener('mousemove', (e) => {
+    if (isDragging) {
+        container.style.left = (e.clientX - offsetX) + 'px';
+        container.style.top = (e.clientY - offsetY) + 'px';
+    }
 });
 
-document.addEventListener('mousemove', function(e) {
-    if (isDragging) {
-    container.style.left = (e.clientX - offsetX) + 'px';
-    container.style.top = (e.clientY - offsetY) + 'px';
-}
+dragField.addEventListener('touchstart', (e) => {
+    isDragging = true;
+    const touch = e.touches[0];
+    offsetX = touch.clientX - container.offsetLeft;
+    offsetY = touch.clientY - container.offsetTop;
 });
+
+document.addEventListener('touchend', () => isDragging = false);
+
+document.addEventListener('touchmove', (e) => {
+    if (isDragging) {
+        const touch = e.touches[0];
+        container.style.left = (touch.clientX - offsetX) + 'px';
+        container.style.top = (touch.clientY - offsetY) + 'px';
+    }
+}, { passive: false });
