@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function() {
         var language = localStorage.getItem('language');
 
         if (language === "de_DE") {
-            console.log("set-internal-langue=de_DE");
+            console.log("[LANG] set-internal-langue=de_DE");
             document.getElementById("german-de_DE").style.display = "block";
             document.getElementById("mb-german-de_DE").style.display = "block";
             document.getElementById("english-en_US").style.display = "none";
@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function() {
             updateToGerman();
         }
         if (language === "en_US") {
-            console.log("set-internal-langue=en_US");
+            console.log("[LANG] set-internal-langue=en_US");
             document.getElementById("english-en_US").style.display = "block";
             document.getElementById("mb-english-en_US").style.display = "block";
             document.getElementById("german-de_DE").style.display = "none";
@@ -24,7 +24,7 @@ document.getElementById("english-en_US").addEventListener("click", function() {
     localStorage.setItem('language', 'de_DE');
     document.getElementById("german-de_DE").style.display = "block";
     document.getElementById("english-en_US").style.display = "none";
-    console.log("set-internal-langue=de_DE");
+    console.log("[LANG] set-internal-langue=de_DE");
     // Language Banner
     document.getElementById("ui-text-overay").style.display = "block";
     document.getElementById("ui-content").innerHTML = `<a>Changed the language to "German (DE)"</a>`
@@ -43,7 +43,7 @@ document.getElementById("mb-english-en_US").addEventListener("click", function()
     localStorage.setItem('language', 'de_DE');
     document.getElementById("mb-english-en_US").style.display = "none";
     document.getElementById("mb-german-de_DE").style.display = "block";
-    console.log("set-internal-langue=de_DE");
+    console.log("[LANG] set-internal-langue=de_DE");
     // Language Banner
     document.getElementById("ui-text-overay").style.display = "block";
     document.getElementById("ui-content").innerHTML = `<a>Changed the language to "German (DE)"</a>`
@@ -62,7 +62,7 @@ document.getElementById("german-de_DE").addEventListener("click", function() {
     localStorage.setItem('language', 'en_US');
     document.getElementById("english-en_US").style.display = "block";
     document.getElementById("german-de_DE").style.display = "none";
-    console.log("set-internal-langue=en_US");
+    console.log("[LANG] set-internal-langue=en_US");
     // Language Banner
     document.getElementById("ui-text-overay").style.display = "block";
     document.getElementById("ui-content").innerHTML = `<a>Changed the language to "English (US)"</a>`
@@ -81,7 +81,7 @@ document.getElementById("mb-german-de_DE").addEventListener("click", function() 
     localStorage.setItem('language', 'en_US');
     document.getElementById("mb-english-en_US").style.display = "block";
     document.getElementById("mb-german-de_DE").style.display = "none";
-    console.log("set-internal-langue=en_US");
+    console.log("[LANG] set-internal-langue=en_US");
     // Language Banner
     document.getElementById("ui-text-overay").style.display = "block";
     document.getElementById("ui-content").innerHTML = `<a>Changed the language to "English (US), please wait."</a>`
@@ -107,6 +107,7 @@ function updateToGerman() {
     document.getElementById("dt-download-version").innerText = 'Version';
     document.getElementById("dt-download-filename").innerText = 'Dateigröße';
     document.querySelector(".dt-dwnld-changelog").innerHTML = `<div class="dt-dwnld-cl-header"><h3 style="font-weight: 400; text-decoration: underline;">ChangeLog</h3></div><div class="dt-dwnld-cl-version"><h4 style="text-decoration: underline;">Update V5.0</h4></div><div class="dt-dwnld-cl-changelog"><p>Änderungen:</p><ul class="dt-dwnld-cl-ul"><li>[FLUGHAFEN] Treppe für einsteigende Passagiere hinzugefügt</li><li>[FLUGHAFEN] Ticket-Checker hinzugefügt</li><li>[FLUGHAFEN] Duty-Free-Shops hinzugefügt</li><li>[FLUGHAFEN] Fast Food Restaurant hinzugefügt</li><li>[FLUGHAFEN] Security Station hinzugefügt</li><li>[FLUGHAFEN] Shops hinzugefügt</li><li>[FLUGHAFEN] Ticket Automat hinzugefügt</li><li>[FLUGHAFEN] Boden im großen Flugzeug befestigt</li><li>[FLUGHAFEN] Weiterentwickelt</li><li>[FLUGHAFEN] Boden im Flughafen aktualisiert</li><li>[FLUGHAFEN] Licht Commands aktualisiert</li><li>[FLUGHAFEN] Route zum Aiport festgelegt (Kurven) und Buslinie hinzugefügt</li><li>[FLUGHAFEN] Terraforming am Flughafen und auf der Straße → Keine Luft mehr unter dem Flughafen</li><li>[STADT] Großer Baum in der Mitte befestigt (Weizen, Setzlinge und Seerosenblätter können nicht zerstört werden)</li><li>[STADT] Neue Autos auf der Autobahn und Reparatur alter Autos</li><li>[STADT] Hügel mit Tunnel komplett neu gestaltet/li><li>[STADT] Automatisch gespawnte Dörfer entfernt</li><li>[STADT] Perlenshop entfernt</li><li>[STADT] Plizei Station entfernt</li><li>[STADT] Restaurant gebaut</li><li>[STADT] Strommasten aktualisiert</li><li>[STADT] Parkhaus und Feuerwache entfernt</li><li>[STADT] Straßenschilder aktualisiert</li><li>[MAIN] Autobahn fortgesetzt und fertiggestellt (Autos kommen bald)</li><li>[MAIN] Kurve auf der Autobahn aktualisiert</li><li>[MAIN] Autobahn finished</li><li>[MAIN] Es wurden neue Wälder hinzugefügt</li><li>[MAIN] Obsidian auf der Straße repariert</li><li>[MAIN] Präfix geändert zu: =====[PC]=====</li><li>[MAIN] Restaurant fertiggestellt</li><li>[MAIN] Neue U-Bahn-Station hinzugefügt und alte Station erweitert</li><li>[MAIN] Redstone-Lampe im Tunnel repariert</li><li>[MAIN] Schilder repariert (unbeschriftete Schilder ersetzt, setblock-Schildbefehle entfernt)</li><li>[MAIN] Straßen repariert (neue Kurven, alle verbundenen Straßen gleich breit gemacht, Mittelspur auf der Autobahn repariert, neue Straßen hinzugefügt)</li><li>[MAIN] Die ganze Karte ist jetzt ohne Fullbright spielbar!</li></ul><div class="placeholder w1000 h20"></div><p>Die nächsten Updates enthalten folgende Änderungen:</p><ul class="dt-dwnld-cl-ul"><li>[V5.0.1] Generelle Verbesserung der Map</li><li>[V5.1] Fliegende Flugzeuge und erweiterter Flughafen</li><li>[V5.2] City Update (Bau aller Häuser, Hinzufügen von Redstone und Power System, und vieles mehr)</li><li>[V5.3] 1.21 Update (Umstellung aller Befehle auf 1.21, Hinzufügen von Leben in der Welt mit Menschen und mehr, Verwendung der neuen Blöcke und Redstone Features)</li></ul><div class="placeholder w1000 h20"></div><a style="font-weight: 400;">WIR WÜNSCHEN EUCH ALLEN EIN FROHES NEUES JAHR!</a></div><div class="placeholder w1150 h30"></div>`;
+    document.querySelector(".dt-download-footer-information").innerHTML = `<p>Dieser Link führt dich zu einer Website außerhalb von Projekt City und zu einer externen Website! Projekt City ist nicht verantwortlich für den Datenschutz/die Sicherheit (von Käufen) auf dieser Website</p><p>Projekt City, das Projekt City-Logo und seine Inhalte, Bilder, Videos, Dateien und der Name sind Marken von Projekt City Ltd.</p><p>Diese Datei(en) sind Eigentum von Projekt City Ltd. und dürfen gemäß unserer „Use our World“-Richtlinie nicht weiterverbreitet werden!</p>`;
     // Footer
     if (divLines.length < 3) return;
     const [firstLine, secondLine, thirdLine] = divLines;
@@ -141,6 +142,14 @@ function updateToEnglish() {
     const footerContent = document.querySelector(".dt-footer-content .dt-gf-div-lines");
     const divLines = Array.from(footerContent.querySelectorAll(".dt-gf-div-line"));
     // Change the texts
+    document.querySelector(".dt-download-project-information-text-bottom").innerHTML = `<a>by itsmarian</a>`;
+    document.getElementById("dt-dwnld-page-th-category").innerText = 'Category';
+    document.getElementById("dt-download-uploaded").innerText = 'Uploaded';
+    document.getElementById("dt-download-size").innerText = 'Size';
+    document.getElementById("dt-download-version").innerText = 'Version';
+    document.getElementById("dt-download-filename").innerText = 'Dateiname';
+    document.querySelector(".dt-dwnld-changelog").innerHTML = `<div class="dt-dwnld-changelog"><div class="dt-dwnld-cl-header"><h3 style="font-weight: 400; text-decoration: underline;">ChangeLog</h3></div><div class="dt-dwnld-cl-version"><h4 style="text-decoration: underline;">Update V5.0</h4></div><div class="dt-dwnld-cl-changelog"><p>Changes:</p><ul class="dt-dwnld-cl-ul"><li>[AIRPORT] Added boarding passenger stairs</li><li>[AIRPORT] Added ticket checker</li><li>[AIRPORT] Added duty free shops</li><li>[AIRPORT] Added fast food restaurant</li><li>[AIRPORT] Added security station</li><li>[AIRPORT] Added shops</li><li>[AIRPORT] Added ticket automat</li><li>[AIRPORT] Floor on big plane fixed</li><li>[AIRPORT] Continued developement</li><li>[AIRPORT] Fixed floor on airport</li><li>[AIRPORT] Fixed lightning commands</li><li>[AIRPORT] Route to Aiport fixed (curves) and bus route added</li><li>[AIRPORT] Terraforming at airport and street → No more air under the airport</li><li>[CITY] Big tree in center fixed (wheat, saplings and lily pads can not be destroyed)</li><li>[CITY] Cars added to the highway and old cars fixed</li><li>[CITY] Hill with tunnel completely redone</li><li>[CITY] Natural spawned villages removed</li><li>[CITY] Pearlshop removed</li><li>[CITY] Police station removed</li><li>[CITY] Restaurant built</li><li>[CITY] Power poles fixed</li><li>[CITY] Parking station and fire departement removed</li><li>[CITY] Street signs updated</li><li>[MAIN] Highway continued and finished (cars coming soon)</li><li>[MAIN] Highway curve fixed</li><li>[MAIN] Highway finished</li><li>[MAIN] New forrests have been added</li><li>[MAIN] Obsidian on street fixed</li><li>[MAIN] Prefix changed to: =====[PC]=====</li><li>[MAIN] Restaurant finished</li><li>[MAIN] New Subway Station added and old station expanded</li><li>[MAIN] Redstone Lamp in tunnel fixed</li><li>[MAIN] Signs fixed (unwritten signs replaced, remove setblock sign commands)</li><li>[MAIN] Streets fixed (renewed curves, made every connected street the same width, fixed highway middle lane, added new streets)</li><li>[MAIN] The whole map is now playable without fullbright!</li></ul><div class="placeholder w1000 h20"></div><p>The next update will include:</p><ul class="dt-dwnld-cl-ul"><li>[V5.0.1] General improvement of the map</li><li>[V5.1] Flying planes and Airport</li><li>[V5.2] City Update (Building all houses, adding Redstone and power System, and much more)</li><li>[V5.3] 1.21 Update (changing all commands to 1.21, adding life to the world with humans and more, using the new blocks and Redstone Features)</li></ul><div class="placeholder w1000 h20"></div><a style="font-weight: 400;">WE WISH YOU A HAPPY NEW YEAR!</a></div><div class="placeholder w1150 h30"></div></div>`;
+    document.querySelector(".dt-download-footer-information").innerHTML = `<p>This link is taking you to a website outside of Projekt City and to an external site! Projekt City is not responsible for the privacy/security (of purchases) on this site</p><p>Projekt City, the Projekt City logo and its contents, images, videos, file(s) and name are trademarks of Projekt City Ltd.!</p><p>These file(s) are the property of Projekt City Ltd. and may not be redistributed in accordance with our "Use our World" policy!</p>`;
     // Footer
     if (divLines.length < 3) return;
     const [firstLine, secondLine, thirdLine] = divLines;

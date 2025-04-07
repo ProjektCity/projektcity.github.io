@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function() {
         var language = localStorage.getItem('language');
 
         if (language === "de_DE") {
-            console.log("set-internal-langue=de_DE");
+            console.log("[LANG] set-internal-langue=de_DE");
             document.getElementById("german-de_DE").style.display = "block";
             document.getElementById("mb-german-de_DE").style.display = "block";
             document.getElementById("english-en_US").style.display = "none";
@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function() {
             updateToGerman();
         }
         if (language === "en_US") {
-            console.log("set-internal-langue=en_US");
+            console.log("[LANG] set-internal-langue=en_US");
             document.getElementById("english-en_US").style.display = "block";
             document.getElementById("mb-english-en_US").style.display = "block";
             document.getElementById("german-de_DE").style.display = "none";
@@ -24,7 +24,7 @@ document.getElementById("english-en_US").addEventListener("click", function() {
     localStorage.setItem('language', 'de_DE');
     document.getElementById("german-de_DE").style.display = "block";
     document.getElementById("english-en_US").style.display = "none";
-    console.log("set-internal-langue=de_DE");
+    console.log("[LANG] set-internal-langue=de_DE");
     // Language Banner
     document.getElementById("ui-text-overay").style.display = "block";
     document.getElementById("ui-content").innerHTML = `<a>Changed the language to "German (DE)"</a>`
@@ -43,7 +43,7 @@ document.getElementById("mb-english-en_US").addEventListener("click", function()
     localStorage.setItem('language', 'de_DE');
     document.getElementById("mb-english-en_US").style.display = "none";
     document.getElementById("mb-german-de_DE").style.display = "block";
-    console.log("set-internal-langue=de_DE");
+    console.log("[LANG] set-internal-langue=de_DE");
     // Language Banner
     document.getElementById("ui-text-overay").style.display = "block";
     document.getElementById("ui-content").innerHTML = `<a>Changed the language to "German (DE)"</a>`
@@ -62,7 +62,7 @@ document.getElementById("german-de_DE").addEventListener("click", function() {
     localStorage.setItem('language', 'en_US');
     document.getElementById("english-en_US").style.display = "block";
     document.getElementById("german-de_DE").style.display = "none";
-    console.log("set-internal-langue=en_US");
+    console.log("[LANG] set-internal-langue=en_US");
     // Language Banner
     document.getElementById("ui-text-overay").style.display = "block";
     document.getElementById("ui-content").innerHTML = `<a>Changed the language to "English (US)"</a>`
@@ -81,7 +81,7 @@ document.getElementById("mb-german-de_DE").addEventListener("click", function() 
     localStorage.setItem('language', 'en_US');
     document.getElementById("mb-english-en_US").style.display = "block";
     document.getElementById("mb-german-de_DE").style.display = "none";
-    console.log("set-internal-langue=en_US");
+    console.log("[LANG] set-internal-langue=en_US");
     // Language Banner
     document.getElementById("ui-text-overay").style.display = "block";
     document.getElementById("ui-content").innerHTML = `<a>Changed the language to "English (US), please wait."</a>`
@@ -103,7 +103,7 @@ function updateToGerman() {
     document.getElementById("discord-header").innerText = `Trete unserem Discord Server bei!`;
     document.querySelector(".dt-dsc-information").innerHTML = `<div class="dt-dsc-info-desc"><a style="font-size: 30px;">Trete unserem Discord Server bei, um Vorteile zu erhalten wie:</a></div><div class="dt-dsc-info-bullets"><div class="dt-bullet"><div class="dt-bullet-svg"><svg xmlns="http://www.w3.org/2000/svg" height="35" viewBox="0 -960 960 960" width="35" fill="#fff"><path d="M80-560q0-100 44.5-183.5T244-882l47 64q-60 44-95.5 111T160-560H80Zm720 0q0-80-35.5-147T669-818l47-64q75 55 119.5 138.5T880-560h-80ZM160-200v-80h80v-280q0-83 50-147.5T420-792v-28q0-25 17.5-42.5T480-880q25 0 42.5 17.5T540-820v28q80 20 130 84.5T720-560v280h80v80H160Zm320-300Zm0 420q-33 0-56.5-23.5T400-160h160q0 33-23.5 56.5T480-80ZM320-280h320v-280q0-66-47-113t-113-47q-66 0-113 47t-47 113v280Z"></path></svg></div><div class="dt-bullet-text"><a>bekomme Mitteilungen zu Updates und Änderungen</a></div></div><div class="dt-bullet"><div class="dt-bullet-svg"><svg xmlns="http://www.w3.org/2000/svg" height="35" viewBox="0 -960 960 960" width="35" fill="#fff"><path d="M240-400h320v-80H240v80Zm0-120h480v-80H240v80Zm0-120h480v-80H240v80ZM80-80v-720q0-33 23.5-56.5T160-880h640q33 0 56.5 23.5T880-800v480q0 33-23.5 56.5T800-240H240L80-80Zm126-240h594v-480H160v525l46-45Zm-46 0v-480 480Z"></path></svg></div><div class="dt-bullet-text"><a>tausche dich mit anderen ohne Limits aus*</a></div></div><div class="dt-bullet"><div class="dt-bullet-svg"><svg xmlns="http://www.w3.org/2000/svg" height="35" viewBox="0 0 24 24" width="35" fill="#fff"><path fill="currentColor" d="M12 3a1 1 0 0 0-1-1h-.06a1 1 0 0 0-.74.32L5.92 7H3a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h2.92l4.28 4.68a1 1 0 0 0 .74.32H11a1 1 0 0 0 1-1V3ZM15.1 20.75c-.58.14-1.1-.33-1.1-.92v-.03c0-.5.37-.92.85-1.05a7 7 0 0 0 0-13.5A1.11 1.11 0 0 1 14 4.2v-.03c0-.6.52-1.06 1.1-.92a9 9 0 0 1 0 17.5Z"></path><path fill="currentColor" d="M15.16 16.51c-.57.28-1.16-.2-1.16-.83v-.14c0-.43.28-.8.63-1.02a3 3 0 0 0 0-5.04c-.35-.23-.63-.6-.63-1.02v-.14c0-.63.59-1.1 1.16-.83a5 5 0 0 1 0 9.02Z"></path></svg></div><div class="dt-bullet-text"><a>rede mit anderen in unseren öffentlichen Voice Channels**</a></div></div><div class="dt-bullet"><div class="dt-bullet-svg"><svg xmlns="http://www.w3.org/2000/svg" height="35" viewBox="0 -960 960 960" width="35" fill="#fff"><path d="M480-320 280-520l56-58 104 104v-326h80v326l104-104 56 58-200 200ZM240-160q-33 0-56.5-23.5T160-240v-120h80v120h480v-120h80v120q0 33-23.5 56.5T720-160H240Z"></path></svg></div><div class="dt-bullet-text"><a>lade Projekt City mit offiziellen Links runter</a></div></div><div class="dt-bullet"><div class="dt-bullet-svg"><svg xmlns="http://www.w3.org/2000/svg" height="35" viewBox="0 -960 960 960" width="35" fill="#fff"><path d="M440-280h80v-240h-80v240Zm40-320q17 0 28.5-11.5T520-640q0-17-11.5-28.5T480-680q-17 0-28.5 11.5T440-640q0 17 11.5 28.5T480-600Zm0 520q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z"></path></svg></div><div class="dt-bullet-text"><a>erhalte Informationen über Projekt City und andere wichtige Dinge</a></div></div><div class="dt-bullet"><div class="dt-bullet-svg"><svg xmlns="http://www.w3.org/2000/svg" height="35" viewBox="0 -960 960 960" width="35" fill="#fff"><path d="M440-120v-80h320v-284q0-117-81.5-198.5T480-764q-117 0-198.5 81.5T200-484v244h-40q-33 0-56.5-23.5T80-320v-80q0-21 10.5-39.5T120-469l3-53q8-68 39.5-126t79-101q47.5-43 109-67T480-840q68 0 129 24t109 66.5Q766-707 797-649t40 126l3 52q19 9 29.5 27t10.5 38v92q0 20-10.5 38T840-249v49q0 33-23.5 56.5T760-120H440Zm-80-280q-17 0-28.5-11.5T320-440q0-17 11.5-28.5T360-480q17 0 28.5 11.5T400-440q0 17-11.5 28.5T360-400Zm240 0q-17 0-28.5-11.5T560-440q0-17 11.5-28.5T600-480q17 0 28.5 11.5T640-440q0 17-11.5 28.5T600-400Zm-359-62q-7-106 64-182t177-76q89 0 156.5 56.5T720-519q-91-1-167.5-49T435-698q-16 80-67.5 142.5T241-462Z"></path></svg></div><div class="dt-bullet-text"><a>erhalte LIVE Support für deine speziellen Themen</a></div></div><div class="dt-bullet"><div class="dt-bullet-svg"><svg xmlns="http://www.w3.org/2000/svg" height="35" viewBox="0 -960 960 960" width="35" fill="#fff"><path d="M480-280q17 0 28.5-11.5T520-320q0-17-11.5-28.5T480-360q-17 0-28.5 11.5T440-320q0 17 11.5 28.5T480-280Zm-40-160h80v-240h-80v240ZM330-120 120-330v-300l210-210h300l210 210v300L630-120H330Zm34-80h232l164-164v-232L596-760H364L200-596v232l164 164Zm116-280Z"></path></svg></div><div class="dt-bullet-text"><a>melde Fehler und Bugs direkt zu Moderatoren und Admins</a></div></div><div class="dt-bullet"><div class="dt-bullet-svg"><svg xmlns="http://www.w3.org/2000/svg" height="35" viewBox="0 0 24 24" width="35" fill="none"><path fill="currentColor" d="M18.91 12.98a5.45 5.45 0 0 1 2.18 6.2c-.1.33-.09.68.1.96l.83 1.32a1 1 0 0 1-.84 1.54h-5.5A5.6 5.6 0 0 1 10 17.5a5.6 5.6 0 0 1 5.68-5.5c1.2 0 2.32.36 3.23.98Z" class="dt-"></path><path fill="currentColor" d="M19.24 10.86c.32.16.72-.02.74-.38L20 10c0-4.42-4.03-8-9-8s-9 3.58-9 8c0 1.5.47 2.91 1.28 4.11.14.21.12.49-.06.67l-1.51 1.51A1 1 0 0 0 2.4 18h5.1a.5.5 0 0 0 .49-.5c0-4.2 3.5-7.5 7.68-7.5 1.28 0 2.5.3 3.56.86Z"></path></svg></div><div class="dt-bullet-text"><a>stelle deine Fragen in unseren Post-Channels und andere Discord-Mitglieder können dir weiterhelfen oder DU hilfst anderen Leuten bei ihren Fragen</a></div></div></div>`;
     document.querySelector(".dt-dsc-text").innerHTML = `<a>Server beitreten</a>`;
-    document.querySelector(".dt-discord-footer-information").innerHTML = `<a>* Der Chat muss den Discord- und Projekt City-Nutzungsbedingungen entsprechen. Projekt City behält sich das Recht vor, Benutzer, die gegen diese Regeln verstoße, von ihrem Server zu sperren und sie an Discord zu melden. Projekt City oder seine Moderatoren können die Aktivitäten jederzeit überwachen und aufzeichnen.</a><br><a>** Die Aktivitäten in den Voice-Chats müssen den Discord- und Projekt City-Nutzungsbedingungen entsprechen. Projekt City behält sich das Recht vor, Benutzer, die gegen diese Regeln verstoße, von ihrem Server zu sperren und sie an Discord zu melden. Projekt City oder seine Moderatoren können die Aktivitäten jederzeit überwachen und aufzeichnen.</a>`;
+    document.querySelector(".dt-discord-footer-information").innerHTML = `<a>* Der Chat muss den Discord- und Projekt City-Nutzungsbedingungen entsprechen. Projekt City behält sich das Recht vor, Benutzer, die gegen diese Regeln verstoße, von ihrem Server zu sperren und sie an Discord zu melden. Projekt City oder seine Moderatoren können die Aktivitäten jederzeit überwachen und aufzeichnen.</a><br><a>** Die Aktivitäten in den Sprachkanälen müssen den Discord- und Projekt City-Nutzungsbedingungen entsprechen. Projekt City behält sich das Recht vor, Benutzer, die gegen diese Regeln verstoße, von ihrem Server zu sperren und sie an Discord zu melden. Projekt City oder seine Moderatoren können die Aktivitäten jederzeit überwachen und aufzeichnen.</a>`;
     // Footer
     if (divLines.length < 3) return;
     const [firstLine, secondLine, thirdLine] = divLines;
