@@ -865,7 +865,7 @@ input[type="checkbox"]:checked::before {
     width: 100%;
 }
 
-.reportc-dialog-textarea {
+textarea, input[type="text"] {
     background-color: var(--bg);
     border: 1px solid var(--bg-2);
     border-radius: 7.5px;
@@ -877,7 +877,14 @@ input[type="checkbox"]:checked::before {
     padding: 5px;
     outline: none;
     resize: vertical;
+}
+
+textarea {
     width: calc(100% - 10px) !important;
+}
+
+input[type="text"] {
+    width: 100% !important;
 }
 
 .reportc-dialog-email {
@@ -895,7 +902,7 @@ input[type="checkbox"]:checked::before {
 
 }
 
-.reportc-dialog-textarea:focus, .reportc-dialog-email:focus {
+.reportc-dialog-textarea:focus, .reportc-dialog-email:focus, input[type="text"]:focus {
     border: 1px solid var(--bg);
     box-shadow: 0 0 2.5px var(--tt);
 }

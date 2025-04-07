@@ -1,0 +1,134 @@
+.comment-section {
+    border: 1px solid #fff;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.comment-writing-container {
+
+}
+
+.form-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.form-action {
+    flex-grow: 1;
+    padding: 5px;
+    width: 33%;
+}
+
+.form-input {
+    width: 100% !important;
+    height: 40px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 0 15px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.comment-form-send {
+    border-radius: 15px;
+    background-color: var(--bg);
+    border: 1px solid var(--tt);
+    color: var(--tt);
+    cursor: pointer;
+    display: inline-flex;
+    font-size: 20px;
+    height: 38px;
+    justify-content: center;
+    margin: 0 5px;
+    padding: 0 15px;
+    text-align: center;
+    max-width: 150px;
+    width: 100%;
+}
+
+.comment-form-send:hover {
+    background-color: var(--tt);
+    color: var(--bg);
+    transition: all 0.3s ease-in-out;
+}
+
+.comment-form-send-inner {
+    height: 28px;
+    margin: 5px 0px 5px 0px;
+}
+
+.comments-list {
+
+}
+
+.comments-list-empty {
+
+}
+
+/* Comment design */
+.comments {
+    padding: 0px 10px 0px 10px;
+}
+
+.comment {
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.comment-item {
+    display: flex;
+}
+
+.comment-item-profileimage {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.comment-item-letter {
+    align-items: center;
+    background-color: #eb3b5a;
+    border-radius: 50%;
+    font-weight: 500;
+    font-size: 25px;
+    text-align: center;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+}
+
+#comments-item-letter {
+    height: 35.2px;
+    margin-bottom: 7.4px;
+    margin-top: 7.4px;
+    position: relative;
+}
+
+.comment-item-username-date {
+
+}
+
+@media (max-width: 635px) {
+    .form-action {
+        width: 100%;
+        margin: 0;
+    }
+    .form-actions {
+        flex-direction: column;
+    }
+    .form-actions > * {
+        margin-bottom: 10px;
+    }
+    .reportc-dialog-footer-btns {
+        display: block;
+    }
+
+    .comment-form-send {
+        max-width: 100%;
+        width: calc(100% - 30px);
+    }
+}
