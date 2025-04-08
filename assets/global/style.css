@@ -1009,7 +1009,7 @@ input[type="text"] {
 
 /* Login */
 .dt-login {
-
+    cursor: pointer;
 }
 
 .header-login-container {
@@ -1033,8 +1033,8 @@ input[type="text"] {
 
 .flexible-welcome-img {
     border-radius: 20%;
-    height: 31.6px;
-    width: 31.6px;
+    height: 31.6px !important;
+    width: 31.6px !important;
 }
 
 .flexible-welcome-text {

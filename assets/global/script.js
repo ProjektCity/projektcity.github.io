@@ -6,7 +6,7 @@
     * Redistribution or use on other sites, not related to Projekt City, is strictly prohibited
     * For more information, please contact us at: projektcityofficial@gmail.com
     * 
-    * Script version: 1.5
+    * Script version: 1.6
     * 
     * Script format: W.X.Y.Z
     * W = Finished code, contains no errors, works perfectly
@@ -172,7 +172,7 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     }
     
-    console.log("[BUILD INFO] Release Channel: stable, Build Number: #657, Update date: 04/08/2025");
+    console.log("[BUILD INFO] Release Channel: stable, Build Number: #658, Update date: 04/08/2025");
     setTimeout(() => {
         console.log(`[USER] get-userdevice=${deviceType}`);
         console.log(`[USER] get-userbrowser=${browser}`);

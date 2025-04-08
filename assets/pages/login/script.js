@@ -6,7 +6,7 @@
     * Redistribution or use on other sites, not related to Projekt City, is strictly prohibited
     * For more information, please contact us at: projektcityofficial@gmail.com
     * 
-    * Script version: 1.0
+    * Script version: 1.1
 */
 
 document.addEventListener("DOMContentLoaded", function() {
@@ -46,6 +46,8 @@ function getUserInfo(token) {
             ? `https://cdn.discordapp.com/avatars/${user.id}/${user.avatar}.png`
             : `https://cdn.discordapp.com/embed/avatars/${user.discriminator % 5}.png`;
 
+        document.getElementById("profile-pic-big").src = avatarUrl;
+        document.getElementById("mb-profile-pic").src = avatarUrl;
         document.getElementById("profile-pic").src = avatarUrl;
         document.getElementById("profileinformation").style.display = 'block';
         document.getElementById("signincontainer").style.display = 'none';
