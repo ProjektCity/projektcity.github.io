@@ -135,4 +135,51 @@ document.addEventListener("DOMContentLoaded", function() {
             console.log('%cThis is a browser feature intended for developers and debuggers only and may contain sensitive links and information about you, your data and private information, account/s, device, browser and current session. \nScammers have been known to encourage people to copy and/or paste information or run commands on the command line to hack accounts or access sensitive data. If you do not know what you are doing, do not proceed and close the debug menu! \nThe information that is/will be visible above and below this text is only for the development and improvement of the site and helps to find and fix bugs and other problems in JavaScript faster. \nFor more information about this message and what you can do if you have been taken in by a scam, please visit the following address: https://projektcity.github.io/helpcenter/debug-menu', 'color: red; font-size: 12.5px;');  
         }, 240);
     }, 4);
+    
+    const urlParams = new URLSearchParams(window.location.hash.substring(1));
+    const accessToken = urlParams.get('access_token');
+    
+    if (accessToken) {
+        localStorage.setItem('discord_token', accessToken);
+        removeAccessTokenFromURL();
+        getUserInfo(accessToken);
+    } else {
+        const token = localStorage.getItem('discord_token');
+        if (token) {
+            console.log("[DISCORD] User is signed in.");
+            getUserInfo(token);
+        } else {
+            console.log("[DISCORD] User is not signed in.");
+        }
+    }
+
+    function removeAccessTokenFromURL() {
+        const url = window.location.href.split('#')[0];
+        window.history.replaceState({}, document.title, url);
+    }
+
+    function getUserInfo(token) {
+        fetch("https://discord.com/api/users/@me", {
+            headers: { Authorization: `Bearer ${token}` }
+        })
+        .then(res => res.json())
+        .then(user => {
+            if (localStorage.getItem("autofill") === "true") {
+                document.getElementById("report-promt-mail").value = user.email;
+                console.log("[DISCORD] set_autofill=true.");
+            } else {
+                console.log("[DISCORD] set_autofill=false.");
+            }
+
+            const avatarUrl = user.avatar 
+                ? `https://cdn.discordapp.com/avatars/${user.id}/${user.avatar}.png`
+                : `https://cdn.discordapp.com/embed/avatars/${user.discriminator % 5}.png`;
+
+            console.log("[DISCORD] User information received successfully:", user);
+        })
+        .catch(error => {
+            console.error("[DISCORD] Error while receiving user information:", error);
+            localStorage.removeItem('discord_token');
+        });
+    }
 });

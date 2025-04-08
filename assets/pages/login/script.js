@@ -9,7 +9,7 @@
     * Script version: 1.0
 */
 
-window.onload = function() {
+document.addEventListener("DOMContentLoaded", function() {
     const urlParams = new URLSearchParams(window.location.hash.substring(1));
     const accessToken = urlParams.get('access_token');
     
@@ -25,7 +25,7 @@ window.onload = function() {
             getUserInfo(token);
         }
     }
-};
+});
 
 function removeAccessTokenFromURL() {
     const url = window.location.href.split('#')[0];
@@ -56,7 +56,6 @@ function getUserInfo(token) {
     });
 }
 
-
 document.getElementById("signinbtn").addEventListener('click', function() {
     localStorage.removeItem('discord_token');
     window.open("https://discord.com/oauth2/authorize?client_id=1308503690449256561&redirect_uri=https://projektcity.github.io/login&response_type=token&scope=identify%20email", "_parent");
@@ -66,8 +65,6 @@ document.getElementById('signout-btn').addEventListener('click', function() {
     localStorage.removeItem('discord_token');
     window.open("/login/return?signin-type=logout&redirect_url=https://projektcity.github.io/login?utm_src=login_page_logout_btn&utm_medium=discord_x_projektcity", "_parent");
 });
-
-
 
 document.addEventListener("DOMContentLoaded", function() {
     const randomString = generateRandomString(16);

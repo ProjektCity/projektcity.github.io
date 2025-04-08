@@ -1006,3 +1006,37 @@ input[type="text"] {
         display: none !important;
     }
 }
+
+/* Login */
+.dt-login {
+
+}
+
+.header-login-container {
+
+}
+
+.flexible-welcome-container {
+    display: flex;
+}
+
+.flexible-welcome-symbol {
+    height: 31.6px;
+    margin: 0 auto;
+    width: 31.6px;
+}
+
+#welcome-container, #signin-container {
+    height: 50px;
+    width: 60px;
+}
+
+.flexible-welcome-img {
+    border-radius: 20%;
+    height: 31.6px;
+    width: 31.6px;
+}
+
+.flexible-welcome-text {
+    font-size: 12px;
+}
