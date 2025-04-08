@@ -49,11 +49,11 @@ function getUserInfo(token) {
 }
 
 document.getElementById('welcome-container').addEventListener('click', function() {
-    window.open("/account.html", "_parent");
+    window.open("/account", "_parent");
 });
 
 document.getElementById('mb-welcome-container').addEventListener('click', function() {
-    window.open("/account.html", "_parent");
+    window.open("/account", "_parent");
 });
 
 document.getElementById("signin-container").addEventListener('click', function() {
