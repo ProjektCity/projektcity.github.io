@@ -1,6 +1,6 @@
 <!-- Header -->
 <p>
-    <img style="display: block; margin-left: auto; margin-right: auto; padding-bottom: 25px;" src="https://projektcity.github.io/assests/images/header/Projekt%20City%20Header.png" width="100%" />
+    <img style="display: block; margin-left: auto; margin-right: auto; padding-bottom: 25px;" src="https://projektcity.github.io/assets/images/header/Projekt%20City%20Header.png" width="100%" />
 </p>
 <!-- Our mission -->
 <p align="center">
@@ -16,7 +16,7 @@
 <br>
 <!-- Informations -->
 <p>
-    <img style="display: block; margin-left: auto; margin-right: auto; padding-bottom: 25px;" src="https://projektcity.github.io/assests/images/header/Informations.png" width="100%" />
+    <img style="display: block; margin-left: auto; margin-right: auto; padding-bottom: 25px;" src="https://projektcity.github.io/assets/images/header/Informations.png" width="100%" />
 </p>
 <h2 align="center">
     <span style="font-size: 24px; color: gray;">Project start:&nbsp;</span>
@@ -52,7 +52,7 @@
 </p>
 <!-- Map information -->
 <p>
-    <img style="padding-top: 75px; padding-bottom: 25px; display: block; margin-left: auto; margin-right: auto;" src="https://projektcity.github.io/assests/images/header/Map.png" width="100%" />
+    <img style="padding-top: 75px; padding-bottom: 25px; display: block; margin-left: auto; margin-right: auto;" src="https://projektcity.github.io/assets/images/header/Map.png" width="100%" />
 </p>
 <p align="center">
     <span style="font-size: 18px;">A long highway with cars and which leads to the airport, the city and other places in the region</span>
@@ -106,7 +106,7 @@
 </p>
 <!-- Support -->
 <p>
-    <img style="padding-top: 75px; padding-bottom: 25px;" src="https://projektcity.github.io/assests/images/header/Socials.png" width="100%"/>
+    <img style="padding-top: 75px; padding-bottom: 25px;" src="https://projektcity.github.io/assets/images/header/Socials.png" width="100%"/>
 </p>
 <h1 align="center">
     <span style="font-size: 35px; color: #7393b3;">
