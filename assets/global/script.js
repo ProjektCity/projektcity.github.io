@@ -135,7 +135,9 @@ document.addEventListener("DOMContentLoaded", function() {
     } else {
         const token = localStorage.getItem('discord_token');
         if (token) {
-            console.log("[DISCORD] User is signed in.");
+            setTimeout(() => {
+                console.log("[DISCORD] User is signed in.");
+            }, 10);
             getUserInfo(token);
         } else {
             console.log("[DISCORD] User is not signed in.");
@@ -172,7 +174,7 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     }
     
-    console.log("[BUILD INFO] Release Channel: stable, Build Number: #664, Update date: 04/09/2025");
+    console.log("[BUILD INFO] Release Channel: stable, Build Number: #665, Update date: 04/09/2025");
     setTimeout(() => {
         console.log(`[USER] get-userdevice=${deviceType}`);
         console.log(`[USER] get-userbrowser=${browser}`);
