@@ -1074,12 +1074,11 @@
                 animate();
             }
         
-            // Reset inactivity timer
             clearTimeout(mouseStillTimeout);
             mouseStillTimeout = setTimeout(() => {
                 isAnimating = false;
                 cancelAnimationFrame(animationFrameId);
-            }, 100); // Pause after 100ms Stillstand
+            }, 100);
         }
     
         image.addEventListener('mousemove', (e) => {
@@ -1093,7 +1092,7 @@
             targetX = 0;
             targetY = 0;
             isAnimating = true;
-            animate(); // animate zurück zur neutralen Position
+            animate();
         });
     
         function animate() {

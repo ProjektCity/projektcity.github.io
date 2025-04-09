@@ -739,6 +739,7 @@
             if (/mobile|android|iphone|ipad|ipod|blackberry|windows phone/i.test(userAgent)) {
                 // Setting font sizes
                 document.querySelector(".dt-gf-div-copy").innerHTML = `<a>&copy; 2025 Projekt City Ltd.</a><br><a>All rights reserved!</a><br><div style="font-size: 20px;"><a>Made with ❤️ in&nbsp;</a><a style="color: #000000;">GE</a><a style="color: #DD0000;">RMA</a><a style="color: #FFCE00;">NY</a></div>`;
+                // Cookie Banner
                 document.documentElement.style.overflowY = "hidden";
                 document.getElementById("cookie-selector").style.display = "none";
                 document.getElementById("cookie-banner").style.display = "none";
@@ -753,7 +754,6 @@
                 document.querySelector(".dt-footer").style.display = "block";
                 // Removing Mobile Elements
                 document.getElementById("mb-placeholder").style.display = "none";
-                // Cookie Banner
                 return "desktop";
             }
         }
