@@ -25,3 +25,19 @@
 #CookieChanger, #SendComplaint {
     cursor: pointer;
 }
+
+@media (min-width: 0px) and (max-width: 310px) {
+    .dt-gf-div-line {
+        font-size: 11px;
+    }
+
+    .dt-gf-div-copy {
+        font-size: 1.5em;
+    }
+}
+
+@media (min-width: 310px) and (max-width: 500px) {
+    .dt-gf-div-line {
+        font-size: 13px;
+    }
+}

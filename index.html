@@ -1166,9 +1166,6 @@
             const userAgent = navigator.userAgent.toLowerCase();
             if (/mobile|android|iphone|ipad|ipod|blackberry|windows phone/i.test(userAgent)) {
                 // Setting font sizes
-                document.querySelectorAll(".dt-gf-div-line").forEach(el => {
-                    el.style.fontSize = "13px";
-                });
                 document.querySelector(".dt-gf-div-copy").innerHTML = `<a>&copy; 2025 Projekt City Ltd.</a><br><a>All rights reserved!</a><br><div style="font-size: 20px;"><a>Made with ❤️ in&nbsp;</a><a style="color: #000000;">GE</a><a style="color: #DD0000;">RMA</a><a style="color: #FFCE00;">NY</a></div>`;
                 document.querySelectorAll(".dt-map-content-text").forEach(el => {
                     el.style.fontSize = "20px";

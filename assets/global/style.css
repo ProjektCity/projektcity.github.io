@@ -970,7 +970,10 @@ input[type="text"] {
     #send-report {
         margin-top: 10px;
     }
-    
+
+    .header1 h1 {
+        font-size: 2em;
+    }
 }
 
 @media (min-width: 310px) and (max-width: 500px) {
@@ -994,6 +997,10 @@ input[type="text"] {
 
     #send-report {
         margin-top: 10px;
+    }
+
+    .header1 h1 {
+        font-size: 2em;
     }
 }
 
