@@ -38,9 +38,11 @@ document.addEventListener("DOMContentLoaded", function () {
             console.log("Cookies have not yet been accepted");
         }
     } else {
-        linkoutContinueBtn.remove();
-        document.getElementById("linkoutURLpretext").remove();
-        URLtag.style.color = "#D50100";
+        setTimeout(() => {
+            linkoutContinueBtn.style.display = "none";
+            document.getElementById("linkoutURLpretext").style.display = "none";;
+            URLtag.style.color = "#D50100";
+        }, 100);
     }
 });
 
