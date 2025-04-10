@@ -57,6 +57,18 @@ document.getElementById('shareButton').addEventListener('click', async () => {
     }
 });
 
+window.addEventListener('scroll', function () {
+    const header = document.querySelector('.dt-p-header');
+    const mobileHeader = document.getElementById('mobile-header');
+    if (window.scrollY > 10) {
+        header.classList.add('window-scrolling');
+        mobileHeader.classList.add('window-scrolling');
+    } else {
+        header.classList.remove('window-scrolling');
+        mobileHeader.classList.remove('window-scrolling');
+    }
+});
+
 document.addEventListener("DOMContentLoaded", function() {
     function generateStyles() {
         const elements = document.querySelectorAll('*');
@@ -174,7 +186,7 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     }
     
-    console.log("[BUILD INFO] Release Channel: stable, Build Number: #665, Update date: 04/09/2025");
+    console.log("[BUILD INFO] Release Channel: stable, Build Number: #666, Update date: 04/10/2025");
     setTimeout(() => {
         console.log(`[USER] get-userdevice=${deviceType}`);
         console.log(`[USER] get-userbrowser=${browser}`);
@@ -184,20 +196,4 @@ document.addEventListener("DOMContentLoaded", function() {
             console.log('%cThis is a browser feature intended for developers and debuggers only and may contain sensitive links and information about you, your data and private information, account/s, device, browser and current session. \nScammers have been known to encourage people to copy and/or paste information or run commands on the command line to hack accounts or access sensitive data. If you do not know what you are doing, do not proceed and close the debug menu! \nThe information that is/will be visible above and below this text is only for the development and improvement of the site and helps to find and fix bugs and other problems in JavaScript faster. \nFor more information about this message and what you can do if you have been taken in by a scam, please visit the following address: https://projektcity.github.io/helpcenter/debug-menu', 'color: red; font-size: 12.5px;');  
         }, 240);
     }, 4);
-});
-
-window.addEventListener('scroll', function () {
-    const header = document.querySelector('.dt-p-header');
-    const mobileHeader = document.getElementById('mobile-header');
-    if (window.scrollY > 0) {
-        header.classList.add('window-scrolling');
-        mobileHeader.classList.add('window-scrolling');
-    } else {
-        header.classList.remove('window-scrolling');
-        mobileHeader.classList.remove('window-scrolling');
-    }
-});
-
-window.addEventListener('DOMContentLoaded', () => {
-    document.querySelector('.dt-p-header').style.display = 'block';
 });
