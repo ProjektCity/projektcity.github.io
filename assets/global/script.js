@@ -107,7 +107,7 @@ document.addEventListener("DOMContentLoaded", function() {
         if (/mobile|android|iphone|ipad|ipod|blackberry|windows phone/i.test(userAgent)) {
            return "mobile";
         } else {
-            document.querySelector(".mobile-menu").remove();
+            document.querySelector(".mobile-menu").style.display = "none";
             return "desktop";
         }
     }

@@ -23,6 +23,10 @@ document.addEventListener("DOMContentLoaded", function() {
             document.getElementById("profileinformation").style.display = 'block';
             document.getElementById("email-header").style.display = 'block';
             getUserInfo(token);
+        } if (!token) {
+            setTimeout(() => {
+                window.open("https://discord.com/oauth2/authorize?client_id=1308503690449256561&redirect_uri=https://projektcity.github.io/login&response_type=token&scope=identify%20email", "_parent");
+            }, 1000);
         }
     }
 });
@@ -55,6 +59,9 @@ function getUserInfo(token) {
         document.getElementById("mb-signin-container").style.display = 'none';
         document.getElementById("welcome-container").style.display = 'block';
         document.getElementById("mb-welcome-container").style.display = 'block';
+        setTimeout(() => {
+            window.open("/account", "_parent");
+        }, 1000);
     })
     .catch(error => {
         console.error("Error while receiving user information:", error);
@@ -69,7 +76,7 @@ document.getElementById("signinbtn").addEventListener('click', function() {
 
 document.getElementById('signout-btn').addEventListener('click', function() {
     localStorage.removeItem('discord_token');
-    window.open("/login/return?signin-type=logout&redirect_url=https://projektcity.github.io/login?utm_src=login_page_logout_btn&utm_medium=discord_x_projektcity", "_parent");
+    window.open("/login/forward?signin-type=logout&redirect_url=https://projektcity.github.io/login?utm_src=login_page_logout_btn&utm_medium=discord_x_projektcity", "_parent");
 });
 
 document.addEventListener("DOMContentLoaded", function() {

@@ -41,6 +41,8 @@ function getUserInfo(token) {
 
             document.getElementById("profile-pic").src = avatarUrl;
             document.getElementById("mb-profile-pic").src = avatarUrl;
+            document.getElementById("accountOpener").style.display = 'block';
+            document.getElementById("LoginOpener").style.display = 'none';
     })
     .catch(error => {
         console.error("Error while receiving user information:", error);

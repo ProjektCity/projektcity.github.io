@@ -100,5 +100,5 @@ document.getElementById("enableAutofill").addEventListener("click", function() {
 
 document.getElementById('signout-btn').addEventListener('click', function() {
     localStorage.removeItem('discord_token');
-    window.open("/login/return?signin-type=logout&redirect_url=https://projektcity.github.io/login?utm_src=login_page_logout_btn&utm_medium=discord_x_projektcity", "_parent");
+    window.open("/login/forward?signin-type=logout&redirect_url=https://projektcity.github.io/?utm_src=login_page_logout_btn&utm_medium=discord_x_projektcity", "_parent");
 });
