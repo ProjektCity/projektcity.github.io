@@ -1,5 +1,3 @@
-/* Desktop */
-
 .dt-gf-div-copy {
     font-size: 2em;
     font-weight: 400;
@@ -17,9 +15,9 @@
 
 .dt-footer-content {
     padding-bottom: 15px;
-    padding-top: 15px;
     padding-left: 5px;
     padding-right: 5px;
+    padding-top: 15px;
 }
 
 #CookieChanger, #SendComplaint {
@@ -27,12 +25,12 @@
 }
 
 @media (min-width: 0px) and (max-width: 310px) {
-    .dt-gf-div-line {
-        font-size: 11px;
-    }
-
     .dt-gf-div-copy {
         font-size: 1.5em;
+    }
+    
+    .dt-gf-div-line {
+        font-size: 11px;
     }
 }
 

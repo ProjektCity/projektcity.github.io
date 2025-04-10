@@ -1,8 +1,8 @@
 .legal-header {
-    min-width: 300px;
     max-width: 1150px;
     margin: 0 auto;
     min-height: 50px;
+    min-width: 300px;
     text-align: center;
 }
 
@@ -13,10 +13,10 @@
 .legal-text-section {
     font-size: 1.56em;
     line-height: 37.5px;
-    min-width: 300px;
-    max-width: 1150px;
     margin: 0 auto;
+    max-width: 1150px;
     min-height: 40px;
+    min-width: 300px;
     text-align: left;
 }
 
@@ -69,8 +69,8 @@
 }
 
 .legal-ul {
-    margin-block-start: 0em;
     margin-block-end: 0em;
+    margin-block-start: 0em;
 }
 
 .btt-btn {

@@ -1,9 +1,9 @@
 .mb-trailer-container {
     background-color: #1B1D1E;
     display: none;
-    height: 169px;
     flex-direction: column;
     font-family: Arial, sans-serif;
+    height: 169px;
     justify-content: center;
     margin: 0;
     padding: 0;
@@ -20,13 +20,13 @@
 }
 
 .mb-image-slider {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    display: nonemb-image-slider;
-    flex-direction: column;
-    justify-content: center;
     align-items: center;
     background-color: #1B1D1E;
     color: #fff;
+    display: nonemb-image-slider;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
 }

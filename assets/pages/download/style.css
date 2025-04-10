@@ -33,9 +33,9 @@
 }
 
 .dt-download-project-information-text {
+    font-size: 35px;
     height: 102px;
     padding: 19px;
-    font-size: 35px;
 }
 
 .dt-download-project-information-text-top {
@@ -60,8 +60,8 @@
 }
 
 .dt-table, .dt-td, .dt-tr {
-    border-top: 1px solid #fff;
     border-collapse: collapse;
+    border-top: 1px solid #fff;
     font-weight: 200;
     text-align: left;
 }
@@ -72,8 +72,8 @@
 
 /* List */
 ul {
-    margin-block-start: 0em;
     margin-block-end: 0em;
+    margin-block-start: 0em;
 }
 
 .dt-th-l1 {
@@ -82,11 +82,11 @@ ul {
 }
 
 .dt-th-l2 {
-    text-align: left;
-    padding-left: 9px;
-    padding-right: 9px;
     max-width: 280px;
     min-width: 180px;
+    padding-left: 9px;
+    padding-right: 9px;
+    text-align: left;
 }
 
 .dt-th-l3 {
@@ -172,7 +172,7 @@ ul {
 }
 
 .dt-tooltip {
-    align-items: center; 
+    align-items: center;
     cursor: pointer;
     display: inline-flex;
     font-weight: 200;
@@ -185,11 +185,11 @@ ul {
     border-radius: 5px;
     color: #fff;
     left: 50%;
-    margin-left: -95px;
     opacity: 0;
     position: absolute;
     text-align: center;
     top: 100%;
+    transform: translateX(-50%);
     transition: opacity 0.25s;
     width: 180px;
     z-index: 1;
@@ -208,7 +208,7 @@ ul {
 
 .dt-middle-bracket {
     color: #fff;
-    font-size: 25px; 
+    font-size: 25px;
 }
   
 .dt-tooltiptext {
@@ -288,9 +288,9 @@ ul {
 .dt-download-footer-information {
     font-size: 10px;
     margin: 0 auto;
-    text-align: center;
-    max-width: 1000px;
     min-width: 300px;
+    max-width: 1000px;
+    text-align: center;
 }
 
 /* Individual Download Site */

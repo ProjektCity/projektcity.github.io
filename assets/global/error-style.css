@@ -1,3 +1,7 @@
+html, body {
+    height: 100%;
+}
+
 .error-container {
     color: var(--tt);
     display: flex;
@@ -5,7 +9,8 @@
     max-width: 1200px;
     padding: 10px;
     position: relative;
-    transform: translateY(10%);
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 .error-container-left {
@@ -45,21 +50,21 @@
     transform: translateY(-50%);
 }
 
-.parallax-container {
+.dynamic-container {
+    height: fit-content;
     perspective: 1000px;
     width: fit-content;
-    height: fit-content;
 }
 
-.parallax-image {
-    width: 400px;
-    height: 400px;
+.dynamic-image {
     background-image: url('/assets/images/logos/mainlogo.png');
-    background-size: cover;
     background-position: center;
+    background-size: cover;
     border-radius: 12px;
-    transform-style: preserve-3d;
+    height: 400px;
     transition: transform 0.1s ease;
+    transform-style: preserve-3d;
+    width: 400px;
 }
 
 @media (max-width: 900px) {

@@ -120,7 +120,6 @@
 .general-element-top {
     color: var(--tt-2);
     font-size: 18px;
-    
 }
 
 .general-element-bottom {
@@ -130,17 +129,17 @@
 }
 
 .preferences-maincontent {
-
+    width: 100%;
 }
 
 .preferences-action {
     align-items: center;
+    border: 1px solid var(--bg-2);
+    border-radius: 10px;
     display: flex;
     justify-content: space-between;
     margin: 10px 0;
     padding: 10px;
-    border: 1px solid var(--bg-2);
-    border-radius: 10px;
 }
 
 .preferences-left {
@@ -151,20 +150,20 @@
 }
 
 .preferences-header a {
+    color: var(--tt-1);
     font-size: 18px;
     font-weight: bold;
-    color: var(--tt-1);
     text-decoration: none;
 }
 
 .preferences-description a {
-    font-size: 14px;
     color: var(--tt-2);
-    text-decoration: none;
+    font-size: 14px;
     line-height: 1.5;
+    text-decoration: none;
 }
 
 .preferences-switcher {
-    display: flex;
     align-items: center;
+    display: flex;
 }

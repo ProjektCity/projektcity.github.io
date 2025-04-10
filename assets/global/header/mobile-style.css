@@ -1,14 +1,14 @@
 #mobile-header {
-    background-color: #1B1D1E; /* Anfangszustand */
+    background-color: #1B1D1E;
     position: fixed;
-    z-index: 99999;
-    width: 100%;
     transition: background-color 0.3s ease, backdrop-filter 0.3s ease;
+    width: 100%;
+    z-index: 99999;
 }
 
 #mobile-header.window-scrolling {
-    background-color: rgba(36, 38, 43, 0.25); /* halbtransparent */
     backdrop-filter: blur(10px);
+    background-color: rgba(36, 38, 43, 0.25);
     -webkit-backdrop-filter: blur(10px);
 }
 
@@ -23,38 +23,38 @@
     -webkit-user-select: none;
     -khtml-user-select: none;
     -moz-user-select: none;
-    -ms-user-select: none; 
+    -ms-user-select: none;
     user-select: none;
 }
 
 .mb-head {
-    min-width: 300px;
     margin: 0 auto;
     max-width: 400px;
+    min-width: 300px;
 }
 
 .mb-header {
     height: 100%;
-    min-width: 300px;
     max-width: 400px;
+    min-width: 300px;
 }
 
 .mb-top-menu {
+    background-color: #24262B;
     border: 1px solid #32333C;
     border-radius: 5px;
-    background-color: #24262B;
     height: 50px;
-    min-width: 298px;
     max-width: 398px;
+    min-width: 298px;
 }
 
 .mb-box-container {
-    min-width: 298px;
     max-width: 398px;
+    min-width: 298px;
 }
 
 .mb-left-column {
-    
+    width: auto;
 }
 
 .mb-information {
@@ -76,19 +76,20 @@
 .mb-text {
     height: 50px;
     margin-left: 2.5px;
-    min-width: 250px;
     max-width: 350px;
+    min-width: 250px;
 }
 
 .mb-text-inner {
-    font-family: 'Poppins', sans-serif;
-    font-weight: 100;
     background-color: #24262B;
     border-radius: 5px;
     color: white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 100;
     height: 50px;
     margin: 0;
     overflow: hidden;
+    /* Non selectable text */
     -webkit-touch-callout: none;
     -webkit-user-select: none;
     -khtml-user-select: none;
@@ -107,16 +108,16 @@
 }
 
 .mb-middle-menu {
+    background-color: #24262B;
     border: 1px solid #32333C;
     border-radius: 5px;
-    background-color: #24262B;
     height: 50px;
     min-width: 298px;
     max-width: 398px;
 }
 
 .mb-right-column {
-
+    width: auto;
 }
 
 .mb-others {
@@ -154,26 +155,26 @@
 }
 
 .mb-container {
-    width: 180px;
-    height: 50px;
-    overflow: hidden;
-    animation-name: initialMBWidth;
     animation-duration: 1s;
     animation-fill-mode: forwards;
+    animation-name: initialMBWidth;
+    height: 50px;
+    overflow: hidden;
+    width: 180px;
 }
 
 .mb-scrolling-items {
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-name: infiniteMBScroll;
+    animation-timing-function: linear;
     display: flex;
     font-size: 33px;
     width: 2740.32px;
     /* 
-        width = [TW * 1.5]
+        width = [TW * 1.5] on 100% zoom level
         TW = total width of text
     */
-    animation-name: infiniteMBScroll;
-    animation-duration: 20s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
 }
 
 .mb-scrolling-item {

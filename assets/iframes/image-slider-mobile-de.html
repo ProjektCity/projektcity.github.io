@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Image Carousel</title>
+    <title>Image Carousel for Projekt City</title>
     <style>
         body {
             align-items: center;
             background-color: #1B1D1E;
             color: #fff;
             display: flex;
-            font-family: Arial, sans-serif;
             flex-direction: column;
+            font-family: Arial, sans-serif;
             height: 100vh;
             justify-content: center;
             margin: 0;
@@ -27,12 +27,10 @@
             width: 300px;
         }
 
-        .carousel ul {
-            display: flex;
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            transition: transform 0.5s ease-in-out;
+        .carousel img {
+            display: block;
+            height: 160.5px;
+            width: 100%;
         }
 
         .carousel li {
@@ -40,41 +38,12 @@
             min-width: 100%;
         }
 
-        .carousel img {
-            display: block;
-            height: 160.5px;
-            width: 100%;
-        }
-
-        .navbtn-prev, .navbtn-next {
-            background-color: rgba(0, 0, 0, 0.5);
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            height: 30px;
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-            width: 30px;
+        .carousel ul {
             display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .navbtn-prev {
-            left: 5px;
-        }
-
-        .navbtn-next {
-            right: 5px;
-        }
-
-        .navbtn-inner {
-            align-items: center;
-            display: flex;
-            height: 100%;
-            justify-content: center;
-            width: 100%;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            transition: transform 0.5s ease-in-out;
         }
 
         .indicators {
@@ -85,8 +54,8 @@
 
         .indicators button {
             background-color: #bbb;
-            border-radius: 0.9375px;
             border: none;
+            border-radius: 0.9375px;
             cursor: pointer;
             height: 2px;
             margin: 0 1.875px;
@@ -113,15 +82,6 @@
             width: 0;
         }
 
-        @keyframes fill {
-            0% {
-                width: 0;
-            }
-            100% {
-                width: 100%;
-            }
-        }
-
         .li-img {
             position: relative;
         }
@@ -130,13 +90,62 @@
             background-color: rgba(255, 255, 255, 0.5);
             color: #333;
             font-size: 6.7125px;
+            margin-top: -22.5px;
             max-height: 15px;
             min-height: 7.5px;
-            margin-top: -22.5px;
             padding: 1.875px;
             position: relative;
             text-align: center;
             width: 296.25px;
+        }
+
+        .navbtn-inner {
+            align-items: center;
+            display: flex;
+            height: 100%;
+            justify-content: center;
+            width: 100%;
+        }
+
+        .navbtn-next {
+            align-items: center;
+            background-color: rgba(0, 0, 0, 0.5);
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            display: flex;
+            height: 30px;
+            justify-content: center;
+            position: absolute;
+            right: 5px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 30px;
+        }
+
+        .navbtn-prev {
+            align-items: center;
+            background-color: rgba(0, 0, 0, 0.5);
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            display: flex;
+            height: 30px;
+            justify-content: center;
+            left: 5px;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 30px;
+        }
+
+        @keyframes fill {
+            0% {
+                width: 0;
+            }
+            100% {
+                width: 100%;
+            }
         }
     </style>
 </head>

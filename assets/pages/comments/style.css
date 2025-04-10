@@ -1,12 +1,12 @@
 .comment-section {
+    border-radius: 5px;
     border: 1px solid #fff;
     margin-bottom: 20px;
     padding: 10px;
-    border-radius: 5px;
 }
 
 .comment-writing-container {
-
+    width: 100%;
 }
 
 .form-actions {
@@ -35,20 +35,19 @@
 }
 
 .form-input {
-    width: 100% !important;
-    height: 40px;
-    font-size: 16px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    padding: 0 15px;
-    font-size: 16px;
     box-sizing: border-box;
+    font-size: 16px;
+    height: 40px;
+    padding: 0 15px;
+    width: 100% !important;
 }
 
 .comment-form-send {
-    border-radius: 15px;
     background-color: var(--bg);
     border: 1px solid var(--tt);
+    border-radius: 15px;
     color: var(--tt);
     cursor: pointer;
     display: inline-flex;
@@ -73,11 +72,11 @@
 }
 
 .comments-list {
-
+    width: auto;
 }
 
 .comments-list-empty {
-
+    width: auto;
 }
 
 /* Comment design */
@@ -95,22 +94,22 @@
 }
 
 .comment-item-profileimage {
-    width: 50px;
-    height: 50px;
     border-radius: 50%;
+    height: 50px;
     margin-right: 10px;
+    width: 50px;
 }
 
 .comment-item-letter {
     align-items: center;
     background-color: #eb3b5a;
     border-radius: 50%;
-    font-weight: 500;
     font-size: 25px;
+    font-weight: 500;
+    height: 50px;
     text-align: center;
     position: absolute;
     width: 50px;
-    height: 50px;
 }
 
 #comments-item-letter {
@@ -121,7 +120,7 @@
 }
 
 .comment-item-username-date {
-
+    width: auto;
 }
 
 .comments-nocomment {
@@ -134,14 +133,14 @@
 
 .comments-nocomment-right {
     font-size: 20px;
-    min-height: 28px;
     margin: 2.5px;
+    min-height: 28px;
 }
 
 @media (max-width: 635px) {
     .form-action {
-        width: 100%;
         margin: 0;
+        width: 100%;
     }
 
     .form-actions {

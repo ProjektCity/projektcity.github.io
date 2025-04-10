@@ -1,14 +1,14 @@
 .dt-helpcenter-header {
     height: auto;
-    text-align: center;
     max-width: 1150px;
     min-width: 300px;
+    text-align: center;
 }
 
 .dt-helpcenter-information-container {
     height: auto;
-    min-width: 300px;
     max-width: 1150px;
+    min-width: 300px;
 }
 
 .dt-helpcenter-ic-header {
@@ -20,8 +20,8 @@
 }
 
 .dt-helpcenter-ul {
-    margin-block-start: 0em;
     margin-block-end: 0em;
+    margin-block-start: 0em;
 }
 
 .dt-import-world-container {
@@ -37,5 +37,5 @@
 }
 
 .dt-helpcenter-enumeration-right {
-    
+    width: auto;
 }

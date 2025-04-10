@@ -11,33 +11,34 @@
     -webkit-user-select: none;
     -khtml-user-select: none;
     -moz-user-select: none;
-    -ms-user-select: none; 
+    -ms-user-select: none;
     user-select: none;
 }
 
 .dt-gh-ui-navbar {
     height: 72.5px;
-    padding-top: 15px;
     padding-bottom: 15px;
+    padding-top: 15px;
 }
 
 .dt-p-header {
-    background-color: #1b1d1e; /* Anfangszustand */
+    background-color: #1b1d1e;/* Anfangszustand */
     border-bottom: 2px solid rgba(255, 255, 255, 0.25);
     display: none;
     height: 104.5px;
     left: 0;
     position: fixed;
     top: 0;
+    transition: background-color 0.3s ease, backdrop-filter 0.3s ease;
     width: 100%;
     z-index: 99999;
+    /* Non selectable text */
     -webkit-touch-callout: none;
     -webkit-user-select: none;
     -khtml-user-select: none;
     -moz-user-select: none;
-    -ms-user-select: none; 
+    -ms-user-select: none;
     user-select: none;
-    transition: background-color 0.3s ease, backdrop-filter 0.3s ease;
 }
 
 .dt-p-header.window-scrolling {
@@ -225,18 +226,18 @@ img {
 }
 
 .dt-container {
-    font-weight: 100;
-    font-family: 'Poppins', sans-serif;
-    background-color: transparent;
-    color: white;
-    margin: 0;
-    overflow: hidden;
-    margin-left: 5px;
-    width: 180px;
-    height: 50px;
-    animation-name: initialWidth;
     animation-duration: 1s;
     animation-fill-mode: forwards;
+    animation-name: initialWidth;
+    background-color: transparent;
+    color: white;
+    font-weight: 100;
+    font-family: 'Poppins', sans-serif;
+    height: 50px;
+    margin: 0;
+    margin-left: 5px;
+    overflow: hidden;
+    width: 180px;
 }
 
 .dt-scrolling-items {
@@ -245,7 +246,7 @@ img {
     font-size: 33px;
     width: 2740.32px;
     /* 
-        width = [TW * 1.5]
+        width = [TW * 1.5] on 100% zoom level
         TW = total width of text
     */
     animation-name: infiniteScroll;
@@ -265,12 +266,12 @@ img {
 }
 
 .parallax-image {
-    width: 50px;
-    height: 50px;
     background-image: url('https://media.forgecdn.net/avatars/911/517/638366219563911068.png');
-    background-size: cover;
     background-position: center;
+    background-size: cover;
     border-radius: 12px;
+    height: 50px;
     transform-style: preserve-3d;
     transition: transform 0.05s ease;
+    width: 50px;
 }

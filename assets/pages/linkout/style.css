@@ -4,19 +4,19 @@
 }
 
 .linkout-button-frame {
-    display: flex;
-    justify-content: center;
     align-items: center;
+    display: flex;
     flex-wrap: wrap;
-    margin-top: 20px;
+    justify-content: center;
     margin-bottom: 20px;
+    margin-top: 20px;
     
 }
 
 .linkout-button-container {
     display: flex;
     flex-wrap: wrap;
-    gap: 10px; /* Abstand zwischen den Elementen */
+    gap: 10px;
     margin-bottom: 10px;
     margin-top: 10px;
     width: 100%;
