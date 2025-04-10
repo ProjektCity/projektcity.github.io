@@ -3,7 +3,6 @@
     display: flex;
     margin: 0 auto;
     max-width: 1200px;
-    overflow: hidden;
     padding: 10px;
     position: relative;
     transform: translateY(10%);

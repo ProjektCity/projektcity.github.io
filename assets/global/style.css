@@ -16,6 +16,7 @@ html, body {
     color: var(--tt);
     font-family: 'Poppins';
     font-weight: 200;
+    height: 100%;
     margin: 0px;
     margin-inline: 0px;
     padding: 0px;
