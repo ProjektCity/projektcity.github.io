@@ -51,6 +51,10 @@ function getUserInfo(token) {
         document.getElementById("profile-pic").src = avatarUrl;
         document.getElementById("profileinformation").style.display = 'block';
         document.getElementById("signincontainer").style.display = 'none';
+        document.getElementById("signin-container").style.display = 'none';
+        document.getElementById("mb-signin-container").style.display = 'none';
+        document.getElementById("welcome-container").style.display = 'block';
+        document.getElementById("mb-welcome-container").style.display = 'block';
     })
     .catch(error => {
         console.error("Error while receiving user information:", error);
