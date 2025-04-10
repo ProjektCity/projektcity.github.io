@@ -1,8 +1,15 @@
 #mobile-header {
-    background-color: #1B1D1E;
+    background-color: #1B1D1E; /* Anfangszustand */
     position: fixed;
     z-index: 99999;
     width: 100%;
+    transition: background-color 0.3s ease, backdrop-filter 0.3s ease;
+}
+
+#mobile-header.window-scrolling {
+    background-color: rgba(36, 38, 43, 0.25); /* halbtransparent */
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
 }
 
 .mb-gh-ui-navbar {
@@ -120,6 +127,10 @@
     cursor: pointer;
     height: 50px;
     width: 50px;
+}
+
+.mb-clickelement .dt-login {
+    margin-top: 1.5px;
 }
 
 @keyframes initialMBWidth {

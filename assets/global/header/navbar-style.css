@@ -17,13 +17,40 @@
 
 .dt-gh-ui-navbar {
     height: 72.5px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.dt-p-header {
+    background-color: #1b1d1e; /* Anfangszustand */
+    border-bottom: 2px solid rgba(255, 255, 255, 0.25);
+    display: none;
+    height: 104.5px;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 99999;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none; 
+    user-select: none;
+    transition: background-color 0.3s ease, backdrop-filter 0.3s ease;
+}
+
+.dt-p-header.window-scrolling {
+    background-color: rgba(36, 38, 43, 0.25);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
 }
 
 .dt-header {
-    background-color: #24262B;
-    border: 1px solid #32333C;
+    background-color: rgba(36, 38, 43, 1);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border: 1px solid rgba(50, 51, 60, 0.5);
     border-radius: 10px;
     height: 53px;
     padding: 10px;

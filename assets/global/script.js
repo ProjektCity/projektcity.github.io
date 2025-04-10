@@ -185,3 +185,19 @@ document.addEventListener("DOMContentLoaded", function() {
         }, 240);
     }, 4);
 });
+
+window.addEventListener('scroll', function () {
+    const header = document.querySelector('.dt-p-header');
+    const mobileHeader = document.getElementById('mobile-header');
+    if (window.scrollY > 0) {
+        header.classList.add('window-scrolling');
+        mobileHeader.classList.add('window-scrolling');
+    } else {
+        header.classList.remove('window-scrolling');
+        mobileHeader.classList.remove('window-scrolling');
+    }
+});
+
+window.addEventListener('DOMContentLoaded', () => {
+    document.querySelector('.dt-p-header').style.display = 'block';
+});
