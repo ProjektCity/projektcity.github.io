@@ -1,6 +1,5 @@
 body {
     height: 100vh;
-    overflow-y: hidden;
 }
 
 .error-container {
@@ -20,7 +19,8 @@ body {
     word-break: normal;
 }
 
-.error-container-left p, .error-container-left a {
+.error-container-left p,
+.error-container-left a {
     font-size: 30px;
     margin-block-end: 0.1em;
     margin-block-start: 0.1em;
@@ -74,7 +74,8 @@ body {
 }
 
 @media (max-width: 600px) {
-    .error-container-left p, .error-container-left a {
+    .error-container-left p,
+    .error-container-left a {
         font-size: 20px;
     }
 }
