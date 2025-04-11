@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", function() {
             getUserInfo(token);
         } else {
             console.log("[DISCORD] No access token found in local storage.");
-            // window.open("https://discord.com/oauth2/authorize?client_id=1308503690449256561&redirect_uri=https://projektcity.github.io/account&response_type=token&scope=identify%20email", "_parent");
+            window.open("https://discord.com/oauth2/authorize?client_id=1308503690449256561&redirect_uri=https://projektcity.github.io/account&response_type=token&scope=identify%20email", "_parent");
         }
     }
 
