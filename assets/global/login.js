@@ -38,7 +38,6 @@ function getUserInfo(token) {
             : `https://cdn.discordapp.com/embed/avatars/${user.discriminator % 5}.png`;
 
             document.getElementById("profile-pic").src = avatarUrl;
-            document.getElementById("mb-profile-pic").src = avatarUrl;
             document.getElementById("accountOpener").style.display = 'block';
             document.getElementById("LoginOpener").style.display = 'none';
     })

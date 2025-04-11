@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", function() {
             getUserInfo(token);
         } if (!token) {
             setTimeout(() => {
-                window.open("https://discord.com/oauth2/authorize?client_id=1308503690449256561&redirect_uri=https://projektcity.github.io/login&response_type=token&scope=identify%20email", "_parent");
+                // window.open("https://discord.com/oauth2/authorize?client_id=1308503690449256561&redirect_uri=https://projektcity.github.io/login&response_type=token&scope=identify%20email", "_parent");
             }, 1000);
         }
     }
@@ -51,16 +51,13 @@ function getUserInfo(token) {
             : `https://cdn.discordapp.com/embed/avatars/${user.discriminator % 5}.png`;
 
         document.getElementById("profile-pic-big").src = avatarUrl;
-        document.getElementById("mb-profile-pic").src = avatarUrl;
         document.getElementById("profile-pic").src = avatarUrl;
         document.getElementById("profileinformation").style.display = 'block';
         document.getElementById("signincontainer").style.display = 'none';
         document.getElementById("signin-container").style.display = 'none';
-        document.getElementById("mb-signin-container").style.display = 'none';
         document.getElementById("welcome-container").style.display = 'block';
-        document.getElementById("mb-welcome-container").style.display = 'block';
         setTimeout(() => {
-            window.open("/account", "_parent");
+            // window.open("/account", "_parent");
         }, 1000);
     })
     .catch(error => {

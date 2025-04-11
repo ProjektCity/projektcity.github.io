@@ -33,11 +33,6 @@ document.addEventListener("DOMContentLoaded", function () {
             console.log("Cookies have not yet been accepted");
         }
     } else {
-        document.getElementById("linkoutURLpretext").remove();
-        URLtag.style.color = "#D50100";
+        console.log("An error occured. Try again or report to the owner!")
     }
-});
-
-document.getElementById("linkoutReturnBtn").addEventListener("click", function () {
-    window.history.back();
 });

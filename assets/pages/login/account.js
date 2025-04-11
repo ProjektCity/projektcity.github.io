@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", function() {
             getUserInfo(token);
         } else {
             console.log("[DISCORD] No access token found in local storage.");
-            window.open("https://discord.com/oauth2/authorize?client_id=1308503690449256561&redirect_uri=https://projektcity.github.io/account&response_type=token&scope=identify%20email", "_parent");
+            // window.open("https://discord.com/oauth2/authorize?client_id=1308503690449256561&redirect_uri=https://projektcity.github.io/account&response_type=token&scope=identify%20email", "_parent");
         }
     }
 
@@ -46,9 +46,7 @@ function getUserInfo(token) {
     .then(res => res.json())
     .then(user => {
         document.getElementById("signin-container").style.display = 'none';
-        document.getElementById("mb-signin-container").style.display = 'none';
         document.getElementById("welcome-container").style.display = 'block';
-        document.getElementById("mb-welcome-container").style.display = 'block';
         document.getElementById("username").textContent = user.username;
         document.getElementById("email").textContent = user.email;
         if (localStorage.getItem("autofill") === "true") {
@@ -63,7 +61,6 @@ function getUserInfo(token) {
             : `https://cdn.discordapp.com/embed/avatars/${user.discriminator % 5}.png`;
 
         document.getElementById("profile-pic").src = avatarUrl;
-        document.getElementById("mb-profile-pic").src = avatarUrl;
         console.log("[DISCORD] User information received successfully:", user);
     })
     .catch(error => {
