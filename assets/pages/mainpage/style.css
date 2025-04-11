@@ -1,7 +1,9 @@
 /* Download Count */
 .dt-download-count {
-    height: 100px;
+    height: 75.96px;
     margin: 0 auto;
+    padding: 12.225px;
+    padding-top: 12.225px;
     user-select: none;
     width: 585px;
     -khtml-user-select: none;
@@ -16,16 +18,9 @@
     border: 1px solid #888888;
     border-radius: 5px;
     height: 73.96px;
-    left: 50%;
-    margin-bottom: 12.225px;
-    margin-top: 12.225px;
     overflow: hidden;
     position: relative;
-    transform: translateX(-50%);
     width: 583px;
-    -ms-transform: translateX(-50%);
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
 }
 
 #progressBar {
