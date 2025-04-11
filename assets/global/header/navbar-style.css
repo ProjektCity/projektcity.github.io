@@ -16,13 +16,12 @@
 }
 
 .gh-ui-navbar {
-    height: 72.5px;
     padding-bottom: 15px;
     padding-top: 15px;
 }
 
 .menu-header {
-    background-color: #1b1d1e;/* Anfangszustand */
+    background-color: #1b1d1e;
     border-bottom: 2px solid rgba(255, 255, 255, 0.25);
     display: block !important;
     height: 104.5px;
@@ -92,6 +91,78 @@ img {
 .text {
     height: 50px;
     width: 250px;
+}
+
+.parallax-container {
+    perspective: 1000px;
+}
+
+.parallax-image {
+    background-image: url('https://media.forgecdn.net/avatars/911/517/638366219563911068.png');
+    background-position: center;
+    background-size: cover;
+    border-radius: 12px;
+    height: 50px;
+    transform-style: preserve-3d;
+    transition: transform 0.05s ease;
+    width: 50px;
+}
+
+.container {
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-name: initialWidth;
+    background-color: transparent;
+    color: white;
+    font-weight: 100;
+    font-family: 'Poppins', sans-serif;
+    height: 50px;
+    margin: 0;
+    margin-left: 5px;
+    overflow: hidden;
+    width: 180px;
+}
+
+.scrolling-items {
+    background-color: transparent;
+    display: flex;
+    font-size: 33px;
+    width: 2740.34px;
+    /* 
+        width = [ (Width of .scrolling-item) * 2] on 100% zoom level
+        TW = total width of text
+    */
+    animation-name: infiniteScroll;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.scrolling-item {
+    background-color: transparent;
+    font-weight: 100;
+    white-space: nowrap;
+}
+
+/* Scrolling items */
+@keyframes initialWidth {
+    from {
+        width: 180px;
+    }
+
+    to {
+        width: calc(100% - 55px);
+    }
+}
+
+@keyframes infiniteScroll {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-50%);
+    }
 }
 
 /* Menu */
@@ -252,94 +323,17 @@ img {
     font-size: 12px;
 }
 
-.container {
-    animation-duration: 1s;
-    animation-fill-mode: forwards;
-    animation-name: initialWidth;
-    background-color: transparent;
-    color: white;
-    font-weight: 100;
-    font-family: 'Poppins', sans-serif;
-    height: 50px;
-    margin: 0;
-    margin-left: 5px;
-    overflow: hidden;
-    width: 180px;
-}
-
-.scrolling-items {
-    background-color: transparent;
-    display: flex;
-    font-size: 33px;
-    width: 2740.32px;
-    /* 
-        width = [TW * 1.5] on 100% zoom level
-        TW = total width of text
-    */
-    animation-name: infiniteScroll;
-    animation-duration: 20s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-}
-
-.scrolling-item {
-    background-color: transparent;
-    font-weight: 100;
-    white-space: nowrap;
-}
-
-/* Scrolling items */
-@keyframes initialWidth {
-    from {
-        width: 180px;
-    }
-
-    to {
-        width: calc(100% - 55px);
-    }
-}
-
-@keyframes infiniteScroll {
-    from {
-        transform: translateX(0);
-    }
-
-    to {
-        transform: translateX(-50%);
-    }
-}
-
-.parallax-container {
-    perspective: 1000px;
-}
-
-.parallax-image {
-    background-image: url('https://media.forgecdn.net/avatars/911/517/638366219563911068.png');
-    background-position: center;
-    background-size: cover;
-    border-radius: 12px;
-    height: 50px;
-    transform-style: preserve-3d;
-    transition: transform 0.05s ease;
-    width: 50px;
-}
-
 @media (max-width: 920px) {
     main {
         padding-top: 150px !important;
     }
 
     /* Basic Header Design */
-    .box-container {
-        flex-direction: column;
-        height: 106px;
-        justify-content: center;
-        padding: 0;
-        width: 100%;
+    .gh-ui-navbar {
+        padding: 7.5px !important;
     }
-
     .menu-header {
-        height: 150px !important;
+        height: 140px !important;
     }
 
     .head {
@@ -348,6 +342,14 @@ img {
     
     .header {
         height: 103px !important;
+    }
+
+    .box-container {
+        flex-direction: column;
+        height: 106px;
+        justify-content: center;
+        padding: 0;
+        width: 100%;
     }
 
     #mobileLine {
