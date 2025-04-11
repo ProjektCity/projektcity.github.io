@@ -23,6 +23,12 @@
     width: 583px;
 }
 
+@media (max-width: 920px) {
+    #download-count {
+        display: none;
+    }
+}
+
 #progressBar {
     background-color: #2D2D2D;
     border-radius: 5px;
