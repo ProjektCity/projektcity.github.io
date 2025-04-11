@@ -58,14 +58,11 @@ document.getElementById('shareButton').addEventListener('click', async () => {
 });
 
 window.addEventListener('scroll', function () {
-    const header = document.querySelector('.dt-p-header');
-    const mobileHeader = document.getElementById('mobile-header');
+    const header = document.querySelector('.menu-header');
     if (window.scrollY > 10) {
         header.classList.add('window-scrolling');
-        mobileHeader.classList.add('window-scrolling');
     } else {
         header.classList.remove('window-scrolling');
-        mobileHeader.classList.remove('window-scrolling');
     }
 });
 
@@ -152,7 +149,9 @@ document.addEventListener("DOMContentLoaded", function() {
             }, 10);
             getUserInfo(token);
         } else {
-            console.log("[DISCORD] User is not signed in.");
+            setTimeout(() => {
+                console.log("[DISCORD] User is not signed in.");
+            }, 5);
         }
     }
 
@@ -186,7 +185,7 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     }
     
-    console.log("[BUILD INFO] Release Channel: stable, Build Number: #675, Update date: 04/11/2025");
+    console.log("[BUILD INFO] Release Channel: stable, Build Number: #676, Update date: 04/11/2025");
     setTimeout(() => {
         console.log(`[USER] get-userdevice=${deviceType}`);
         console.log(`[USER] get-userbrowser=${browser}`);

@@ -16,17 +16,13 @@ document.addEventListener('DOMContentLoaded', function() {
         if (language === "de_DE") {
             console.log("[LANG] set-internal-langue=de_DE");
             document.getElementById("german-de_DE").style.display = "block";
-            document.getElementById("mb-german-de_DE").style.display = "block";
             document.getElementById("english-en_US").style.display = "none";
-            document.getElementById("mb-english-en_US").style.display = "none";
             updateToGerman();
         }
         if (language === "en_US") {
             console.log("[LANG] set-internal-langue=en_US");
             document.getElementById("english-en_US").style.display = "block";
-            document.getElementById("mb-english-en_US").style.display = "block";
             document.getElementById("german-de_DE").style.display = "none";
-            document.getElementById("mb-german-de_DE").style.display = "none";
         }
     }, 10);
 });
@@ -50,25 +46,6 @@ document.getElementById("english-en_US").addEventListener("click", function() {
     updateToGerman();
 });
 
-document.getElementById("mb-english-en_US").addEventListener("click", function() {
-    localStorage.setItem('language', 'de_DE');
-    document.getElementById("mb-english-en_US").style.display = "none";
-    document.getElementById("mb-german-de_DE").style.display = "block";
-    console.log("[LANG] set-internal-langue=de_DE");
-    // Language Banner
-    document.getElementById("ui-text-overay").style.display = "block";
-    document.getElementById("ui-content").innerHTML = `<a>Changed the language to "German (DE)"</a>`
-    setTimeout(() => {
-        document.getElementById("ui-text-overay").classList.add("fade-out-animation");
-        setTimeout(() => {
-            document.getElementById("ui-text-overay").style.display = "none";
-            document.getElementById("ui-text-overay").classList.remove("fade-out-animation");
-            document.getElementById("ui-content").innerHTML = ``
-        }, 500);
-    }, 3000);
-    updateToGerman();
-});
-    
 document.getElementById("german-de_DE").addEventListener("click", function() {
     localStorage.setItem('language', 'en_US');
     document.getElementById("english-en_US").style.display = "block";
@@ -77,25 +54,6 @@ document.getElementById("german-de_DE").addEventListener("click", function() {
     // Language Banner
     document.getElementById("ui-text-overay").style.display = "block";
     document.getElementById("ui-content").innerHTML = `<a>Changed the language to "English (US)"</a>`
-    setTimeout(() => {
-        document.getElementById("ui-text-overay").classList.add("fade-out-animation");
-        setTimeout(() => {
-            document.getElementById("ui-text-overay").style.display = "none";
-            document.getElementById("ui-text-overay").classList.remove("fade-out-animation");
-            document.getElementById("ui-content").innerHTML = ``
-        }, 500);
-    }, 3000);
-    updateToEnglish();
-});
-
-document.getElementById("mb-german-de_DE").addEventListener("click", function() {
-    localStorage.setItem('language', 'en_US');
-    document.getElementById("mb-english-en_US").style.display = "block";
-    document.getElementById("mb-german-de_DE").style.display = "none";
-    console.log("[LANG] set-internal-langue=en_US");
-    // Language Banner
-    document.getElementById("ui-text-overay").style.display = "block";
-    document.getElementById("ui-content").innerHTML = `<a>Changed the language to "English (US), please wait."</a>`
     setTimeout(() => {
         document.getElementById("ui-text-overay").classList.add("fade-out-animation");
         setTimeout(() => {

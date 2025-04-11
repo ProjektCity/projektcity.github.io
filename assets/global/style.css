@@ -886,14 +886,6 @@ input[type="text"] {
 }
 
 @media (min-width: 0px) and (max-width: 310px) {
-    .dt-p-header {
-        display: none !important;
-    }
- 
-    #mobile-header {
-        display: none !important;
-    }
-
     /* Report Container */
     .reportc-dialog-titlebar {
         font-size: 17px;
@@ -916,15 +908,7 @@ input[type="text"] {
     }
 }
 
-@media (min-width: 310px) and (max-width: 500px) {
-    .dt-p-header {
-        display: none !important;
-    }
- 
-    #mobile-header {
-        display: block !important;
-    }
-
+@media (min-width: 0px) and (max-width: 500px) {
     /* Report Container */
     .reportc-dialog-footer-btns {
         display: block;
@@ -942,55 +926,4 @@ input[type="text"] {
     .header1 h1 {
         font-size: 2em;
     }
-}
-
-@media (min-width: 500px) {
-    .dt-p-header {
-        display: block !important;
-    }
- 
-    #mobile-header {
-        display: none !important;
-    }
-}
-
-/* Login */
-.dt-login {
-    cursor: pointer;
-    height: 50px;
-}
-
-.header-login-container {
-    height: 50px;
-    width: 100%;
-}
-
-.flexible-welcome-container {
-    display: flex;
-    height: 50px;
-    left: 50%;
-    position: relative;
-    transform: translateX(-50%);
-    width: 50px;
-}
-
-.flexible-welcome-symbol {
-    height: 31.6px;
-    margin: 0 auto;
-    width: 31.6px;
-}
-
-#welcome-container, #signin-container {
-    height: 50px;
-    width: 60px;
-}
-
-.flexible-welcome-img {
-    border-radius: 20%;
-    height: 31.6px !important;
-    width: 31.6px !important;
-}
-
-.flexible-welcome-text {
-    font-size: 12px;
 }

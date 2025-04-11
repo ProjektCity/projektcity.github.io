@@ -5,17 +5,13 @@ document.addEventListener('DOMContentLoaded', function() {
         if (language === "de_DE") {
             console.log("[LANG] set-internal-langue=de_DE");
             document.getElementById("german-de_DE").style.display = "block";
-            document.getElementById("mb-german-de_DE").style.display = "block";
             document.getElementById("english-en_US").style.display = "none";
-            document.getElementById("mb-english-en_US").style.display = "none";
             updateToGerman();
         }
         if (language === "en_US") {
             console.log("[LANG] set-internal-langue=en_US");
             document.getElementById("english-en_US").style.display = "block";
-            document.getElementById("mb-english-en_US").style.display = "block";
             document.getElementById("german-de_DE").style.display = "none";
-            document.getElementById("mb-german-de_DE").style.display = "none";
         }
     }, 10);
 });
