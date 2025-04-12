@@ -86,7 +86,7 @@
 @media (max-width: 760px) {
     .account-column-left  {
         min-width: 225px;
-        width: 100% !important;
+        width: calc(100% - 10px) !important;
     }
 
     .general-maincontent {
