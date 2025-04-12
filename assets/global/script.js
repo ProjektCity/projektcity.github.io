@@ -16,6 +16,54 @@
 */
 
 // Mobile Navbar
+const image = document.getElementById('tiltImage');
+let targetX = 0, targetY = 0;
+let currentX = 0, currentY = 0;
+let animationFrameId;
+let isAnimating = false;
+let mouseStillTimeout;
+    
+function updateTilt(x, y) {
+    targetX = x * 15;
+    targetY = -y * 15;
+        
+    if (!isAnimating) {
+        isAnimating = true;
+        animate();
+    }
+
+clearTimeout(mouseStillTimeout);
+    mouseStillTimeout = setTimeout(() => {
+        isAnimating = false;
+        cancelAnimationFrame(animationFrameId);
+    }, 100);
+}
+    
+image.addEventListener('mousemove', (e) => {
+    const rect = image.getBoundingClientRect();
+    const x = (e.clientX - rect.left) / rect.width - 0.5;
+    const y = (e.clientY - rect.top) / rect.height - 0.5;
+    updateTilt(x, y);
+});
+    
+image.addEventListener('mouseleave', () => {
+    targetX = 0;
+    targetY = 0;
+    isAnimating = true;
+    animate();
+});
+    
+function animate() {
+    currentX += (targetX - currentX) * 0.5;
+    currentY += (targetY - currentY) * 0.5;
+        
+    image.style.transform = `rotateY(${currentX}deg) rotateX(${currentY}deg)`;
+        
+    if (isAnimating) {
+        animationFrameId = requestAnimationFrame(animate);
+    }
+}
+
 document.getElementById("menu-opener").addEventListener("click", function() {
     const menu = document.querySelector(".mobile-menu");
     document.querySelector(".cookie-banner-dark-background").style.display = "block";
