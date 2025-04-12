@@ -297,13 +297,82 @@
                 <h1>Images</h1>
             </div>
             <div class="placeholder w350 h20"></div>
-            <!-- Mobile Image Slider -->
-            <div class="mb-image-slider">
-                <iframe frameborder="0" playsinline playsInline height="175" src="assets/iframes/image-slider-mobile.html" width="100%"></iframe>
-            </div>
-            <!-- Desktop Image Slider -->
-            <div class="dt-image-slider">
-                <iframe frameborder="0" height="500" src="assets/iframes/image-slider.html" width="100%"></iframe>
+            <div class="image-slider" style="height: 100%;">
+                <div class="carousel">
+                    <ul>
+                        <li>
+                            <div class="li-img">
+                                <img src="../../assets/images/project/Planes.png" alt="The picture shows a peaceful Minecraft scene on a sunny day. At the center of the shot is a small airport with a large passenger plane parked on the tarmac. The plane, a Boeing 737, is white with blue accents and looks ready to take off. The airport itself is very large, but it has all the important facilities such as a runway, hangars and even a small control tower.">
+                            </div>
+                            <div class="li-text">
+                                <a id="image-planes">Many planes flying around the world</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="li-img">
+                                <img src="../../assets/images/project/Subway-Station.png" alt="In the foreground is a railroad line with several tracks leading into a dark tunnel on the right-hand side of the picture. The tracks are made of wood and metal. The landscape in which the town is embedded contains green hills, scattered trees and a small field with flowers and plants.">
+                            </div>
+                            <div class="li-text">
+                                <a id="image-subwaystation">The subway station</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="li-img">
+                                <img src="../../assets/images/project/Parking-Station.png" alt="The picture shows a large parking garage on a sunny day. The multi-storey building with a gray facade and many windows dominates most of the picture. In front of the parking garage is a parking lot and a street. A blue sign with a white “P” marks the parking garage, and a parking deck can be seen on the roof.">
+                            </div>
+                            <div class="li-text">
+                                <a id="image-parking-station">A huge parking station</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="li-img">
+                                <img src="../../assets/images/project/Mountain.png" alt="The picture shows a large mountain in the foreground, which is surrounded by a railroad line. The striking mountain with its pyramid-shaped peak is the dominant element of the image. A highway with several cars runs around the mountain, with cars driving on it. Other mountains and a small town can be seen in the background, adding to the varied landscape.">
+                            </div>
+                            <div class="li-text">
+                                <a id="image-mountain">A big mountain with a long highway</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="li-img">
+                                <img src="../../assets/images/project/Highway.png" alt="The picture shows a country road lined with trees and running under a high-voltage power line. A blue truck is driving on the road in the viewer's line of sight. A yellow car and a building can be seen in the background. The road is gray and has yellow lines on the sides marking the lanes.">
+                            </div>
+                            <div class="li-text">
+                                <a id="image-highway">The highway, which makes the city, airport and suburbs quickly and efficiently accessible</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="li-img">
+                                <img src="../../assets/images/project/City.png" alt="In this scene, a charming town street is depicted, complete with a quaint shop bearing the sign 'SHOP'. The street is crafted from stone bricks, adding a medieval touch to the setting. On the right side of the street, the 'SHOP' building stands out with its unique design, featuring a combination of stone and wood, and a roof adorned with red accents. The building's walls are made of stone, while the roof showcases red bricks, creating a visually appealing contrast.">
+                            </div>
+                            <div class="li-text">
+                                <a id="image-city">The city, with more houses, better facilities and a keycard system</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="li-img">
+                                <img src="../../assets/images/project/Hotel.png" alt="The picture shows several buildings connected by stairs and railings. The buildings are made of different materials and in different styles, including a house with a pitched roof and a building with a white façade and a brown roof. The stairs and railings are made of wood and stone and look very detailed. The scene is shot from a slightly elevated perspective.">
+                            </div>
+                            <div class="li-text">
+                                <a id="image-hotel">The hotel to accommodate all our guests, with a variety of suites and rooms and a keycard system to keep order</a>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="navbtn-prev" onclick="prevSlide()">
+                        <div class="navbtn-inner">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 -960 960 960" width="20" fill="#e8eaed">
+                                <path d="M640-80 240-480l400-400 71 71-329 329 329 329-71 71Z"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="navbtn-next" onclick="nextSlide()">
+                        <div class="navbtn-inner">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 -960 960 960" width="20" fill="#e8eaed">
+                                <path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="indicators"></div>
             </div>
             <div class="placeholder w350 h20"></div>
         </section>
@@ -1009,6 +1078,80 @@
         }
     </script>
     <script>
+        const carousel = document.querySelector('.carousel ul');
+        const indicatorsContainer = document.querySelector('.indicators');
+        let index = 0;
+        let autoSlideInterval;
+    
+        function createIndicators() {
+            const slides = document.querySelectorAll('.carousel li');
+            slides.forEach((_, i) => {
+                const button = document.createElement('button');
+                const progress = document.createElement('div');
+                progress.classList.add('progress');
+                button.dataset.index = i;
+                button.appendChild(progress);
+                button.onclick = () => showSlide(i, true);
+                indicatorsContainer.appendChild(button);
+            });
+            updateIndicators();
+        }
+    
+        function updateIndicators() {
+            const buttons = indicatorsContainer.querySelectorAll('button');
+            buttons.forEach((button, i) => {
+                const progress = button.querySelector('.progress');
+                button.classList.remove('active');
+                progress.style.animation = 'none';
+                if (i === index) {
+                    button.classList.add('active');
+                    progress.style.animation = 'fill 3s linear';
+                }
+            });
+        }
+    
+        function showSlide(newIndex, stopAutoSlide = false) {
+            const slides = document.querySelectorAll('.carousel li');
+            const totalSlides = slides.length;
+    
+            if (newIndex < 0) newIndex = totalSlides - 1;
+            if (newIndex >= totalSlides) newIndex = 0;
+    
+            index = newIndex;
+            const offset = -index * 100;
+            carousel.style.transform = `translateX(${offset}%)`;
+            updateIndicators();
+    
+            if (stopAutoSlide) {
+                resetAutoSlide();
+            }
+        }
+    
+        function nextSlide() {
+            showSlide(index + 1);
+            resetAutoSlide();
+        }
+    
+        function prevSlide() {
+            showSlide(index - 1);
+            resetAutoSlide();
+        }
+    
+        function startAutoSlide() {
+            autoSlideInterval = setInterval(() => {
+                nextSlide();
+            }, 3000);
+        }
+    
+        function resetAutoSlide() {
+            clearInterval(autoSlideInterval);
+            startAutoSlide();
+        }
+    
+        createIndicators();
+        startAutoSlide();
+    </script>
+    <script>
         document.addEventListener("DOMContentLoaded", function() {
             const language = localStorage.getItem('language');
             const displayThirdPartyContent = localStorage.getItem("displayThirdPartyContent");
@@ -1079,13 +1222,11 @@
                 document.getElementById("cookie-banner").style.display = "none";
                 // Removing Desktop Elements
                 document.querySelector(".dt-trailer-container").style.display = "none";
-                document.querySelector(".dt-image-slider").style.display = "none";
                 document.getElementById("installwithpython").style.display = "none";
                 document.querySelector(".main").style.display = "block";
                 document.querySelector(".dt-footer").style.display = "block";
                 // Mobile Elements
                 document.querySelector(".mb-trailer-container").style.display = "flex";
-                document.querySelector(".mb-image-slider").style.display = "flex";
                 document.getElementById("mb-placeholder").style.display = "block";
                 document.getElementById("mb-placeholder-temp").style.display = "block";
                 // Set Font Sizes
@@ -1108,7 +1249,6 @@
                 document.querySelector(".dt-trailer-container").style.display = "block";
                 // Removing Mobile Elements
                 document.querySelector(".mb-trailer-container").style.display = "none";
-                document.querySelector(".mb-image-slider").style.display = "none";
                 document.getElementById("mb-placeholder").style.display = "none";
                 return "desktop";
             }

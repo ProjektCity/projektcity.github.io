@@ -124,16 +124,16 @@
 }
 
 /* Images */
-.dt-carousel {
+.carousel {
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    height: 428px;
+    height: auto;
     overflow: hidden;
     position: relative;
-    width: 800px;
+    width: 100%;
 }
 
-.dt-carousel button {
+.carousel button {
     background-color: rgba(0, 0, 0, 0.5);
     border: none;
     color: white;
@@ -145,17 +145,18 @@
     z-index: 100;
 }
 
-.dt-carousel img {
+.carousel img {
     display: block;
-    height: 428px;
     width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
-.dt-carousel li {
+.carousel li {
     min-width: 100%;
 }
 
-.dt-carousel ul {
+.carousel ul {
     display: flex;
     list-style-type: none;
     margin: 0;
@@ -163,58 +164,32 @@
     transition: transform 0.5s ease-in-out;
 }
 
-.dt-carousel .dt-navbt-prev {
-    border-radius: 5px;
-    height: 40px;
-    left: 10px;
-    width: 40px;
-}
-
-.dt-carousel .dt-navbtn-next {
-    border-radius: 5px;
-    height: 40px;
-    right: 10px;
-    width: 40px;
-}
-
-.dt-image-slider {
-    align-items: center;
-    background-color: #1B1D1E;
-    color: #fff;
-    display: flex;
-    flex-direction: column;
-    font-family: Arial, sans-serif;
-    justify-content: center;
-    margin: 0;
-    padding: 0;
-}
-
-.dt-indicators {
+.indicators {
     display: flex;
     justify-content: center;
     margin-top: 10px;
 }
 
-.dt-indicators button {
+.indicators button {
     background-color: #bbb;
     border: none;
-    border-radius: 5px;
+    border-radius: 4px;
     cursor: pointer;
-    height: 5px;
+    height: 4px;
     margin: 0 5px;
     overflow: hidden;
     position: relative;
-    width: 15px;
+    width: 25px;
 }
 
-.dt-indicators button.dt-active {
+.indicators button.active {
     background-color: #bbb;
-    border-radius: 5px;
-    height: 5px;
-    width: 45px;
+    border-radius: 4px;
+    height: 4px;
+    width: 60px;
 }
 
-.dt-indicators button .dt-progress {
+.indicators button .progress {
     animation: fill 3s linear infinite;
     background-color: #717171;
     border-radius: 2.5px;
@@ -225,20 +200,76 @@
     width: 0;
 }
 
-.dt-li-img {
+.li-img {
+    height: 100%;
     position: relative;
 }
 
-.dt-li-text {
+.li-text {
     background-color: rgba(255, 255, 255, 0.5);
     color: #333;
-    font-size: 17.9px;
-    height: auto;
+    font-size: 18px;
+    font-weight: 400;
     margin-top: -70px;
+    max-height: 80px;
+    min-height: 10px;
     padding: 5px;
     position: relative;
     text-align: center;
-    width: 790px;
+    width: calc(100% - 10px);
+}
+
+.navbtn-inner {
+    height: 20px;
+    width: 20px;
+}
+
+.navbtn-next {
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    border-radius: 7.5px;
+    cursor: pointer;
+    display: flex;
+    height: 40px;
+    justify-content: center;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+}
+
+.navbtn-prev {
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    border-radius: 7.5px;
+    cursor: pointer;
+    display: flex;
+    height: 40px;
+    justify-content: center;
+    left: 10px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+}
+
+@keyframes fill {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+@media (max-width: 450px) {
+    .li-text {
+        font-size: 10px !important;
+        margin-top: -45px !important;
+    }
 }
 
 /* Trailer */

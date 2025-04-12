@@ -12,8 +12,8 @@
             display: flex;
             flex-direction: column;
             font-family: Arial, sans-serif;
-            height: 100vh;
             justify-content: center;
+            overflow: hidden;
             margin: 0;
             padding: 0;
         }
@@ -21,10 +21,10 @@
         .carousel {
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-            height: 428px;
+            height: auto;
             overflow: hidden;
             position: relative;
-            width: 800px;
+            width: 100%;
         }
 
         .carousel button {
@@ -41,12 +41,12 @@
 
         .carousel img {
             display: block;
-            height: 428px;
             width: 100%;
+            height: 100%;
+            object-fit: cover;
         }
 
         .carousel li {
-            height: 427.99px;
             min-width: 100%;
         }
 
@@ -95,6 +95,7 @@
         }
 
         .li-img {
+            height: 100%;
             position: relative;
         }
 
@@ -108,7 +109,7 @@
             padding: 5px;
             position: relative;
             text-align: center;
-            width: 790px;
+            width: 100%;
         }
 
         .navbtn-inner {

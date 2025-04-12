@@ -281,6 +281,11 @@ p {
     text-decoration: none;
 }
 
+iframe {
+    overflow: hidden;
+    scrollbar-width: none;
+}
+
 /* Button */
 .mb-basic-btn {
     background-color: #282626;
