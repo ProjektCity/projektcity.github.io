@@ -229,11 +229,10 @@ document.addEventListener("DOMContentLoaded", function() {
         })
         .catch(error => {
             console.error("[DISCORD] Error while receiving user information:", error);
-            localStorage.removeItem('discord_token');
         });
     }
     
-    console.log("[BUILD INFO] Release Channel: stable, Build Number: #688, Update date: 04/12/2025");
+    console.log("[BUILD INFO] Release Channel: stable, Build Number: #689, Update date: 04/15/2025");
     setTimeout(() => {
         console.log(`[USER] get-userdevice=${deviceType}`);
         console.log(`[USER] get-userbrowser=${browser}`);

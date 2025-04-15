@@ -43,7 +43,6 @@ function getUserInfo(token) {
     })
     .catch(error => {
         console.error("Error while receiving user information:", error);
-        localStorage.removeItem('discord_token');
     });
 }
 
