@@ -88,6 +88,10 @@
     margin: 0;
 }
 
+#mainpage-header-h1 {
+    font-size: 5em;
+}
+
 .dt-des-header {
     max-width: 1150px;
     min-width: 300px;
@@ -410,5 +414,15 @@ iframe {
     }
     100% {
         width: 100%;
+    }
+}
+
+@media (max-width: 455px) {
+    #mainpage-header-h1 {
+        font-size: 3em !important;
+    }
+
+    .dt-des-h-author {
+        margin-top: -15px;
     }
 }
