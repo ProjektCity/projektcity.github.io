@@ -1,4 +1,12 @@
 document.addEventListener("DOMContentLoaded", function() {
+    
+    const userAgent = navigator.userAgent.toLowerCase();
+    if (/mobile|android|iphone|ipad|ipod|blackberry|windows phone/i.test(userAgent)) {
+        document.querySelector(".mb-trailer-container").style.display = "flex";
+    } else {
+        document.querySelector(".dt-trailer-container").style.display = "flex";
+    }
+
     const language = localStorage.getItem('language');
     const displayThirdPartyContent = localStorage.getItem("displayThirdPartyContent");
     if (displayThirdPartyContent === "granted") {
