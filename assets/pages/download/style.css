@@ -122,6 +122,11 @@
     text-align: center;
 }
 
+.dt-th-l1, .dt-th-l2, .dt-th-l3, .dt-th-l4, .dt-th-l5 {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
 @media (max-width: 720px) {
     .dt-th-l3, .dt-td-date {
         display: none !important;
