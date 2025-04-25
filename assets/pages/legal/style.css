@@ -108,6 +108,21 @@
     width: 100%;
 }
 
+@media (max-width: 500px) {
+    .legal-h1 {
+        font-size: 30px;
+    }
+
+    .legal-h2 {
+        font-size: 25px;
+    }
+
+    .legal-text-section {
+        font-size: 1.25em;
+        line-height: 30px;
+    }
+}
+
 /*  Every section: <div class="placeholder w1150 h30"></div>
     Header to subheader: <div class="placeholder w1150 h20"></div>
     Link ending: ?utm_src=projektcity_legal_information_link_linkout&utm_medium=projektcity&return_url=https%3A%2F%2Fprojektcity.github.io%2Flegal%2Fprivacy

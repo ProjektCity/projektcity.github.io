@@ -65,9 +65,9 @@ html, body {
     font-weight: 200;
     margin: 0px;
     margin-inline: 0px;
+    overflow-x: hidden;
     padding: 0px;
     padding-inline: 0px;
-    overflow-x: hidden;
     width: 100%;
 }
 
@@ -89,6 +89,7 @@ html, body {
     margin-top: 10px;
     max-width: 1150px;
     min-width: 300px;
+    width: 100%;
 }
 
 .dt-footer {
