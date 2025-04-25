@@ -42,15 +42,10 @@ function getUserInfo(token) {
     })
     .then(res => res.json())
     .then(user => {
-        document.getElementById("username").textContent = user.username;
-        document.getElementById("email").textContent = user.email;
-        document.getElementById("email-header").style.display = 'block';
-
         const avatarUrl = user.avatar 
             ? `https://cdn.discordapp.com/avatars/${user.id}/${user.avatar}.png`
             : `https://cdn.discordapp.com/embed/avatars/${user.discriminator % 5}.png`;
 
-        document.getElementById("profile-pic-big").src = avatarUrl;
         document.getElementById("profile-pic").src = avatarUrl;
         document.getElementById("profileinformation").style.display = 'block';
         document.getElementById("signincontainer").style.display = 'none';
@@ -65,16 +60,6 @@ function getUserInfo(token) {
         localStorage.removeItem('discord_token');
     });
 }
-
-document.getElementById("signinbtn").addEventListener('click', function() {
-    localStorage.removeItem('discord_token');
-    window.open("https://discord.com/oauth2/authorize?client_id=1308503690449256561&redirect_uri=https://projektcity.github.io/login&response_type=token&scope=identify%20email", "_parent");
-});
-
-document.getElementById('signout-btn').addEventListener('click', function() {
-    localStorage.removeItem('discord_token');
-    window.open("/login/forward?signin-type=logout&redirect_url=https://projektcity.github.io/login?utm_src=login_page_logout_btn&utm_medium=discord_x_projektcity", "_parent");
-});
 
 document.addEventListener("DOMContentLoaded", function() {
     const randomString = generateRandomString(16);
