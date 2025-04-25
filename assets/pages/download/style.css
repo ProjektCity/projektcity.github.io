@@ -48,19 +48,18 @@
 
 /* Table */
 .dt-download-table {
-    left: 50%;
-    margin: 0px 10px;
+    margin: 0 auto;
     max-width: 1000px;
     overflow-x: auto;
     position: relative;
-    transform: translateX(-50%);
 }
 
 .dt-table {
     border-collapse: collapse;
     cursor: pointer;
     font-size: 20px;
-    width: 100%;
+    margin: 0px 5px;
+    width: calc(100% - 10px);
 }
 
 .dt-thead th,
