@@ -314,13 +314,12 @@ document.getElementById("unclassifiedCookies").addEventListener("change", functi
     }
 });
 
-// If ESC
+// ESC-Action
 document.addEventListener('keydown', function(event) {
-    // Prüfen, ob die ESC-Taste gedrückt wurde (keyCode 27)
     if (event.key === 'Escape') {
-      var div = document.getElementById('cookie-selector');  // Ersetze dies mit dem spezifischen Div, das du ansprechen möchtest
+      var div = document.getElementById('cookie-selector');
       if (div && div.style.display !== 'none') {
-            div.style.display = 'none';  // Das DIV unsichtbar machen
+            div.style.display = 'none';
             document.querySelector(".cookie-banner-dark-background").style.display = "none";
             document.querySelector(".cookie-banner-background").style.display = "none";
             document.documentElement.style.overflowY = "scroll";
