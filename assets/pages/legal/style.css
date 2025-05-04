@@ -123,22 +123,206 @@
     }
 }
 
-/*  Every section: <div class="placeholder w1150 h30"></div>
-    Header to subheader: <div class="placeholder w1150 h20"></div>
-    Link ending: ?utm_src=projektcity_legal_information_link_linkout&utm_medium=projektcity&return_url=https%3A%2F%2Fprojektcity.github.io%2Flegal%2Fprivacy
-    X.X to X.XX --> 30px
-    X.XX to X.XXX --> 20px
+/* Feedback */
+#feedback-notice {
+    background-color: #1771E6;
+    bottom: 50%;
+    left: -51px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    padding: 10px 15px;
+    transform: rotate(90deg);
+    position: fixed;
+}
 
-Enoumeration:
-<div class="legal-text-enumerations">
-    <div class="legal-text-enumeration-line">
-        <div class="legal-text-enumeration-left">
-            <a></a>
-        </div>
-        <div class="legal-text-enumeration-right">
-            <a></a>
-        </div>
-    </div>
-</div>
+.feedback-notice-container {
+    cursor: pointer;
+    display: flex;
+    gap: 5px;
+}
 
-<a class="linkout" href="" target="_blank"></a>
+.feedback-notice-container:hover {
+    text-decoration: underline;
+}
+
+.feedback-notice-container-svg {
+    height: 25px;
+    width: 25px;
+}
+
+.feedback-notice-container-text {
+    font-size: 17.7px;
+    font-weight: 500;
+    margin: 0.4px 0px;
+    height: 24.2px;
+}
+
+.feedback-notice-container-text div {
+    transform: translateY(-1px);
+}
+
+#feedback-container {
+    background-color: #181818;
+    border: 1px solid #383939;
+    border-radius: 20px;
+    box-sizing: border-box;
+    color: var(--tt);
+    display: none;
+    height: 521px;
+    left: 50px;
+    max-width: 530px;
+    min-width: 300px;
+    position: fixed;
+    text-align: center;
+    top: calc(50% - 95px);
+    transition: all 0.5s;
+    z-index: 100001;
+    width: calc(100% - 20px);
+}
+
+.fb-con-frame {
+    height: 446px;
+}
+
+.feedback-container-head {
+    border-bottom: 1px solid var(--tt);
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.25rem;
+    font-weight: 700;
+    height: 30;
+    padding: 15px;
+    word-wrap: break-word;
+}
+
+#feedbackClose {
+    cursor: pointer;
+}
+
+.feedback-container-content {
+    padding: 10px;
+    position: relative;
+}
+
+.feedback-container-content-head {
+    text-align: left;
+    font-size: 20px;
+}
+
+.feedback-container-content-form {
+    padding-right: 5px;
+    width: 100%;
+}
+
+.feedback-options {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin: 20px 0;
+    align-items: flex-start;
+}
+
+.feedback-options label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    color: #fff;
+    transition: color 0.3s ease;
+    width: 100%;;
+}
+
+.feedback-options label:hover {
+    color: var(--tt-2);
+}
+
+.feedback-options label div {
+    font-size: 20px;
+    text-align: left;
+    width: calc(100% - 40px - 5px);
+}
+
+.feedback-options input[type="radio"] {
+    appearance: none;
+    width: 40px;
+    height: 40px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    outline: none;
+    cursor: pointer;
+    margin: 0;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.feedback-options input[type="radio"]:checked {
+    background-color: #1771E6;
+    border-color: #1771E6;
+}
+
+.feedback-container-content-footer {
+    border-top: 1px solid rgba(243, 245, 247, 0.15);
+    padding: 15px;
+}
+
+.feedback-container-content-formsend-btn, .feedback-container-content-done-btn {
+    background-color: var(--tt);
+    color: var(--tt-dark);
+    border: 1px solid #fff;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 25px;
+    height: 44px;
+    width: calc(100% - 2px);
+}
+
+.feedback-container-content-formsend-button, .feedback-container-content-done-button {
+    height: 35px;
+    margin: 4px 0px 5px 0px;
+}
+
+.feedback-container-content-end-content {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    height: 100%;
+    justify-content: space-between;
+}
+
+@media (max-width: 1250px) {
+    #feedback-notice {
+        background-color: #1771E6;
+        bottom: 50%;
+        right: -51px;
+        left: auto !important;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        padding: 10px 15px;
+        transform: rotate(-90deg);
+        position: fixed;
+    }
+
+    #feedback-container {
+        background-color: #181818;
+        border: 1px solid #383939;
+        border-radius: 20px;
+        bottom: 20px;
+        box-sizing: border-box;
+        color: var(--tt);
+        height: 521px;
+        left: 50%;
+        max-width: 530px;
+        min-width: 300px;
+        position: fixed;
+        text-align: center;
+        top: auto;
+        transform: translateX(-50%);
+        z-index: 100001;
+        width: calc(100% - 20px);
+    }
+}
+
+.fb-con-frame::-webkit-scrollbar {
+    display: none;
+}
