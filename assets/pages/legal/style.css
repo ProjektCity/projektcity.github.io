@@ -182,6 +182,7 @@
 
 .fb-con-frame {
     height: 442px;
+    overflow-y: scroll;
 }
 
 .feedback-container-head {
