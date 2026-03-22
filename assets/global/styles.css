@@ -1,0 +1,327 @@
+:root {
+    --radius-none: 2px;
+    --radius-extra-small: 6px;
+    --radius-small: 12px;
+    --radius: 16px;
+    --radius-big: 24px;
+    --radius-extra-big: 32px;
+    --background: #1B1D1E;
+    --surface1: #191b1f;
+    --surface2: #272a30;
+    --surface3: #25272d;
+    --surface4: #3f4141;
+    --text: #FFFFFF;
+    --text-lightgray: hsl(220, 14%, 55%);
+    --text-gray: hsl(220, 11%, 35%);
+    --text-black: #000000;
+    --success: #a6e3a1;
+    --border-black: #000000;
+    --border-gray: rgba(255, 255, 255, 0.25);
+    --border-white: #FFFFFF;
+    --fill-white: #FFFFFF;
+    --fill-dark: #000000;
+}
+
+:root.light {
+    --background: #F0F2F5;
+    --surface1: #E8EAEF;
+    --surface2: #FFFFFF;
+    --surface3: #F4F5F8;
+    --surface4: #D1D3DA;
+    --text: #1B1D1E;
+    --text-lightgray: hsl(220, 14%, 45%);
+    --text-gray: hsl(220, 11%, 55%);
+    --text-black: #000000;
+    --success: #2d8a5e;
+    --border-black: #000000;
+    --border-gray: rgba(0, 0, 0, 0.15);
+    --border-white: #1B1D1E;
+    --fill-white: #1B1D1E;
+    --fill-dark: #FFFFFF;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: var(--background);
+    color: var(--text);
+    font-family: 'Poppins';
+    font-weight: 200;
+    margin: 0;
+}
+
+a:link, a:link:visited, a:-webkit-any-link, a[data-linkout], .linkout {
+    color: var(--text);
+    cursor: pointer;
+    text-decoration: none;
+}
+
+a:link:hover, a:-webkit-any-link:hover, a[data-linkout]:hover, .linkout:hover {
+    text-decoration: underline;
+}
+
+main {
+    margin-top: 111px;
+    min-height: calc(100dvh - 108px - 276px);
+    width: 100%;
+}
+
+section {
+    margin: 0 auto;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    max-width: 1150px;
+    min-width: 300px;
+    padding: 1rem 10px;
+    width: calc(100% - 20px);
+}
+
+section.hasborder {
+    border-top: 1.5px solid var(--border-white);
+    padding: 2rem 10px;
+}
+
+h1, h2, h3, h4 {
+    font-weight: 300;
+    margin-block-end: 0em;
+    margin-block-start: 0em;
+}
+
+h1 {
+    font-size: 3em;
+    text-decoration: underline;
+}
+
+h2 {
+    font-size: 2.5em;
+}
+
+h3 {
+    font-size: 35px;
+}
+
+h4 {
+    font-size: 30px;
+}
+
+a, p, span, ul, li {
+    font-size: 24px;
+    font-weight: 200;
+    margin-block-end: 0em;
+    margin-block-start: 0em;
+}
+
+ul {
+    margin: 8px 0;
+    padding-inline-start: 40px;
+}
+
+.small {
+    font-size: 12px;
+}
+
+.directory {
+    display: flex;
+    font-size: 23px;
+    gap: 8px;
+}
+
+.logo {
+    background: url('/assets/images/logos/favicon.png');
+    background-position: center;
+    background-size: cover;
+    border-radius: var(--radius-small);
+}
+
+@keyframes floatIn {
+    0% {
+        border: unset !important;
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-floatin {
+    animation-name: floatIn;
+    animation-duration: 0.5s;
+    animation-fill-mode: both;
+    animation-timing-function: ease-out;
+}
+
+#linkout-overlay {
+	align-items: center;
+	backdrop-filter: blur(6px);
+	-webkit-backdrop-filter: blur(6px);
+	background: rgba(0, 0, 0, 0.6);
+	display: flex;
+	inset: 0;
+	justify-content: center;
+	opacity: 0;
+	padding: 20px;
+	pointer-events: none;
+	position: fixed;
+	transition: opacity 0.25s ease;
+	z-index: 999999;
+}
+
+#linkout-overlay.open {
+	opacity: 1;
+	pointer-events: all;
+}
+
+#linkout-popup {
+	background: var(--background);
+	border: 1px solid rgba(255, 255, 255, 0.15);
+	border-radius: 16px;
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+	max-width: 880px;
+	padding: 28px;
+	transform: scale(0.92) translateY(12px);
+	transition: transform 0.25s ease, opacity 0.25s ease;
+	width: 100%;
+}
+
+#linkout-overlay.open #linkout-popup {
+	transform: scale(1) translateY(0);
+}
+
+.linkout-popup-header {
+	align-items: center;
+	display: flex;
+	gap: 12px;
+    justify-content: center;
+}
+
+.linkout-popup-icon {
+	color: var(--text);
+	font-size: 28px;
+	line-height: 1;
+}
+
+.linkout-popup-title {
+	font-size: 22px !important;
+	font-weight: 300;
+	margin: 0;
+}
+
+.linkout-popup-text {
+	font-size: 20px !important;
+	font-weight: 200;
+	line-height: 1.6;
+}
+
+.linkout-popup-url {
+	background: var(--surface2);
+	border-radius: 8px;
+	font-size: 20px !important;
+	font-weight: 200;
+	overflow: hidden;
+	padding: 16px 24px;
+	text-overflow: ellipsis;
+    text-align: center;
+	white-space: nowrap;
+}
+
+.linkout-popup-actions {
+	display: flex;
+	gap: 10px;
+	justify-content: flex-end;
+	margin-top: 4px;
+}
+
+.linkout-popup-actions button {
+	border: none;
+	border-radius: 10px;
+	cursor: pointer;
+    flex: 1;
+	font-family: 'Poppins', sans-serif;
+	font-size: 15px;
+	font-weight: 300;
+	padding: 10px 22px;
+	transition: opacity 0.2s ease, transform 0.15s ease;
+}
+
+.linkout-popup-actions button:hover {
+	opacity: 0.85;
+	transform: translateY(-1px);
+}
+
+.linkout-popup-actions button:active {
+	transform: translateY(0);
+}
+
+.linkout-btn-continue {
+    background-color: var(--surface2);
+	color: var(--text);
+}
+
+.linkout-btn-back {
+	background: var(--text);
+	color: var(--text-black);
+}
+
+@media (max-width: 768px) {
+    a, p, ul, li {
+        font-size: 18px;
+    }
+}
+
+::-webkit-scrollbar {
+    width: 7.5px;
+    -webkit-appearance: none;
+    z-index: 1000000;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: transparent;
+    border-radius: 4px;
+    -webkit-box-shadow: 0 0 1px rgba(255,255,255,.5);
+}
+
+::-webkit-scrollbar-track {
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #707070;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #a0a0a0;
+}
+
+::-webkit-overflow-scrolling:touch {
+    background: #707070;
+    width: 5px;
+}
+
+@media (max-width: 630px) {
+    .linkout-popup-title {
+        font-size: 18px !important;
+    }
+
+    .linkout-popup-text {
+        font-size: 15px !important;
+    }
+
+    .linkout-popup-url {
+        font-size: 14px !important;
+        padding: 12px 10px;
+    }
+
+    .linkout-popup-actions {
+        flex-direction: column;
+    }
+}

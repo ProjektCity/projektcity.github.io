@@ -1,0 +1,22 @@
+{
+    "import_h1": "Import World",
+    "import_sp_h2": "#1 Import the world into Minecraft (Single Player)",
+    "import_sp_para1": "When importing the world for single player, only you - or the user on your local device - will be able to play. To play with other players, see section #2 below.",
+    "import_sp_para2": "To load the world in single player, follow these steps after downloading:",
+    "import_sp_step1": "Right-click the downloaded .zip file \"Projekt City [V5.0]\" and select \"Extract All\".",
+    "import_sp_step2": "Click \"Extract\" in the bottom right of the dialog window.",
+    "import_sp_step3": "Wait for the extraction to complete, then return to your previous directory.",
+    "import_sp_step4": "Right-click the extracted folder and copy it.",
+    "import_sp_step5": "Press the Windows key, type \"run\", and open the Run application. Enter \"%appdata%\" and click \"OK\".",
+    "import_sp_step6": "Navigate to \".minecraft\" → \"saves\" and paste the copied folder there. Make sure there is no additional folder nested inside - if the world folder contains another folder within it, the world may not load correctly.",
+    "import_mp_h2": "#2 Import the world onto a Minecraft server (Multiplayer)",
+    "import_mp_step1": "Right-click the downloaded .zip file \"Projekt City [V5.0]\" and select \"Extract All\".",
+    "import_mp_step2": "Click \"Extract\" in the bottom right of the dialog window.",
+    "import_mp_step3": "Wait for the extraction to complete, then return to your previous directory.",
+    "import_mp_step4": "Right-click the extracted folder and copy it.",
+    "import_mp_step5": "Navigate to your server folder.",
+    "import_mp_step6": "Paste the copied folder into the root directory of your server.",
+    "import_mp_step7": "Rename the folder to \"world\" if necessary. If an existing \"world\" folder is present, remove it first. Please note: deleting your existing world folder permanently removes all progress made on that server world. This action cannot be undone.",
+    "import_mp_para": "You can also add the world as an additional world using the Multiverse Core plugin. Apex Hosting provides a detailed step-by-step guide for this at the following address:",
+    "import_mp_link": "https://apexminecrafthosting.com/multiverse-core-plugin/"
+}

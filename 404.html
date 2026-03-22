@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="/assets/images/logos/favicon-f.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 - Projekt City</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Space+Mono:wght@400;700&display=swap">
+    <link rel="stylesheet" href="https://itsmarian-static.is-a.dev/fonts/font-awesome-6.7.2/css/all.css">
+    <link rel="stylesheet" href="/assets/global/cookiebanner/styles.css">
+    <link rel="stylesheet" href="/assets/global/footer.css">
+    <link rel="stylesheet" href="/assets/global/header.css">
+    <link rel="stylesheet" href="/assets/global/styles.css">
+    <link rel="stylesheet" href="/assets/global/variables.css">
+    <link rel="stylesheet" href="/assets/global/404/styles.css">
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="referrer" content="no-referrer">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- i18n Configuration -->
+    <script>
+        window.i18nConfig = {
+            pagestringsPath: 'unset'
+        };
+    </script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-PMX9M628SV"></script>
+    <script>
+    	window.dataLayer = window.dataLayer || [];
+
+    	function gtag() {
+    		dataLayer.push(arguments);
+    	}
+        
+    	gtag('js', new Date());
+    	gtag('config', 'G-PMX9M628SV');
+    </script>
+</head>
+<body>
+    <header></header>
+    <div id="particleContainer"></div>
+    <div id="pickaxe-cursor"></div>
+    <div class="mining-progress-container" id="miningProgress">
+        <div class="mining-progress-bar" id="miningProgressBar"></div>
+    </div>
+    <main>
+        <div class="error-container" id="errorContainer">
+            <div class="blocks-404">
+                <div class="blocks-row">
+                    <div class="block-digit">
+                        <div class="cube mineable-block" id="block0" data-block="0">
+                            <div class="cube-face cube-front"></div>
+                            <div class="cube-face cube-back"></div>
+                            <div class="cube-face cube-right"></div>
+                            <div class="cube-face cube-left"></div>
+                            <div class="cube-face cube-top"></div>
+                            <div class="cube-face cube-bottom"></div>
+                        </div>
+                        <div class="block-label">4</div>
+                    </div>
+                    <div class="block-digit">
+                        <div class="cube mineable-block" id="block1" data-block="1">
+                            <div class="cube-face cube-front"></div>
+                            <div class="cube-face cube-back"></div>
+                            <div class="cube-face cube-right"></div>
+                            <div class="cube-face cube-left"></div>
+                            <div class="cube-face cube-top"></div>
+                            <div class="cube-face cube-bottom"></div>
+                        </div>
+                        <div class="block-label">0</div>
+                    </div>
+                    <div class="block-digit">
+                        <div class="cube mineable-block" id="block2" data-block="2">
+                            <div class="cube-face cube-front"></div>
+                            <div class="cube-face cube-back"></div>
+                            <div class="cube-face cube-right"></div>
+                            <div class="cube-face cube-left"></div>
+                            <div class="cube-face cube-top"></div>
+                            <div class="cube-face cube-bottom"></div>
+                        </div>
+                        <div class="block-label">4</div>
+                    </div>
+                </div>
+            </div>
+            <h1 class="error-title" id="errorTitle">Page Not Found</h1>
+            <p class="error-subtitle" id="errorSubtitle">This chunk hasn't been generated yet.</p>
+            <p class="error-description" id="errorDescription">The page you are looking for does not exist or has been moved. Let's get you back to spawn.</p>
+            <a href="/" class="error-cta">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+                    <polyline points="9 22 9 12 15 12 15 22"/>
+                </svg>
+                Return to Spawn
+            </a>
+            <div class="mining-stats" id="miningStats" style="display:none;">
+                <div class="stat-item">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color:var(--mining-green)">
+                        <rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/>
+                    </svg>
+                    Blocks mined: <span id="blocksDestroyed">0</span>
+                </div>
+            </div>
+            <div class="easter-egg" id="easterEgg" title="Psst… try clicking!">
+                <img src="/assets/global/404/pickaxe.png" alt="" width="25">
+            </div>
+        </div>
+    </main>
+    <footer></footer>
+    <script src="/assets/global/cookiebanner/script.js"></script>
+    <script src="/assets/global/footer.js"></script>
+    <script src="/assets/global/header.js"></script>
+    <script src="/assets/global/script.js"></script>
+    <script src="/assets/global/404/script.js"></script>
+</body>
+</html>

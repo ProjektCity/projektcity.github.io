@@ -1,0 +1,16 @@
+{
+    "help_h1": "Helpcenter",
+    "help_intro": "Willkommen im Projekt City Helpcenter. Hier findest du Antworten auf häufige Fragen, Anleitungen für den Einstieg und Informationen über unsere Werkzeuge und Richtlinien. Wenn du nicht findest, was du suchst, kannst du uns jederzeit direkt kontaktieren.",
+    "help_topics_h2": "Themen",
+    "help_link_faq": "Häufig gestellte Fragen",
+    "help_desc_faq": "- Antworten auf häufige Fragen zu Kosten, Plattformen, Updates und Fehlermeldungen.",
+    "help_link_import": "Welt importieren",
+    "help_desc_import": "- Schritt-für-Schritt-Anleitung zum Laden von Projekt City im Einzelspieler oder auf einem Mehrspieler-Server.",
+    "help_link_debug": "Debug-Menü & Entwickler-Tools",
+    "help_desc_debug": "- Erfahre mehr über die Browser-Konsole, die Sicherheitswarnung und wie du sicher bleibst.",
+    "help_still_h2": "Noch Hilfe benötigt?",
+    "help_still_para1": "Wenn du die gesuchte Antwort nicht finden konntest, kannst du uns gerne",
+    "help_still_email": "eine E-Mail senden",
+    "help_still_para2": "Einen Fehler in der Welt gefunden? Schicke uns einen Bericht über das",
+    "help_still_bug": "Fehlerberichtsformular"
+}

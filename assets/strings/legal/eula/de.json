@@ -1,0 +1,61 @@
+{
+  "page_title": "EULA",
+  "legal_header_intro_p1": "Projekt City ist ein privates, unabhängiges Projekt, das dir als Teil von itsmarian.dev völlig kostenlos zur Verfügung gestellt wird. Beim Download erhältst du eine komprimierte ZIP-Datei, die du entpacken und direkt in Minecraft laden kannst - auf eigene Gefahr.",
+  "legal_header_intro_p2": "Bitte beachte, dass Projekt City von itsmarian.dev verwaltet wird. Das rechtlich erforderliche Impressum sowie zentrale Kontaktinformationen findest du unter <a class=\"linkout\" data-linkout=\"https://itsmarian.dev/legal/imprint\" data-target=\"_blank\">itsmarian.dev/legal/imprint</a>.",
+  "legal_header_intro_p3": "Wenn du fortfährst, bestätigst du, dass du unsere <a class=\"linkout\" data-linkout=\"/legal/advertisement-terms\" data-target=\"_blank\">Werbebedingungen</a>, die <a class=\"linkout\" data-linkout=\"/legal/eula\">Endbenutzer-Lizenzvereinbarung</a>, die <a class=\"linkout\" data-linkout=\"/legal/privacy\" data-target=\"_blank\">Datenschutzerklärung</a>, die <a class=\"linkout\" data-linkout=\"/legal/terms\" data-target=\"_blank\">Nutzungsbedingungen</a> und die <a class=\"linkout\" data-linkout=\"/legal/use-our-world\" data-target=\"_blank\">Nutzungsrichtlinie für unsere Welt</a> gelesen hast und damit einverstanden bist. Wenn du nicht einverstanden bist, verlasse bitte unsere Website und nutze unsere Dienste nicht.",
+
+  "s1_title": "#1 Weitere Vereinbarungen",
+  "s1_p1": "Du stimmst auch anderen Bedingungen und Richtlinien von Projekt City zu, die ausdrücklich in diese Vereinbarung einbezogen sind. Bitte lies die folgenden Bedingungen und Richtlinien sorgfältig durch:",
+  "s1_privacy_prefix": "Unsere",
+  "s1_privacy_link": "Datenschutzerklärung",
+  "s1_privacy_suffix": "erläutert, welche Informationen wir von dir erheben und wie wir diese schützen.",
+  "s1_terms_prefix": "Unsere",
+  "s1_terms_link": "Nutzungsbedingungen",
+  "s1_terms_suffix": "erklären, wie und unter welchen Bedingungen unsere Dienste verfügbar sind und wie sie genutzt werden dürfen.",
+  "s1_uow_prefix": "Unsere",
+  "s1_uow_link": "Nutzungsrichtlinie für unsere Welt",
+  "s1_uow_suffix": "erläutert, wie und unter welchen Bedingungen die Welt von Projekt City genutzt werden darf und was dabei zu beachten ist.",
+
+  "s2_title": "#2 Lizenzerteilung",
+  "s2_p1": "Projekt City gewährt dir ein persönliches, nicht-exklusives, nicht übertragbares, nicht unterlizenzierbares, eingeschränktes Recht und eine Lizenz, die Welt auf kompatiblen Geräten, die du besitzt oder kontrollierst, für deine persönliche Unterhaltung zu installieren und zu nutzen (die \"Lizenz\"). Die Rechte unterliegen den Bedingungen dieser Vereinbarung und der <a class=\"linkout\" data-linkout=\"https://projektcity.github.io/legal/use-our-world\" data-target=\"_blank\">Nutzungsrichtlinie für unsere Welt</a>, und du darfst die Lizenz nur nutzen, wenn du alle geltenden Bedingungen einhältst.",
+  "s2_p2": "Die Lizenz tritt an dem Tag in Kraft, an dem du dieser Vereinbarung zustimmst. Die Welt wird dir lizenziert, nicht verkauft. Die Lizenz räumt dir keine Eigentumsrechte an der Software ein.",
+  "s2_a": "die Software kommerziell oder für Werbezwecke zu nutzen, sofern dies nicht ausdrücklich von Projekt City genehmigt wurde;",
+  "s2_b": "die Welt auf eine Weise zu kopieren, zu reproduzieren, zu verteilen, anzuzeigen oder zu nutzen, die nicht ausdrücklich in dieser Vereinbarung oder der Nutzungsrichtlinie für unsere Welt autorisiert ist;",
+  "s2_c": "die Software zu verkaufen, zu vermieten, zu verleasen, zu lizenzieren, zu verbreiten oder anderweitig zu übertragen;",
+  "s2_d": "die Software unter Verletzung geltender Gesetze oder Vorschriften zu nutzen, zu exportieren oder re-exportieren;",
+
+  "s3_title": "#3 Updates und Patches",
+  "s3_p": "Projekt City kann Patches, Updates oder Upgrades für die Welt bereitstellen. Projekt City kann die Software jederzeit ohne vorherige Ankündigung remote aktualisieren, und du stimmst hiermit zu, dass Projekt City Patches, Updates und Upgrades einspielen darf. Projekt City kann jederzeit Aspekte der Software oder der Dienste ändern, aussetzen, einstellen oder deinen Zugang dazu einschränken.",
+
+  "s4_title": "#4 Feedback",
+  "s4_p1": "\"Feedback\" bezeichnet schriftliche oder mündliche Mitteilungen an Projekt City in Form von Meinungen, Vorschlägen, Kommentaren, Ideen und allen anderen Arten von Beiträgen, die du direkt oder indirekt an Projekt City übermittelst und die sich auf deine Ansichten bezüglich der Software, der Dienste oder anderer Produkte von Projekt City beziehen.",
+  "s4_p2": "Du bist nicht verpflichtet, Feedback zu geben; jedes Feedback ist freiwillig. Wenn du Projekt City Feedback gibst, räumst du Projekt City eine nicht-exklusive, weltweite, unbefristete, unwiderrufliche, unterlizenzierbare Lizenz ein, jedes Feedback zu nutzen, zu kopieren, zu reproduzieren, zu verteilen, zu modifizieren und anderweitig zu verwerten. Projekt City ist nicht verpflichtet, das von dir bereitgestellte Feedback zu nutzen oder dich dafür zu vergüten.",
+
+  "s5_title": "#5 Eigentum / Lizenzen Dritter",
+  "s5_p": "Projekt City und seine Lizenzgeber besitzen alle Titel-, Eigentums- und geistigen Eigentumsrechte an der Welt und den Diensten. Projekt City, Projekt City Ltd. und ihre jeweiligen Logos, Namen und Dateien sind Marken oder eingetragene Marken von Projekt City Ltd. Alle dir eingeräumten Rechte werden nur durch eine ausdrückliche Lizenz gewährt. Eine Liste der Danksagungen zu Drittkomponenten befindet sich in der Spieloberfläche.",
+
+  "s6_title": "#6 Kündigung",
+  "s6_p1": "Du kannst diese Vereinbarung kündigen, indem du die Welt und ihre Dateien von allen Geräten löscht, auf denen du sie installiert hast. Nach der Kündigung darfst du keine der dir durch die Lizenz gewährten Rechte mehr ausüben und musst alle Kopien der Software vernichten.",
+  "s6_p2": "Projekt City kann diese Vereinbarung auch kündigen oder deinen Zugang einschränken oder sperren, wenn festgestellt wird, dass du gegen",
+  "s6_a": "die Bedingungen dieser Vereinbarung; oder",
+  "s6_b": "durch oder während deiner Nutzung der Welt oder der Dienste verstoßen hast.",
+  "s6_p3": "Projekt City wird angemessene Schritte unternehmen, um dich vor der Kündigung zu warnen. Eine Vorwarnung ist nicht erforderlich, wenn dein Verstoß so schwerwiegend war, dass eine sofortige Kündigung gerechtfertigt ist.",
+
+  "s7_title": "#7 Anwendbares Recht und Gerichtsbarkeit",
+  "s7_p": "Jeder Anspruch oder Streit, der sich aus dieser Vereinbarung oder dem Dienst ergibt, unterliegt dem Recht des Landes, in dem du deinen Wohnsitz hast.",
+
+  "s8_title": "#8 Änderungen dieser Vereinbarung",
+  "s8_p": "Projekt City kann diese Vereinbarung, die Nutzungsbedingungen oder die Datenschutzerklärung jederzeit in angemessener Weise ändern, soweit dies zur Umsetzung gesetzlicher Anforderungen oder zur Klarstellung notwendig ist. Wir werden dich 30 Tage im Voraus über Änderungen informieren. Wenn du nicht ausdrücklich widersprichst, gilt die Änderung als akzeptiert.",
+
+  "s9_title": "#9 Keine Abtretung",
+  "s9_p": "Du darfst keine deiner Rechte oder Pflichten aus dieser Vereinbarung ohne die vorherige schriftliche Zustimmung von Projekt City abtreten oder übertragen. Projekt City kann jederzeit alle oder einen Teil seiner Rechte oder Pflichten abtreten oder übertragen.",
+
+  "s10_title": "#10 Definitionen",
+  "s10_p1": "In dieser Vereinbarung haben die folgenden großgeschriebenen Wörter die folgenden Bedeutungen:",
+  "s10_def1": "\"Projekt City\" bezeichnet das Unternehmen \"Projekt City Ltd.\" und alle zugehörigen Dateien, Hoster, Dienste, Social-Media-Kanäle, Websites und Welten.",
+  "s10_def2": "\"Welt\" bezeichnet die Welt von Projekt City in jeder Version und Form, die von CurseForge heruntergeladen und gemäß der Nutzungsrichtlinie für unsere Welt verwendet werden kann.",
+  "s10_def3": "\"Dienste\" bezeichnet alle Dienste von Projekt City, sei es Websites, Hoster, Dateien und Social-Media-Kanäle, die von Projekt City erstellt oder (aktiv) verwaltet werden.",
+
+  "s11_title": "#11 Aktueller Status der EULA",
+  "s11_p": "Diese Endbenutzer-Lizenzvereinbarung wurde am 6. März 2025 erstellt und tritt am 6. April 2025 in Kraft. Bis dahin sind alle Nutzer verpflichtet, diese Lizenzvereinbarung zu lesen."
+}

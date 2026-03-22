@@ -1,0 +1,46 @@
+{
+  "page_title": "Barrierefreiheitserklärung",
+  "legal_header_intro_p1": "Projekt City ist ein privates, unabhängiges Projekt, das dir als Teil von itsmarian.dev völlig kostenlos zur Verfügung gestellt wird. Beim Download erhältst du eine komprimierte ZIP-Datei, die du entpacken und direkt in Minecraft laden kannst - auf eigene Gefahr.",
+  "legal_header_intro_p2": "Bitte beachte, dass Projekt City von itsmarian.dev verwaltet wird. Das rechtlich erforderliche Impressum sowie zentrale Kontaktinformationen findest du unter <a class=\"linkout\" data-linkout=\"https://itsmarian.dev/legal/imprint\" data-target=\"_blank\">itsmarian.dev/legal/imprint</a>.",
+  "legal_header_intro_p3": "Wenn du fortfährst, bestätigst du, dass du unsere <a class=\"linkout\" data-linkout=\"/legal/advertisement-terms\" data-target=\"_blank\">Werbebedingungen</a>, die <a class=\"linkout\" data-linkout=\"/legal/eula\">Endbenutzer-Lizenzvereinbarung</a>, die <a class=\"linkout\" data-linkout=\"/legal/privacy\" data-target=\"_blank\">Datenschutzerklärung</a>, die <a class=\"linkout\" data-linkout=\"/legal/terms\" data-target=\"_blank\">Nutzungsbedingungen</a> und die <a class=\"linkout\" data-linkout=\"/legal/use-our-world\" data-target=\"_blank\">Nutzungsrichtlinie für unsere Welt</a> gelesen hast und damit einverstanden bist. Wenn du nicht einverstanden bist, verlasse bitte unsere Website und nutze unsere Dienste nicht.",
+
+  "s0_p1": "Web-Barrierefreiheit ist ein häufig unterschätzter, aber entscheidender Aspekt bei der Gestaltung und Entwicklung von Online-Plattformen. Sie beschreibt, wie einfach es für Menschen mit unterschiedlichen Fähigkeiten und Einschränkungen ist, eine Website zu erreichen, zu verstehen und zu nutzen. Im Kern geht es darum sicherzustellen, dass alle Nutzer - unabhängig von ihren individuellen Bedürfnissen - dieselbe Möglichkeit haben, auf digitale Inhalte zuzugreifen und diese zu navigieren.",
+  "s0_p2": "Web-Barrierefreiheit betrifft nicht nur Menschen mit Behinderungen, sondern auch ältere Menschen, Personen mit vorübergehenden Einschränkungen (z.B. nach Verletzungen) sowie Nutzer mit langsamerer Internetverbindung oder veralteten technischen Geräten. Durch den Abbau von Barrieren schaffen wir eine inklusivere Online-Umgebung.",
+  "s0_p3": "In diesem Artikel werfen wir einen genaueren Blick darauf, was Web-Barrierefreiheit bedeutet, warum sie wichtig ist und wie sie umgesetzt werden kann. Dies ist die Barrierefreiheitserklärung von Projekt City Ltd.!",
+
+  "s1_title": "#1 Maßnahmen zur Unterstützung der Barrierefreiheit",
+  "s1_p": "Projekt City Ltd. ergreift folgende Maßnahmen, um die Barrierefreiheit von Projekt City sicherzustellen:",
+  "s1_li1": "Klare Ziele und Verantwortlichkeiten für Barrierefreiheit festlegen",
+  "s1_li2_prefix": "Eine einfache und leicht verständliche Version unserer Hauptseite:",
+  "s1_li3": "Barrierefreiheit in all unsere internen Richtlinien einbeziehen",
+  "s1_li4": "Einheitliches System für alle Webseiten sowie einfache Farben, Schriftfamilien und Schriftgrößen verwenden",
+
+  "s2_title": "#2 Konformitätsstatus",
+  "s2_p": "Die <a class=\"linkout\" data-linkout=\"https://www.w3.org/WAI/standards-guidelines/wcag\" data-linkout-type=\"external\" data-target=\"_blank\">Web Content Accessibility Guidelines (WCAG)</a> definieren Anforderungen für Designer und Entwickler, um die Barrierefreiheit für Menschen mit Behinderungen zu verbessern. Sie definieren drei Konformitätsstufen: Level A, Level AA und Level AAA. Projekt City erfüllt WCAG 2.1 Level AA teilweise. Teilweise konform bedeutet, dass einige Teile des Inhalts nicht vollständig dem Barrierefreiheitsstandard entsprechen.",
+
+  "s3_title": "#3 Feedback",
+  "s3_p": "Wir freuen uns über dein Feedback zur Barrierefreiheit von Projekt City. Bitte teile uns mit, wenn du auf Projekt City auf Barrierefreiheitsprobleme stößt:",
+  "s3_email_label": "E-Mail:",
+  "s3_discord_label": "Discord:",
+
+  "s4_title": "#4 Kompatibilität mit Browsern und Hilfstechnologien",
+  "s4_p": "Projekt City ist so konzipiert, dass es mit folgenden Hilfstechnologien kompatibel ist:",
+  "s4_li1": "Browser Brave auf den Betriebssystemen Android 10 - Android 15 und höher, HyperOS, iOS 15 - iOS 18 und höher, Meta Horizon OS v38 - v74 und höher, macOS 10 (Ventura) - macOS 26 (Tahoe) und höher, Windows 10 & Windows 11 und höher",
+  "s4_li2": "Browser Chrome auf den Betriebssystemen Android 10 - Android 15 und höher, HyperOS, iOS 15 - iOS 18 und höher, Meta Horizon OS v38 - v74 und höher, macOS 10 (Ventura) - macOS 26 (Tahoe) und höher, Windows 10 & Windows 11 und höher",
+  "s4_li3": "Browser DuckDuckGo auf den Betriebssystemen Android 10 - Android 15 und höher, HyperOS, iOS 15 - iOS 18 und höher, Meta Horizon OS v38 - v74 und höher, macOS 10 (Ventura) - macOS 26 (Tahoe) und höher, Windows 10 & Windows 11 und höher",
+  "s4_li4": "Browser Ecosia auf den Betriebssystemen Android 10 - Android 15 und höher, HyperOS, iOS 15 - iOS 18 und höher, Meta Horizon OS v38 - v74 und höher, macOS 10 (Ventura) - macOS 26 (Tahoe) und höher, Windows 10 & Windows 11 und höher",
+  "s4_li5": "Browser Firefox auf den Betriebssystemen Android 10 - Android 15 und höher, HyperOS, iOS 15 - iOS 18 und höher, Meta Horizon OS v38 - v74 und höher, macOS 10 (Ventura) - macOS 26 (Tahoe) und höher, Windows 10 & Windows 11 und höher",
+  "s4_li6": "Browser Microsoft Edge auf den Betriebssystemen Android 10 - Android 15 und höher, HyperOS, iOS 15 - iOS 18 und höher, Meta Horizon OS v38 - v74 und höher, macOS 10 (Ventura) - macOS 26 (Tahoe) und höher, Windows 10 & Windows 11 und höher",
+  "s4_li7": "Browser Opera auf den Betriebssystemen Android 10 - Android 15 und höher, HyperOS, iOS 15 - iOS 18 und höher, Meta Horizon OS v38 - v74 und höher, macOS 10 (Ventura) - macOS 26 (Tahoe) und höher, Windows 10 & Windows 11 und höher",
+  "s4_li8": "Browser Opera GX auf den Betriebssystemen Android 10 - Android 15 und höher, HyperOS, iOS 15 - iOS 18 und höher, Meta Horizon OS v38 - v74 und höher, macOS 10 (Ventura) - macOS 26 (Tahoe) und höher, Windows 10 & Windows 11 und höher",
+  "s4_li9": "Browser Safari auf den Betriebssystemen macOS 10 (Ventura) - macOS 26 (Tahoe), iOS 15 - iOS 18 und höher",
+  "s4_li10": "Browser TOR auf den Betriebssystemen Android 10 - Android 15 und höher, HyperOS, iOS 15 - iOS 18 und höher, Meta Horizon OS v38 - v74 und höher, macOS 10 (Ventura) - macOS 26 (Tahoe) und höher, Windows 10 & Windows 11 und höher",
+  "s4_note": "Es ist wichtig zu erwähnen, dass diese Informationen nur auf speziellen Geräten getestet wurden. Es ist jedoch möglich, dass die Seite - je nach Gerät, Softwareversion und -typ - auf einem hier aufgelisteten Betriebssystem möglicherweise nicht funktioniert. Dennoch versucht Projekt City stets, sich an diese Software und ihre Geräte anzupassen.",
+
+  "s5_title": "#5 Technische Spezifikationen",
+  "s5_p1": "Die Barrierefreiheit von Projekt City basiert auf folgenden Technologien, die in Kombination mit dem jeweiligen Webbrowser sowie etwaigen installierten Hilfstechnologien oder Plugins funktionieren:",
+  "s5_p2": "Diese Technologien werden für die Konformität mit den verwendeten Barrierefreiheitsstandards herangezogen.",
+
+  "s6_title": "#6 Datum",
+  "s6_p": "Diese Erklärung wurde am [1. April 2024] erstellt und zuletzt am [1. März 2026] aktualisiert."
+}

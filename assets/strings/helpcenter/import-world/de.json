@@ -1,0 +1,22 @@
+{
+    "import_h1": "Welt importieren",
+    "import_sp_h2": "#1 Die Welt in Minecraft importieren (Einzelspieler)",
+    "import_sp_para1": "Wenn du die Welt für den Einzelspieler importierst, kannst nur du - oder der Benutzer auf deinem lokalen Gerät - spielen. Um mit anderen Spielern zu spielen, siehe Abschnitt #2 unten.",
+    "import_sp_para2": "Um die Welt im Einzelspieler zu laden, befolge nach dem Herunterladen diese Schritte:",
+    "import_sp_step1": "Klicke mit der rechten Maustaste auf die heruntergeladene .zip-Datei „Projekt City [V5.0]“ und wähle „Alle extrahieren“.",
+    "import_sp_step2": "Klicke unten rechts im Dialogfenster auf „Extrahieren“.",
+    "import_sp_step3": "Warte, bis die Extraktion abgeschlossen ist, und kehre dann zu deinem vorherigen Verzeichnis zurück.",
+    "import_sp_step4": "Klicke mit der rechten Maustaste auf den extrahierten Ordner und kopiere ihn.",
+    "import_sp_step5": "Drücke die Windows-Taste, gib „run“ ein und öffne die Ausführen-Anwendung. Gib „%appdata%“ ein und klicke auf „OK“.",
+    "import_sp_step6": "Navigiere zu „.minecraft“ → „saves“ und füge den kopierten Ordner dort ein. Achte darauf, dass sich kein weiterer Ordner darin befindet - wenn der Weltordner einen weiteren Ordner enthält, wird die Welt möglicherweise nicht richtig geladen.",
+    "import_mp_h2": "#2 Die Welt auf einen Minecraft-Server importieren (Mehrspieler)",
+    "import_mp_step1": "Klicke mit der rechten Maustaste auf die heruntergeladene .zip-Datei „Projekt City [V5.0]“ und wähle „Alle extrahieren“.",
+    "import_mp_step2": "Klicke unten rechts im Dialogfenster auf „Extrahieren“.",
+    "import_mp_step3": "Warte, bis die Extraktion abgeschlossen ist, und kehre dann zu deinem vorherigen Verzeichnis zurück.",
+    "import_mp_step4": "Klicke mit der rechten Maustaste auf den extrahierten Ordner und kopiere ihn.",
+    "import_mp_step5": "Navigiere zu deinem Server-Ordner.",
+    "import_mp_step6": "Füge den kopierten Ordner in das Stammverzeichnis deines Servers ein.",
+    "import_mp_step7": "Benenne den Ordner bei Bedarf in „world“ um. Wenn bereits ein Ordner „world“ vorhanden ist, entferne ihn zuerst. Bitte beachte: Das Löschen deines vorhandenen Weltordners entfernt dauerhaft alle Fortschritte in dieser Serverwelt. Diese Aktion kann nicht rückgängig gemacht werden.",
+    "import_mp_para": "Du kannst die Welt auch als zusätzliche Welt mit dem Multiverse-Core-Plugin hinzufügen. Apex Hosting bietet eine detaillierte Schritt-für-Schritt-Anleitung unter folgender Adresse:",
+    "import_mp_link": "https://apexminecrafthosting.com/multiverse-core-plugin/"
+}

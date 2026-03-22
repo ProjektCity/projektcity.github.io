@@ -1,0 +1,142 @@
+#directory, #project-info, #download-table {
+    max-width: 1000px;
+    width: 100%;
+}
+
+.project-information {
+    display: flex;
+    gap: 10px;
+}
+
+.information-logo {
+    height: 140px;
+    width: 140px;
+}
+
+.information-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+}
+
+.information-project-name {
+    font-size: 35px;
+    font-weight: 400;
+}
+
+.information-project-author {
+    font-size: 35px;
+}
+
+.table {
+	border-collapse: collapse;
+    font-size: 20px;
+	table-layout: auto;
+	width: 100%;
+}
+
+.table th {
+	text-align: center;
+	padding: 12px 8px;
+}
+
+.mobile-td {
+	display: none;
+}
+
+.mobile-td:hover {
+	text-decoration: underline;
+}
+.table tr {
+    border-top: 1px solid var(--border-white);
+}
+
+.table td {
+	padding: 8px 0;
+	vertical-align: middle;
+    text-align: center;
+}
+
+.td-image-container img {
+	display: block;
+	height: auto;
+    margin: 0 auto;
+	max-width: 40px;
+}
+
+.image-release {
+    background: url('/assets/images/download/Release.png');
+}
+
+.image-beta {
+    background: url('/assets/images/download/Beta.png');
+}
+
+.td-image-container div {
+    background-position: center;
+    background-size: cover;
+    border-radius: var(--radius-extra-small);
+    height: 40px;
+    margin: 0 auto;
+    width: 40px;
+}
+
+@media screen and (max-width: 630px) {
+    .table {
+        margin-top: 2rem;
+    }
+
+	.table,
+	.table thead,
+	.table tbody,
+	.table tr,
+	.table th,
+	.table td {
+		display: block;
+	}
+    
+	.table thead {
+		display: none;
+	}
+
+	.mobile-td {
+		display: block;
+	}
+
+	.table tr {
+		border: 1px solid #ccc;
+		margin-bottom: 1rem;
+		padding: 0.5rem;
+		border-radius: 6px;
+	}
+
+	.table td {
+		display: flex;
+		align-items: center;
+        justify-content: center;
+		padding: 0.5rem 0;
+		border-bottom: 1px dashed #ddd;
+        border-top: none;
+	}
+
+	.table td:last-child {
+		border-bottom: none;
+	}
+
+	.td-image {
+		justify-content: flex-start;
+	}
+
+	.td-image-container {
+		display: inline-flex;
+		align-items: center;
+	}
+
+	.table td .td-name-container,
+	.table td .td-date-container,
+	.table td .td-size-container,
+	.table td .td-gversion-container {
+		flex: 1;
+	}
+}

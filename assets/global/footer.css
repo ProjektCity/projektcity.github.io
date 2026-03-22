@@ -1,0 +1,28 @@
+footer {
+    border-top: 2px solid var(--border-white);
+    display: flex;
+    flex-direction: column;
+    gap: 7.5px;
+    padding: 1.25rem;
+    text-align: center;
+}
+
+footer > p, footer > p > a {
+    font-size: 1.1rem;
+}
+
+footer > div {
+    margin-top: calc(1rem - 7.5px);
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+#CookieChanger {
+    cursor: pointer;
+}
+
+.f-colored a {
+    text-decoration: none !important;
+}

@@ -1,0 +1,103 @@
+h3 {
+    margin-top: 1rem;
+}
+
+.legal-header {
+    margin-bottom: 2rem;
+}
+
+.enumeration-line {
+    display: flex;
+    gap: 10px;
+}
+
+.enumeration-left {
+    margin-right: 5px;
+}
+
+.enumeration-right {
+
+}
+
+.contents {
+    width: 100%;
+}
+
+.content {
+    display: flex;
+}
+
+.content-l p, .content-r p {
+    cursor: pointer;
+}
+
+.content-l p {
+    font-weight: 400;
+}
+
+.content-r {
+    margin-left: 5px;
+    width: 100%;
+}
+
+.btt-btn {
+    background-color: #24262B;
+    bottom: 25px;
+    border: 1px solid #32333C;
+    border-radius: 20px;
+    color: #fff;
+    cursor: pointer;
+    opacity: 1;
+    height: 70px;
+    left: 50%;
+    padding: 10px;
+    position: fixed;
+    text-align: center;
+    transform: translateX(-50%);
+    transition: all 0.3s ease-out;
+    width: 277.79px;
+    z-index: 1000;
+}
+
+.btt-btn.inactive {
+    pointer-events: none;
+    opacity: 0;
+}
+
+.btt-button {
+    display: flex;
+}
+
+.btt-svg {
+    height: 50px;
+    width: 50px;
+}
+
+.btt-text {
+    align-items: center;
+    display: flex;
+    height: 40px;
+    justify-content: center;
+    margin: 5px;
+    text-align: center;
+    width: 100%;
+}
+
+.btt-text p {
+    font-size: 29px !important;
+}
+
+@media (max-width: 500px) {
+    .legal-h1 {
+        font-size: 30px;
+    }
+
+    .legal-h2 {
+        font-size: 25px;
+    }
+
+    .legal-text-section {
+        font-size: 1.25em;
+        line-height: 30px;
+    }
+}

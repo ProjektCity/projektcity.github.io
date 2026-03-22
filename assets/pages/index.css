@@ -1,0 +1,432 @@
+.download-counter {
+    align-items: center;
+    background: linear-gradient(to right, var(--surface4) 0%, var(--surface4) var(--progress, 0%), transparent var(--progress, 0%), transparent 100%);
+    border: 2px solid #333;
+    border-radius: var(--radius-small);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    display: flex;
+    height: 70px;
+    font-size: 40px;
+    justify-content: center;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 0 15px;
+    position: relative;
+    width: 350px;
+}
+
+.big-header {
+    font-size: 5rem;
+}
+
+.subheader {
+    font-size: 15px;
+    margin: 0 auto;
+    transform: translate(10px, -22px);
+    width: 80%;
+}
+
+.carousel {
+    background: var(--surface2);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(50, 51, 60, 0.5);
+    border-radius: var(--radius);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    height: auto;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+
+.carousel ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.carousel li {
+    min-width: 100%;
+}
+
+.carousel img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.li-img {
+    height: 100%;
+    position: relative;
+}
+
+:root.light .li-text {
+    background: rgba(101, 101, 101, 0.5);
+}
+
+.li-text {
+    background: rgba(27, 29, 30, 0.7);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    color: var(--text);
+    margin-top: -100px;
+    max-height: 100px;
+    min-height: 10px;
+    padding: 12px 20px;
+    position: relative;
+    text-align: center;
+    width: 100%;
+}
+.li-text a {
+    font-size: 17px;
+    font-weight: 300;
+}
+
+.navbtn-prev,
+.navbtn-next {
+    align-items: center;
+    background: rgba(39, 42, 48, 0.6);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: var(--radius-small);
+    cursor: pointer;
+    display: flex;
+    height: 45px;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    width: 45px;
+    z-index: 10;
+}
+
+.navbtn-prev {
+    left: 15px;
+}
+
+.navbtn-next {
+    right: 15px;
+}
+
+.navbtn-prev:hover,
+.navbtn-next:hover {
+    background: rgba(39, 42, 48, 0.85);
+    border-color: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
+}
+
+.navbtn-prev:active,
+.navbtn-next:active {
+    transform: translateY(-50%) scale(0.95);
+}
+
+.navbtn-inner {
+    height: 22px;
+    width: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.indicators {
+    display: flex;
+    justify-content: center;
+    margin-top: 16px;
+    gap: 8px;
+    padding-bottom: 4px;
+}
+
+.indicators button {
+    background: rgba(255, 255, 255, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 6px;
+    cursor: pointer;
+    height: 8px;
+    margin: 0;
+    overflow: hidden;
+    position: relative;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    width: 32px;
+}
+
+.indicators button:hover {
+    background: rgba(255, 255, 255, 0.3);
+    border-color: rgba(255, 255, 255, 0.25);
+}
+
+.indicators button.active {
+    background: rgba(255, 255, 255, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    width: 72px;
+}
+
+.indicators button .progress {
+    animation: progressFill 3s linear forwards;
+    background: var(--surface4);
+    border-radius: 4px;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 0;
+}
+
+@keyframes progressFill {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+.trailer-container, .trailer-container div {
+    border-radius: var(--radius);
+    overflow: hidden;
+}
+
+#trailerPrivacy {
+    display: none;
+    aspect-ratio: 16 / 9;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: var(--surface3);
+    border: 1px solid var(--border-gray);
+    border-radius: var(--radius);
+    overflow: hidden;
+    position: relative;
+}
+
+.tp-inner {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+    padding: 24px;
+    text-align: center;
+}
+
+.tp-icon {
+    width: 80px;
+    height: 80px;
+    border-radius: var(--radius-small);
+    border: 1px solid var(--border-gray);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.tp-icon svg {
+    display: block;
+    opacity: 0.5;
+}
+
+.tp-title {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--text);
+    margin: 0;
+    line-height: 1.3;
+}
+
+.tp-description {
+    font-size: 15px;
+    font-weight: 400;
+    color: var(--text-lightgray);
+    margin: 0;
+    line-height: 1.55;
+    max-width: 320px;
+}
+
+.tp-btn {
+    margin-top: 4px;
+    padding: 8px 18px;
+    border-radius: var(--radius-small);
+    border: 1px solid var(--border-gray);
+    background-color: var(--surface2);
+    color: var(--text);
+    font-size: 13px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s ease, border-color 0.2s ease, transform 0.15s ease;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.tp-btn:hover {
+    background-color: var(--surface5);
+    border-color: var(--border-white);
+    transform: translateY(-1px);
+}
+
+.tp-btn:active {
+    transform: translateY(0);
+    opacity: 0.7;
+}
+
+.faq-container {
+    font-size: 20px;
+    font-weight: 200;
+    margin: 0;
+    overflow: hidden;
+}
+
+.content {
+    margin-bottom: 20px;
+    margin-top: 0;
+    padding-left: 20px;
+    width: calc(100% - 50px);
+    overflow: hidden;
+    max-height: 500px;
+    transition: max-height 0.35s ease, padding 0.35s ease, margin 0.35s ease;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    padding-right: 0;
+}
+
+.content.collapsed {
+    max-height: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.box {
+    cursor: pointer;
+    margin-bottom: 10px;
+    overflow: hidden;
+    padding-top: 10px;
+    position: relative;
+    width: 97.5%;
+}
+
+.content {
+    display: block;
+    overflow: hidden;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 0px;
+    padding-top: 10px;
+    width: 90%;
+}
+
+.special-information {
+    font-size: 8px;
+}
+
+.triangle {
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid white;
+    height: 0;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: transform 0.3s ease;
+    width: 0;
+}
+
+.rotated {
+    transform: translateY(-50%) rotate(180deg);
+}
+
+@media (max-width: 768px) {
+    .navbtn-prev,
+    .navbtn-next {
+        height: 40px;
+        width: 40px;
+    }
+
+    .navbtn-prev {
+        left: 10px;
+    }
+
+    .navbtn-next {
+        right: 10px;
+    }
+
+    .navbtn-inner {
+        height: 20px;
+        width: 20px;
+    }
+
+    .li-text {
+        margin-top: -60px;
+        padding: 10px 15px;
+    }
+
+    .li-text a {
+        font-size: 11px;
+    }
+
+    .indicators {
+        margin-top: 12px;
+        gap: 6px;
+    }
+
+    .indicators button {
+        height: 5px;
+        width: 28px;
+    }
+
+    .indicators button.active {
+        width: 56px;
+    }
+}
+
+@media (max-width: 487px) {
+    .big-header {
+        font-size: 3.5rem;
+    }
+
+    .subheader {
+        transform: translate(0px, -18px);
+    }
+
+    .navbtn-prev,
+    .navbtn-next {
+        height: 36px;
+        width: 36px;
+    }
+
+    .navbtn-inner {
+        height: 18px;
+        width: 18px;
+    }
+
+    .li-text {
+        font-size: 12px;
+        margin-top: -50px;
+        padding: 8px 12px;
+    }
+
+    .indicators button {
+        height: 4px;
+        width: 24px;
+    }
+
+    .indicators button.active {
+        width: 48px;
+    }
+
+    .tp-title {
+        font-size: 14px;
+    }
+
+    .tp-description {
+        font-size: 12px;
+    }
+}
