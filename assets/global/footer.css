@@ -26,3 +26,9 @@ footer a:hover {
 .f-colored a {
     text-decoration: none !important;
 }
+
+@media (max-width: 630px) {
+    footer > p, footer > p > a {
+        font-size: 0.8rem;
+    }
+}

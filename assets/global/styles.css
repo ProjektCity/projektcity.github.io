@@ -345,4 +345,8 @@ ul {
     a, p, span, ul, li {
         font-size: 18px;
     }
+
+    .small {
+        font-size: 8px;
+    }
 }
