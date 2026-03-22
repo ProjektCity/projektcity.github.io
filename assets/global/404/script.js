@@ -29,12 +29,12 @@
 		container.classList.add('mining-active');
 		titleEl.style.animation = 'titleChange 0.6s ease forwards';
 		setTimeout(() => {
-			titleEl.textContent = 'Mine Your Way Out!';
+			titleEl.textContent = window.i18n ? window.i18n.get('404_mining_title') : 'Mine Your Way Out!';
 			titleEl.style.animation = '';
 		}, 300);
 		subtitleEl.style.animation = 'subtitleFade 0.6s ease forwards';
 		setTimeout(() => {
-			subtitleEl.textContent = 'Hold down on a block to mine it.';
+			subtitleEl.textContent = window.i18n ? window.i18n.get('404_mining_subtitle') : 'Hold down on a block to mine it.';
 			subtitleEl.style.animation = '';
 		}, 300);
 		easterEgg.classList.add('egg-active');
@@ -44,9 +44,9 @@
 	function celebrateAllDestroyed() {
 		playSound('victory');
 		setTimeout(() => {
-			titleEl.textContent = 'You mined the 404!';
-			subtitleEl.textContent = '🎉 Achievement Unlocked: Block Breaker!';
-			errorDescriptionEl.textContent = 'Thank you for playing Projekt City!';
+			titleEl.textContent = window.i18n ? window.i18n.get('404_victory_title') : 'You mined the 404!';
+			subtitleEl.textContent = window.i18n ? window.i18n.get('404_victory_achievement') : '🎉 Achievement Unlocked: Block Breaker!';
+			errorDescriptionEl.textContent = window.i18n ? window.i18n.get('404_victory_description') : 'Thank you for playing Projekt City!';
 			statsEl.style.display = 'flex';
 			easterEgg.remove();
 			disableMiningMode()

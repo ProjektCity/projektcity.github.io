@@ -1,0 +1,12 @@
+{
+    "404_title": "Seite nicht gefunden",
+    "404_subtitle": "Dieser Bereich wurde noch nicht generiert.",
+    "404_description": "Die Seite, die Sie suchen, existiert nicht oder wurde verschoben. Lassen Sie uns Sie zum Spawn zurückbringen.",
+    "404_return_to_spawn": "Zum Spawn zurückkehren",
+    "404_blocks_destroyed": "Blöcke abgebaut: ",
+    "404_mining_title": "Grabe dich raus!",
+    "404_mining_subtitle": "Halte einen Block gedrückt, um ihn abzubauen.",
+    "404_victory_title": "Du hast die 404 abgebaut!",
+    "404_victory_achievement": "🎉 Erfolg freigeschaltet: Blockbrecher!",
+    "404_victory_description": "Danke, dass du Projekt City spielst!"
+}

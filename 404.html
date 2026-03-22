@@ -19,9 +19,10 @@
     <!-- i18n Configuration -->
     <script>
         window.i18nConfig = {
-            pagestringsPath: 'unset'
+            pageStringsPath: '/assets/strings/global/404/'
         };
     </script>
+    <script src="/assets/global/language.js"></script>
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-PMX9M628SV"></script>
     <script>
@@ -81,22 +82,22 @@
                     </div>
                 </div>
             </div>
-            <h1 class="error-title" id="errorTitle">Page Not Found</h1>
-            <p class="error-subtitle" id="errorSubtitle">This chunk hasn't been generated yet.</p>
-            <p class="error-description" id="errorDescription">The page you are looking for does not exist or has been moved. Let's get you back to spawn.</p>
+            <h1 class="error-title" id="errorTitle" data-i18n="404_title"></h1>
+            <p class="error-subtitle" id="errorSubtitle" data-i18n="404_subtitle"></p>
+            <p class="error-description" id="errorDescription" data-i18n="404_description"></p>
             <a href="/" class="error-cta">
                 <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
                     <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
                     <polyline points="9 22 9 12 15 12 15 22"/>
                 </svg>
-                Return to Spawn
+                <span data-i18n="404_return_to_spawn"></span>
             </a>
             <div class="mining-stats" id="miningStats" style="display:none;">
                 <div class="stat-item">
                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color:var(--mining-green)">
                         <rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/>
                     </svg>
-                    Blocks mined: <span id="blocksDestroyed">0</span>
+                    <span data-i18n="404_blocks_destroyed"></span><span id="blocksDestroyed">0</span>
                 </div>
             </div>
             <div class="easter-egg" id="easterEgg" title="Psst… try clicking!">
