@@ -12,7 +12,7 @@
 
 <p style="text-decoration: none; text-align: center;"><a style="text-align: center;" href="https://youtube.com/@ProjektCity" rel="nofollow"> <img src="https://cdn.jsdelivr.net/npm/@intergrav/devins-badges@3/assets/compact/social/youtube-plural_vector.svg" alt="YouTube" width="280.5" height="50"></a>&nbsp; <a style="text-align: center;" href="https://bit.ly/ProjektCity" rel="nofollow"><img src="https://cdn.jsdelivr.net/npm/@intergrav/devins-badges@3/assets/compact/documentation/website_vector.svg" alt="Website" width="240" height="50"> </a></p>
 
-<p style="text-decoration: none; text-align: center;"><a style="text-align: center;" href="https://translate.projektcity.com/" rel="nofollow"><img src="https://badges.crowdin.net/projektcity/localized.svg" alt="Translate" height="50">
+<p style="text-decoration: none; text-align: center;"><a style="text-align: center;" href="https://translate.projektcity.com/" rel="nofollow"><img src="https://badges.crowdin.net/projektcity/localized.svg" alt="Translate" height="50"></p>
 
 <h2 style="text-align: center;">&nbsp;</h2>
 
