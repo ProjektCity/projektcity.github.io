@@ -10,8 +10,6 @@ function formatNumber(num) {
 async function fetchDownloadData() {
 	try {
 		const response = await fetch('https://api.projektcity.com/api/download');
-        console.log('Fetch response:', response);
-
 		if (!response.ok) {
 			throw new Error(`HTTP error! status: ${response.status}`);
 		}
