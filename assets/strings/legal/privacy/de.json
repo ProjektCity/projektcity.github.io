@@ -3,7 +3,6 @@
   "legal_header_intro_p1": "Projekt City ist ein privates, unabhängiges Projekt, das dir als Teil von itsmarian.dev völlig kostenlos zur Verfügung gestellt wird. Beim Download erhältst du eine komprimierte ZIP-Datei, die du entpacken und direkt in Minecraft laden kannst - auf eigene Gefahr.",
   "legal_header_intro_p2": "Bitte beachte, dass Projekt City von itsmarian.dev verwaltet wird. Das rechtlich erforderliche Impressum sowie zentrale Kontaktinformationen findest du unter <a class=\"linkout\" data-linkout=\"https://itsmarian.dev/legal/imprint\" data-target=\"_blank\">itsmarian.dev/legal/imprint</a>.",
   "legal_header_intro_p3": "Wenn du fortfährst, bestätigst du, dass du unsere <a class=\"linkout\" data-linkout=\"/legal/advertisement-terms\" data-target=\"_blank\">Werbebedingungen</a>, die <a class=\"linkout\" data-linkout=\"/legal/eula\">Endbenutzer-Lizenzvereinbarung</a>, die <a class=\"linkout\" data-linkout=\"/legal/privacy\" data-target=\"_blank\">Datenschutzerklärung</a>, die <a class=\"linkout\" data-linkout=\"/legal/terms\" data-target=\"_blank\">Nutzungsbedingungen</a> und die <a class=\"linkout\" data-linkout=\"/legal/use-our-world\" data-target=\"_blank\">Nutzungsrichtlinie für unsere Welt</a> gelesen hast und damit einverstanden bist. Wenn du nicht einverstanden bist, verlasse bitte unsere Website und nutze unsere Dienste nicht.",
-
   "contents_title": "Inhaltsverzeichnis",
   "contents_1": "Einleitung",
   "contents_1_1": "Vorabinformation",
@@ -44,7 +43,6 @@
   "contents_5_9": "Beschwerderecht gemäß Art. 77 DSGVO",
   "contents_6": "Was passiert, wenn andere Änderungen eintreten?",
   "contents_7": "Informationen zu den aufgeführten Codes, Gesetzen und deren Abkürzungen",
-
   "s1_title": "#1 Einleitung",
   "s1_1_title": "#1.1 Vorabinformation:",
   "s1_1_p1": "Da wir unsere Website aus/in Deutschland hosten, das sich in der Europäischen Union / im Europäischen Wirtschaftsraum (EWR) befindet, können die gesetzlichen Regelungen in anderen Regionen oder Ländern von den hier genannten abweichen.",
@@ -54,7 +52,6 @@
   "s1_2_p1": "In dieser Vereinbarung haben die folgenden großgeschriebenen Wörter die folgenden Bedeutungen:",
   "s1_2_def1": "\"Projekt City\" bezeichnet das Unternehmen \"Projekt City Ltd.\" und alle zugehörigen Dateien, Hoster, Dienste, Social-Media-Kanäle, Websites und Welten, die sich an den jeweiligen Orten in der Welt befinden.",
   "s1_2_def2": "\"(Die) Website(s)\" bezeichnet alle von Projekt City Ltd. erstellten, verwalteten, betriebenen und gehosteten Websites. Dazu gehören folgende Seiten und ihre Unterseiten: \"https://projektcity.github.io/\", \"https://itsmarian.wixsite.com/projektcity\" und \"https://itsmarian.wixsite.com/helpcenter\". \"(Die) Website\" bezeichnet die ursprüngliche Website, von der der Nutzer kam, und umfasst die Projekt City-Website, die der Nutzer (hat) besucht.",
-
   "s2_title": "#2. Allgemeine Informationen",
   "s2_1_title": "#2.1 Verarbeitung personenbezogener Daten und andere Begriffe",
   "s2_1_p1": "Der Datenschutz gilt für die Verarbeitung personenbezogener Daten. Personenbezogene Daten sind alle Daten, mit denen du persönlich identifiziert werden kannst. Das ist zum Beispiel die IP-Adresse des Geräts (PC, Laptop, Smartphone usw.), das du gerade verwendest. Solche Daten werden verarbeitet, wenn \"etwas damit passiert\". Hier wird beispielsweise die IP vom Browser an unseren Anbieter übermittelt und dort automatisch gespeichert. Das ist dann eine Verarbeitung (gemäß Art. 4 Nr. 2 DSGVO) personenbezogener Daten (gemäß Art. 4 Nr. 1 DSGVO).",
@@ -92,7 +89,6 @@
   "s2_10_b": "Nachdem du dich vom Newsletter abgemeldet hast, werden deine Daten gelöscht. Du hast das Recht, deine Einwilligung jederzeit zu widerrufen, indem du unter einer der E-Mails auf \"Abmelden\" klickst. Du hast außerdem das Recht auf Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung und Widerspruch gegen die Verarbeitung deiner personenbezogenen Daten.",
   "s2_10_c": "Wir ergreifen geeignete technische und organisatorische Sicherheitsmaßnahmen, um deine personenbezogenen Daten vor unbefugtem Zugriff, Verlust, Vernichtung oder Veränderung zu schützen.",
   "s2_10_p": "Wenn du Fragen oder Bedenken zum Datenschutz unseres Newsletters hast, kannst du uns jederzeit unter der oben genannten E-Mail-Adresse kontaktieren.",
-
   "s3_title": "#3 Was auf unserer Website passiert",
   "s3_p1": "Wenn du unsere Website besuchst, verarbeiten wir deine personenbezogenen Daten. Wir verwenden SSL- oder TLS-Verschlüsselung, um diese Daten bestmöglich vor dem unbefugten Zugriff Dritter zu schützen. Diese verschlüsselte Verbindung erkennst du an https:// oder dem Schloss-Symbol in der Adresszeile deines Browsers.",
   "s3_p2": "Nachfolgend erfährst du, welche Daten beim Besuch unserer Website erhoben werden, zu welchem Zweck dies geschieht und auf welcher Rechtsgrundlage.",
@@ -132,8 +128,8 @@
   "s3_3_1_li5": "E-Mail",
   "s3_3_1_p2": "Die Rechtsgrundlage für diese Datenverarbeitung ist Art. 6 Abs. 1 lit. b DSGVO. Die Daten werden gelöscht, sobald der jeweilige Zweck nicht mehr zutrifft und dies gemäß den gesetzlichen Anforderungen möglich ist.",
   "s3_3_2": "#3.3.2 Kontaktaufnahme",
-  "s3_3_2_email_label": "a) E-Mail",
   "s3_3_2_email": "Wenn du uns per E-Mail kontaktierst, verarbeiten wir deine E-Mail-Adresse und alle anderen in der E-Mail enthaltenen Daten. Diese Daten werden auf dem Mailserver und in einigen Fällen auf den jeweiligen Endgeräten gespeichert. Je nach Anfrage ist die Rechtsgrundlage hierfür regelmäßig Art. 6 Abs. 1 lit. f DSGVO oder Art. 6 Abs. 1 lit. b DSGVO. Die Daten werden gelöscht, sobald der jeweilige Zweck nicht mehr zutrifft und dies gemäß den gesetzlichen Anforderungen möglich ist.",
+  "s3_3_2_email_label": "a) E-Mail",
   "s3_3_2_form_label": "b) Kontaktformular",
   "s3_3_2_form": "Wir bieten ein Kontaktformular an. Dieses dient zur Kontaktaufnahme mit unserem Unternehmen. In diesem Formular verarbeiten wir in der Regel deinen Vor- und Nachnamen, deine Telefonnummer, deine E-Mail-Adresse, eine Postanschrift und den Inhalt der Nachricht. Die Daten werden auf unserem Webserver gespeichert und intern an die entsprechenden E-Mail-Adressen weitergeleitet. Die Rechtsgrundlage für die Datenverarbeitung ist Art. 6 Abs. 1 lit. f DSGVO. Wenn der Kontakt auf den Abschluss eines Vertrags abzielt, ist zusätzliche Rechtsgrundlage für die Verarbeitung Art. 6 Abs. 1 lit. b DSGVO. Wir löschen diese Daten spätestens 3 Monate nach Erhalt, sofern sie nicht für ein entstandenes Vertragsverhältnis erforderlich sind.",
   "s3_3_2_formbind": "Wir binden das Kontaktformular von",
@@ -252,12 +248,10 @@
   "s3_11_2_c": "Zusammenarbeiten und kommunizieren: CurseForge ermöglicht die Interaktion zwischen Mod-Erstellern und Nutzern über Foren, Kommentare und Nachrichtenfunktionen. Dies ermöglicht Feedback, Fehlerbehebung und die Zusammenarbeit bei der Mod-Entwicklung.",
   "s3_11_2_d": "Neue Inhalte entdecken: Die Plattform bietet Werkzeuge, mit denen Nutzer trendige Mods entdecken, Kategorien durchsuchen und nach bestimmten Inhalten basierend auf ihren Interessen suchen können.",
   "s3_11_2_support": "Du kannst hier ein Support-Ticket für CurseForge erstellen: <a class=\"linkout\" data-linkout=\"https://support.curseforge.com/en/support/tickets/new\" data-target=\"_blank\" data-type=\"external\">https://support.curseforge.com/en/support/tickets/new</a>. Du kannst sie per E-Mail, Support-Tickets oder Social-Media-Kanälen für Anfragen, Feedback oder Unterstützung erreichen.",
-
   "s4_title": "#4 GitHub Pages",
   "s4_subtitle": "GitHub Pages Dienst",
   "s4_p1": "Diese Website wird als GitHub Pages-Website gehostet. GitHub kann personenbezogene Daten von Besuchern dieser GitHub Pages-Website erheben, einschließlich Protokolle der IP-Adressen der Besucher, um gesetzliche Verpflichtungen zu erfüllen und die Sicherheit und Integrität dieser Website und des Dienstes aufrechtzuerhalten.",
   "s4_p2": "Details findest du in der <a class=\"linkout\" data-linkout=\"https://help.github.com/en/github/site-policy/github-privacy-statement\" data-target=\"_blank\" data-type=\"external\">GitHub Datenschutzerklärung</a>.",
-
   "s5_title": "#5 Deine Rechte",
   "s5_1_title": "#5.1 Auskunftsrecht gemäß Art. 15 DSGVO",
   "s5_1_p": "Du kannst Auskunft darüber verlangen, ob deine personenbezogenen Daten verarbeitet werden. Ist dies der Fall, kannst du weitere Informationen über Art und Weise der Verarbeitung anfordern. Eine detaillierte Auflistung findest du in Art. 15 Abs. 1 lit. a bis h DSGVO.",
@@ -279,10 +273,8 @@
   "s5_8_p3": "Wir möchten dich auch auf deine Rechte nach §§ 32 ff. BDSG hinweisen, die jedoch weitgehend mit den soeben beschriebenen Rechten übereinstimmen.",
   "s5_9_title": "#5.9 Beschwerderecht gemäß Art. 77 DSGVO",
   "s5_9_p": "Du hast auch das Recht, eine Beschwerde bei einer Datenschutz-Aufsichtsbehörde einzureichen, wenn du der Ansicht bist, dass die Verarbeitung der dich betreffenden personenbezogenen Daten gegen diese Verordnung verstößt.",
-
   "s6_title": "#6 Was passiert, wenn andere Änderungen eintreten?",
   "s6_p": "Der aktuelle Stand dieser Datenschutzerklärung ist der 6. März 2025. Gelegentlich ist es notwendig, den Inhalt der Datenschutzerklärung anzupassen, um auf tatsächliche und rechtliche Änderungen zu reagieren. Wir behalten uns daher vor, diese Datenschutzerklärung jederzeit zu ändern. Wir werden die geänderte Version an der gleichen Stelle veröffentlichen und empfehlen dir, die Datenschutzerklärung regelmäßig zu lesen.",
-
   "s7_title": "#7 Informationen zu den aufgeführten Codes, Gesetzen und deren Abkürzungen",
   "s7_gdpr": "GDPR = General Data Protection Regulation",
   "s7_gdpr_de": "DEUTSCH: DSGVO = Datenschutz-Grundverordnung",
