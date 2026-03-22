@@ -1,0 +1,12 @@
+{
+    "404_title": "Page Not Found",
+    "404_subtitle": "This chunk hasn't been generated yet.",
+    "404_description": "The page you are looking for does not exist or has been moved. Let's get you back to spawn.",
+    "404_return_to_spawn": "Return to Spawn",
+    "404_blocks_destroyed": "Blocks mined: ",
+    "404_mining_title": "Mine Your Way Out!",
+    "404_mining_subtitle": "Hold down on a block to mine it.",
+    "404_victory_title": "You mined the 404!",
+    "404_victory_achievement": "🎉 Achievement Unlocked: Block Breaker!",
+    "404_victory_description": "Thank you for playing Projekt City!"
+}
