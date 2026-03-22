@@ -11,6 +11,9 @@
 <p style="text-decoration: none; text-align: center;"><a style="text-align: center;" rel="nofollow"> <img src="https://cdn.jsdelivr.net/npm/@intergrav/devins-badges@3/assets/compact/documentation/generic_vector.svg" alt="Documentation" width="315.85" height="50"></a> &nbsp;<a style="text-align: center;" href="https://instagram.com/ProjektCity" rel="nofollow"><img src="https://img.shields.io/badge/Instagram-@ProjektCity-272125?logo=instagram&logoColor=white&style=flat" alt="Instagram" width="412.5" height="50"> </a></p>
 
 <p style="text-decoration: none; text-align: center;"><a style="text-align: center;" href="https://youtube.com/@ProjektCity" rel="nofollow"> <img src="https://cdn.jsdelivr.net/npm/@intergrav/devins-badges@3/assets/compact/social/youtube-plural_vector.svg" alt="YouTube" width="280.5" height="50"></a>&nbsp; <a style="text-align: center;" href="https://bit.ly/ProjektCity" rel="nofollow"><img src="https://cdn.jsdelivr.net/npm/@intergrav/devins-badges@3/assets/compact/documentation/website_vector.svg" alt="Website" width="240" height="50"> </a></p>
+
+<p style="text-decoration: none; text-align: center;"><a style="text-align: center;" href="https://translate.projektcity.com/" rel="nofollow"><img src="https://badges.crowdin.net/projektcity/localized.svg" alt="Translate" height="50">
+
 <h2 style="text-align: center;">&nbsp;</h2>
 
 <p style="text-align: center;"><img src="https://i.ibb.co/7VQ1tpk/Map.png" width="100%"></p>
