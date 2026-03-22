@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function () {
     let popupTranslations = {};
     let popupTranslationsPromise = null;
 
-    const POPUP_STRINGS_PATH = '/assets/strings/global/popup/';
+    const POPUP_STRINGS_PATH = 'https://projektcity.com/assets/strings/global/popup/';
 
     function getCurrentLanguage() {
         return (window.i18n && typeof window.i18n.getCurrentLanguage === 'function')
