@@ -52,9 +52,9 @@
 
     async function loadLanguageFiles(lang) {
         const pagePath = window.i18nConfig.pageStringsPath;
-        const globalHeaderPath = '/assets/strings/global/header/';
-        const globalFooterPath = '/assets/strings/global/footer/';
-        const globalCbPath = '/assets/strings/global/cb/';
+        const globalHeaderPath = 'https://projektcity.com/assets/strings/global/header/';
+        const globalFooterPath = 'https://projektcity.com/assets/strings/global/footer/';
+        const globalCbPath = 'https://projektcity.com/assets/strings/global/cb/';
 
         const urls = [
             `${pagePath}${lang}.json`,
