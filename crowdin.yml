@@ -1,5 +1,4 @@
-"preserve_hierarchy": true
-
-"files":
-- "source": "/assets/strings/**/en.json"
-- "translation": "/assets/strings/**/%two_letters_code%.json"
+preserve_hierarchy: 1
+files:
+  - source: /assets/strings/**/en.json
+    translation: /assets/strings/**/%two_letters_code%.json
