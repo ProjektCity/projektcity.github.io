@@ -200,7 +200,6 @@ header.scrolling {
 @media (max-width: 768px) {
     .language-dropdown {
         right: auto;
-        left: 0;
     }
 }
 
@@ -453,7 +452,7 @@ body.dark .theme-switch {
 
     .header-inner {
         overflow: visible;
-        width: calc(100% - 40px);
+        width: calc(100% - 20px);
     }
 
     .header-box {
