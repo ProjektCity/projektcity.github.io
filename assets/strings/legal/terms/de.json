@@ -3,7 +3,6 @@
   "legal_header_intro_p1": "Projekt City ist ein privates, unabhängiges Projekt, das dir als Teil von itsmarian.dev völlig kostenlos zur Verfügung gestellt wird. Beim Download erhältst du eine komprimierte ZIP-Datei, die du entpacken und direkt in Minecraft laden kannst - auf eigene Gefahr.",
   "legal_header_intro_p2": "Bitte beachte, dass Projekt City von itsmarian.dev verwaltet wird. Das rechtlich erforderliche Impressum sowie zentrale Kontaktinformationen findest du unter <a class=\"linkout\" data-linkout=\"https://itsmarian.dev/legal/imprint\" data-target=\"_blank\">itsmarian.dev/legal/imprint</a>.",
   "legal_header_intro_p3": "Wenn du fortfährst, bestätigst du, dass du unsere <a class=\"linkout\" data-linkout=\"/legal/advertisement-terms\" data-target=\"_blank\">Werbebedingungen</a>, die <a class=\"linkout\" data-linkout=\"/legal/eula\">Endbenutzer-Lizenzvereinbarung</a>, die <a class=\"linkout\" data-linkout=\"/legal/privacy\" data-target=\"_blank\">Datenschutzerklärung</a>, die <a class=\"linkout\" data-linkout=\"/legal/terms\" data-target=\"_blank\">Nutzungsbedingungen</a> und die <a class=\"linkout\" data-linkout=\"/legal/use-our-world\" data-target=\"_blank\">Nutzungsrichtlinie für unsere Welt</a> gelesen hast und damit einverstanden bist. Wenn du nicht einverstanden bist, verlasse bitte unsere Website und nutze unsere Dienste nicht.",
-
   "s1_title": "#1 Einleitung",
   "s1_1": "Die folgenden Bedingungen gelten für die Nutzung der Website \"itsmarian.wixsite.com/projektcity\" & itsmarian.wixsite.com/helpcenter (im Folgenden \"Website\"). Um die Website nutzen zu können, ist es wichtig, dass du als Nutzer die folgenden Bedingungen akzeptierst.",
   "s1_2": "Durch die Nutzung unserer Website stimmst du den Nutzungsbedingungen zu. Mit deiner Zustimmung versicherst du uns, dass du keine Beiträge leisten wirst, die gegen die Nutzungsbedingungen verstoßen.",
@@ -12,44 +11,34 @@
   "s1_3_li2": "Online-Minecraft-Website",
   "s1_3_li3": "Bereitstellung von Minecraft-Welten",
   "s1_3_li4": "Support unseres Dienstes",
-
   "s2_title": "#2 Kontaktdaten und rechtliche Informationen",
   "s2_p": "Wenn du Fragen zu unserer Website hast, kannst du uns über folgende Kontaktdaten erreichen:",
-
   "s3_title": "#3 Verfügbarkeit der Website",
   "s3_1": "Projekt City ist rund um die Uhr 24 Stunden am Tag verfügbar. Es kann jedoch zu Unterbrechungen aufgrund von Wartungsarbeiten kommen. Unterbrechungen können unter anderem durch höhere Gewalt oder andere Ursachen entstehen, für die Projekt City nicht verantwortlich ist.",
   "s3_2_intro": "Projekt City weist darauf hin,",
   "s3_2_li1": "dass Fehler zur vorübergehenden Abschaltung der Website führen können,",
   "s3_2_li2": "dass es technisch unmöglich ist, die Website fehlerfrei zur Verfügung zu stellen, und Projekt City daher keine Verantwortung dafür übernimmt,",
   "s3_2_li3": "dass die Verfügbarkeit dieser Website von Bedingungen und Diensten abhängt, die außerhalb der Kontrolle von Projekt City liegen. Wir sind nicht verantwortlich für Störungen in diesem Bereich.",
-
   "s4_title": "#4 Diskussionsforen",
   "s4_p": "Wenn Projekt City auf seinen Websites Diskussionsforen anbietet, wird von den Teilnehmern erwartet, dass sie die üblichen Kommunikationsregeln wie gegenseitigen Respekt einhalten. Besucher dürfen kein beleidigendes, abwertendes, obszönes, anstößiges, verleumderisches oder unanständiges Material verbreiten oder veröffentlichen, das die Rechte des geistigen Eigentums Dritter verletzt.",
-
   "s5_title": "#5 Elektronische Kommunikation",
   "s5_p": "Wenn du einen Projekt City-Dienst nutzt oder E-Mails, Textnachrichten oder andere Mitteilungen von deinem Computer oder Mobilgerät an uns sendest, kommunizierst du elektronisch mit uns. Wir werden auf verschiedenen Wegen elektronisch mit dir kommunizieren, darunter per E-Mail, Textnachrichten oder durch elektronische Nachrichten auf unserer Website. Für Vertragszwecke stimmst du zu, elektronische Mitteilungen von uns zu erhalten und dass diese keiner Schriftform bedürfen, sofern das geltende Recht nichts anderes vorschreibt.",
-
   "s6_title": "#6 Urheberrecht und Datenbankrechte",
   "s6_1": "Alle Inhalte, die in einem Projekt City-Dienst enthalten oder darüber zugänglich sind - wie Texte, Grafiken, Logos, Bilder, Audioclips, digitale Downloads und Datenzusammenstellungen - sind Eigentum von Projekt City oder Dritten und durch deutsches Urheberrecht und Datenbankrechte geschützt.",
   "s6_2": "Die Gesamtheit der in einem Projekt City-Dienst enthaltenen Inhalte ist ebenfalls ausschließliches Eigentum von Projekt City und durch deutsches Urheberrecht und Datenbankrechte geschützt.",
   "s6_3": "Du darfst Teile der Dienste \"itsmarian.wixsite.com/projektcity\", \"itsmarian.wixsite.com/helpcenter\", \"projektcity.github.io\" & \"itsmarianmc.github.io\" nicht ohne unsere ausdrückliche schriftliche Genehmigung systematisch extrahieren und/oder wiederverwenden. Insbesondere darfst du keine Data-Mining- oder Roboter-Werkzeuge verwenden, um wesentliche Teile eines Projekt City-Dienstes zu extrahieren.",
-
   "s7_title": "#7 Patente",
   "s7_p": "Alle bei Projekt City registrierten Patente gelten auch für alle Dienste und sonstigen Produkte von Projekt City. Es kann vorkommen, dass die jeweiligen Patente unter einem oder mehreren Patenten betrieben werden.",
-
   "s8_title": "#8 Ansprüche aus geistigen Eigentumsrechten",
   "s8_p": "Projekt City respektiert die Rechte des geistigen Eigentums Dritter. Wenn du der Ansicht bist, dass deine Rechte des geistigen Eigentums verletzt wurden, folge bitte unserem Verfahren zur Meldung von Verletzungen an \"itsmarian.wixsite.com/projektcity\", \"itsmarian.wixsite.com/helpcenter\" & \"projektcity.github.io\".",
-
   "s9_title": "#9 Haftung",
   "s9_1": "Wir bemühen uns stets, sicherzustellen, dass die Dienste von Projekt City unterbrechungsfrei verfügbar sind und die Übertragungen fehlerfrei sind. Aufgrund der Natur des Internets kann dies jedoch nicht garantiert werden. Dein Zugang kann auch von Zeit zu Zeit für Reparaturen oder Wartungsarbeiten unterbrochen oder eingeschränkt werden.",
   "s9_2": "Projekt City haftet unbegrenzt, soweit die Schadensursache auf einem vorsätzlichen oder grob fahrlässigen Pflichtverstoß von Projekt City oder eines gesetzlichen Vertreters oder Erfüllungsgehilfen beruht.",
   "s9_3": "Darüber hinaus haftet Projekt City für die leicht fahrlässige Verletzung wesentlicher Pflichten. In diesem Fall haftet Projekt City jedoch nur für den vorhersehbaren, vertragstypischen Schaden. Projekt City ist nicht haftbar für die leicht fahrlässige Verletzung nicht wesentlicher Pflichten.",
   "s9_4": "Die vorstehenden Haftungsbeschränkungen gelten nicht bei Verletzung von Leben, Körper oder Gesundheit, bei Mängeln nach Übernahme einer Garantie oder bei arglistig verschwiegenen Mängeln. Die Haftung nach dem Produkthaftungsgesetz bleibt unberührt.",
   "s9_5": "Soweit die Haftung von Projekt City ausgeschlossen oder eingeschränkt ist, gilt dies auch für die persönliche Haftung von Mitarbeitern, Vertretern und Erfüllungsgehilfen.",
-
   "s10_title": "#10 Links zu anderen Websites",
   "s10_p": "Unsere Website(s) enthalten Links zu Dritten. Diese werden nur aus Bequemlichkeits- und Informationsgründen bereitgestellt. Projekt City übernimmt keine Haftung für den Inhalt der jeweiligen Website. Es kann vorkommen, dass von uns bereitgestellte Links zu nicht mehr erreichbaren oder Fehlerseiten führen. Wenn du dies bemerkst, kontaktiere uns bitte, damit wir es so schnell wie möglich beheben können.",
-
   "s11_title": "#11 Datenschutz",
   "s11_1": "Es ist möglich, dass Besucher- und Nutzerdaten (Datum, Uhrzeit, aufgerufene Seite) auf dem Server gespeichert werden. Wir möchten darauf hinweisen, dass - ohne Einwilligung - keine personenbezogenen Daten (z.B. Name, Adresse oder E-Mail-Adresse) gespeichert werden.",
   "s11_2": "Wenn personenbezogene Daten erhoben werden, verpflichten wir uns, die vorherige Einwilligung des Nutzers einzuholen. Wir verpflichten uns, keine Daten an Dritte weiterzugeben, es sei denn, der Besucher oder Nutzer gibt seine vorherige Einwilligung.",
@@ -58,7 +47,6 @@
   "s11_5": "Du hast das Recht auf Auskunft. Du hast das Recht, jederzeit und kostenlos vollständige Auskunft über die dich betreffenden Daten von uns zu erhalten.",
   "s11_6": "Darüber hinaus hast du das Recht auf Berichtigung/Löschung von Daten/Einschränkung der Verarbeitung.",
   "s11_7": "Weitere Informationen werden gesondert in der Datenschutzerklärung bereitgestellt.",
-
   "s12_title": "#12 Cookies",
   "s12_1": "Wir können Cookies verwenden, um das Produktangebot anzuzeigen. Cookies sind kleine Textdateien, die lokal im Cache des Internetbrowsers des Website-Besuchers gespeichert werden.",
   "s12_2": "Viele Cookies enthalten eine sogenannte Cookie-ID. Eine Cookie-ID ist ein eindeutiger Bezeichner des Cookies, bestehend aus einer Zeichenkette, über die Websites und Server dem spezifischen Internetbrowser zugeordnet werden können, in dem das Cookie gespeichert wurde.",
@@ -66,13 +54,10 @@
   "s12_4": "Wir möchten darauf hinweisen, dass einige dieser Cookies vom Server auf dein Computersystem übertragen werden - dabei handelt es sich meist um sitzungsbezogene Cookies, die am Ende der Browser-Sitzung automatisch gelöscht werden. Andere Cookies (sogenannte persistente Cookies) verbleiben auf deinem Computersystem.",
   "s12_5": "Du kannst der Speicherung von Cookies widersprechen, indem du auf ein Banner klickst, dem du widersprechen/zustimmen kannst.",
   "s12_6": "Du kannst deinen Browser so einstellen, dass keine Cookies auf deiner Festplatte gespeichert werden oder bereits gespeicherte Cookies gelöscht werden. Die Anweisungen dazu findest du in der Hilfefunktion deines Browsers oder des Software-Herstellers.",
-
   "s13_title": "#13 Änderungen der Nutzungsbedingungen",
   "s13_p": "Wir behalten uns das Recht vor, Änderungen an den Diensten, Regeln und Bedingungen von Projekt City, einschließlich dieser Nutzungsbedingungen, jederzeit vorzunehmen. Du unterliegt den Bedingungen, die zum Zeitpunkt deiner Nutzung der Dienste in Kraft sind. Wenn eine Bestimmung dieser Nutzungsbedingungen für ungültig oder nicht durchsetzbar erklärt wird, gilt diese Bestimmung als abtrennbar und berührt nicht die Gültigkeit der verbleibenden Bestimmungen.",
-
   "s14_title": "#14 Kein Verzicht",
   "s14_p": "Wenn du gegen diese Nutzungsbedingungen verstößt und wir nichts dagegen unternehmen, sind wir weiterhin berechtigt, unsere Rechte bei jeder anderen Gelegenheit auszuüben, bei der du gegen diese Nutzungsbedingungen verstößt.",
-
   "s15_title": "#15 Schlussbestimmungen",
   "s15_1": "Die Vertragssprache ist Englisch. Wenn du eine andere Sprache verwendest, musst du damit rechnen, dass deine Anfrage nicht bearbeitet wird.",
   "s15_2": "Wenn du gegen diese Nutzungsbedingungen verstößt und wir nichts dagegen unternehmen, sind wir weiterhin berechtigt, unsere Rechte bei jeder anderen Gelegenheit auszuüben.",
