@@ -1,22 +1,17 @@
 {
   "page_title": "Impressum",
-
   "s1_title": "Angaben gemäß §5 DDG",
   "s1_contact_title": "Kontaktdaten",
-
   "s_eu_title": "EU-Streitschlichtung",
   "s_eu_p": "Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung bereit: <a class=\"linkout\" data-linkout=\"https://ec.europa.eu/consumers/odr/\" data-target=\"_blank\" data-type=\"external\">https://ec.europa.eu/consumers/odr/</a>. Unsere E-Mail-Adresse findest du im obigen Impressum.",
-
   "s_disclaimer_title": "Haftungsausschluss für Inhalte",
   "s_disclaimer_p1": "Alle Inhalte, die wir für unsere Website verwenden, werden mit größter Sorgfalt erstellt und ausgewählt. Wir können jedoch keine Haftung für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte übernehmen. Als Diensteanbieter sind wir gemäß §7 Absatz 1 TMG (Telemediengesetz) für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Nach §§8 bis 10 TMG sind wir als Diensteanbieter jedoch nicht verpflichtet, übermittelte oder gespeicherte fremde Informationen zu überwachen oder nach Umständen zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen. Verpflichtungen zur Entfernung oder Sperrung der Nutzung von Informationen nach den allgemeinen Gesetzen bleiben hiervon unberührt.",
   "s_disclaimer_p2": "Eine diesbezügliche Haftung ist jedoch erst ab dem Zeitpunkt möglich, ab dem wir Kenntnis von einer konkreten Rechtsverletzung erlangen. Sobald wir von einer solchen Rechtsverletzung Kenntnis erlangen, werden wir diesen Inhalt umgehend entfernen.",
-
   "s_connected_title": "Verknüpfte Seiten, Konten und Websites",
   "s_connected_p1": "Dieses Impressum gilt auch für die Social-Media-Seiten, Konten und Websites:",
   "s_connected_li": "https://www.instagram.com/ProjektCity und der damit verbundene Account https://threads.net/@ProjektCity",
   "s_connected_p2": "Alle Vereinbarungen, Richtlinien, Bedingungen und Bestimmungen, die in den Links der oben genannten Website enthalten sind und auf diese Seite verweisen, stehen in direktem Zusammenhang mit Projekt City und treten daher in Kraft.",
   "s_connected_p3": "Alle anderen nicht hier genannten Seiten, die sich dennoch auf diese Vereinbarungen, Richtlinien, Bedingungen und Bestimmungen beziehen, stehen nicht im Zusammenhang mit Projekt City, und Projekt City Ltd. übernimmt keine Haftung für Handlungen, die im Namen von Projekt City auf diesen Seiten vorgenommen werden. Dementsprechend gelten diese Vereinbarungen, Richtlinien, Bedingungen und Bestimmungen nicht für diese Seiten.",
-
   "s_legal_title": "Rechtlicher Hinweis",
   "s_legal_p1": "Die Nutzung unserer Dienste unterliegt auch anderen Bedingungen. Um besser zu verstehen, wie wir deine Daten erheben, nutzen und analysieren, welche Bedingungen für die Nutzung unserer Dienste gelten und wie du unsere Welt nutzen darfst, lies bitte auch diese.",
   "s_legal_p2": "Weitere Informationen findest du in der <a class=\"linkout\" data-linkout=\"/legal/eula\">Endbenutzer-Lizenzvereinbarung</a>, im <a class=\"linkout\" data-linkout=\"/legal/github-privacy\" data-target=\"_blank\">GitHub Datenschutz</a>, in der <a class=\"linkout\" data-linkout=\"/legal/privacy\" data-target=\"_blank\">Datenschutzerklärung</a>, den <a class=\"linkout\" data-linkout=\"/legal/terms\" data-target=\"_blank\">Nutzungsbedingungen</a> und der <a class=\"linkout\" data-linkout=\"/legal/use-our-world\" data-target=\"_blank\">Nutzungsrichtlinie für unsere Welt</a>."

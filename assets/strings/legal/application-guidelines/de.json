@@ -3,13 +3,11 @@
   "legal_header_intro_p1": "Projekt City ist ein privates, unabhängiges Projekt, das dir als Teil von itsmarian.dev völlig kostenlos zur Verfügung gestellt wird. Beim Download erhältst du eine komprimierte ZIP-Datei, die du entpacken und direkt in Minecraft laden kannst - auf eigene Gefahr.",
   "legal_header_intro_p2": "Bitte beachte, dass Projekt City von itsmarian.dev verwaltet wird. Das rechtlich erforderliche Impressum sowie zentrale Kontaktinformationen findest du unter <a class=\"linkout\" data-linkout=\"https://itsmarian.dev/legal/imprint\" data-target=\"_blank\">itsmarian.dev/legal/imprint</a>.",
   "legal_header_intro_p3": "Wenn du fortfährst, bestätigst du, dass du unsere <a class=\"linkout\" data-linkout=\"/legal/advertisement-terms\" data-target=\"_blank\">Werbebedingungen</a>, die <a class=\"linkout\" data-linkout=\"/legal/eula\">Endbenutzer-Lizenzvereinbarung</a>, die <a class=\"linkout\" data-linkout=\"/legal/privacy\" data-target=\"_blank\">Datenschutzerklärung</a>, die <a class=\"linkout\" data-linkout=\"/legal/terms\" data-target=\"_blank\">Nutzungsbedingungen</a> und die <a class=\"linkout\" data-linkout=\"/legal/use-our-world\" data-target=\"_blank\">Nutzungsrichtlinie für unsere Welt</a> gelesen hast und damit einverstanden bist. Wenn du nicht einverstanden bist, verlasse bitte unsere Website und nutze unsere Dienste nicht.",
-
   "s1_title": "#1 Bewerbung als Builder",
   "s1_1": "Du musst mindestens 14 Jahre alt sein, um dich als Builder zu bewerben. Außerdem musst du ein gewisses Maß an Reife und Wertschätzung für den Aufwand und die Vision hinter diesem Projekt zeigen. Je nach deinem Hintergrund und deiner Erfahrung kann die Mindestaltersanforderung variieren, oder wir sind möglicherweise nicht in der Lage, deine Bewerbung anzunehmen.",
   "s1_2": "Wir behalten uns das Recht vor, jede Bewerbung ohne Angabe von Gründen abzulehnen. Dies schließt Situationen ein, in denen wir genügend Builder haben, vorübergehend keine neuen Mitglieder aufnehmen oder andere interne Gründe vorliegen. Bewerber müssen dies akzeptieren, ohne dies in Frage zu stellen.",
   "s1_3": "Es kann sein, dass du ein Auswahlverfahren absolvieren musst, bevor deine Bewerbung angenommen wird. Du bist verpflichtet, es vollständig abzuschließen, es sei denn, du wirst ausdrücklich auf das Gegenteil hingewiesen - andernfalls wird deine Bewerbung nicht berücksichtigt.",
   "s1_4": "Als Builder wird von dir erwartet, alle Anweisungen zu befolgen, deine Aktivitäten auf die zugewiesenen Aufgaben zu beschränken, Probleme oder Fehler umgehend zu melden und uns jederzeit auf dem Laufenden zu halten.",
-
   "s2_title": "#2 Datenschutz",
   "s2_1": "Der Schutz deiner Daten hat für uns höchste Priorität. Wir gehen mit allen persönlichen Informationen sorgfältig um und werden sie niemals an Dritte weitergeben. Im Rahmen des Bewerbungsprozesses müssen möglicherweise einige Informationen freiwillig angegeben werden.",
   "s2_2": "Mit deiner Bewerbung stimmst du zu, dass alle während deiner Zeit bei uns gesammelten Daten ausschließlich für legitime Zwecke verwendet werden - zum Beispiel, um dich oder deinen gesetzlichen Vormund (wenn du unter 18 bist) im Falle eines rechtlichen Problems zu kontaktieren.",
@@ -17,29 +15,23 @@
   "s2_4": "Deine Daten werden auf unseren eigenen gesicherten Servern gespeichert, auf die nur wir Zugriff haben. Alle Daten sind verschlüsselt.",
   "s2_5": "Wenn du dieses Projekt verlässt, behalten wir deine Daten eine Woche lang, bevor wir sie dauerhaft aus allen unseren Systemen löschen. Dein Minecraft-Benutzername wird ebenfalls von unserer Website entfernt, obwohl er möglicherweise in bereits veröffentlichten Weltdateien verbleibt.",
   "s2_6": "Wir gehen verantwortungsvoll mit deinen Daten um, damit du mit Vertrauen mit uns zusammenarbeiten kannst.",
-
   "s3_title": "#3 Rechte",
   "s3_1_text": "Du hast das Recht, dieses Projekt jederzeit zu verlassen oder deine Beiträge zu unterbrechen. Wir möchten niemanden dazu verpflichten, gegen seinen Willen mit uns zu arbeiten. Wenn du Fragen oder Bedenken hast, kannst du dich gerne über unseren",
   "s3_1_discord_link": "Discord-Server",
   "s3_2": "Wir behalten uns das Recht vor, jeden Builder jederzeit aus diesem Projekt zu entfernen, wenn Fehlverhalten festgestellt wird. Alle Builder werden erwartet, die von uns festgelegten Anweisungen und Richtlinien zu befolgen.",
-
   "s4_title": "#4 Dieses Projekt verlassen",
   "s4_1": "Bevor du dieses Projekt verlässt, musst du sicherstellen, dass alle zugewiesenen Aufgaben abgeschlossen oder ordnungsgemäß übergeben wurden. Du bist außerdem verpflichtet, uns im Voraus zu benachrichtigen.",
   "s4_2": "Durch den Beitritt zu diesem Projekt gehen alle von dir erstellten Inhalte in das Eigentum von Projekt City über. Du hast daher nicht das Recht, nach dem Verlassen die Entfernung deiner erstellten Strukturen zu fordern. Auf Anfrage können wir jedoch deinen Namen aus den Credits auf unserer Website entfernen.",
-
   "s5_title": "#5 Einwilligung zur Veröffentlichung",
   "s5_1": "Durch den Beitritt zu diesem Projekt stimmst du zu, dass dein Minecraft-Benutzername auf unserer/unseren Website(s) als Teil der Credits erwähnt wird.",
   "s5_2": "Du überträgst Projekt City das vollständige Urheberrecht an allen Inhalten, die du im Rahmen dieses Projekts erstellst. Alle erstellten Elemente werden unser Eigentum, und wir behalten das alleinige Recht, über deren Verwendung, Änderung oder Verteilung zu entscheiden.",
-
   "s6_title": "#6 Kontakt und Kommunikation",
   "s6_1": "Du musst eine gültige und regelmäßig geprüfte E-Mail-Adresse angeben. Diese wird als primäres Kommunikationsmittel zwischen dir und Projekt City genutzt.",
   "s6_2": "Wir behalten uns das Recht vor, dich jederzeit über deine angegebene E-Mail-Adresse zu kontaktieren. Von dir wird erwartet, dass du genau und zeitnah antwortest. Andernfalls kann dies zur Entfernung aus dem Team führen, wie in Abschnitt 1.2 beschrieben.",
   "s6_3": "Wenn sich deine Kontaktdaten ändern, musst du uns umgehend informieren. Alle aktualisierten Kontaktdaten müssen weiterhin den Anforderungen aus Abschnitt 6.1 und 6.2 entsprechen.",
-
   "s7_title": "#7 Gebühren",
   "s7_1": "Für bestimmte Dienste oder Werkzeuge im Projekt können Gebühren anfallen. Etwaige Gebühren und Zahlungsbedingungen werden separat mitgeteilt oder auf der entsprechenden Plattform veröffentlicht.",
   "s7_2": "Alle Zahlungen müssen gemäß den zum Zeitpunkt der Kommunikation angegebenen Bedingungen geleistet werden. Der Builder ist allein dafür verantwortlich, dass die Zahlung fristgerecht und korrekt erfolgt.",
-
   "s8_title": "#8 Pflichten des Builders",
   "s8_1": "Detaillierte Baurichtlinien, Zeitpläne und Regeln werden derzeit vorbereitet und hier in Kürze veröffentlicht.",
   "s8_2": "Bis die vollständigen Richtlinien verfügbar sind, werden alle Builder gebeten, die allgemeinen Anweisungen von Projekt City zu befolgen und im Sinne dieses Dokuments zu handeln."

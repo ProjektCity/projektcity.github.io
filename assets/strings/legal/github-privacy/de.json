@@ -3,10 +3,8 @@
   "legal_header_intro_p1": "Projekt City ist ein privates, unabhängiges Projekt, das dir als Teil von itsmarian.dev völlig kostenlos zur Verfügung gestellt wird. Beim Download erhältst du eine komprimierte ZIP-Datei, die du entpacken und direkt in Minecraft laden kannst - auf eigene Gefahr.",
   "legal_header_intro_p2": "Bitte beachte, dass Projekt City von itsmarian.dev verwaltet wird. Das rechtlich erforderliche Impressum sowie zentrale Kontaktinformationen findest du unter <a class=\"linkout\" data-linkout=\"https://itsmarian.dev/legal/imprint\" data-target=\"_blank\">itsmarian.dev/legal/imprint</a>.",
   "legal_header_intro_p3": "Wenn du fortfährst, bestätigst du, dass du unsere <a class=\"linkout\" data-linkout=\"/legal/advertisement-terms\" data-target=\"_blank\">Werbebedingungen</a>, die <a class=\"linkout\" data-linkout=\"/legal/eula\">Endbenutzer-Lizenzvereinbarung</a>, die <a class=\"linkout\" data-linkout=\"/legal/privacy\" data-target=\"_blank\">Datenschutzerklärung</a>, die <a class=\"linkout\" data-linkout=\"/legal/terms\" data-target=\"_blank\">Nutzungsbedingungen</a> und die <a class=\"linkout\" data-linkout=\"/legal/use-our-world\" data-target=\"_blank\">Nutzungsrichtlinie für unsere Welt</a> gelesen hast und damit einverstanden bist. Wenn du nicht einverstanden bist, verlasse bitte unsere Website und nutze unsere Dienste nicht.",
-
   "s_ghpages_title": "GitHub Pages Dienst",
   "s_ghpages_p": "Diese Website wird als GitHub Pages-Website gehostet. GitHub kann personenbezogene Daten von Besuchern erheben, einschließlich Protokolle der IP-Adressen, um gesetzliche Verpflichtungen zu erfüllen und die Sicherheit dieser Website zu gewährleisten. Details findest du in der <a class=\"linkout\" data-linkout=\"https://help.github.com/en/github/site-policy/github-privacy-statement\" data-target=\"_blank\" data-type=\"external\">GitHub Datenschutzerklärung</a>.",
-
   "s_datacollection_title": "Datenerhebung",
   "s_analytics_title": "Website-Analyse",
   "s_analytics_p": "Zum Schutz und zur kontinuierlichen Verbesserung unserer Dienste verwenden wir Google Analytics von Google LLC. Folgende Aktionen auf der Website werden erkannt, verfolgt und analysiert, wenn du zustimmst:",
@@ -17,14 +15,12 @@
   "s_analytics_li5": "Seitenaufrufe",
   "s_analytics_li6": "Scrollen",
   "s_analytics_li7": "Website-Suche",
-
   "s_cookies_title": "Cookie-Nutzung",
   "s_cookies_p1": "Diese Website wird über GitHub Pages gehostet. Weitere Details zu GitHubs Cookies findest du oben.",
   "s_cookies_p2": "Wir nutzen die von Google LLC bereitgestellten Cookies, um die Sicherheit unserer Website zu gewährleisten und das Nutzerverhalten und Interaktionen zu erkennen, zu analysieren und auszuwerten, sofern die Einwilligung erteilt wurde.",
   "s_cookies_p3": "Wenn du die Erfassung von Interaktionen und deinem Nutzerverhalten nicht wünschst, kannst du deine Einstellungen in unserem Cookie-Banner auf jeder Seite ändern oder das Add-on von Google nutzen, um Google Analytics für deinen Browser zu deaktivieren: <a class=\"linkout\" data-linkout=\"https://tools.google.com/dlpage/gaoptout\" data-target=\"_blank\" data-type=\"external\">https://tools.google.com/dlpage/gaoptout</a>",
   "s_cookies_linked_title": "Verknüpfte Dienste",
   "s_cookies_linked_p": "Weitere Informationen zu Links zu Dritten findest du in §3.10 / §3.10.11 unserer <a class=\"linkout\" data-linkout=\"/legal/privacy\" data-target=\"_blank\">Datenschutzerklärung</a>.",
-
   "s_ads_title": "Google Ads",
   "s_ads_what_title": "Was sind Google Ads und warum nutzen wir diesen Dienst?",
   "s_ads_what_p": "Wir nutzen Adsense von Google LLC, um die dort generierten Einnahmen in das Projekt zu reinvestieren, beispielsweise um unsere Domain und andere Kosten für die Weiterentwicklung von Projekt City zu decken. Dennoch versuchen wir, das Nutzererlebnis nicht zu beeinträchtigen und angenehme Werbung bereitzustellen.",
