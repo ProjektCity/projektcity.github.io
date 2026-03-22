@@ -1,0 +1,22 @@
+{
+    "debug_menu_h1": "Debug Menu, Command Line & Developer Tools",
+    "debug_menu_welcome_h2": "Welcome to the section for developers and debuggers.",
+    "debug_menu_para1": "This page explains what the debug menu is, how it works, and why you should exercise caution when using it or the browser console.",
+    "debug_menu_para2": "You may already be familiar with the following message. It appears on every Projekt City page you visit - but it is not as alarming as it may look.",
+    "debug_menu_img_alt": "Warning in the browser debug menu with red text, warning against fraud attempts and entering code in the console. Link to the Projekt City help page",
+    "debug_menu_whatis_h2": "What is the debug menu?",
+    "debug_menu_whatis_para": "The debug menu - also known as \"developer tools\" or \"console\" - is a built-in tool available in all modern browsers such as Chrome, Firefox, or Edge. It is primarily used by developers to analyze websites, diagnose errors, or execute commands directly in the browser environment.",
+    "debug_menu_security_h2": "Security warning",
+    "debug_menu_security_para1": "If you have opened this menu, you may have noticed a red warning message. This is not an error - it is a protective notice designed to keep you informed and safe.",
+    "debug_menu_security_para2": "Never enter code into the console unless you fully understand what it does. Scammers sometimes attempt to trick users into running malicious commands by disguising them as helpful instructions. Doing so could result in your personal data being stolen or your account being compromised.",
+    "debug_menu_who_h2": "Who should use the debug menu?",
+    "debug_menu_who_para": "The debug menu is intended exclusively for:",
+    "debug_menu_who_li1": "Developers actively working on Projekt City",
+    "debug_menu_who_li2": "Technically experienced users performing troubleshooting or analysis",
+    "debug_menu_who_para2": "Our support team will never ask you to enter anything into the console or share information from the debug menu. If you are unsure, you can close the console at any time by pressing [F12].",
+    "debug_menu_warning_h2": "IF ANYONE CLAIMING TO BE FROM PROJEKT CITY ASKS YOU TO COPY OR SHARE INFORMATION FROM THE DEBUG MENU, PLEASE REPORT THIS TO US IMMEDIATELY.",
+    "debug_menu_questions_h2": "Still have questions?",
+    "debug_menu_questions_para": "If you need further assistance, you can always ",
+    "debug_menu_visit_helpcenter": "visit our Helpcenter",
+    "debug_menu_send_email": "send us an email"
+}
