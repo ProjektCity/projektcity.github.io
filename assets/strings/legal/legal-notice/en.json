@@ -4,6 +4,9 @@
   "s1_title": "Contents according to §5 DDG",
   "s1_contact_title": "Contact details",
 
+  "s_notice_title": "Important Notice!",
+  "s_notice_p": "This Legal Notice will be updated soon. The information provided here is valid through May 1, 2026.",
+
   "s_eu_title": "EU dispute resolution",
   "s_eu_p": "The European Commission provides a platform for online dispute resolution: <a class=\"linkout\" data-linkout=\"https://ec.europa.eu/consumers/odr/\" data-target=\"_blank\" data-type=\"external\">https://ec.europa.eu/consumers/odr/</a>. You can find our e-mail address in the legal notice above.",
 
@@ -16,7 +19,6 @@
   "s_connected_li": "https://www.instagram.com/ProjektCity and the associated account https://threads.net/@ProjektCity",
   "s_connected_p2": "All agreements, guidelines, terms and policies contained in the links on the aforementioned website that refer to this page are directly related to Projekt City and therefore come into force.",
   "s_connected_p3": "All other sites not mentioned here which nevertheless refer to these agreements, guidelines, terms and policies are not associated with Projekt City and Projekt City Ltd. accepts no liability for actions taken on behalf of these sites under Projekt City. Accordingly, these agreements, guidelines, terms and policies do not apply to these sites.",
-
 
   "s_legal_title": "Legal notice",
   "s_legal_p1": "The use of our services is also subject to other conditions. For a better understanding of how we collect, use and analyze your data, which conditions apply to the use of our services and how you may use our world, please also read these.",
