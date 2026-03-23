@@ -1,8 +1,16 @@
 {
   "page_title": "Nutzungsrichtlinie für unsere Welt",
   "legal_header_intro_p1": "Projekt City ist ein privates, unabhängiges Projekt, das dir als Teil von itsmarian.dev völlig kostenlos zur Verfügung gestellt wird. Beim Download erhältst du eine komprimierte ZIP-Datei, die du entpacken und direkt in Minecraft laden kannst - auf eigene Gefahr.",
-  "legal_header_intro_p2": "Bitte beachte, dass Projekt City von itsmarian.dev verwaltet wird. Das rechtlich erforderliche Impressum sowie zentrale Kontaktinformationen findest du unter <a class=\"linkout\" data-linkout=\"https://itsmarian.dev/legal/imprint\" data-target=\"_blank\">itsmarian.dev/legal/imprint</a>.",
-  "legal_header_intro_p3": "Wenn du fortfährst, bestätigst du, dass du unsere <a class=\"linkout\" data-linkout=\"/legal/advertisement-terms\" data-target=\"_blank\">Werbebedingungen</a>, die <a class=\"linkout\" data-linkout=\"/legal/eula\">Endbenutzer-Lizenzvereinbarung</a>, die <a class=\"linkout\" data-linkout=\"/legal/privacy\" data-target=\"_blank\">Datenschutzerklärung</a>, die <a class=\"linkout\" data-linkout=\"/legal/terms\" data-target=\"_blank\">Nutzungsbedingungen</a> und die <a class=\"linkout\" data-linkout=\"/legal/use-our-world\" data-target=\"_blank\">Nutzungsrichtlinie für unsere Welt</a> gelesen hast und damit einverstanden bist. Wenn du nicht einverstanden bist, verlasse bitte unsere Website und nutze unsere Dienste nicht.",
+  "legal_header_intro_p2": "Bitte beachte, dass Projekt City von itsmarian.dev verwaltet wird. Das rechtlich erforderliche Impressum sowie zentrale Kontaktinformationen findest du unter ${imprint_link}.",
+  "legal_header_intro_p3": "Wenn du fortfährst, bestätigst du, dass du unsere ${at}, die ${eula_link}, die ${privacy_link}, die ${terms_link} und die ${world_link} gelesen hast und damit einverstanden bist. Wenn du nicht einverstanden bist, verlasse bitte unsere Website und nutze unsere Dienste nicht.",
+
+  "link_imprint": "itsmarian.dev/legal/imprint",
+  "link_advertisement_terms": "Werbebedingungen",
+  "link_eula": "Endbenutzer-Lizenzvereinbarung",
+  "link_privacy": "Datenschutzerklärung",
+  "link_terms": "Nutzungsbedingungen",
+  "link_use_our_world": "Nutzungsrichtlinie für unsere Welt",
+
   "s1_title": "1. Werbung und kommerzielle Nutzung",
   "s1_1_title": "1.1. Verbotene Aktivitäten",
   "s1_1_p": "Die Nutzung dieser Minecraft-Welt für jede Form von Werbung - einschließlich, aber nicht beschränkt auf Produktplatzierungen, Werbeaktionen oder Marketingkampagnen - ist streng verboten, sofern keine ausdrückliche, schriftliche Genehmigung des Weltbesitzers vorliegt. Dies umfasst sowohl In-Game- als auch externe Werbung.",
@@ -26,7 +34,7 @@
   "s4_2_p": "Die Verbreitung dieser Welt oder ihrer Bestandteile (einschließlich benutzerdefinierter Texturen, Bauten, Skripte oder anderer kreativer Assets) auf einer Plattform ist ohne schriftliche Zustimmung von uns nicht gestattet. Wenn eine Genehmigung erteilt wird, muss dem Ersteller ordnungsgemäße Anerkennung gegeben werden.",
   "s5_title": "5. Urheberrecht und geistiges Eigentum",
   "s5_1_title": "5.1 Eigentümerschaft",
-  "s5_1_p": "Die Minecraft-Welt ist zusammen mit allen ihren Inhalten geistiges Eigentum von Projekt City Ltd. (mehr dazu findest du in unserem <a class=\"linkout\" data-linkout=\"/legal/imprint\" data-target=\"_blank\">Impressum</a>). Alle Rechte sind bei uns vorbehalten, und kein Teil der Welt darf ohne ausdrückliche Genehmigung reproduziert, verbreitet oder für kommerzielle Zwecke genutzt werden.",
+  "s5_1_p": "Die Minecraft-Welt ist zusammen mit allen ihren Inhalten geistiges Eigentum von Projekt City Ltd. (mehr dazu findest du in unserem ${imprint_link}). Alle Rechte sind bei uns vorbehalten, und kein Teil der Welt darf ohne ausdrückliche Genehmigung reproduziert, verbreitet oder für kommerzielle Zwecke genutzt werden.",
   "s5_2_title": "5.2 Nutzung von Assets",
   "s5_2_p": "Wenn du Assets aus dieser Welt - wie Designs, Texturen oder andere Elemente - in eigenen Projekten oder in anderen Minecraft-Welten verwenden möchtest, musst du eine Genehmigung von uns einholen. Es muss eine ordnungsgemäße Namensnennung erfolgen.",
   "s6_title": "6. Fehler, Bugs und andere Probleme",

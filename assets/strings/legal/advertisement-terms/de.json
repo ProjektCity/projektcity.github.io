@@ -3,6 +3,14 @@
   "legal_header_intro_p1": "Projekt City ist ein privates, unabhängiges Projekt, das dir als Teil von itsmarian.dev völlig kostenlos zur Verfügung gestellt wird. Beim Download erhältst du eine komprimierte ZIP-Datei, die du entpacken und direkt in Minecraft laden kannst - auf eigene Gefahr.",
   "legal_header_intro_p2": "Bitte beachte, dass Projekt City von itsmarian.dev verwaltet wird. Das rechtlich erforderliche Impressum sowie zentrale Kontaktinformationen findest du unter ${imprint_link}.",
   "legal_header_intro_p3": "Wenn du fortfährst, bestätigst du, dass du unsere ${at}, die ${eula_link}, die ${privacy_link}, die ${terms_link} und die ${world_link} gelesen hast und damit einverstanden bist. Wenn du nicht einverstanden bist, verlasse bitte unsere Website und nutze unsere Dienste nicht.",
+
+  "link_imprint": "itsmarian.dev/legal/imprint",
+  "link_advertisement_terms": "Werbebedingungen",
+  "link_eula": "Endbenutzer-Lizenzvereinbarung",
+  "link_privacy": "Datenschutzerklärung",
+  "link_terms": "Nutzungsbedingungen",
+  "link_use_our_world": "Nutzungsrichtlinie für unsere Welt",
+
   "s1_title": "#1 Allgemeine Informationen",
   "s1_1_title": "1.1 Kontaktdaten",
   "s1_1_p1": "Es muss eine klar erkennbare Kontaktperson angegeben werden, die für Fragen und Support zuständig ist. Kontaktinformationen - wie eine E-Mail-Adresse, Telefonnummer oder ein Kontaktformular - müssen auf deiner Website oder App verfügbar sein.",
@@ -20,6 +28,7 @@
   "s1_2_3a": "Impressum: Deine Website oder App muss ein vollständiges Impressum enthalten, damit unsere Nutzer wissen, an wen sie sich wenden können und wie sie dich erreichen.",
   "s1_2_3b": "Allgemeine Geschäftsbedingungen: Deine Website oder App muss klare und leicht verständliche Nutzungsbedingungen für alle Nutzer bereitstellen.",
   "s1_2_3c": "Datenschutzrichtlinie: Deine Website oder App muss eine Datenschutzrichtlinie enthalten, die klar erläutert, wann und wie Nutzerdaten erfasst, gespeichert und verwendet werden.",
+
   "s2_title": "#2 Deine Anzeigen",
   "s2_1_title": "2.1 Anzeigen aktualisieren",
   "s2_1_li1": "Bearbeitungsmöglichkeiten: Du kannst deine Anzeige jederzeit bearbeiten und aktualisieren, sofern alle Änderungen weiterhin diesen Bedingungen entsprechen.",
@@ -60,6 +69,7 @@
   "s2_12_5": "Qualität und Konsistenz: KI-generierte Inhalte müssen dieselben Qualitätsanforderungen erfüllen wie manuell erstellte Inhalte (siehe Abschnitt 2.6). Minderwertiges oder visuell inkonsistentes KI-Material wird nicht akzeptiert.",
   "s2_12_6": "Offenlegung gegenüber Projekt City: Auf Anfrage musst du angeben können, welche KI-Werkzeuge zur Erstellung oder Änderung deines Werbeinhalts verwendet wurden. Andernfalls kann deine Anzeige entfernt werden.",
   "s2_12_7": "Prüfungs- und Entfernungsrecht: Projekt City behält sich das Recht vor, KI-generierte Werbeinhalte jederzeit zu prüfen, abzulehnen oder zu entfernen, wenn ein Verstoß festgestellt wird oder Herkunft und Richtigkeit nicht ausreichend nachgewiesen werden können. Der Werbevertrag kann in solchen Fällen ohne Vorankündigung beendet werden.",
+
   "s3_title": "#3 Einhaltung dieser Regeln",
   "s3_p": "Mit der Einreichung einer Werbeanzeige bei Projekt City stimmst du automatisch allen in diesem Dokument genannten Bedingungen zu. Die weitere Nutzung unserer Werbedienste gilt als fortlaufende Zustimmung."
 }

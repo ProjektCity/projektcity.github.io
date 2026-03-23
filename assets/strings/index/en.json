@@ -7,6 +7,7 @@
     "index_paragraph4": "To provide detailed information, we have launched a website where players can find essential details and ask questions. We strive to address player requests swiftly and professionally, aiming to create a bug-free world. We encourage you to report any bugs or errors on our Discord server or forum. We are committed to enhancing our professionalism and skills in building, redstone, and commands to become more professional, more accurate and better!",
     "index_thanks": "Thank you for your support,",
     "index_signature": "SuffixHD & itsmarian",
+
     "index_images_title": "Images",
     "index_img_planes_alt": "The picture shows a peaceful Minecraft scene on a sunny day. At the center of the shot is a small airport with a large passenger plane parked on the tarmac. The plane, a Boeing 737, is white with blue accents and looks ready to take off. The airport itself is very large, but it has all the important facilities such as a runway, hangars and even a small control tower.",
     "index_img_planes_caption": "Many aircraft flying around the world and transporting passengers",
@@ -21,26 +22,26 @@
     "index_img_city_alt": "In this scene, a charming town street is depicted, complete with a quaint shop bearing the sign 'SHOP'. The street is crafted from stone bricks, adding a medieval touch to the setting. On the right side of the street, the 'SHOP' building stands out with its unique design, featuring a combination of stone and wood, and a roof adorned with red accents. The building's walls are made of stone, while the roof showcases red bricks, creating a visually appealing contrast.",
     "index_img_city_caption": "The city with more houses, better facilities, and a key card system to ensure maximum security",
     "index_img_hotel_alt": "The picture shows several buildings connected by stairs and railings. The buildings are made of different materials and in different styles, including a house with a pitched roof and a building with a white façade and a brown roof. The stairs and railings are made of wood and stone and look very detailed. The scene is shot from a slightly elevated perspective.",
-    "index_img_hotel_caption": "Das Hotel, um all unsere Gäste unterzubringen, mit einer Vielzahl von Suiten und Zimmern und einem Schlüsselkartensystem, um Ordnung zu halten und für Sicherheit zu sorgen",
+    "index_img_hotel_caption": "The hotel, to accommodate all our guests, with a variety of suites and rooms and a key card system to maintain order and ensure security",
+
     "index_trailer_title": "Trailer",
     "index_trailer_blocked_title": "Third-party content blocked",
     "index_trailer_blocked_desc": "This video is hosted by YouTube. To watch it, please allow third-party content in your cookie settings.",
+
     "index_faq_title": "FAQ",
     "index_faq_q1": "Am I allowed to use the world on a public server?",
-    "index_faq_a1_part1": "Yes, you may use our world on servers, but you must draw attention to our project and inform us about it.",
-    "index_faq_a1_part2": "Further information about how you are allowed to use our world can you find in our",
-    "index_faq_a1_link": "Use Our World Policy",
+    "index_faq_a1_combined": "Yes, you may use our world on servers, but you must draw attention to our project and inform us about it. Further information about how you are allowed to use our world can you find in our ${use_our_world_link}.",
     "index_faq_q2": "Does it cost money to play the world?",
     "index_faq_a2": "No, Projekt City is completely free to play. You still need to own Minecraft before playing to be able to play the world.",
     "index_faq_q3": "I have found an error, what do I do?",
-    "index_faq_a3_part1": "First of all, thank you for finding this bug. You can find the form to report bugs under the following adress:",
-    "index_faq_a3_link": "https://forms.office.com/r/3W4NYS3yaN",
-    "index_faq_a3_part2": "Open the link, fill out the form as precise as you can and we will take care of the bug. If we need further information, we will reach out to you.",
+    "index_faq_a3_combined": "First of all, thank you for finding this bug. You can find the form to report bugs under the following address: ${bug_report_link}. Open the link, fill out the form as precise as you can and we will take care of the bug. If we need further information, we will reach out to you.",
     "index_faq_q4": "On which platforms can you also find Projekt City?",
-    "index_faq_a4_part1": "You can find Projekt City on Instagram, Threads, TikTok and YouTube. And more platforms will follow! You can find our social media channels at",
-    "index_faq_a4_link": "https://bit.ly/ProjektCityLinktree",
+    "index_faq_a4_combined": "You can find Projekt City on Instagram, Threads, TikTok and YouTube. And more platforms will follow! You can find our social media channels at ${linktree_link}.",
     "index_faq_q5": "When will there be a new update for the map?",
-    "index_faq_a5_part1": "Our biggest update V5.0 is out now and is waiting to be downloaded by you! V6.0 will follow shortly and contain even more improvements and innovations.",
-    "index_faq_a5_link_text": "You can download it here:",
-    "index_faq_a5_link": "https://www.curseforge.com/minecraft/worlds/projekt-city/files/all"
+    "index_faq_a5_combined": "Our biggest update V5.0 is out now and is waiting to be downloaded by you! V6.0 will follow shortly and contain even more improvements and innovations. You can download it here: ${curseforge_link}",
+
+    "link_use_our_world": "Use Our World Policy",
+    "link_bug_report": "Report a bug",
+    "link_linktree": "Linktree",
+    "link_curseforge": "Download on CurseForge"
 }

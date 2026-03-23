@@ -76,14 +76,26 @@
         }
     }
 
+    function translateElement(el) {
+        const key = el.getAttribute('data-i18n');
+        if (!key || !translations[key]) return;
+
+        const varsAttr = el.getAttribute('data-i18n-vars');
+        const vars = varsAttr ? JSON.parse(varsAttr) : {};
+        el.innerHTML = Object.keys(vars).length ? interpolate(translations[key], vars) : translations[key];
+
+        if (el.children) {
+            Array.from(el.children).forEach(child => {
+                if (child.hasAttribute('data-i18n')) {
+                    translateElement(child);
+                }
+            });
+        }
+    }
+
     function translatePage() {
-        document.querySelectorAll('[data-i18n]').forEach(el => {
-            const key = el.getAttribute('data-i18n');
-            if (!translations[key]) return;
-            const varsAttr = el.getAttribute('data-i18n-vars');
-            const vars = varsAttr ? JSON.parse(varsAttr) : {};
-            el.innerHTML = Object.keys(vars).length ? interpolate(translations[key], vars) : translations[key];
-        });
+        document.querySelectorAll('[data-i18n]').forEach(el => translateElement(el));
+
         document.querySelectorAll('[data-i18n-alt]').forEach(el => {
             const key = el.getAttribute('data-i18n-alt');
             if (translations[key]) el.alt = translations[key];

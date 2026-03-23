@@ -7,6 +7,7 @@
     "index_paragraph4": "Um detaillierte Informationen bereitzustellen, haben wir diese Website gestartet, auf der Spieler wichtige Details finden und Fragen stellen können. Wir bemühen uns, Spieleranfragen schnell und professionell zu bearbeiten, um eine fehlerfreie Welt zu schaffen. Wir wollen dich ermutigen, Fehler oder Probleme auf unserem Discord-Server oder Forum zu melden, damit auch du beitragen kannst die Welt für alle zu verbessern. Wir wollen stets, unsere Professionalität und Fähigkeiten im Bauen, Redstone und Befehlen zu verbessern, um professioneller, genauer und besser zu werden und die Map konstant aufzuwerten!",
     "index_thanks": "Vielen Dank für eure Unterstützung,",
     "index_signature": "SuffixHD & itsmarian",
+
     "index_images_title": "Bilder",
     "index_img_planes_alt": "Das Bild zeigt eine friedliche Minecraft-Szene an einem sonnigen Tag. Im Zentrum der Aufnahme befindet sich ein kleiner Flughafen mit einem großen Passagierflugzeug, das auf dem Vorfeld parkt. Das Flugzeug, eine Boeing 737, ist weiß mit blauen Akzenten und sieht startbereit aus. Der Flughafen selbst ist sehr groß, verfügt aber über alle wichtigen Einrichtungen wie eine Start- und Landebahn, Hangars und sogar einen kleinen Kontrollturm.",
     "index_img_planes_caption": "Viele Flugzeuge, die um die Welt fliegen und Passagiere transportieren",
@@ -22,25 +23,25 @@
     "index_img_city_caption": "Die Stadt mit mehr Häusern, besseren Einrichtungen und einem Schlüsselkartensystem, um maximale Sicherheit zu gewähren",
     "index_img_hotel_alt": "Das Bild zeigt mehrere Gebäude, die durch Treppen und Geländer miteinander verbunden sind. Die Gebäude bestehen aus unterschiedlichen Materialien und in verschiedenen Stilen, darunter ein Haus mit einem Satteldach und ein Gebäude mit einer weißen Fassade und einem braunen Dach. Die Treppen und Geländer sind aus Holz und Stein und sehen sehr detailreich aus. Die Szene ist aus einer leicht erhöhten Perspektive aufgenommen.",
     "index_img_hotel_caption": "Das Hotel, um all unsere Gäste unterzubringen, mit einer Vielzahl von Suiten und Zimmern und einem Schlüsselkartensystem, um Ordnung zu halten und für Sicherheit zu sorgen",
+
     "index_trailer_title": "Trailer",
     "index_trailer_blocked_title": "Drittanbieter-Inhalte blockiert",
     "index_trailer_blocked_desc": "Dieses Video wird von YouTube gehostet. Um es anzusehen, erlaube bitte Drittanbieter-Inhalte in deinen Cookie-Einstellungen.",
+
     "index_faq_title": "FAQ",
     "index_faq_q1": "Darf ich die Welt auf einem öffentlichen Server verwenden?",
-    "index_faq_a1_part1": "Ja, du darfst unsere Welt auf Servern verwenden, aber du musst auf unser Projekt aufmerksam machen und uns darüber informieren.",
-    "index_faq_a1_part2": "Weitere Informationen darüber, wie du unsere Welt nutzen darfst, findest du in unserer",
-    "index_faq_a1_link": "Richtlinie zur Nutzung unserer Welt",
+    "index_faq_a1_combined": "Ja, du darfst unsere Welt auf Servern verwenden, aber du musst auf unser Projekt aufmerksam machen und uns darüber informieren. Weitere Informationen darüber, wie du unsere Welt nutzen darfst, findest du in unserer ${use_our_world_link}.",
     "index_faq_q2": "Kostet es Geld, die Welt zu spielen?",
     "index_faq_a2": "Nein, Projekt City ist und wird völlig kostenlos spielbar bleiben! Du musst jedoch Minecraft besitzen, bevor du spielen kannst, um die Welt spielen zu können.",
     "index_faq_q3": "Ich habe einen Fehler gefunden, was soll ich tun?",
-    "index_faq_a3_part1": "Zunächst einmal vielen Dank, dass du diesen Fehler gefunden hast. Das Formular zur Meldung von Fehlern findest du hier:",
-    "index_faq_a3_link": "https://forms.office.com/r/3W4NYS3yaN",
-    "index_faq_a3_part2": "Öffne den Link, fülle das Formular so genau wie möglich aus und wir kümmern uns um den Fehler. Falls wir weitere Informationen benötigen, werden wir uns bei dir melden.",
+    "index_faq_a3_combined": "Zunächst einmal vielen Dank, dass du diesen Fehler gefunden hast. Das Formular zur Meldung von Fehlern findest du hier: ${bug_report_link}. Öffne den Link, fülle das Formular so genau wie möglich aus und wir kümmern uns um den Fehler. Falls wir weitere Informationen benötigen, werden wir uns bei dir melden.",
     "index_faq_q4": "Auf welchen Plattformen kann man Projekt City noch finden?",
-    "index_faq_a4_part1": "Du findest Projekt City auf Instagram, Threads, TikTok und YouTube. Und weitere Plattformen werden folgen! Unsere Social-Media-Kanäle findest du unter",
-    "index_faq_a4_link": "https://bit.ly/ProjektCityLinktree",
+    "index_faq_a4_combined": "Du findest Projekt City auf Instagram, Threads, TikTok und YouTube. Und weitere Plattformen werden folgen! Unsere Social-Media-Kanäle findest du unter ${linktree_link}.",
     "index_faq_q5": "Wann gibt es ein neues Update für die Map?",
-    "index_faq_a5_part1": "Unser größtes Update V5.0 ist jetzt draußen und wartet darauf, von dir heruntergeladen zu werden! V6.0 wird demnächst folgen und noch mehr Verbesserungen und Neuerungen enthalten.",
-    "index_faq_a5_link_text": "Lade es hier herunter:",
-    "index_faq_a5_link": "https://www.curseforge.com/minecraft/worlds/projekt-city/files/all"
+    "index_faq_a5_combined": "Unser größtes Update V5.0 ist jetzt draußen und wartet darauf, von dir heruntergeladen zu werden! V6.0 wird demnächst folgen und noch mehr Verbesserungen und Neuerungen enthalten. Lade es hier herunter: ${curseforge_link}",
+
+    "link_use_our_world": "Nutzungsrichtlinie für unsere Welt",
+    "link_bug_report": "Fehler melden",
+    "link_linktree": "Linktree",
+    "link_curseforge": "Download auf CurseForge"
 }

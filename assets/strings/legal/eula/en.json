@@ -1,8 +1,8 @@
 {
   "page_title": "EULA",
   "legal_header_intro_p1": "Projekt City is a private, independent project provided to you completely free of charge as part of itsmarian.dev. By downloading, you receive a compressed ZIP file which you can unzip and load directly into Minecraft - at your own risk.",
-  "legal_header_intro_p2": "Please note that Projekt City is managed by itsmarian.dev. The legally required Imprint (Legal Notice) and central contact information can be found at <a class=\"linkout\" data-linkout=\"https://itsmarian.dev/legal/imprint\" data-target=\"_blank\">itsmarian.dev/legal/imprint</a>.",
-  "legal_header_intro_p3": "By continuing, you confirm that you have read and agree to our <a class=\"linkout\" data-linkout=\"${url_advertisement_terms}\" data-target=\"_blank\">${link_advertisement_terms}</a>, <a class=\"linkout\" data-linkout=\"${url_eula}\">${link_eula}</a>, <a class=\"linkout\" data-linkout=\"${url_privacy}\" data-target=\"_blank\">${link_privacy}</a>, <a class=\"linkout\" data-linkout=\"${url_terms}\" data-target=\"_blank\">${link_terms}</a>, and <a class=\"linkout\" data-linkout=\"${url_use_our_world}\" data-target=\"_blank\">${link_use_our_world}</a>. If you do not agree, please leave our website and refrain from using our services.",
+  "legal_header_intro_p2": "Please note that Projekt City is managed by itsmarian.dev. The legally required Imprint (Legal Notice) and central contact information can be found at ${imprint_link}.",
+  "legal_header_intro_p3": "By continuing, you confirm that you have read and agree to our ${at}, ${eula_link}, ${privacy_link}, ${terms_link}, and ${world_link}. If you do not agree, please leave our website and refrain from using our services.",
 
   "link_advertisement_terms": "Advertisement Terms",
   "link_eula": "End-User Licence Agreement",
@@ -23,7 +23,7 @@
   "s1_uow_suffix": "explains how and under what conditions the World of Projekt City may be used and what must be taken into account.",
 
   "s2_title": "#2 Granting of License",
-  "s2_p1": "Projekt City grants you a personal, non-exclusive, non-transferable, non-sublicensable, limited right and license to install and use the world on compatible devices that you own or control for your personal entertainment use (the \"License\"). The rights Projekt City grants you under this License are subject to the terms and conditions of this Agreement and the <a class=\"linkout\" data-linkout=\"${url_use_our_world}\" data-target=\"_blank\">${link_use_our_world}</a> from Projekt City, and you may use the License only if you comply with all applicable terms and conditions.",
+  "s2_p1": "Projekt City grants you a personal, non-exclusive, non-transferable, non-sublicensable, limited right and license to install and use the world on compatible devices that you own or control for your personal entertainment use (the \"License\"). The rights Projekt City grants you under this License are subject to the terms and conditions of this Agreement and the ${url_use_our_world} from Projekt City, and you may use the License only if you comply with all applicable terms and conditions.",
   "s2_p2": "The License is effective on the date you accept this Agreement. The world is licensed, not sold, to you under the License. The License does not grant you any ownership rights in the Software.",
   "s2_a": "use the Software commercially or for advertising purposes unless expressly authorized by Projekt City;",
   "s2_b": "copy, reproduce, distribute, display or use the World in any manner not expressly authorized in this Agreement or the use our world policy;",
