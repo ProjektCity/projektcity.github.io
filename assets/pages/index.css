@@ -69,15 +69,17 @@
 }
 
 .li-text {
+    align-items: center;
     background: rgba(27, 29, 30, 0.7);
     backdrop-filter: blur(8px);
     -webkit-backdrop-filter: blur(8px);
     border-top: 1px solid rgba(255, 255, 255, 0.1);
     color: var(--text);
+    display: flex;
+    justify-content: center;
     margin-top: -100px;
     max-height: 100px;
-    min-height: 10px;
-    padding: 12px 20px;
+    min-height: 60px;
     position: relative;
     text-align: center;
     width: 100%;
@@ -133,6 +135,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .indicators {
@@ -420,6 +423,16 @@
 
     .indicators button.active {
         width: 48px;
+    }
+
+    .tp-icon {
+        width: 50px;
+        height: 50px;
+    }
+
+    .tp-icon svg {
+        width: 30px;
+        height: 30px;
     }
 
     .tp-title {

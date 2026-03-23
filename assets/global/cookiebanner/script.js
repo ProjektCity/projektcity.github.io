@@ -560,10 +560,13 @@ document.addEventListener('DOMContentLoaded', function() {
             }
 
             document.addEventListener('click', (e) => {
-                if (e.target && e.target.id === 'CookieChanger') {
+                const trigger = e.target.closest('.change-settings');
+                
+                if (trigger) {
                     e.preventDefault();
                     this._fromChanger = true;
                     this.showSelector(true);
+                    console.log('[COOKIES] Selector via class .change-settings opened');
                 }
             });
 

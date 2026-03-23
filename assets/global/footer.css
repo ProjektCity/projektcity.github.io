@@ -19,7 +19,7 @@ footer a:hover {
     text-decoration: underline;
 }
 
-#CookieChanger {
+.change-settings {
     cursor: pointer;
 }
 

@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 <a data-linkout="/legal/terms" data-target="_blank" data-i18n="footer_terms">Terms of use</a> • 
                 <a data-linkout="/legal/use-our-world" data-target="_blank" data-i18n="footer_use_world">Use Our World</a>
             </p>
-            <p><a id="CookieChanger" data-i18n="footer_cookie_preferences">Change Cookie Preferences</a></p>
+            <p><a class="change-settings" data-i18n="footer_cookie_preferences">Change Cookie Preferences</a></p>
             <div>
                 <p>© ${year} ${branding} | <span data-i18n="footer_copyright">All rights reserved!</span></p>
                 <p><p class="f-colored"><span data-i18n="footer_made_with_love">Made with ❤️ in</span>&nbsp;<a style="color: #000000;">GE</a><a style="color: #DD0000;">RMA</a><a style="color: #FFCE00;">NY</a></p>
