@@ -1,8 +1,8 @@
 {
   "page_title": "Bewerbungsrichtlinien",
   "legal_header_intro_p1": "Projekt City ist ein privates, unabhängiges Projekt, das dir als Teil von itsmarian.dev völlig kostenlos zur Verfügung gestellt wird. Beim Download erhältst du eine komprimierte ZIP-Datei, die du entpacken und direkt in Minecraft laden kannst - auf eigene Gefahr.",
-  "legal_header_intro_p2": "Bitte beachte, dass Projekt City von itsmarian.dev verwaltet wird. Das rechtlich erforderliche Impressum sowie zentrale Kontaktinformationen findest du unter <a class=\"linkout\" data-linkout=\"https://itsmarian.dev/legal/imprint\" data-target=\"_blank\">itsmarian.dev/legal/imprint</a>.",
-  "legal_header_intro_p3": "Wenn du fortfährst, bestätigst du, dass du unsere <a class=\"linkout\" data-linkout=\"${url_advertisement_terms}\" data-target=\"_blank\">${link_advertisement_terms}</a>, die <a class=\"linkout\" data-linkout=\"${url_eula}\">${link_eula}</a>, die <a class=\"linkout\" data-linkout=\"${url_privacy}\" data-target=\"_blank\">${link_privacy}</a>, die <a class=\"linkout\" data-linkout=\"${url_terms}\" data-target=\"_blank\">${link_terms}</a> und die <a class=\"linkout\" data-linkout=\"${url_use_our_world}\" data-target=\"_blank\">${link_use_our_world}</a> gelesen hast und damit einverstanden bist. Wenn du nicht einverstanden bist, verlasse bitte unsere Website und nutze unsere Dienste nicht.",
+  "legal_header_intro_p2": "Bitte beachte, dass Projekt City von itsmarian.dev verwaltet wird. Das rechtlich erforderliche Impressum sowie zentrale Kontaktinformationen findest du unter ${imprint_link}.",
+  "legal_header_intro_p3": "Wenn du fortfährst, bestätigst du, dass du unsere ${at}, die ${eula_link}, die ${privacy_link}, die ${terms_link} und die ${world_link} gelesen hast und damit einverstanden bist. Wenn du nicht einverstanden bist, verlasse bitte unsere Website und nutze unsere Dienste nicht.",
 
   "link_advertisement_terms": "Werbebedingungen",
   "link_eula": "Endbenutzer-Lizenzvereinbarung",
