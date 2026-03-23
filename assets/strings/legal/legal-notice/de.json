@@ -5,7 +5,7 @@
   "s_notice_title": "Important Notice!",
   "s_notice_p": "This Legal Notice will be updated soon. The information provided here is valid through May 1, 2026.",
   "s_eu_title": "EU-Streitschlichtung",
-  "s_eu_p": "Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung bereit: <a class=\"linkout\" data-linkout=\"https://ec.europa.eu/consumers/odr/\" data-target=\"_blank\" data-type=\"external\">https://ec.europa.eu/consumers/odr/</a>. Unsere E-Mail-Adresse findest du im obigen Impressum.",
+  "s_eu_p": "The European Commission provides a platform for online dispute resolution: ${eu_platform_link}. You can find our e-mail address in the legal notice above.",
   "s_disclaimer_title": "Haftungsausschluss für Inhalte",
   "s_disclaimer_p1": "Alle Inhalte, die wir für unsere Website verwenden, werden mit größter Sorgfalt erstellt und ausgewählt. Wir können jedoch keine Haftung für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte übernehmen. Als Diensteanbieter sind wir gemäß §7 Absatz 1 TMG (Telemediengesetz) für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Nach §§8 bis 10 TMG sind wir als Diensteanbieter jedoch nicht verpflichtet, übermittelte oder gespeicherte fremde Informationen zu überwachen oder nach Umständen zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen. Verpflichtungen zur Entfernung oder Sperrung der Nutzung von Informationen nach den allgemeinen Gesetzen bleiben hiervon unberührt.",
   "s_disclaimer_p2": "Eine diesbezügliche Haftung ist jedoch erst ab dem Zeitpunkt möglich, ab dem wir Kenntnis von einer konkreten Rechtsverletzung erlangen. Sobald wir von einer solchen Rechtsverletzung Kenntnis erlangen, werden wir diesen Inhalt umgehend entfernen.",
@@ -16,5 +16,11 @@
   "s_connected_p3": "Alle anderen nicht hier genannten Seiten, die sich dennoch auf diese Vereinbarungen, Richtlinien, Bedingungen und Bestimmungen beziehen, stehen nicht im Zusammenhang mit Projekt City, und Projekt City Ltd. übernimmt keine Haftung für Handlungen, die im Namen von Projekt City auf diesen Seiten vorgenommen werden. Dementsprechend gelten diese Vereinbarungen, Richtlinien, Bedingungen und Bestimmungen nicht für diese Seiten.",
   "s_legal_title": "Rechtlicher Hinweis",
   "s_legal_p1": "Die Nutzung unserer Dienste unterliegt auch anderen Bedingungen. Um besser zu verstehen, wie wir deine Daten erheben, nutzen und analysieren, welche Bedingungen für die Nutzung unserer Dienste gelten und wie du unsere Welt nutzen darfst, lies bitte auch diese.",
-  "s_legal_p2": "Weitere Informationen findest du in der <a class=\"linkout\" data-linkout=\"/legal/eula\">Endbenutzer-Lizenzvereinbarung</a>, im <a class=\"linkout\" data-linkout=\"/legal/github-privacy\" data-target=\"_blank\">GitHub Datenschutz</a>, in der <a class=\"linkout\" data-linkout=\"/legal/privacy\" data-target=\"_blank\">Datenschutzerklärung</a>, den <a class=\"linkout\" data-linkout=\"/legal/terms\" data-target=\"_blank\">Nutzungsbedingungen</a> und der <a class=\"linkout\" data-linkout=\"/legal/use-our-world\" data-target=\"_blank\">Nutzungsrichtlinie für unsere Welt</a>."
+  "s_legal_p2": "For more information, read the ${eula_link}, ${github_privacy_link}, ${privacy_link}, ${terms_link} and ${world_link}.",
+  "link_eu_platform": "https://ec.europa.eu/consumers/odr/",
+  "link_eula": "End-User Licence Agreement",
+  "link_github_privacy": "GitHub Privacy",
+  "link_privacy": "Privacy Policy",
+  "link_terms": "Terms of Use",
+  "link_use_our_world": "Use Our World Policy"
 }
