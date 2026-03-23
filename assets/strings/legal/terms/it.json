@@ -2,7 +2,7 @@
   "page_title": "Terms of Use",
   "legal_header_intro_p1": "Projekt City is a private, independent project provided to you completely free of charge as part of itsmarian.dev. By downloading, you receive a compressed ZIP file which you can unzip and load directly into Minecraft - at your own risk.",
   "legal_header_intro_p2": "Please note that Projekt City is managed by itsmarian.dev. The legally required Imprint (Legal Notice) and central contact information can be found at ${imprint_link}.",
-  "legal_header_intro_p3": "By continuing, you confirm that you have read and agree to our ${at}, ${eula_link}, ${privacy_link}, ${terms_link}, and ${world_link}. If you do not agree, please leave our website and refrain from using our services.",
+  "legal_header_intro_p3": "By continuing, you confirm that you have read and agree to our ${at_link}, ${eula_link}, ${privacy_link}, ${terms_link}, and ${world_link}. If you do not agree, please leave our website and refrain from using our services.",
   "link_imprint": "itsmarian.dev/legal/imprint",
   "link_advertisement_terms": "Advertisement Terms",
   "link_eula": "End-User Licence Agreement",
