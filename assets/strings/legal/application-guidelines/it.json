@@ -1,13 +1,22 @@
 {
   "page_title": "Application Guidelines",
   "legal_header_intro_p1": "Projekt City is a private, independent project provided to you completely free of charge as part of itsmarian.dev. By downloading, you receive a compressed ZIP file which you can unzip and load directly into Minecraft - at your own risk.",
-  "legal_header_intro_p2": "Please note that Projekt City is managed by itsmarian.dev. The legally required Imprint (Legal Notice) and central contact information can be found at <a class=\"linkout\" data-linkout=\"https://itsmarian.dev/legal/imprint\" data-target=\"_blank\">itsmarian.dev/legal/imprint</a>.",
-  "legal_header_intro_p3": "By continuing, you confirm that you have read and agree to our <a class=\"linkout\" data-linkout=\"/legal/advertisement-terms\" data-target=\"_blank\">Advertisement Terms</a>, <a class=\"linkout\" data-linkout=\"/legal/eula\">End-User Licence Agreement</a>, <a class=\"linkout\" data-linkout=\"/legal/privacy\" data-target=\"_blank\">Privacy Policy</a>, <a class=\"linkout\" data-linkout=\"/legal/terms\" data-target=\"_blank\">Terms of Use</a>, and <a class=\"linkout\" data-linkout=\"/legal/use-our-world\" data-target=\"_blank\">Use Our World Policy</a>. If you do not agree, please leave our website and refrain from using our services.",
+  "legal_header_intro_p2": "Please note that Projekt City is managed by itsmarian.dev. The legally required Imprint (Legal Notice) and central contact information can be found at ${imprint_link}.",
+  "legal_header_intro_p3": "By continuing, you confirm that you have read and agree to our ${at_link}, ${eula_link}, ${privacy_link}, ${terms_link}, and ${world_link}. If you do not agree, please leave our website and refrain from using our services.",
+
+  "link_imprint": "itsmarian.dev/legal/imprint",
+  "link_advertisement_terms": "Advertisement Terms",
+  "link_eula": "End-User Licence Agreement",
+  "link_privacy": "Privacy Policy",
+  "link_terms": "Terms of Use",
+  "link_use_our_world": "Use Our World Policy",
+
   "s1_title": "#1 Applying as a Builder",
   "s1_1": "You must be at least 14 years old to apply as a Builder. You must also demonstrate a level of maturity and an appreciation for the effort and vision behind this project. Depending on your background and experience, the minimum age requirement may vary, or we may be unable to accept your application at all.",
   "s1_2": "We reserve the right to refuse or disregard any application without providing a reason. This includes, but is not limited to, situations where we have sufficient builders, are temporarily not accepting new members, or have other internal reasons. We may also decline applications based on factors such as age, maturity, or insufficient experience. Applicants must accept this without dispute.",
   "s1_3": "You may be required to complete a selection process before your application is accepted. This process may vary and is not fixed. You are required to complete it in full unless explicitly told otherwise - failure to do so will result in your application not being considered.",
   "s1_4": "As a Builder, you are expected to follow all instructions given to you, limit your activity in the world to assigned tasks only, promptly report any problems or errors you encounter, and keep us informed at all times.",
+
   "s2_title": "#2 Privacy",
   "s2_1": "Protecting your data is our top priority. We handle all personal information with care and will never share it with third parties. Some information may need to be provided voluntarily as part of the application process.",
   "s2_2": "By applying, you agree that any data collected during your time with us will only be used for legitimate purposes - for example, to contact you or your legal guardian (if you are under 18) in the event of a legal issue.",
@@ -15,23 +24,29 @@
   "s2_4": "Your data is stored on our own secured servers, accessible only to us. All data is encrypted and cannot be accessed without the appropriate credentials.",
   "s2_5": "If you leave this project, we will retain your data for one week before permanently deleting it from all our systems. Your Minecraft username will also be removed from our website, though it may remain in downloadable world files that were published during your time with us.",
   "s2_6": "We handle your data responsibly so that you can work with us with confidence, knowing that your personal information will not be made public.",
+
   "s3_title": "#3 Rights",
   "s3_1_text": "You have the right to leave this project or pause your contributions at any time. We do not wish to obligate anyone to work with us against their will, as we are committed to a positive and respectful working environment. If you have any questions or concerns, you are welcome to reach out via our",
   "s3_1_discord_link": "Discord server",
   "s3_2": "We reserve the right to remove any Builder from this project at any time if misconduct is identified. All Builders are expected to follow the instructions and guidelines set by us.",
+
   "s4_title": "#4 Leaving this Project",
   "s4_1": "Before leaving this project, you must ensure that all assigned tasks have been completed or properly handed over. You are also required to notify us in advance so that we can prepare accordingly.",
   "s4_2": "By joining this project, all content you build becomes the property of Projekt City. You therefore do not have the right to request the removal of your built structures after leaving. However, upon request, we can remove your name from the credits on our website.",
+
   "s5_title": "#5 Consent to Publication",
   "s5_1": "By joining this project, you consent to your Minecraft username being mentioned on our website(s) as part of the credits.",
   "s5_2": "You grant Projekt City full copyright over all content you create as part of this project. This means that all built items become our property and we retain the sole right to decide how they are used, modified, or distributed.",
+
   "s6_title": "#6 Contact and Communication",
   "s6_1": "You are required to provide a valid and regularly checked e-mail address. This will be used as the primary means of communication between you and Projekt City.",
   "s6_2": "We reserve the right to contact you at any time via your provided e-mail address. You are expected to respond accurately and in a timely manner when required. Failure to do so may result in removal from the team, as outlined in section 1.2.",
   "s6_3": "If your contact details change, you must notify us promptly so that we can update our records. All updated contact details must continue to meet the requirements stated in sections 6.1 and 6.2.",
+
   "s7_title": "#7 Fees",
   "s7_1": "Fees may apply for certain services or tools used within the project. Any applicable fees and payment terms will be communicated separately or published on the relevant platform.",
   "s7_2": "All payments must be made in accordance with the terms specified at the time of communication. The Builder is solely responsible for ensuring timely and correct payment.",
+
   "s8_title": "#8 Responsibilities of the Builder",
   "s8_1": "Detailed building guidelines, schedules, and rules are currently being prepared and will be published here soon.",
   "s8_2": "Until the full guidelines are available, all Builders are expected to follow the general instructions provided by Projekt City and act in accordance with the spirit of this document."

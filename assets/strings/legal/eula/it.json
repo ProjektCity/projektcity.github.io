@@ -1,8 +1,15 @@
 {
   "page_title": "EULA",
   "legal_header_intro_p1": "Projekt City is a private, independent project provided to you completely free of charge as part of itsmarian.dev. By downloading, you receive a compressed ZIP file which you can unzip and load directly into Minecraft - at your own risk.",
-  "legal_header_intro_p2": "Please note that Projekt City is managed by itsmarian.dev. The legally required Imprint (Legal Notice) and central contact information can be found at <a class=\"linkout\" data-linkout=\"https://itsmarian.dev/legal/imprint\" data-target=\"_blank\">itsmarian.dev/legal/imprint</a>.",
-  "legal_header_intro_p3": "By continuing, you confirm that you have read and agree to our <a class=\"linkout\" data-linkout=\"/legal/advertisement-terms\" data-target=\"_blank\">Advertisement Terms</a>, <a class=\"linkout\" data-linkout=\"/legal/eula\">End-User Licence Agreement</a>, <a class=\"linkout\" data-linkout=\"/legal/privacy\" data-target=\"_blank\">Privacy Policy</a>, <a class=\"linkout\" data-linkout=\"/legal/terms\" data-target=\"_blank\">Terms of Use</a>, and <a class=\"linkout\" data-linkout=\"/legal/use-our-world\" data-target=\"_blank\">Use Our World Policy</a>. If you do not agree, please leave our website and refrain from using our services.",
+  "legal_header_intro_p2": "Please note that Projekt City is managed by itsmarian.dev. The legally required Imprint (Legal Notice) and central contact information can be found at ${imprint_link}.",
+  "legal_header_intro_p3": "By continuing, you confirm that you have read and agree to our ${at_link}, ${eula_link}, ${privacy_link}, ${terms_link}, and ${world_link}. If you do not agree, please leave our website and refrain from using our services.",
+
+  "link_advertisement_terms": "Advertisement Terms",
+  "link_eula": "End-User Licence Agreement",
+  "link_privacy": "Privacy Policy",
+  "link_terms": "Terms of Use",
+  "link_use_our_world": "Use Our World Policy",
+
   "s1_title": "#1 Other Agreements",
   "s1_p1": "You also agree to other terms, conditions and policies from Projekt City that are expressly incorporated into this agreement. Please read the following terms, conditions and policies carefully:",
   "s1_privacy_prefix": "Our",
@@ -14,37 +21,47 @@
   "s1_uow_prefix": "Our",
   "s1_uow_link": "use our world policy",
   "s1_uow_suffix": "explains how and under what conditions the World of Projekt City may be used and what must be taken into account.",
+
   "s2_title": "#2 Granting of License",
-  "s2_p1": "Projekt City grants you a personal, non-exclusive, non-transferable, non-sublicensable, limited right and license to install and use the world on compatible devices that you own or control for your personal entertainment use (the \"License\"). The rights Projekt City grants you under this License are subject to the terms and conditions of this Agreement and the <a class=\"linkout\" data-linkout=\"https://projektcity.github.io/legal/use-our-world\" data-target=\"_blank\">use our world policy</a> from Projekt City, and you may use the License only if you comply with all applicable terms and conditions.",
+  "s2_p1": "Projekt City grants you a personal, non-exclusive, non-transferable, non-sublicensable, limited right and license to install and use the world on compatible devices that you own or control for your personal entertainment use (the \"License\"). The rights Projekt City grants you under this License are subject to the terms and conditions of this Agreement and the ${url_use_our_world} from Projekt City, and you may use the License only if you comply with all applicable terms and conditions.",
   "s2_p2": "The License is effective on the date you accept this Agreement. The world is licensed, not sold, to you under the License. The License does not grant you any ownership rights in the Software.",
   "s2_a": "use the Software commercially or for advertising purposes unless expressly authorized by Projekt City;",
   "s2_b": "copy, reproduce, distribute, display or use the World in any manner not expressly authorized in this Agreement or the use our world policy;",
   "s2_c": "sell, rent, lease, license, distribute or otherwise transfer the Software; or distribute or otherwise transfer the Software;",
   "s2_d": "use, export or re-export the Software in violation of any applicable laws or regulations;",
+
   "s3_title": "#3 Updates and Patches",
   "s3_p": "Projekt City may provide patches, updates or upgrades to the World that can be installed to further improve and enhance your use of the Software and Services. Projekt City may remotely update the Software at any time without notice to you, and you hereby consent to Projekt City applying patches, updates and upgrades. Projekt City may modify, suspend, discontinue, replace, substitute or restrict your access to any aspect of the Software or Services at any time. You acknowledge that by using the World or the Services, you are not making any claim, monetary or otherwise, to any aspect or feature of the Software or the Services.",
+
   "s4_title": "#4 Feedback",
   "s4_p1": "\"Feedback\" means written or oral communications to Projekt City in the form of opinions, suggestions, comments, ideas and all other forms of input that you provide, post or otherwise communicate directly or indirectly to Projekt City and that relate to your suggestions, views and opinions regarding the Software, Services or other Projekt City products and services.",
   "s4_p2": "You are under no obligation to provide feedback; any feedback you provide through the available means is voluntary. If you provide Feedback to Projekt City, you hereby grant Projekt City a non-exclusive, worldwide, perpetual, irrevocable, sublicensable, transferable and assignable license to use, copy, reproduce, distribute, modify, adapt, create derivative works from, publish, publicly perform, publicly display, translate and otherwise exploit any Feedback. You understand and agree that Projekt City is under no obligation to use any Feedback you provide and is not obligated to recognize or compensate you for your contribution.",
+
   "s5_title": "#5 Ownership/Third party licenses",
   "s5_p": "Projekt City and its licensors own all title, ownership rights and intellectual property rights in the World and the Services. Projekt City, Projekt City Ltd. and their respective logos, names and files are trademarks or registered trademarks of Projekt City Ltd. All rights granted to you under this Agreement are granted by express license only and not by sale. The World contains certain components provided by Projekt City's licensors. A list of credits and notices for third-party components can be found in the game interface.",
+
   "s6_title": "#6 Termination",
   "s6_p1": "You may terminate this agreement by deleting the World and its files from all devices on which you have installed it. Upon termination, you may no longer exercise any of the rights granted to you by the license and must destroy all copies of the Software in your possession.",
   "s6_p2": "Projekt City may also terminate this Agreement or temporarily or permanently restrict or suspend your access to all or part of the Software and/or Services if you are found to be in breach of",
   "s6_a": "the terms of this Agreement; or",
   "s6_b": "by or during your use of the World or the Services.",
   "s6_p3": "In either case, Projekt City will take reasonable steps to warn you before terminating the Agreement. Projekt City is not required to provide you with a prior warning if your breach was so severe as to warrant immediate termination.",
+
   "s7_title": "#7 Applicable law and jurisdiction",
   "s7_p": "Any claim or dispute arising out of or relating to this Agreement or the Service shall be governed by the laws of your country of residence.",
+
   "s8_title": "#8 Amendments to this agreement",
   "s8_p": "Projekt City may reasonably modify this Agreement, the Terms of Use or the Privacy Policy at any time, if and to the extent such changes are necessary to implement legal requirements, changes in law or jurisprudence, and for clarification purposes. We will provide you with 30 days advance written or email notice of any changes. If you do not expressly object to the particular change within 30 days of the new agreement taking effect, you will be deemed to have approved the change.",
+
   "s9_title": "#9 No assignment",
   "s9_p": "You may not assign, transfer, charge or subcontract any or all of your rights or obligations under this Agreement without the prior written consent of Projekt City. If restrictions on the transfer of the Software in this Agreement are not enforceable under the laws of your country, this Agreement is binding on any recipient of the Software. Projekt City may assign, transfer, charge or subcontract any or all of its rights or obligations under this Agreement at any time.",
+
   "s10_title": "#10 Definitions",
   "s10_p1": "In this agreement, the following capitalized words have the following meanings:",
   "s10_def1": "\"Projekt City\" refers to the company \"Projekt City Ltd.\" and all associated files, hosters, services, social media channels, websites and worlds.",
   "s10_def2": "\"World\" means the world of Projekt City in any version and form, which may be downloaded from the CurseForge website and used in accordance with the use our world policy.",
   "s10_def3": "\"Services\" refers to all services of Projekt City, be it websites, hosters, files and social media channels, which are created or (actively) managed by Projekt City.",
+
   "s11_title": "#11 Current status of the EULA",
   "s11_p": "This End User License Agreement was created on March 6, 2025 and enters into force on April 6, 2025. Until then, all users are obliged to read this license agreement in order to be aware of it."
 }

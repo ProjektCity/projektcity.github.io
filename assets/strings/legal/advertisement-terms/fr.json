@@ -1,8 +1,16 @@
 {
   "page_title": "Advertisement Terms",
   "legal_header_intro_p1": "Projekt City is a private, independent project provided to you completely free of charge as part of itsmarian.dev. By downloading, you receive a compressed ZIP file which you can unzip and load directly into Minecraft - at your own risk.",
-  "legal_header_intro_p2": "Please note that Projekt City is managed by itsmarian.dev. The legally required Imprint (Legal Notice) and central contact information can be found at <a class=\"linkout\" data-linkout=\"https://itsmarian.dev/legal/imprint\" data-target=\"_blank\">itsmarian.dev/legal/imprint</a>.",
-  "legal_header_intro_p3": "By continuing, you confirm that you have read and agree to our <a class=\"linkout\" data-linkout=\"/legal/advertisement-terms\" data-target=\"_blank\">Advertisement Terms</a>, <a class=\"linkout\" data-linkout=\"/legal/eula\">End-User Licence Agreement</a>, <a class=\"linkout\" data-linkout=\"/legal/privacy\" data-target=\"_blank\">Privacy Policy</a>, <a class=\"linkout\" data-linkout=\"/legal/terms\" data-target=\"_blank\">Terms of Use</a>, and <a class=\"linkout\" data-linkout=\"/legal/use-our-world\" data-target=\"_blank\">Use Our World Policy</a>. If you do not agree, please leave our website and refrain from using our services.",
+  "legal_header_intro_p2": "Please note that Projekt City is managed by itsmarian.dev. The legally required Imprint (Legal Notice) and central contact information can be found at ${imprint_link}.",
+  "legal_header_intro_p3": "By continuing, you confirm that you have read and agree to our ${at_link}, ${eula_link}, ${privacy_link}, ${terms_link}, and ${world_link}. If you do not agree, please leave our website and refrain from using our services.",
+
+  "link_imprint": "itsmarian.dev/legal/imprint",
+  "link_advertisement_terms": "Advertisement Terms",
+  "link_eula": "End-User Licence Agreement",
+  "link_privacy": "Privacy Policy",
+  "link_terms": "Terms of Use",
+  "link_use_our_world": "Use Our World Policy",
+
   "s1_title": "#1 General Information",
   "s1_1_title": "1.1 Contact Details",
   "s1_1_p1": "A clearly identifiable contact person responsible for questions and support must be specified. Contact information - such as an e-mail address, phone number, or contact form - must be available on your website or app.",
@@ -20,6 +28,7 @@
   "s1_2_3a": "Imprint: Your website or app must include a complete imprint so that our users know who to contact and how to reach you.",
   "s1_2_3b": "Terms and Conditions: Your website or app must provide clear and easily understandable terms and conditions for all users.",
   "s1_2_3c": "Privacy Policy: Your website or app must include a privacy policy that clearly explains when and how user data is collected, stored, and used.",
+
   "s2_title": "#2 Your Ads",
   "s2_1_title": "2.1 Updating Ads",
   "s2_1_li1": "Editing options: You may edit and update your ad at any time, provided all changes continue to comply with these terms.",
@@ -60,6 +69,7 @@
   "s2_12_5": "Quality and consistency: AI-generated content must meet the same quality requirements as manually created content as outlined in section 2.6. Low-quality, distorted, or visually inconsistent AI-generated images or videos that could negatively affect the user experience will not be accepted.",
   "s2_12_6": "Disclosure to Projekt City: Upon request, you must be able to disclose which AI tools or systems were used to generate or modify your advertisement content. Failure to provide this information may result in your ad being removed.",
   "s2_12_7": "Right to review and removal: Projekt City reserves the right to review, reject, or remove any AI-generated advertisement content at any time if it is found to violate these terms or if its origin or accuracy cannot be sufficiently verified. In such cases, the advertising contract may be terminated without prior notice.",
+
   "s3_title": "#3 Compliance with these Rules",
   "s3_p": "By submitting an advertisement to Projekt City, you automatically agree to and accept all terms outlined in this document. Continued use of our advertising services constitutes ongoing acceptance of these terms."
 }
