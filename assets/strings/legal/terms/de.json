@@ -4,7 +4,6 @@
   "legal_header_intro_p2": "Bitte beachte, dass Projekt City von itsmarian.dev verwaltet wird. Das rechtlich erforderliche Impressum sowie zentrale Kontaktinformationen findest du unter ${imprint_link}.",
   "legal_header_intro_p3": "Wenn du fortfährst, bestätigst du, dass du unsere ${at_link}, die ${eula_link}, die ${privacy_link}, die ${terms_link} und die ${world_link} gelesen hast und damit einverstanden bist. Wenn du nicht einverstanden bist, verlasse bitte unsere Website und nutze unsere Dienste nicht.",
 
-  "link_imprint": "itsmarian.dev/legal/imprint",
   "link_advertisement_terms": "Werbebedingungen",
   "link_eula": "Endbenutzer-Lizenzvereinbarung",
   "link_privacy": "Datenschutzerklärung",
