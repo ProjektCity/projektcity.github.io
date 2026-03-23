@@ -419,6 +419,22 @@ body.dark .theme-switch {
     transform: translateY(50%) rotate(-45deg);
 }
 
+.menu-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 99997;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    backdrop-filter: blur(10px);
+}
+
+.menu-overlay.open {
+    display: block;
+    opacity: 1;
+}
+
 @keyframes initialWidth {
     from {
         width: 180px;

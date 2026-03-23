@@ -1,37 +1,43 @@
-#directory, #project-info, #download-table {
-    max-width: 1000px;
-    width: 100%;
+#directory,
+#project-info,
+#download-table {
+	max-width: 1000px;
+	width: 100%;
+}
+
+.root a {
+	font-size: 24px;
 }
 
 .project-information {
-    display: flex;
-    gap: 10px;
+	display: flex;
+	gap: 10px;
 }
 
 .information-logo {
-    height: 140px;
-    width: 140px;
+	height: 140px;
+	width: 140px;
 }
 
 .information-text {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 10px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 10px;
 }
 
 .information-project-name {
-    font-size: 35px;
-    font-weight: 400;
+	font-size: 35px;
+	font-weight: 400;
 }
 
 .information-project-author {
-    font-size: 35px;
+	font-size: 35px;
 }
 
 .table {
 	border-collapse: collapse;
-    font-size: 20px;
+	font-size: 20px;
 	table-layout: auto;
 	width: 100%;
 }
@@ -48,45 +54,74 @@
 .mobile-td:hover {
 	text-decoration: underline;
 }
+
 .table tr {
-    border-top: 1px solid var(--border-white);
+	border-top: 1px solid var(--border-white);
 }
 
 .table td {
 	padding: 8px 0;
 	vertical-align: middle;
-    text-align: center;
+	text-align: center;
 }
 
 .td-image-container img {
 	display: block;
 	height: auto;
-    margin: 0 auto;
+	margin: 0 auto;
 	max-width: 40px;
 }
 
 .image-release {
-    background: url('/assets/images/download/Release.png');
+	background: url('/assets/images/download/Release.png');
 }
 
 .image-beta {
-    background: url('/assets/images/download/Beta.png');
+	background: url('/assets/images/download/Beta.png');
 }
 
 .td-image-container div {
-    background-position: center;
-    background-size: cover;
-    border-radius: var(--radius-extra-small);
-    height: 40px;
-    margin: 0 auto;
-    width: 40px;
+	background-position: center;
+	background-size: cover;
+	border-radius: var(--radius-extra-small);
+	height: 40px;
+	margin: 0 auto;
+	width: 40px;
+}
+
+.download-table {
+	border-collapse: collapse;
+	font-size: 20px;
+	max-width: 450px;
+	table-layout: auto;
+	width: 100%;
+}
+
+.download-table th {
+	text-align: center;
+	padding: 12px 8px;
+}
+
+.th-l1 {
+	text-align: center !important;
+}
+
+.download-table td {
+	border-top: 1px solid var(--border-white);
+	padding: 8px 0;
+	vertical-align: middle;
+	text-align: center;
+}
+
+.changelog {
+	margin-top: 1rem;
+}
+
+.changelog ul {
+	padding-inline-start: 40px;
 }
 
 @media screen and (max-width: 630px) {
-    .table {
-        margin-top: 2rem;
-    }
-
 	.table,
 	.table thead,
 	.table tbody,
@@ -95,7 +130,7 @@
 	.table td {
 		display: block;
 	}
-    
+
 	.table thead {
 		display: none;
 	}
@@ -114,10 +149,10 @@
 	.table td {
 		display: flex;
 		align-items: center;
-        justify-content: center;
+		justify-content: center;
 		padding: 0.5rem 0;
 		border-bottom: 1px dashed #ddd;
-        border-top: none;
+		border-top: none;
 	}
 
 	.table td:last-child {
@@ -138,5 +173,9 @@
 	.table td .td-size-container,
 	.table td .td-gversion-container {
 		flex: 1;
+	}
+
+	.information-project-author {
+		font-size: 1.2rem;
 	}
 }

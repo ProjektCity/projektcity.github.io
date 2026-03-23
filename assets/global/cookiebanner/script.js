@@ -3,9 +3,9 @@ document.addEventListener('DOMContentLoaded', function() {
     const unclassifiedCookiesCount = 0;
 
     const COOKIE_BANNER_HTML = `
-        <div class="cookie-banner-dark-background" id="cookie-banner-dark-bg" style="display: none;"></div>
-        <div class="cookie-banner-background" id="cookie-banner-bg" style="display: none;"></div>
-        <div class="cookie-banner" id="cookie-banner" style="display: none;">
+        <div class="cookie-banner-dark-background" id="cookie-banner-dark-bg"></div>
+        <div class="cookie-banner-background" id="cookie-banner-bg"></div>
+        <div class="cookie-banner" id="cookie-banner">
             <div class="cb-inner">
                 <div class="cb-top-elements">
                     <div class="cb-header-text">
