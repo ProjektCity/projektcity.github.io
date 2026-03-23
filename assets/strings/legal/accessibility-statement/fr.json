@@ -4,17 +4,12 @@
   "legal_header_intro_p2": "Please note that Projekt City is managed by itsmarian.dev. The legally required Imprint (Legal Notice) and central contact information can be found at ${imprint_link}.",
   "legal_header_intro_p3": "By continuing, you confirm that you have read and agree to our ${at_link}, ${eula_link}, ${privacy_link}, ${terms_link}, and ${world_link}. If you do not agree, please leave our website and refrain from using our services.",
 
-  "link_imprint": "itsmarian.dev/legal/imprint",
   "link_advertisement_terms": "Advertisement Terms",
   "link_eula": "End-User Licence Agreement",
   "link_privacy": "Privacy Policy",
   "link_terms": "Terms of Use",
   "link_use_our_world": "Use Our World Policy",
   "link_wcag": "Web Content Accessibility Guidelines (WCAG)",
-  "link_main_site": "itsmarian.wixsite.com/projektcity",
-  "link_main_site_alt": "projektcity.com",
-  "link_support_email": "support@projektcity.com",
-  "link_discord": "https://discord.gg/HeRwHB2QQk",
 
   "s0_p1": "Web accessibility is a crucial aspect of online platform design and development that is often underestimated. It refers to how easy it is for people with different abilities and limitations to access, understand and use a website. At its core, it is about ensuring that all users, regardless of their individual needs and requirements, have the same opportunity to access and navigate digital content.",
   "s0_p2": "Web accessibility not only affects people with disabilities, but also older people, people with temporary disabilities (such as injuries) and users with slower internet connections or outdated technological devices. By removing barriers and improving accessibility, we are creating a more inclusive online environment that has the potential to enrich and improve the lives of millions of people.",

@@ -23,7 +23,6 @@
   "s_legal_p1": "Die Nutzung unserer Dienste unterliegt auch anderen Bedingungen. Um besser zu verstehen, wie wir deine Daten erheben, nutzen und analysieren, welche Bedingungen für die Nutzung unserer Dienste gelten und wie du unsere Welt nutzen darfst, lies bitte auch diese.",
   "s_legal_p2": "Weitere Informationen findest du in der ${eula_link}, im ${github_privacy_link}, in der ${privacy_link}, den ${terms_link} und der ${world_link}.",
 
-  "link_eu_platform": "https://ec.europa.eu/consumers/odr/",
   "link_eula": "Endbenutzer-Lizenzvereinbarung",
   "link_github_privacy": "GitHub Datenschutz",
   "link_privacy": "Datenschutzerklärung",

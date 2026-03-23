@@ -24,7 +24,6 @@
   "s_legal_p1": "The use of our services is also subject to other conditions. For a better understanding of how we collect, use and analyze your data, which conditions apply to the use of our services and how you may use our world, please also read these.",
   "s_legal_p2": "For more information, read the ${eula_link}, ${github_privacy_link}, ${privacy_link}, ${terms_link} and ${world_link}.",
 
-  "link_eu_platform": "https://ec.europa.eu/consumers/odr/",
   "link_eula": "End-User Licence Agreement",
   "link_github_privacy": "GitHub Privacy",
   "link_privacy": "Privacy Policy",
