@@ -17,7 +17,6 @@
   "s_legal_title": "Rechtlicher Hinweis",
   "s_legal_p1": "Die Nutzung unserer Dienste unterliegt auch anderen Bedingungen. Um besser zu verstehen, wie wir deine Daten erheben, nutzen und analysieren, welche Bedingungen für die Nutzung unserer Dienste gelten und wie du unsere Welt nutzen darfst, lies bitte auch diese.",
   "s_legal_p2": "For more information, read the ${eula_link}, ${github_privacy_link}, ${privacy_link}, ${terms_link} and ${world_link}.",
-  "link_eu_platform": "https://ec.europa.eu/consumers/odr/",
   "link_eula": "End-User Licence Agreement",
   "link_github_privacy": "GitHub Privacy",
   "link_privacy": "Privacy Policy",
