@@ -13,5 +13,6 @@
     "v1-1_changelog_2": "Bagger hinzugefügt",
     "v1-1_changelog_3": "Straßen repariert",
     "v1-1_changelog_4": "Mittellinie repariert",
-    "v1-1_changelog_5": "Wald erweitert"
+    "v1-1_changelog_5": "Wald erweitert",
+    "fastinstall_desc": "Install via Terminal"
 }
