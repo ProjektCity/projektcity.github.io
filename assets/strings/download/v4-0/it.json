@@ -22,5 +22,6 @@
     "v4-0_changelog_11": "Spawn improved",
     "v4-0_more_updates": "More updates will be coming soon",
     "v4-0_sorry": "Sorry!",
-    "v4-0_apology": "We had some performance issues, which would make the map not playable well. We have fixed the problem whereby a feature that was supposed to be added was not added."
+    "v4-0_apology": "We had some performance issues, which would make the map not playable well. We have fixed the problem whereby a feature that was supposed to be added was not added.",
+    "fastinstall_desc": "Install via Terminal"
 }

@@ -9,5 +9,6 @@
     "v1-0_filename": "File Name",
     "v1-0_download": "Download",
     "v1-0_changes_title": "Changes",
-    "v1-0_no_changelog": "File has no changelog"
+    "v1-0_no_changelog": "File has no changelog",
+    "fastinstall_desc": "Install via Terminal"
 }

@@ -49,5 +49,6 @@
     "v5-0_next_update_2": "[V5.1] Flying planes and Airport",
     "v5-0_next_update_3": "[V5.2] City Update (Building all houses, adding Redstone and power System, and much more)",
     "v5-0_next_update_4": "[V5.3] 1.21 Update (changing all commands to 1.21, adding life to the world with humans and more, using the new blocks and Redstone Features)",
-    "v5-0_happy_new_year": "WE WISH YOU A HAPPY NEW YEAR!"
+    "v5-0_happy_new_year": "WE WISH YOU A HAPPY NEW YEAR!",
+    "fastinstall_desc": "Install via Terminal"
 }

@@ -13,5 +13,6 @@
     "v1-1_changelog_2": "Added excavator",
     "v1-1_changelog_3": "Streets fixed",
     "v1-1_changelog_4": "Middleline fixed",
-    "v1-1_changelog_5": "Expanded forest"
+    "v1-1_changelog_5": "Expanded forest",
+    "fastinstall_desc": "Install via Terminal"
 }

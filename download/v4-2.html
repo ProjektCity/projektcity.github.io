@@ -27,7 +27,6 @@
     <script src="/assets/global/script.js"></script>
     <script src="/assets/global/directory.js"></script>
     <!-- Individual Elements -->
-    <link rel="stylesheet" href="/assets/pages/download/download.css">
     <link rel="stylesheet" href="/assets/pages/download/styles.css">
     <script src="/assets/pages/download/main.js"></script>
     <!-- Meta tag -->
@@ -123,6 +122,24 @@
                     </tr>
                 </tbody>
             </table>
+        </section>
+        <section class="hasborder" id="fastinstall">
+            <p class="centered" data-i18n="fastinstall_desc">Install via Terminal</p>
+            <br>
+            <div class="install-tab-block">
+                <div class="install-tab-header">
+                    <button class="install-tab-pill active" id="windows">Windows</button>
+                    <button class="install-tab-pill" id="linux">Linux</button>
+                </div>
+                <div class="install-tab-body">
+                    <code id="cmd-windows">iwr -useb https://projektcity.com/install.ps1 | iex</code>
+                    <code id="cmd-linux" style="display:none">This feature is not yet available for Linux, but will be added soon.</code>
+                    <button class="install-copy-btn" id="installCopy" title="Copy">
+                        <svg class="icon-copy" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+                        <svg class="icon-check" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="display:none"><polyline points="20 6 9 17 4 12"/></svg>
+                    </button>
+                </div>
+            </div>
         </section>
         <section id="changelog">
             <h1 class="centered" data-i18n="v4-2_changes_title"></h1>

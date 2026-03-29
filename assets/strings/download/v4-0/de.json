@@ -22,5 +22,6 @@
     "v4-0_changelog_11": "Spawn verbessert",
     "v4-0_more_updates": "Weitere Updates folgen bald",
     "v4-0_sorry": "Entschuldigung!",
-    "v4-0_apology": "Wir hatten einige Leistungsprobleme, die die Karte nicht gut spielbar machten. Wir haben das Problem behoben, bei dem eine Funktion, die hinzugefügt werden sollte, nicht hinzugefügt wurde."
+    "v4-0_apology": "Wir hatten einige Leistungsprobleme, die die Karte nicht gut spielbar machten. Wir haben das Problem behoben, bei dem eine Funktion, die hinzugefügt werden sollte, nicht hinzugefügt wurde.",
+    "fastinstall_desc": "Mit Terminal installieren"
 }
