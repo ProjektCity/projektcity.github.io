@@ -27,5 +27,6 @@
     "v4-1_houses_3": "Hotel (IN ENTWICKLUNG)",
     "v4-1_other_title": "Weitere Änderungen:",
     "v4-1_other_1": "Autobahn wurde erweitert",
-    "v4-1_other_2": "Einige weitere Straßen wurden gebaut"
+    "v4-1_other_2": "Einige weitere Straßen wurden gebaut",
+    "fastinstall_desc": "Install via Terminal"
 }
