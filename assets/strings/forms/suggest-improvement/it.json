@@ -1,0 +1,20 @@
+{
+    "form_title": "Suggest Improvement",
+    "form_subtitle": "Found something broken or want to suggest an improvement? Let us know and we'll get on it.",
+    "form_success": "Improvement suggested. Thanks for keeping Projekt City clean!",
+    "btn_submit": "Submit Report",
+    "field_title_label": "Title",
+    "field_title_placeholder": "Short description of the issue",
+    "field_description_label": "Description",
+    "field_description_placeholder": "What happened? What did you expect to happen?",
+    "field_steps_label": "Steps to reproduce",
+    "field_steps_placeholder": "1. Go to...\n2. Click on...\n3. See error",
+    "field_severity_label": "Severity",
+    "field_severity_placeholder": "How bad is it?",
+    "field_severity_opt_low": "Low - minor visual glitch",
+    "field_severity_opt_medium": "Medium - functionality affected",
+    "field_severity_opt_high": "High - major feature broken",
+    "field_severity_opt_critical": "Critical - site is down",
+    "field_version_label": "Version / URL",
+    "field_version_placeholder": "e.g. projektcity.com/map or v2.1.0"
+}
