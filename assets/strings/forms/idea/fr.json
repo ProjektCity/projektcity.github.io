@@ -1,0 +1,23 @@
+{
+    "form_title": "Idea",
+    "form_subtitle": "Got a suggestion? Drop it here and we'll take a look.",
+    "form_success": "Idea submitted! Great ones make it into the roadmap.",
+    "btn_submit": "Submit Idea",
+    "field_title_label": "Idea title",
+    "field_title_placeholder": "Give it a \"one in a lifetime\" title",
+    "field_area_label": "Area",
+    "field_area_placeholder": "Which part of Projekt City?",
+    "field_area_opt_gameplay": "Gameplay",
+    "field_area_opt_website": "Website",
+    "field_area_opt_economy": "Economy",
+    "field_area_opt_events": "Events",
+    "field_area_opt_building": "Building",
+    "field_area_opt_community": "Community",
+    "field_area_opt_other": "Other",
+    "field_description_label": "Describe your idea",
+    "field_description_placeholder": "What is it? How should it work? Why would players love it?",
+    "field_prior_art_label": "Seen it elsewhere?",
+    "field_prior_art_placeholder": "Link or name of a server / game that does this well",
+    "field_username_label": "Your username",
+    "field_username_placeholder": "Optional"
+}
