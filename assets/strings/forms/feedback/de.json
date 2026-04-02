@@ -1,0 +1,24 @@
+{
+    "form_title": "Feedback",
+    "form_subtitle": "Gut, schlecht oder irgendwo dazwischen - wir wollen es hören. Hilf uns, deine Erfahrung zu verstehen und uns zu verbessern, oder teile einfach deine Gedanken.",
+    "form_success": "Feedback erhalten. Vielen dank, wir geben unser Bestes, um deine Meldung so schnell wie möglich zu bearbeiten.",
+    "btn_submit": "Feedback senden",
+
+    "field_category_label": "Kategorie",
+    "field_category_placeholder": "Worum geht es?",
+    "field_category_opt_general": "Allgemein",
+    "field_category_opt_website": "Website",
+    "field_category_opt_server": "Server",
+    "field_category_opt_community": "Community",
+    "field_category_opt_staff": "Team",
+    "field_category_opt_other": "Sonstiges",
+
+    "field_message_label": "Dein Feedback",
+    "field_message_placeholder": "Feedback hier eingeben...",
+
+    "field_contact_label": "Kontakt (Discord / E-Mail)",
+    "field_contact_placeholder": "Falls wir nachfragen möchten, wie können wir dich erreichen? Optional, aber hilfreich",
+
+    "field_username_label": "In-Game-Name oder Benutzername",
+    "field_username_placeholder": "Optional, aber hilfreich"
+}

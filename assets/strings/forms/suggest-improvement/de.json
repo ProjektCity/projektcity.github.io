@@ -1,0 +1,25 @@
+{
+    "form_title": "Verbesserung vorschlagen",
+    "form_subtitle": "Etwas kaputt gefunden oder eine Verbesserung im Sinn? Meld dich und wir kümmern uns darum.",
+    "form_success": "Verbesserung eingereicht. Danke, dass du Projekt City sauber hältst!",
+    "btn_submit": "Bericht einreichen",
+
+    "field_title_label": "Titel",
+    "field_title_placeholder": "Kurze Beschreibung des Problems",
+
+    "field_description_label": "Beschreibung",
+    "field_description_placeholder": "Was ist passiert? Was hättest du erwartet?",
+
+    "field_steps_label": "Schritte zur Reproduktion",
+    "field_steps_placeholder": "1. Gehe zu...\n2. Klicke auf...\n3. Fehler sehen",
+
+    "field_severity_label": "Schweregrad",
+    "field_severity_placeholder": "Wie schlimm ist es?",
+    "field_severity_opt_low": "Niedrig - kleinerer visueller Fehler",
+    "field_severity_opt_medium": "Mittel - Funktionalität beeinträchtigt",
+    "field_severity_opt_high": "Hoch - wichtige Funktion kaputt",
+    "field_severity_opt_critical": "Kritisch - Seite ist nicht erreichbar",
+
+    "field_version_label": "Version / URL",
+    "field_version_placeholder": "z.B. projektcity.com/map oder v2.1.0"
+}

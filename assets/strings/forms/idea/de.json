@@ -1,0 +1,28 @@
+{
+    "form_title": "Idee",
+    "form_subtitle": "Hast du einen Vorschlag? Schick ihn ab und wir schauen uns das an.",
+    "form_success": "Idee eingereicht! Die besten schaffen es in die Roadmap.",
+    "btn_submit": "Idee einreichen",
+
+    "field_title_label": "Titel der Idee",
+    "field_title_placeholder": "Gib ihr einen unvergesslichen Titel",
+
+    "field_area_label": "Bereich",
+    "field_area_placeholder": "Welcher Teil von Projekt City?",
+    "field_area_opt_gameplay": "Gameplay",
+    "field_area_opt_website": "Website",
+    "field_area_opt_economy": "Wirtschaft",
+    "field_area_opt_events": "Events",
+    "field_area_opt_building": "Bauen",
+    "field_area_opt_community": "Community",
+    "field_area_opt_other": "Sonstiges",
+
+    "field_description_label": "Beschreibe deine Idee",
+    "field_description_placeholder": "Was ist es? Wie soll es funktionieren? Warum würden Spieler es lieben?",
+
+    "field_prior_art_label": "Schon woanders gesehen?",
+    "field_prior_art_placeholder": "Link oder Name eines Servers / Spiels, das das gut umsetzt",
+
+    "field_username_label": "Dein Benutzername",
+    "field_username_placeholder": "Optional"
+}
